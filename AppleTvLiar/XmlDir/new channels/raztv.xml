@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+			<atv><body><videoPlayer id="missde.cn-player"><httpFileVideoAsset id="show-player">
+					<mediaURL><![CDATA[http://198.206.132.136/stream.m3u8?channel=raztv-ru&ticket=71e949388284e6ac98fa8637d4586ec1bab9995580b07d6cc64521a49e71b46f2f0c4bdb938a7b9577b6f695f42cbbdf6bd2aecd3dd3350a]]></mediaURL>
+					<title></title>
+					<description></description>
+					</httpFileVideoAsset></videoPlayer></body></atv>

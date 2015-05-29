@@ -1,0 +1,11 @@
+openssl req -new -newkey rsa:1024 -nodes -keyout C://client01.key  -subj "/C=US/CN=trailers.apple.com"  -out C://client01.csr
+
+openssl ca -config E://ca.config -in C://client01.csr -out c://client01.crt -batch
+
+openssl ca -config E://ca.config -in C://client01.csr -out C://client01.crt -batch
+
+openssl pkcs12 -export -in C://client01.crt -inkey C://client01.key  -certfile C://ca.cer -out C://client01.p12 -passout pass:Aa123456
+
+openssl.exe pkcs12 -export -in C://client01.crt -inkey client01.key -certfile ca.crt -out client01.p12
+
+openssl x509 -noout -text -in C://client01.crt

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+			<atv><body><videoPlayer id="missde.cn-player"><httpFileVideoAsset id="show-player">
+					<mediaURL><![CDATA[http://198.206.132.136/stream.m3u8?channel=top-secret-ru&ticket=9457a2ef6e64bfa2f44d6b8d94de40705465c137453b2771626b9963fa724202bc504cceba8ecaaa8bac51ee5fb71a8989e23275dcfce917]]></mediaURL>
+					<title></title>
+					<description></description>
+					</httpFileVideoAsset></videoPlayer></body></atv>

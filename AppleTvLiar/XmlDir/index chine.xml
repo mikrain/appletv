@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <scroller id="com.sample.movie-shelf">
+      <items>
+        <collectionDivider alignment="left" accessibilityLabel="Русские программы">
+          <title>Русские программы</title>
+        </collectionDivider>
+        <shelf id="shelf_1" columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+                <sixteenByNinePoster id="shelf_item_1" alwaysShowTitles="true" accessibilityLabel="ОРТ" onSelect="atv.loadURL('http://localhost/appletv?channel=ort');"  onPlay="atv.loadURL('http://localhost/appleChannels?channel=ort');">
+                  <title>ОРТ</title>
+                  <image>http://cineworld-cinema.org/_ld/0/49029428.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_2" alwaysShowTitles="true" accessibilityLabel="НТВ" onSelect="atv.loadURL('http://localhost/appletv?channel=ntv');"  onPlay="atv.loadURL('http://localhost/appleChannels?channel=ntv');">
+                  <title>НТВ</title>
+                  <image>http://www.sporttvnews.ru/news_photo/ntv.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+
+                <sixteenByNinePoster id="shelf_item_3" alwaysShowTitles="true" accessibilityLabel="ТНТ" onSelect="atv.loadURL('http://localhost/appletv?channel=tnt');"  onPlay="atv.loadURL('http://localhost/appleChannels?channel=tnt');">
+                  <title>ТНТ</title>
+                  <image>http://mradio.in/uploads/posts/2011-09/1316771274_tnt.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+
+                <sixteenByNinePoster id="shelf_item_4" alwaysShowTitles="true" accessibilityLabel="ПЕРЕЦ" onSelect="atv.loadURL('http://localhost/appletv?channel=perec');"  onPlay="atv.loadURL('http://localhost/appleChannels?channel=perec');">
+                  <title>ПЕРЕЦ</title>
+                  <image>http://riper.tv/images/perec_online.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+
+                <sixteenByNinePoster id="shelf_item_5" alwaysShowTitles="true" accessibilityLabel="СТС" onSelect="atv.loadURL('http://localhost/appletv?channel=sts');"  onPlay="atv.loadURL('http://localhost/playSts');">
+                  <title>СТС</title>
+                  <image>http://ctc-tv.my1.ru/CTC_logo.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+
+                <sixteenByNinePoster id="shelf_item_6" alwaysShowTitles="true" accessibilityLabel="ДИСНЕЙ" onSelect="atv.loadURL('http://localhost/appletv?channel=disney');"  onPlay="atv.loadURL('http://localhost/playDisney');">
+                  <title>ДИСНЕЙ</title>
+                  <image>http://images.hitfix.com/photos/2436659/Disney-positions-itself-as-the-new-tentpole-power-house.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_7" alwaysShowTitles="true" accessibilityLabel="РЕН ТВ" onSelect="atv.loadURL('http://localhost/appletv?channel=rentv');"  onPlay="atv.loadURL('http://localhost/playDisney');">
+                  <title>РЕН ТВ</title>
+                  <image>http://www.sostav.ru/articles/rus/2012/18.04/news/images/ren.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_8" alwaysShowTitles="true" accessibilityLabel="Ю ТВ" onSelect="atv.loadURL('http://localhost/appletv?channel=utv');"  onPlay="atv.loadURL('http://localhost/playDisney');">
+                  <title>Ю ТВ</title>
+                  <image>http://kabantv.tv/uploads/posts/2012-10/1351426353_you-tv-online.png</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+        <collectionDivider alignment="left" accessibilityLabel="Зарубежные программы">
+          <title>Зарубежные программы</title>
+        </collectionDivider>
+        <shelf id="shelf_2"  columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+                <sixteenByNinePoster id="shelf_item_9" alwaysShowTitles="true" accessibilityLabel="DocuBoxHD" onSelect="atv.loadURL('http://localhost/appletv?channel=docuboxhd');"  onPlay="atv.loadURL('http://localhost/channel?channel=docuboxhd');">
+                  <title>DocuBoxHD</title>
+                  <image>http://images4.wikia.nocookie.net/__cb20121202034748/tvpedia/ru/images/3/3a/DocuBOX_HD.png</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_10" alwaysShowTitles="true" accessibilityLabel="Sky News" onSelect="atv.loadURL('http://localhost/appletv?channel=skynews');"  onPlay="atv.loadURL('http://localhost/channel?channel=skynews');">
+                  <title>Sky News</title>
+                  <image>https://lh3.googleusercontent.com/-T87BsNe8qwQ/TYjshU35JnI/AAAAAAAAAVA/S3TZTIg7ZDo/s1600/SkyNewsHDConcept2a.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_11" alwaysShowTitles="true" accessibilityLabel="THRILL MOVIE" onSelect="atv.loadURL('http://localhost/appletv?channel=thrillmovie');"  onPlay="atv.loadURL('http://localhost/channel?channel=thrillmovie');">
+                  <title>THRILL MOVIE</title>
+                  <image>https://si0.twimg.com/profile_images/1419747842/Thrillicon.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_12" alwaysShowTitles="true" accessibilityLabel="Universal MOVIE" onSelect="atv.loadURL('http://localhost/appletv?channel=universal');"  onPlay="atv.loadURL('http://localhost/channel?channel=universal');">
+                  <title>Universal MOVIE</title>
+                  <image>http://news.doddleme.com/wp-content/uploads/2011/12/Universal-Studios-Logo.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_13" alwaysShowTitles="true" accessibilityLabel="Start world movie" onSelect="atv.loadURL('http://localhost/appletv?channel=startworldhd');"  onPlay="atv.loadURL('http://localhost/channel?channel=startworldhd');">
+                  <title>Start world movie</title>
+                  <image>http://b.vimeocdn.com/ts/244/146/244146303_640.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster> 
+                <sixteenByNinePoster id="shelf_item_14" alwaysShowTitles="true" accessibilityLabel="Comedy Central" onSelect="atv.loadURL('http://localhost/appletv?channel=centralcomedy');"  onPlay="atv.loadURL('http://localhost/channel?channel=centralcomedy');">
+                  <title>Comedy Central</title>
+                  <image>http://4.bp.blogspot.com/_rlKBD8KhrzE/SwP2YhwooxI/AAAAAAAAAp0/Dod41FJUIus/s1600/Neon+Logo.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_15" alwaysShowTitles="true" accessibilityLabel="Crime" onSelect="atv.loadURL('http://localhost/appletv?channel=crime');"  onPlay="atv.loadURL('http://localhost/channel?channel=crime');">
+                  <title>Crime</title>
+                  <image>http://cdn.realscreen.com/wp/wp-content/uploads/2011/11/Crime-Investigation.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_16" alwaysShowTitles="true" accessibilityLabel="HBO" onSelect="atv.loadURL('http://localhost/appletv?channel=hbo');"  onPlay="atv.loadURL('http://localhost/channel?channel=hbo');">
+                  <title>HBO</title>
+                  <image>http://tvbythenumbers.zap2it.com/wp-content/uploads/2011/09/HBO.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_17" alwaysShowTitles="true" accessibilityLabel="BIO" onSelect="atv.loadURL('http://localhost/appletv?channel=bio');"  onPlay="atv.loadURL('http://localhost/channel?channel=bio');">
+                  <title>BIO</title>
+                  <image>http://images.tvrage.com/networks/320.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+        <collectionDivider alignment="left" accessibilityLabel="Зарубежные программы">
+          <title>Детские программы</title>
+        </collectionDivider>
+        <shelf id="shelf_3"  columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+                <sixteenByNinePoster id="shelf_item_14" alwaysShowTitles="true" accessibilityLabel="Cartoon HD" onSelect="atv.loadURL('http://localhost/appletv?channel=cartoonhd');"  onPlay="atv.loadURL('http://localhost/channel?channel=cartoonhd');">
+                  <title>Cartoon HD</title>
+                  <image>http://madeira.hccanet.org/project2_2010/woodwardp2/cartoon_network_hd.png</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_15" alwaysShowTitles="true" accessibilityLabel="BabyTv" onSelect="atv.loadURL('http://localhost/appletv?channel=babytv');"  onPlay="atv.loadURL('http://localhost/channel?channel=babytv');">
+                  <title>BabyTv</title>
+                  <image>http://upload.wikimedia.org/wikipedia/en/4/45/BabyTV.png</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+        <collectionDivider alignment="left" accessibilityLabel="Зарубежные программы">
+          <title>Музыкальные программы</title>
+        </collectionDivider>
+        <shelf id="shelf_4"  columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+                <sixteenByNinePoster id="shelf_item_16" alwaysShowTitles="true" accessibilityLabel="M Channel Music" onSelect="atv.loadURL('http://localhost/appletv?channel=mchannelhd');"  onPlay="atv.loadURL('http://localhost/channel?channel=mchannelhd');">
+                  <title>M Channel Music</title>
+                  <image>http://yazidanefantasy.com/wp-content/uploads/2012/10/Watch-MTunes-HD-Live-Streaming-Online.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_17" alwaysShowTitles="true" accessibilityLabel="MTV HD" onSelect="atv.loadURL('http://localhost/appletv?channel=mtvhd');"  onPlay="atv.loadURL('http://localhost/channel?channel=mtvhd');">
+                  <title>MTV HD</title>
+                  <image>http://www.hdtvuk.tv/mtv_logo.gif</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+                <sixteenByNinePoster id="shelf_item_18" alwaysShowTitles="true" accessibilityLabel="NAT GEO MUSIC" onSelect="atv.loadURL('http://localhost/appletv?channel=natgeomusic');"  onPlay="atv.loadURL('http://localhost/channel?channel=natgeomusic');">
+                  <title>NAT GEO MUSIC</title>
+                  <image>http://media.al.com/bargain-mom/photo/nat-geo-musicjpg-00ae71cfbf727aba_large.jpg</image>
+                  <defaultImage>resource://16X9.png</defaultImage>
+                </sixteenByNinePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+      </items>
+    </scroller>
+  </body>
+</atv>

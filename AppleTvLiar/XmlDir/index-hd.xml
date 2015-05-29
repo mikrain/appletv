@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+  <body>
+    <itemDetail id="com.apple.trailers">
+      <title>Hello Herman</title>
+      <subtitle>Independent</subtitle>
+      <rating>NR</rating>
+      <summary>Set in the not so distant future in Any Town, USA, sixteen-year-old Herman Howards (Garrett Backstrom) makes a fateful decision. He enters his suburban school and kills thirty-nine students, two teachers, and a police officer. Just before his arrest he emails his idol, journalist Lax Morales (Norman Reedus). &quot;I want to tell my story on your show.&quot; Lax, haunted by his own fateful past and the loss of his love Isa Luz (Martha Higareda), now sits face to face with Herman. As he helps Herman to explore and understand his demons, Lax must finally face his own.</summary>
+      <image style="moviePoster">http://trailers.apple.com/trailers/independent/helloherman/images/poster-xlarge.jpg</image>
+      <defaultImage>resource://Poster.png</defaultImage>
+            <table>
+                                <columnDefinitions>
+      	   <columnDefinition width="25" alignment="left">
+        	  <title>Details</title>
+      	   </columnDefinition>
+          	          <columnDefinition width="25" alignment="left">
+	            <title>Actors</title>
+	          </columnDefinition>
+	                	          <columnDefinition width="25" alignment="left">
+	            <title>Director</title>
+	          </columnDefinition>
+	                	          <columnDefinition width="25" alignment="left">
+	            <title>Writer</title>
+	          </columnDefinition>
+	              </columnDefinitions>
+		<rows>
+		  			<row>
+															<label>Drama</label>
+																								<label>Norman Reedus</label>
+																								<label>Michelle Danner</label>
+																								<label>John Buffalo Mailer</label>
+												</row>
+		  			<row>
+															<label>In Theaters 6/07</label>
+																								<label>Martha Higareda</label>
+																								<label/>
+																								<label/>
+												</row>
+		  			<row>
+									<label/>
+																			<label>Garret Backstrom</label>
+																								<label/>
+																								<label/>
+												</row>
+		  			<row>
+									<label/>
+																			<label>Rob Estes</label>
+																								<label/>
+																								<label/>
+												</row>
+		          </rows>
+      </table>
+      <centerShelf>
+        <shelf id="centerShelf" columnCount="4" center="true">
+          <sections>
+            <shelfSection>
+              <items>
+					                <actionButton id="play" onSelect="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/helloherman/videos/trailer-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/helloherman/videos/trailer-hd.xml');">
+	                  <title>Play</title>
+	                  <image>resource://Play.png</image>
+	                  <focusedImage>resource://PlayFocused.png</focusedImage>
+					  <badge>HD</badge>	                </actionButton>
+								              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+      </centerShelf>
+      <divider>
+  		<smallCollectionDivider alignment="left">
+          <title>More Drama</title>
+        </smallCollectionDivider>
+      </divider>
+      <bottomShelf>
+        <shelf id="bottomShelf" columnCount="8">
+          <sections>
+            <shelfSection>
+              <items>
+				
+						 			<moviePoster id="shelf_item_1" accessibilityLabel="Augustine" related="true" onSelect="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/augustine/index-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/augustine/videos/trailer-hd.xml');">
+		              <title>Augustine</title>
+		              <image>http://trailers.apple.com/trailers/independent/augustine/images/poster-large.jpg</image>
+		              <defaultImage>resource://Poster.png</defaultImage>
+		            </moviePoster>
+						 			<moviePoster id="shelf_item_2" accessibilityLabel="The Hunt" related="true" onSelect="atv.loadURL('http://trailers.apple.com/appletv/studios/magnolia/thehunt/index-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/studios/magnolia/thehunt/videos/trailer-hd.xml');">
+		              <title>The Hunt</title>
+		              <image>http://trailers.apple.com/trailers/magnolia/thehunt/images/poster-large.jpg</image>
+		              <defaultImage>resource://Poster.png</defaultImage>
+		            </moviePoster>
+						 			<moviePoster id="shelf_item_3" accessibilityLabel="Before Midnight" related="true" onSelect="atv.loadURL('http://trailers.apple.com/appletv/studios/sony/beforemidnight/index-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/studios/sony/beforemidnight/videos/trailer-hd.xml');">
+		              <title>Before Midnight</title>
+		              <image>http://trailers.apple.com/trailers/sony/beforemidnight/images/poster-large.jpg</image>
+		              <defaultImage>resource://Poster.png</defaultImage>
+		            </moviePoster>
+						 			<moviePoster id="shelf_item_4" accessibilityLabel="Ways to Live Forever" related="true" onSelect="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/waystoliveforever/index-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/waystoliveforever/videos/trailer-hd.xml');">
+		              <title>Ways to Live Forever</title>
+		              <image>http://trailers.apple.com/trailers/independent/waystoliveforever/images/poster-large.jpg</image>
+		              <defaultImage>resource://Poster.png</defaultImage>
+		            </moviePoster>
+						 			<moviePoster id="shelf_item_5" accessibilityLabel="33 Postcards" related="true" onSelect="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/33postcards/index-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/33postcards/videos/trailer-hd.xml');">
+		              <title>33 Postcards</title>
+		              <image>http://trailers.apple.com/trailers/independent/33postcards/images/poster-large.jpg</image>
+		              <defaultImage>resource://Poster.png</defaultImage>
+		            </moviePoster>
+						 			<moviePoster id="shelf_item_6" accessibilityLabel="Hammer of the Gods" related="true" onSelect="atv.loadURL('http://trailers.apple.com/appletv/studios/magnolia/hammerofthegods/index-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/studios/magnolia/hammerofthegods/videos/trailer-hd.xml');">
+		              <title>Hammer of the Gods</title>
+		              <image>http://trailers.apple.com/trailers/magnolia/hammerofthegods/images/poster-large.jpg</image>
+		              <defaultImage>resource://Poster.png</defaultImage>
+		            </moviePoster>
+						 			<moviePoster id="shelf_item_7" accessibilityLabel="The Guillotines" related="true" onSelect="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/theguillotines/index-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/theguillotines/videos/trailer-hd.xml');">
+		              <title>The Guillotines</title>
+		              <image>http://trailers.apple.com/trailers/independent/theguillotines/images/poster-large.jpg</image>
+		              <defaultImage>resource://Poster.png</defaultImage>
+		            </moviePoster>
+						 			<moviePoster id="shelf_item_8" accessibilityLabel="The Wall" related="true" onSelect="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/thewall/index-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/thewall/videos/trailer-hd.xml');">
+		              <title>The Wall</title>
+		              <image>http://trailers.apple.com/trailers/independent/thewall/images/poster-large.jpg</image>
+		              <defaultImage>resource://Poster.png</defaultImage>
+		            </moviePoster>
+				              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+      </bottomShelf>
+    </itemDetail>
+  </body>
+</atv>

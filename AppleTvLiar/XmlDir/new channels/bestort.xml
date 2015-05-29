@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+			<atv><body><videoPlayer id="missde.cn-player"><httpFileVideoAsset id="show-player">
+					<mediaURL><![CDATA[http://198.206.132.134/stream.m3u8?channel=1best-ru&ticket=d5a17b87966c4566059fa66f42d0f6ab980848e5f2482b8cc5d519f9f131a019932b48120ba76d176cf376b13a4e462319e995553473f42e]]></mediaURL>
+					<title></title>
+					<description></description>
+					</httpFileVideoAsset></videoPlayer></body></atv>

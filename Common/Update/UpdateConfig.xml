@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UpdateConfig UpdateVersion="1">
+  <Config Changed="false">
+    <Url>https://dl.dropboxusercontent.com/u/26778597/1/AppleTvLiar.dll</Url>
+    <Source>Updates/BackupFile/AppleTvLiar.dll</Source>
+    <Target>AppleTvLiar.dll</Target>
+  </Config>
+  <Config Changed="false">
+    <Url>https://dl.dropboxusercontent.com/u/26778597/xml/channels.atl</Url>
+    <Source>Updates/BackupFile/channels.atl</Source>
+    <Target>Content/channels.atl</Target>
+  </Config>
+  <Config Changed="true">
+    <Url>https://dl.dropboxusercontent.com/u/26778597/xml/index.xml</Url>
+    <Source>Updates/BackupFile/index.xml</Source>
+    <Target>Content/index.xml</Target>
+  </Config>
+</UpdateConfig>
+

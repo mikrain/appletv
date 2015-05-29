@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+			<atv><body><videoPlayer id="missde.cn-player"><httpFileVideoAsset id="show-player">
+					<mediaURL><![CDATA[http://sfe1.rt.bradburylab.tv/live/_definst_/smil:komedijatv_sd.smil/playlist.m3u8]]></mediaURL>
+					<title></title>
+					<description></description>
+					</httpFileVideoAsset></videoPlayer></body></atv>

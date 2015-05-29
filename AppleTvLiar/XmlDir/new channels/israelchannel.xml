@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+			<atv><body><videoPlayer id="missde.cn-player"><httpFileVideoAsset id="show-player">
+					<mediaURL><![CDATA[http://198.206.132.133/stream.m3u8?channel=israel-plus-ru&ticket=559b542ea616e785c4e301bf252f6537f57c22f474d76df19a085bd63c298e57e84e3453daf3481b704e36a6d657132530384e49a36dc492]]></mediaURL>
+					<title></title>
+					<description></description>
+					</httpFileVideoAsset></videoPlayer></body></atv>

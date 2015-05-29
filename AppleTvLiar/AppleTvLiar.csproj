@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{648D2A79-9C38-4A2D-9CDC-2D83952AB5BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppleTvLiar</RootNamespace>
+    <AssemblyName>AppleTvLiar</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\AppleTest\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\packages\DotNetZip.1.9.1.8\lib\net20\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppleChannels\AppleBase.cs" />
+    <Compile Include="AppleChannels\HtmlManager\AdultMult.cs" />
+    <Compile Include="AppleChannels\HtmlManager\ArrrSiteManager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\Kino1080Manager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\MultPoiskSiteManager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\M4KinoSiteManager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\ShowSiteManager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\FriendsSiteManager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\MyExtensions.cs" />
+    <Compile Include="AppleChannels\HtmlManager\BaskinoSiteManager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\Ucoz.cs" />
+    <Compile Include="AppleChannels\HtmlManager\YourCinemaManager.cs" />
+    <Compile Include="AppleChannels\IMikrainService.cs" />
+    <Compile Include="AppleChannels\JsonManager\MovieBoxEpisode.cs" />
+    <Compile Include="AppleChannels\JsonManager\MovieBoxEpisodes.cs" />
+    <Compile Include="AppleChannels\JsonManager\MovieBoxManager.cs" />
+    <Compile Include="AppleChannels\JsonManager\MovieBoxObject.cs" />
+    <Compile Include="AppleChannels\JsonManager\MovieBoxSeries.cs" />
+    <Compile Include="AppleChannels\MikrainServiceMethods.cs" />
+    <Compile Include="AppleChannels\MikrainProgramm.cs" />
+    <Compile Include="AppleChannels\TvManager\UniTv\plist.cs" />
+    <Compile Include="AppleChannels\TvManager\TvManager.cs" />
+    <Compile Include="AppleChannels\TvManager\UniTv\Group.cs" />
+    <Compile Include="AppleChannels\TvManager\UniTv\item.cs" />
+    <Compile Include="AppleChannels\XmlManager\RussianCartoons.cs" />
+    <Compile Include="DNS\DNSService.cs" />
+    <Compile Include="Helper\Helpers.cs" />
+    <Compile Include="ProccessManager\ProccessManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ARSoft.Tools.Net\ARSoft.Tools.Net.csproj">
+      <Project>{65bfa748-c640-49b0-b506-34bbb165233a}</Project>
+      <Name>ARSoft.Tools.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{bdcc4a35-dc94-4ddf-8b10-10ebe715480c}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XmlDir\Channels\babytv.xml" />
+    <Content Include="XmlDir\Channels\bio.xml" />
+    <Content Include="XmlDir\Channels\cartoonhd.xml" />
+    <Content Include="XmlDir\Channels\centralcomedy.xml" />
+    <Content Include="XmlDir\Channels\crime.xml" />
+    <Content Include="XmlDir\Channels\disney.xml" />
+    <Content Include="XmlDir\Channels\docuboxhd.xml" />
+    <Content Include="XmlDir\Channels\hbo.xml" />
+    <Content Include="XmlDir\Channels\mchannelhd.xml" />
+    <Content Include="XmlDir\Channels\mtvhd.xml" />
+    <Content Include="XmlDir\Channels\natgeomusic.xml" />
+    <Content Include="XmlDir\Channels\ntv.xml" />
+    <Content Include="XmlDir\Channels\ort.xml" />
+    <Content Include="XmlDir\Channels\perec.xml" />
+    <Content Include="XmlDir\Channels\rentv.xml" />
+    <Content Include="XmlDir\Channels\skynews.xml" />
+    <Content Include="XmlDir\Channels\startworldhd.xml" />
+    <Content Include="XmlDir\Channels\sts.xml" />
+    <Content Include="XmlDir\Channels\thrillmovie.xml" />
+    <Content Include="XmlDir\Channels\tnt.xml" />
+    <Content Include="XmlDir\Channels\universal.xml" />
+    <Content Include="XmlDir\Channels\utv.xml" />
+    <Content Include="XmlDir\index chine - Copy.xml" />
+    <Content Include="XmlDir\index chine url.php - Copy.xml" />
+    <Content Include="XmlDir\index chine url.php.xml" />
+    <Content Include="XmlDir\index chine.php.xml" />
+    <Content Include="XmlDir\index chine.xml" />
+    <Content Include="XmlDir\index-hd.xml" />
+    <Content Include="XmlDir\index.xml" />
+    <Content Include="XmlDir\trailer-hd.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

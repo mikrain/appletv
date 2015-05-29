@@ -1,0 +1,1133 @@
+
+<!-- saved from url=(0048)http://www.opennet.ru/base/sec/ssl_cert.txt.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=KOI8-R"><title>
+OpenNET: статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)
+</title>
+<meta name="KeyWords" content="ssl, crypt, mod_ssl, apache">
+</head><body bgcolor="#DDE1C2" text="#002040">
+<link rel="stylesheet" href="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/opennet4.css" type="text/css">
+<!--htdig_noindex-->
+<form method="get" action="http://www.opennet.ru/search.shtml">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody><tr>
+<td valign="BOTTOM" bgcolor="#E9EAD6" style="background: #E9EAD6 url(&#39;/back.gif&#39;) repeat-x bottom left">
+<a href="http://www.opennet.ru/"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/opennet2.gif" height="60" width="249" alt="The OpenNET Project" border="0"></a><br>
+</td>
+
+<td bgcolor="#B0B190" width="1"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" height="1" width="1" alt=""></td>
+
+<td valign="TOP" align="RIGHT" width="470" bgcolor="#D9DAC6">
+<table border="0" cellpadding="1" width="470">
+<tbody><tr>
+<td height="60" bgcolor="#D9DAC6">
+
+<script language="JavaScript">           
+var plugin=(navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"]) ? navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;          
+          
+if ( plugin ) {          
+          
+ plugin=parseInt(plugin.description.substring(plugin.description.indexOf(".")-2))>=6;          
+          
+}          
+          
+else if (navigator.userAgent && navigator.userAgent.indexOf("MSIE")>=0           
+          
+   && (navigator.userAgent.indexOf("Windows 95")>=0 || navigator.userAgent.indexOf("Windows 98")>=0 || navigator.userAgent.indexOf("Windows NT")>=0)) {          
+          
+ document.write('<SCR'+'IPT LANGUAGE=VBScript\> \n');          
+          
+ document.write('on error resume next \n');          
+          
+ document.write('plugin=( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.6")))\n');          
+          
+ document.write('</SCRIPT\> \n');          
+          
+}          
+          
+if ( plugin ) {          
+          
+     var swf_url = '/img/securit6.swf' + '?link1=' + 'http://click.opennet.ru/cgi-bin/opennet/hjump.cgi?securit6'; 
+     document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width=468 height=60>'); 
+     document.write('<param name=movie value="' + swf_url + '"><param name=menu value=false><param name=quality value=high><param name="play" value="true">'); 
+     document.write('<OBJECT TYPE="application/x-shockwave-flash" data="' + swf_url + '" width=468 height=60>'); 
+     document.write('<param name=movie value="' + swf_url + '"><param name=menu value=false><param name=quality value=high><param name="play" value="true">'); 
+     document.write('</object>'); 
+     document.write('</object>'); 
+                                           
+}else{                 
+    document.write('<a href=http://click.opennet.ru/cgi-bin/opennet/hjump.cgi?securit6 target=_blank><img src=/img/securit6.gif width=468 height=60 border=0></a>');                                           
+}           
+</script><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="468" height="60"><param name="movie" value="/img/securit6.swf?link1=http://click.opennet.ru/cgi-bin/opennet/hjump.cgi?securit6"><param name="menu" value="false"><param name="quality" value="high"><param name="play" value="true"><object type="application/x-shockwave-flash" data="http://www.opennet.ru/img/securit6.swf?link1=http://click.opennet.ru/cgi-bin/opennet/hjump.cgi?securit6" width="468" height="60"><param name="movie" value="/img/securit6.swf?link1=http://click.opennet.ru/cgi-bin/opennet/hjump.cgi?securit6"><param name="menu" value="false"><param name="quality" value="high"><param name="play" value="true"></object></object>          
+<noscript>&lt;a href=http://click.opennet.ru/cgi-bin/opennet/hjump.cgi?securit6 target=_blank&gt;&lt;img src=/img/securit6.gif width=468 height=60 border=0&gt;&lt;/a&gt;</noscript>
+
+
+</td>
+</tr>
+</tbody></table>
+</td>
+
+<td bgcolor="#B0B190" width="1"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" height="1" width="1" alt=""></td>
+<td width="40" bgcolor="#E9EAD6" style="background: #E9EAD6 url(&#39;/back.gif&#39;) repeat-x bottom left">&nbsp;</td>
+<td bgcolor="#B0B190" width="1"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" height="1" width="1" alt=""></td>
+
+<td valign="TOP" align="RIGHT" width="130" bgcolor="#E9EAD6" rowspan="3">
+<a href="http://www.lanbilling.ru/" target="_blank"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/lanbilling7.gif" width="130" height="125" border="0"></a>
+</td>
+
+</tr>
+
+<tr bgcolor="#B0B190"><td colspan="6"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" height="1" width="1" alt=""></td></tr>
+
+
+<tr bgcolor="#E9EAD6">
+<td align="CENTER" colspan="5">
+<table width="100%">
+<tbody><tr>
+<td rowspan="2" width="300" nowrap="" class="h">
+<input type="hidden" name="exclude" value="index|/man.shtml"><a href="http://www.opennet.ru/search.shtml" class="h"><u>Поиск</u></a>&nbsp;(<a href="http://www.opennet.ru/keywords/" class="h">ключи</a>):&nbsp;<input type="text" size="20" name="words" value="" title="для поиска в google наберите &quot;g фраза&quot;">
+</td><td width="25%">
+&nbsp;   <a href="http://www.opennet.ru/prog/sml/" class="h"><b><u>ПРОГРАММЫ</u></b></a>
+</td><td width="25%">
+   <a href="http://www.opennet.ru/filebase.shtml" class="h"><b><u>СТАТЬИ</u></b></a>
+</td><td width="25%">
+   <a href="http://www.opennet.ru/tips/sml/" class="h"><b><u>СОВЕТЫ</u></b></a>
+</td><td width="25%">
+   <a href="http://www.opennet.ru/forum/" class="h"><b><u>ФОРУМ</u></b></a>
+</td></tr>
+<tr><td>
+&nbsp;   <a href="http://wiki.opennet.ru/" class="h"><b><u>WIKI</u></b></a>
+</td><td class="h">
+   <a href="http://www.opennet.ru/opennews/" class="h"><b><u>НОВОСТИ</u></b></a> (<a href="http://www.opennet.ru/news/opennet.shtml" class="h">+</a>)
+</td><td>
+   <a href="http://www.opennet.ru/man.shtml" class="h"><b><u>MAN'ы</u></b></a>
+</td><td>
+   <a href="http://www.opennet.ru/docs/" class="h"><b><u>ДОКУМЕНТАЦИЯ</u></b></a>
+</td></tr>
+</tbody></table>
+</td>
+<td bgcolor="#B0B190" width="1"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" height="1" width="1" alt=""></td>
+</tr>
+<tr bgcolor="#B0B190"><td colspan="7"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" height="2" width="1" alt=""></td></tr>
+</tbody></table>
+
+<div style="float: left; width: 279; text-align: left;padding-right: 60px;" id="adv"><a href="http://www.ip-as.ru/" target="_blank"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/ipas3.gif" border="0" width="279" height="40"></a></div>
+<div style="padding-top: 0px;position:absolute;left:50%;margin-left:-240px;width:476px;" id="adv2">
+<a href="http://click.opennet.ru/cgi-bin/opennet/hjump.cgi?hts_11" target="_blank"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/hts_11.gif" width="470" height="65" border="0" alt=""></a>
+
+</div>
+<div style="width: 279;float: right;" id="adv3"><a href="http://multireal.ru/nagios-enterprises/" target="_blank"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/nag7.gif" border="0" width="279" height="40"></a></div>
+<div style="clear: both;"></div>
+
+<br>
+
+<script language="JavaScript"><!--
+d=document;a='';r=escape(d.referrer);a+=';r='+r;
+js=10; d.write('<img src="http://top.list.ru/counter'+
+'?id=77689;js='+js+a+';rand='+Math.random()+
+'" alt="" height=1 width=1>');
+if(js>11)d.write('<'+'!-- ')//--></script><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/counter" alt="" height="1" width="1"><noscript>&lt;img
+src="http://top.list.ru/counter?js=na;id=77689"
+height=1 width=1 alt=""&gt;
+</noscript>
+
+</form>
+<!--/htdig_noindex-->
+
+
+<center><h3><font color="#000090">
+Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)
+</font></h3></center>
+<br>
+<table border="0" cellspacing="0" cellpadding="1" bgcolor="#B0B190" width="100%">
+<tbody><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#E9EAD6" align="CENTER" width="100%">
+<tbody><tr bgcolor="#000000"><td colspan="7"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" height="1" width="1" alt=""></td></tr>
+<tr align="CENTER">
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=prev">&lt;&lt; Предыдущая</a></small></td>
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=index">ИНДЕКС</a></small></td>
+<td><small><a href="http://www.opennet.ru/search.shtml">Поиск в статьях</a></small></td>
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=raw">src</a></small></td>
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=setbookmark">Установить закладку</a></small></td>
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=getbookmark">Перейти на закладку</a></small></td>
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=next">Следующая &gt;&gt;</a></small></td>
+</tr><tr bgcolor="#000000"><td colspan="7"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" height="1" width="1" alt=""></td></tr>
+</tbody></table></td></tr></tbody></table>
+<pre><b>Ключевые слова:</b> <a href="http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=ssl">ssl</a>, <a href="http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=crypt">crypt</a>, <a href="http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=mod_ssl">mod_ssl</a>, <a href="http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=apache">apache</a>,  (<a href="http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=ssl%20crypt%20mod_ssl%20apache">найти похожие документы</a>)<br>
+<font color="#0000C0">From: Алексей Чекушкин</font>
+<font color="#0000C0">Newsgroups: <a href="http://www.webscript.ru/">http://www.webscript.ru/</a></font>
+<font color="#0000C0">Date: Mon, 20 Dec 2004 18:21:07 +0000 (UTC)</font>
+<font color="#0000C0"><b>Subject: Авторизация с помощью клиентских SSL сертификатов.</b></font>
+
+Оригинал: <a href="http://www.webscript.ru/stories/04/05/29/2604693">http://www.webscript.ru/stories/04/05/29/2604693</a>
+
+Авторизация с помощью клиентских SSL сертификатов.
+
+
+   Протокол безопасной передачи данных SSL (Secure Sockets Layer) помимо
+   обеспечения безопасной передачи данных позволяет также реализовать
+   авторизацию клиентов на сервере с помощью клиентских SSL сертификатов.
+   Данная статья является практическим руководством по реализации данного
+   вида авторизации. В статье не рассматриваются теоретические основы
+   криптографии или передачи данных по протоколу SSL. Подразумеваемся,
+   что читатель хотя бы поверхностно знаком с понятиями, используемыми в
+   этой статье, такими как сертификат, секретный ключ, подпись
+   сертификата и т.д.
+
+   Процесс авторизация выглядит следующим образом. При переходе клиента в
+   закрытую область сайта веб-сервер запрашивает у броузера клиента
+   сертификат, если проверка клиентского сертификата веб-сервером прошла
+   удачно, то клиент получает доступ к закрытым данным.
+
+   Наиболее наглядным примером использования авторизации посредством
+   клиентских сертификатов является система платежей WebMoney Transfer, а
+   точнее реализация WM Keeper Light. Данная схема авторизации признана
+   наиболее надежной и, в том или ином виде, широко используется в сфере
+   предоставления банковских услуг.
+
+   Практическая реализация рассматривается на основе популярной связки
+   веб-сервера Apache (<a href="http://httpd.apache.org/">http://httpd.apache.org/</a>) и модуля mod_ssl (<a href="http://www.modssl.org/">http://www.modssl.org/</a>), 
+   основанного на использовании библиотеки openssl (<a href="http://www.openssl.org/">http://www.openssl.org/</a>). 
+   Предполагается, что соответствующее программное обеспечение у вас уже 
+   установлено.
+
+   Для реализации процесса авторизации по клиентским сертификатам
+   требуется:
+<font color="#461b7e">
+    1. Создать собственный доверенный сертификат (Certificate Authority),
+       для того чтобы с помощью него подписывать и проверять клиентские
+       сертификаты.
+    2. Создать клиентские сертификаты, подписанные доверенным
+       сертификатом, для последующей передачи их клиентам.
+    3. Сконфигурировать веб-сервер для запроса и проверки клиентских
+       сертификатов.
+
+</font>
+     Примечание: Для работы с ключами используется программа openssl,
+     входящая в пакет библиотеки openssl. Все приведенные в статье
+     примеры максимально адаптированы для их выполнения из серверных
+     скриптов при автоматизации процесса выдачи клиентских сертификатов,
+     в частности нигде не используется интерактивный режим. При создании
+     закрытых ключей не используется шифрование ключа, поэтому
+     рекомендуется максимально использовать систему ограничения прав
+     доступа операционной системы на файлы ключей.
+
+
+<b style="color: #990000">Создание собственного самоподписанного доверенного сертификата.
+</b>
+   Собственный доверенный сертификат (Certificate Authority - далее CA)
+   необходим для подписи клиентских сертификатов и для их проверки при
+   авторизации клиента веб-сервером. С помощью приведенной ниже команды
+   создается закрытый ключ и самоподписанный сертификат.
+<font color="#461b7e">
+        # openssl req -new -newkey rsa:1024 -nodes -keyout ca.key -x509 -days 500 \
+          -subj /C=RU/ST=Msk/L=Msk/O=My\ Inc/OU=Sale/CN=bla/emailAddress=usr@dom.ru \
+          -out ca.crt
+
+</font>
+   Описание аргументов:
+
+   req
+          Запрос на создание нового сертификата.
+
+   -new
+          Создание запроса на сертификат (Certificate Signing Request -
+          далее CSR).
+
+   -newkey rsa:1023
+          Автоматически будет создан новый закрытый RSA ключ длиной 1024
+          бита. Длину ключа можете настроить по своему усмотрению.
+
+   -nodes
+          Не шифровать закрытый ключ (См. примечание выше).
+
+   -keyout ca.key
+          Закрытый ключ сохранить в файл ca.key.
+
+   -x509
+          Вместо создания CSR (см. опцию -new) создать самоподписанный
+          сертификат.
+
+   -days 500
+          Срок действия сертификата 500 дней. Размер периода действия
+          можете настроить по своему усмотрению. Не рекомендуется вводить
+          маленькие значения, так как этим сертификатом вы будете
+          подписывать клиентские сертификаты.
+
+   -subj /C=RU/ST=Msk/L=Msk/O=My\
+          Inc/OU=Sale/CN=bla/emailAddress=usr@dom.ru
+
+          Данные сертификата, пары параметр=значение, перечисляются через
+          '/'. Символы в значении параметра могут быть "подсечены" с
+          помощью обратного слэша "\", например "O=My\ Inc". Также можно
+          взять значение аргумента в кавычки, например, -subj
+          "/xx/xx/xx".
+        Описание параметров:
+                С - Двухсимвольный код страны (Country). Необязательный
+                    параметр.
+                ST - Название региона/области/края/республики/... (State
+                    Name). Необязательный параметр.
+                L - Название города/поселка/... (Locality Name).
+                    Необязательный параметр.
+                O - Название организации (Organization Name).
+                    Необязательный параметр.
+                OU - Название отдела (Organization Unit). Необязательный
+                    параметр.
+                CN - Имя сертификата, при создании серверных сертификатов
+                    используется доменное имя сайта, для клиентских
+                    сертификатов может быть использовано что угодно (Common
+                    Name). Обязательный параметр. Максимальная длина 64
+                    символа.
+                emailAddress - почтовый адрес (E-mail address).
+                    Необязательный параметр. Максимальная длина 40 символов.
+
+      Необязательные параметры могут быть пропущены, например,
+      /C=RU/CN=blabla/emailAddress=user@domain.ru.
+
+   -out ca.crt
+          Сертификат сохранить в файл ca.crt.
+
+   В результате выполнения команды появятся два файла ca.key и ca.crt.
+
+   Просмотреть данные закрытого ключа и сертификата вы можете с помощью
+   команд:
+<font color="#461b7e">
+        # openssl rsa -noout -text -in ca.key              (для ключа)
+        # openssl x509 -noout -text -in ca.crt             (для сертификата)
+
+</font>
+<b style="color: #990000">Создание клиентских сертификатов
+</b>
+Подготовка конфигурации и файлов для подписи сертификатов.
+
+   Создайте конфигурационный файл с именем ca.config следующего
+   содержания.
+<font color="#461b7e">
+        [ ca ]
+        default_ca             = CA_CLIENT       # При подписи сертификатов
+        # использовать секцию CA_CLIENT
+        
+        [ CA_CLIENT ]
+        dir                    = ./db            # Каталог для служебных файлов
+        certs                  = $dir/certs      # Каталог для сертификатов
+        new_certs_dir          = $dir/newcerts   # Каталог для новых сертификатов
+
+        database               = $dir/index.txt  # Файл с базой данных
+        # подписанных сертификатов
+        serial                 = $dir/serial     # Файл содержащий серийный номер
+        # сертификата
+        # (в шестнадцатиричном формате)
+        certificate            = ./ca.crt        # Файл сертификата CA
+        private_key            = ./ca.key        # Файл закрытого ключа CA
+
+        default_days           = 365             # Срок действия подписываемого
+        # сертификата
+        default_crl_days       = 7               # Срок действия CRL (см. $4)
+        default_md             = md5             # Алгоритм подписи
+
+        policy                 = policy_anything # Название секции с описанием
+        # политики в отношении данных
+        # сертификата
+
+        [ policy_anything ]
+        countryName            = optional        # Код страны - не обязателен
+        stateOrProvinceName    = optional        # ......
+        localityName           = optional        # ......
+        organizationName       = optional        # ......
+        organizationalUnitName = optional        # ......
+        commonName             = supplied        # ...... - обязателен
+        emailAddress           = optional        # ......
+
+</font>
+   Создайте структуру каталогов и файлов, соответсвующую описанной в
+   конфигурационном файле
+<font color="#461b7e">
+        # mkdir db
+        # mkdir db/certs
+        # mkdir db/newcerts
+        # touch db/index.txt
+        # echo "01" &gt; db/serial
+
+</font>
+     Примечание: В файле db/serial записывается текущий серийный номер
+     подписываемого сертификата в шестнадцатиричном формате. В файл
+     db/index.txt сохраняются данные о подписываемых сертификатах.
+
+
+<b style="color: #990000">Создание клиентского закрытого ключа и запроса на сертификат (CSR).
+</b>
+   Для создания подписанного клиентского сертификата предварительно
+   необходимо создать запрос на сертификат, для его последующей подписи.
+   Аргументы команды полностью аналогичны аргументам использовавшимся при
+   создании самоподписанного доверенного сертификата (см. $1), но
+   отсутсвует параметр -x509.
+<font color="#461b7e">
+        # openssl req -new -newkey rsa:1024 -nodes -keyout client01.key \
+        -subj /C=RU/ST=Msk/L=Msk/O=Inc/OU=Web/CN=usr/emailAddress=usr@dm.ru \
+        -out client01.csr
+
+</font>
+   В результате выполнения команды появятся два файла client01.key и
+   client01.csr. Просмотреть данные закрытого ключа и запроса на
+   сертификат (CSR) вы можете с помощью команд:
+<font color="#461b7e">
+        # openssl rsa -noout -text -in client01.key             (для ключа)
+        # openssl req -noout -text -in client01.csr             (для запроса)
+
+</font>
+<b style="color: #990000">Подпись запроса на сертификат (CSR) с помощью доверенного сертификата (CA).
+</b>
+   При подписи запроса используются параметры заданные в файле ca.config
+<font color="#461b7e">
+        # openssl ca -config ca.config -in client01.csr -out client01.crt -batch
+
+</font>
+   Описание аргументов:
+
+   ca
+          Подпись запроса с помощью CA.
+
+   -config ca.config
+          Использовать конфигурационный файл ca.config.
+
+   -in client01.csr
+          CSR находится в файле client01.csr
+
+   -out client01.crt
+          Сохранить сертификат в файл client01.crt
+
+   -batch
+          Не спрашивать подтверждения подписи.
+
+   В результате выполнения команды появится файл клиентского сертификата
+   client01.crt. Просмотреть данные сертификата вы можете с помощью
+   команды:
+<font color="#461b7e">
+        # openssl x509 -noout -text -in client01.crt
+
+</font>
+<b style="color: #990000">Подготовка данных для передачи клиенту.
+</b>
+   Для передачи полученных в результате предыдущих операций файлов
+   клиенту, обычно используется файл в формате PKCS#12. В этот файл
+   упаковывается и защищается паролем вся информация необходимая клиенту
+   для инсталяции сертификата в броузер.
+<font color="#461b7e">
+        # openssl pkcs12 -export -in client01.crt -inkey client01.key \
+        -certfile ca.crt -out client01.p12 -passout pass:q1w2e3
+
+</font>
+   Описание аргументов:
+
+   pkcs12
+          Работа с файлами формата PKCS#12.
+
+   -export
+          Экспортирование данных в файл.
+
+   -in client01.crt
+          Файл клиентского сертификата.
+
+   -inkey client01.key
+          Файл закрытого ключа.
+
+   -certfile ca.crt
+          Файл доверенного сертификата.
+
+   -out client01.p12
+          Сохранить данные в файл client01.p12.
+
+   -passout pass:q1w2e3
+          Установить пароль q1w2e3 на файл (пароль может быть любым, в
+          том числе и пустым)
+
+   На этом процесс создания клиентского сертификата завершен. Теперь вам
+   необходимо передать клиенту файл client01.p12 и пароль к нему любым
+   удобным безопасным способом, а также проинструктировать его о
+   процедуре инсталяции сертификата в броузер.
+
+   Для создания новых клиентских сертификатов повторите операции с $2.2.
+   по $2.4.
+
+
+<b style="color: #990000">Настройка веб-сервера.
+</b>
+   Для реализации процесса авторизации по клиентским сертификатам
+   необходимо сконфигурировать веб-сервер для решения следующих задач:
+    1. Запрет доступа к защищаемой области по протоколу HTTP.
+    2. Запрос и проверка клиентских сертификатов.
+
+
+<b style="color: #990000">Запрет доступа к защищаемой области по протоколу HTTP.
+</b>
+   Найдите в конфигурационном файле веб-сервера httpd.conf секцию
+   &lt;VirtualHost IP-ADDRESS&gt;, соответсвующую вашему сайту и добавьте в неё
+   следующие директивы
+<font color="#461b7e">
+        &lt;Directory /path/to/secure/area/&gt;
+            SSLRequire
+        &lt;/Directory&gt;
+
+</font>
+   Описание директив:
+
+   /path/to/secure/area/
+          Абсолютный путь до директории защищаемой области.
+
+   SSLRequire
+          Запрещает доступ клиенту, если при соединении не используется
+          протокол HTTPS (HTTP через SSL).
+
+
+<b style="color: #990000">Запрос и проверка клиентских сертификатов.
+</b>
+   Найдите в конфигурационном файле веб-сервера httpd.conf секцию ,
+   соответсвующую вашему сайту и добавьте в неё следующие директивы:
+<font color="#461b7e">
+        SSLCACertificateFile /path/to/ca.crt
+        &lt;Directory /path/to/secure/area/&gt;
+            SSLVerifyClient require
+        &lt;/Directory&gt;
+
+</font>
+   Описание директив:
+
+   SSLCACertificateFile /path/to/ca.crt
+          Абсолютный путь до доверенного сертификата (см. $1.). Также в
+          качестве значения директивы SSLCACertificateFile может быть
+          указан файл, содержащий несколько доверенных сертификатов
+          (формируется путем обычной конкатенации файлов сертификатов),
+          тогда все они будут считаться доверенными сертификатами.
+
+   SSLVerifyClient require
+          При наличии этой директивы веб-сервер будет запрашивать
+          сертификат у клиента в обязательном порядке. Если клиент не
+          предоставляет сертификат, тогда сервер отклоняет запрос. Если
+          клиент предоставляет сертификат, то веб-сервер проверяет его
+          срок действия и поставщика сертификата (сертификат которым он
+          подписан), если сертификат поставщика присутсвует в файле
+          SSLCACertificateFile, то проверка считается успешной и клиенту
+          предоставляется доступ до защищенной области.
+
+   Для того, чтобы изменения конфигурационного файла веб-сервера вступили
+   в силу необходимо перезапустить веб-сервер
+<font color="#461b7e">
+        # apachectl restart
+
+</font>
+<b style="color: #990000">Альтернативные способы настройки веб-сервера.
+</b>
+   В этом разделе будут рассмотрены альтернативные пути настройки
+   веб-сервера для авторизации по клиентским сертификатам. Вариантов
+   настройки и их комбинаций может быть много, нижеприведенные примеры
+   проиллюстрируют некоторые из них и помогут при разработке собственных
+   конфигураций.
+
+   Пример 1.
+
+   Допустим файл указанный в директиве SSLCACertificateFile содержит
+   несколько доверенных сертификатов (см. описание директивы
+   SSLCACertificateFile). Требуется разрешить доступ до защищенной
+   области только владельцам сертификатов, подписанных только одним из
+   поставщиков.
+<font color="#461b7e">
+        &lt;Directory /path/to/secure/area/&gt;
+            SSLVerifyClient require
+            SSLRequire %{SSL_CLIENT_I_DN_O} eq "First CA Inc."
+        &lt;/Directory&gt;
+
+</font>
+   Описание директив:
+
+   SSLRequire %{SSL_CLIENT_I_DN_O} eq "First CA Inc."
+          Требует чтобы организацией поставщика клиентского сертификата
+          являлась "First CA Inc.". Аналогичным способом можно проверять
+          любые другие параметры клиентского сертификата или его
+          поставщика. Более подробную информацию о директиве SSLRequire и
+          именах переменных смотрите в документации по mod_ssl.
+
+   Пример 2.
+
+   Предположим требуется разрешить доступ до защищенной области
+   владельцам сертификатов со слишком разными данными, настолько, что их
+   сложно описать с помощью директивы SSLRequire. В этом случае полезно
+   использовать метод, основанный на имитации простой авторизации
+   веб-сервером по паролю.
+<font color="#461b7e">
+        &lt;Directory /path/to/secure/area/&gt;
+            SSLVerifyClient require
+            SSLOptions +FakeBasicAuth
+            AuthName "My secure area"
+            AuthType Basic
+            AuthUserFile /path/to/passwd/file
+            require valid-user
+        &lt;/Directory&gt;
+
+</font>
+   Содержимое файла /path/to/passwd/file
+<font color="#461b7e">
+        /C=RU/L=Msk/O=My Inc./CN=user/emailAddress=user@domain.ru:xxj31ZMTZzkVA
+        /C=RU/L=Sam/O=My LTD./CN=vas/emailAddress=vas@domain.ru:xxj31ZMTZzkVA
+        /C=RU/L=Zel/O=My LLC./CN=prs/emailAddress=prs@domain.ru:xxj31ZMTZzkVA
+        ........
+
+</font>
+   Описание директив:
+
+   SSLOptions +FakeBasicAuth
+          Имитирует простую авторизацию веб-сервером. Имя пользователя и
+          пароль не запрашиваются, но сверяются данные клиентского
+          сертификата с данными в файле /path/to/passwd/file. Строка
+          идентифицирующая клиента может быть получена из клиентского
+          сертификата с помощью команды:
+
+        # openssl x509 -noout -subject -in client.crt
+
+          Или взята из базы данных db/index.txt, формируемой при подписи
+          CSR (см. $2.). В качестве пароля всегда используется строка
+          "xxj31ZMTZzkVA", являющаяся результатом шифрования строки
+          "password" с помощью алгоритма DES.
+
+
+<b style="color: #990000">Отзыв сертификатов.
+</b>
+   Результат проверки веб-сервером клиентского сертификата будет успешным
+   на весь срок действия сертификата. Возникает вопрос, что делать в
+   случае если вы хотите отказать какому-либо клиенту в доступе по его
+   клиентскому сертификату. Для решения этой проблемы создается список
+   отзыва сертификатов (Certificate Revocation List - CRL). В списке
+   отзыва перечисляются отозванные вами клиентские сертификаты. В
+   соответсвии с этим списком веб-сервер будет отклонять запросы если
+   сертифкат клиента отозван.
+
+
+<b style="color: #990000">Создание списка отзыва (CRL).
+</b>
+   При создании списка отзыва используется тот же конфигурационный файл и
+   таже структура файлов, что и при подписи сертификатов (см. $2.1.),
+   поэтому при выполнении следующей команды вы должны находиться в том же
+   каталоге.
+<font color="#461b7e">
+        # openssl ca -gencrl -config ca.config -out ca.crl
+
+</font>
+   Описание аргументов:
+
+   ca
+          При создании CRL также используется этот аргумент.
+
+   -gencrl
+          Создание списка отзыва сертификатов.
+
+   -config ca.config
+          Использовать конфигурационный файл ca.config.
+
+   -out ca.crl
+          Сохранить созданный список отзыва в файл ca.crl
+
+   В результате будет создан список отзыва, основанный на базе данных
+   подписанных сертификатах db/index.txt. Так как на данный момент ни
+   один из сертификатов в базе данных не помечен как отозванный, то
+   созданный список будет пустым. Просмотреть данные списка отзыва вы
+   можете с помощью следующей команды.
+<font color="#461b7e">
+        # openssl crl -in ca.crl -text -noout
+
+</font>
+   Одной из важных черт списка отзыва является его срок действия,
+   указываемый в конфигурационном файле ca.config с помощью директивы
+   default_crl_days. Также альтернативно может быть использована
+   директива default_crl_hours, если вы планируете часто обновлять ваш
+   CRL. Список отзыва должен обновляться не позже истечения срока
+   действия. Для переодического вызова приведенной выше команды можно
+   использовать cron.
+
+
+<b style="color: #990000">Отзыв сертификата.
+</b>
+   Для того чтобы отозвать клиентский сертификат необходимо пометить его
+   в базе данных сертификатов db/index.txt как отозванный, тогда при
+   следующем обновлении списка отзыва, этот сертификат будет в него
+   включен. Для пометки сертификата как отозванного используйте
+   приведенную ниже команду.
+<font color="#461b7e">
+        # openssl ca -config ca.config -revoke client01.crt
+
+</font>
+   Описание аргументов:
+
+   -revoke client01.crt
+          Отозвать сертификат находящийся в файле client01.crt
+
+
+<b style="color: #990000">Настройка веб-сервера
+</b>
+   После создания списка отзыва сертификатов необходимо дать возможность
+   веб-серверу использовать его. Для этого добавьте приведенную ниже
+   директиву в конфигурационный файл веб-сервера.
+<font color="#461b7e">
+        SSLCARevocationFile /path/to/ca.crl
+
+</font>
+   Описание директив:
+
+   SSLCARevocationFile /path/to/ca.crl
+          Абсолютный путь до файла со списком отзыва сертификатов (см.
+          $4.1.)
+
+   Не забывайте перезапускать веб-сервер после каждого изменения его
+   конфигурации.
+<font color="#461b7e">
+        # apachectl restart
+
+</font>
+<b style="color: #990000">Заключение.
+</b>
+   Вышеизложенный материал можно дополнять и углублять, цель статьи -
+   минимальное руководство по реализации авторизации по клиентским
+   сертификатам на практике. Любой читатель, имеющий доступ к
+   использовавшемуся программному обеспечению, с помощью этой статьи
+   может за короткое время настроить свой веб-сервер для решения этой
+   задачи. Каждый из изложенных пунктов можно расширить и написать по
+   нему отдельную статью, заинтересовавшиеся читатели могут получить
+   дополнительные сведения в документации по Apache, mod_ssl и openssl. В
+   заключение хочется дать несколько советов по программной реализации
+   вышеописанных процессов.
+
+   В openssl не предусмотрен механизм блокирования одновременного доступа
+   к ресурсам, то есть, если две программы одновременно будут
+   осуществлять подпись сертификата, то корректность содержимого
+   текстовой базы данных, файла с серийным номером, как впрочем и самого
+   результата не гарантируется. Поэтому необходимо использовать внешний
+   механизм блокировки, например, так это можно реализовать на языке
+   Perl.
+<font color="#461b7e">
+        open ( LOCK, "&gt;/tmp/cert-sign.lck" ) or error_handling();
+        flock ( LOCK, 2 ) or error_handling();
+        
+        # ... код, реализующий подпись сертификата ...
+
+        close( LOCK );
+
+</font>
+   Описанный метод чрезвычайно прост: ставится блокировка на временный
+   файл, выполняются критические действия, снимается блокировка с файла.
+   Если во всех программах, работающих с вашими файлами придерживаться
+   этого метода, то они не смогут в критические моменты вмешиваться в
+   процесс, а будут ждать снятия блокировки.
+
+   Второй совет связан с извлечением и обработкой данных клиентских
+   сертификатов в CGI-скриптах. При простой авторизации клиента по имени
+   и паролю веб-сервер помещает имя пользователя в переменную окружения
+   REMOTE_USER. Аналогичным образом из переменных окружения можно извлечь
+   данные клиентского сертификата при авторизации по сертификату. Для
+   того чтобы веб-сервер устанавливал значения переменных окружения,
+   относящихся к клиентскому сертификату необходимо добавить в
+   конфигурацию веб-сервера следующую директиву:
+<font color="#461b7e">
+        SSLOptions +StdEnvVars +ExportCertData
+
+</font>
+   Описание директив:
+
+   +StdEnvVars
+          Включает установку в переменные окружения данных, относящихся к
+          SSL.
+
+   +ExportCertData
+          Включает установку в переменные окружения текста сертификатов
+          использовавшихся при передаче данных.
+
+   По умолчанию установка переменных окружения, относящихся к SSL,
+   отключена, так как их извлечение из сертификатов влечет за собой
+   снижение быстродействия веб-сервера. Поэтому следует добавлять эти
+   опции только в случае реальной необходимости.
+
+   Альтернативой переменной REMOTE_USER могут служить следующие
+   переменные: SSL_CLIENT_M_SERIAL - серийный номер клиентского
+   сертификата, SSL_CLIENT_S_DN_CN - имя сертификата (Common Name) или
+   SSL_CLIENT_S_DN - данные сертификата (Subject Name, см. описание
+   аргумента -subj в $1). Если вы хотите использовать переменную
+   SSL_CLIENT_S_DN_CN для идентификации пользователя, то вы должны
+   обеспечить уникальность Common Name для разных сертификатов при
+   создании запросов на клиентский сертификат (см. $2.2.). Уникальность
+   SSL_CLIENT_M_SERIAL и SSL_CLIENT_S_DN гарантируется автоматически при
+   подписи сертификатов.
+
+
+
+
+   Несколько мелких замечаний от Александр Елисеенко:
+<font color="#461b7e">
+   1) ключ -sabj при генерации сертификатов явно лишний, все именные
+   данные и так будут запрошены (в интерактиве). Для упрощения жизни
+   можно отредактировать файл openssl.cnf, секция [
+   req_distinguished_name ]. Тогда останется только жать ENTER.
+
+</font><font color="#461b7e">
+   2) специально создавать файл ca.config нет смысла, дешевле
+   воспользоваться готовым openssl.cnf
+
+</font><font color="#461b7e">
+   3) подробное освещение вопроса генерации сертификатов - дело нужное,
+   но не лишним было бы отметить, что в составе дистрибутива openssl есть
+   готовый скрипт CA (CA.sh или GA.pl), с помощью которого ключи
+   генерятся без всяких проблем
+   (<a href="http://www.opennet.ru/tips/info/681.shtml">http://www.opennet.ru/tips/info/681.shtml</a>)
+
+</font>
+   Ну и по вопросу организации проверки клиентских сертификатов на
+   сервере - не все так просто,как написано в статье.
+
+   Корневой (или доверенный) сертификат может быть не один. Каталог, где
+   они размещены, указывается директивой SSLCACertificatePath. Для
+   каждого доверенного сертификата должен быть указан md5 hash. Все
+   доверенные сертификаты могут быть сгруппированы в один файл (вместе с
+   md5 хэшем, а не путем обычной конкатенации файлов сертификатов), путь
+   к нему в этом случае указывается директивой SSLCACertificateFile. Если
+   используются довереннные сертификаты, подписанные другими CA, то
+   директивой SSLVerifyDepth устанавливается глубина проверки цепочки
+   сертификатов.
+
+
+
+   Алексей Чекушкин отвечает:
+
+   Суть предыдущего поста можно свести к следующему: "Можно и так и
+   эдак". Не спорю, но
+<font color="#461b7e">
+   1. В начале статьи есть предложение "Все приведенные в статье примеры
+   максимально адаптированы для их выполнения из серверных скриптов при
+   автоматизации процесса выдачи клиентских сертификатов, в частности
+   нигде не используется интерактивный режим". Ну проще из скрипта
+   вызвать с ключем -subj, чем эмулировать интерактив.
+
+</font><font color="#461b7e">
+   2. А если захочется на других сайтах замутить похожую лабуду, а если
+   это будут делать другие люди и будут не думая править общий
+   openssl.conf. Вообщем лучше максимально себя изолировать от внешних
+   факторов.
+
+</font><font color="#461b7e">
+   3. Есть не спорю. Существуют еще наверное десятки программ, делающих
+   тоже самое. Хотелось показать процесс максимально нативно.
+
+</font><font color="#461b7e">
+   4. md5 hash не "должен" быть указан. Это опционально. Веб-серверу
+   достаточно иметь сам сертификат, из него он "на раз" извлечет md5
+   hash. И вариант обычной конкатенации доверенных сертификатов работает.
+   О чем между прочим явно указано в документации по директиве
+   SSLCACertificateFile: "Such a file is simply the concatenation of the
+   various PEM-encoded Certificate files, in order of preference."
+
+</font>
+y
+
+</pre><br>
+<table border="0" cellspacing="0" cellpadding="1" bgcolor="#B0B190" width="100%">
+<tbody><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#E9EAD6" align="CENTER" width="100%">
+<tbody><tr bgcolor="#000000"><td colspan="7"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" height="1" width="1" alt=""></td></tr>
+<tr align="CENTER">
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=prev">&lt;&lt; Предыдущая</a></small></td>
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=index">ИНДЕКС</a></small></td>
+<td><small><a href="http://www.opennet.ru/search.shtml">Поиск в статьях</a></small></td>
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=raw">src</a></small></td>
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=setbookmark">Установить закладку</a></small></td>
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=getbookmark">Перейти на закладку</a></small></td>
+<td><small><a href="http://www.opennet.ru/cgi-bin/opennet/jump.cgi?name=ssl_cert.txt&ref=next">Следующая &gt;&gt;</a></small></td>
+</tr><tr bgcolor="#000000"><td colspan="7"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" height="1" width="1" alt=""></td></tr>
+</tbody></table></td></tr></tbody></table>
+<br><table border="0" cellspacing="0" cellpadding="1" bgcolor="#B0B190" width="100%">
+<tbody><tr><td>
+<table border="0" cellspacing="0" cellpadding="5" bgcolor="#E9EAD6" width="100%">
+<tbody><tr bgcolor="#C7CBB1"><td><table width="100%"><tbody><tr><td><font color="#000090"><b>Обсуждение</b></font></td>
+<td align="right" style="font-size: 0.5em;">[
+<a id="smode" onclick="text_type=1;do_switch_thread(5089, 3); return false;" href="http://www.opennet.ru/openforum/vsluhforumID3/ubb/5089.html#END">Линейный режим</a> | <a id="openlnk" onclick="return open_block(5089, 3, hidden_msg,0);" href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#1">Показать все</a> |  
+<a href="http://www.opennet.ru/cgi-bin/openforum/rss_forum.cgi?forum=vsluhforumID3&om=5089" style="color: rgb(255, 102, 0);">RSS</a>
+]</td>
+</tr></tbody></table></td></tr>
+
+<tr bgcolor="E9EAD6"><td id="ln5089" class="ctxt">
+
+
+
+<script language="JavaScript" src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/ajax13.js"></script>
+<table class="cblk"><tbody><tr><td width="3%">&nbsp;</td><td width="97%">
+
+<a name="1"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#1"><font color="#606060">1.1</font></a>, <a href="http://www.opennet.ru/~vitalyopera.ru">vitalyopera.ru</a>, 16:35, 04/02/2005  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=1">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#1">смотреть все</a>] 
+</li></td><td class="chdr2"><span id="vt_2_3_5089_1" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_1&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_1&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+спасибо
+<br>Точно такое же содержимое прочитал на сайте ...ua
+<br>Господа ! Как Вы себе представляете личный ключ, который отдали с сервера клиенту. Вопрос а сколько клиентов его получило ОДИН или ДВА -гарантии нет !</td><td rowspan="2" valign="top" width="55" align="right"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" width="40" height="40"></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_1">
+
+<table class="cblk"><tbody><tr><td width="3%" class="line">&nbsp;</td><td width="97%">
+
+<a name="2"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#2"><font color="#606060">2.2</font></a>, <a href="http://www.opennet.ru/~dd">dd</a>, 17:28, 04/05/2005 [<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#1">^</a>] [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=2">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#2">смотреть все</a>] 
+</li></td><td class="chdr2"><span id="vt_2_3_5089_2" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_2&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_2&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+Гм, а пароль от зашифрованного ключа, который передается клиенту, должен знать только ОДИН :)</td><td rowspan="2" valign="top" width="55" align="right"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" width="40" height="40"></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+</td></tr></tbody></table>
+
+</div>
+
+<a name="3"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#3"><font color="#606060">1.3</font></a>, <a href="http://www.opennet.ru/~Kyxap">Kyxap</a>, 00:36, 07/07/2005  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=3">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#3">смотреть все</a>] 
+</li></td><td class="chdr2"><span id="vt_2_3_5089_3" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_3&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_3&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+Автору золотую медаль размером с обеденную тарелку</td><td rowspan="2" valign="top" width="55" align="right"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" width="40" height="40"></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_2">
+
+</div>
+
+<a name="4"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#4"><font color="#606060">1.4</font></a>, <a href="http://www.opennet.ru/~dd">dd</a>, 14:35, 29/09/2005  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=4">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#4">смотреть все</a>] 
+</li></td><td class="chdr2"><span id="vt_2_3_5089_4" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_4&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_4&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+Автору золотую медаль и категорическое требование осветить вопрос работы клиентов со смарткартами, а то инфы нету по этому поводу :(</td><td rowspan="2" valign="top" width="55" align="right"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" width="40" height="40"></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_3">
+
+</div>
+
+<a name="5"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#5"><font color="#606060">1.5</font></a>, <a href="http://www.opennet.ru/~kmn">kmn</a>, 11:35, 15/11/2005  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=5">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#5">смотреть все</a>] 
+</li></td><td class="chdr2"><span id="vt_2_3_5089_5" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_5&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_5&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+Я делал ЭТО с apache под виндой (не надо кидать в меня тяжелые предметы, надо было). Так вот, мне пришлось добавить в ca.config секции 
+<br>[ req ]
+<br>&nbsp;&nbsp;distinguished_name&nbsp;&nbsp;= req_distinguished_name
+<br>[ req_distinguished_name ]
+<p>а в httpd.conf
+<br>&nbsp;&nbsp;SSLCACertificateFile ssl/ca.crt
+</p><p>и только после этого все заработало.
+<br>А директива SSLRequire должна выглядеть как SSLRequireSSL.
+</p><p>Это особенности работы apache под виндами или неполнота статьи?</p></td><td rowspan="2" valign="top" width="55" align="right"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" width="40" height="40"></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_4">
+
+<table class="cblk"><tbody><tr><td width="3%" class="line">&nbsp;</td><td width="97%">
+
+<a name="10"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#10"><font color="#00A000"><b>2.10</b></font></a>, <a href="http://www.opennet.ru/~Noob">Noob</a>, 23:15, 23/02/2009 [<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#5">^</a>] [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=10">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#10">смотреть все</a>] &nbsp;<script>s_n_a(1235412937,'Noob')</script>
+</li></td><td class="chdr2"><span id="vt_2_3_5089_10" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_10&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_10&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+<font color="#606060">&gt;[оверквотинг удален]</font>
+<br><font color="#606060">&gt;&nbsp;&nbsp;distinguished_name&nbsp;&nbsp;= req_distinguished_name </font>
+<br><font color="#606060">&gt;[ req_distinguished_name ] </font>
+<br><font color="#606060">&gt;</font>
+<br><font color="#606060">&gt;а в httpd.conf </font>
+<br><font color="#606060">&gt;&nbsp;&nbsp;SSLCACertificateFile ssl/ca.crt </font>
+<br><font color="#606060">&gt;</font>
+<br><font color="#606060">&gt;и только после этого все заработало. </font>
+<br><font color="#606060">&gt;А директива SSLRequire должна выглядеть как SSLRequireSSL. </font>
+<br><font color="#606060">&gt;</font>
+<br><font color="#606060">&gt;Это особенности работы apache под виндами или неполнота статьи? </font>
+<p>Если можно расскажите как удалось авторизацию юзеров по сертификатам сделать? (что в каком порядке, если гайд есть буду прыгать от счастья)
+<br>Мудохаюсь с EasyPHP3.0 вроде бы все что надо есть, а в сертификатах запутался наглухо.
+</p><p></p></td><td rowspan="2" valign="top" width="55" align="right"><a href="http://www.opennet.ru/~Noob"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/bb3fa401db1c72be7a86169ae26e8940" width="40" height="40" border="0"></a></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+</td></tr></tbody></table>
+
+</div>
+
+<a name="6"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#6"><font color="#606060">1.6</font></a>, <a href="http://www.opennet.ru/~%E1%CE%D4%CF%CE">Антон</a>, 17:41, 01/12/2006  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=6">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#6">смотреть все</a>] &nbsp;<script>s_n_a(1164976912,'Антон')</script>
+</li></td><td class="chdr2"><span id="vt_2_3_5089_6" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_6&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_6&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+У меня работает только "SSLVerifyClient optional", при "SSLVerifyClient require" в доступе отказывается.
+<br>Только при "SSLVerifyClient optional" клиентский браузер сообщает, что сервер требует предъявить сертификат (если указать на сертификат - всё срабатывает и доступ предоставляется), при "require" отказывают в доступе безо всякого запроса, сразу.
+<br>В чём может быть дело?</td><td rowspan="2" valign="top" width="55" align="right"><a href="http://www.opennet.ru/~%E1%CE%D4%CF%CE"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/4d54fb563367ed25ffce8e30145f1dec" width="40" height="40" border="0"></a></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_5">
+
+</div>
+
+<a name="7"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#7"><font color="#606060">1.7</font></a>, <a href="http://www.opennet.ru/~lex">lex</a>, 13:37, 23/12/2006  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=7">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#7">смотреть все</a>] &nbsp;<script>s_n_a(1166863065,'lex')</script>
+</li></td><td class="chdr2"><span id="vt_2_3_5089_7" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_7&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_7&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+указанных директив для httpd.conf недостаточно, во всяком случае у меня начало запрашивать сертификат только после добавления 
+<br>SSLEngine On
+<br>SSLCertificateFile
+<br>SSLCertificateKeyFile
+<p>полностью это выглядит так
+<br>&lt;VirtualHost 127.0.0.1&gt;
+<br>SSLEngine On
+<br>SSLVerifyClient require
+<br>SSLCertificateFile ca.crt
+<br>SSLCertificateKeyFile ca.key
+<br>SSLCACertificateFile ca.crt
+<br>DocumentRoot "..."
+<br>&lt;/VirtualHost&gt;
+<br> 
+<br></p></td><td rowspan="2" valign="top" width="55" align="right"><a href="http://www.opennet.ru/~lex"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/7cfe5a092c13045bedda2dbd2a2cd67d" width="40" height="40" border="0"></a></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_6">
+
+<table class="cblk"><tbody><tr><td width="3%" class="line">&nbsp;</td><td width="97%">
+
+<a name="8"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#8"><font color="#606060">2.8</font></a>, <a href="http://www.opennet.ru/~%C1%CE%CF%CE%C9%CD%D5%D3">анонимус</a>, 20:08, 23/12/2006 [<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#7">^</a>] [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=8">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#8">смотреть все</a>] &nbsp;<script>s_n_a(1166886494,'анонимус')</script>
+</li></td><td class="chdr2"><span id="vt_2_3_5089_8" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_8&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_8&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+Спасибо за подсказку, а то я голову ломал, какой сертификат засунуть в 
+<br>SSLCertificateFile
+<br>и какой ключ в 
+<br>SSLCertificateKeyFile 
+<br></td><td rowspan="2" valign="top" width="55" align="right"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/p.gif" width="40" height="40"></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+</td></tr></tbody></table>
+
+</div>
+
+<a name="9"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#9"><font color="#606060">1.9</font></a>, <a href="http://www.opennet.ru/~FelixS">FelixS</a>, 07:27, 20/06/2007  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=9">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#9">смотреть все</a>] &nbsp;<script>s_n_a(1182302828,'FelixS')</script>
+</li></td><td class="chdr2"><span id="vt_2_3_5089_9" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_9&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_9&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+В статье допущен ряд неточностей. В частности, пропущена процедура создания сертификата для сервера (соответственно и его подписи), не совсем правильно указаны директивы в настройке хоста:
+<p>Написано:
+</p><p>SSLCACertificateFile /path/to/ca.crt
+<br>&lt;Directory /path/to/secure/area/&gt;
+<br>&nbsp;&nbsp;SSLVerifyClient require
+<br>&lt;/Directory&gt;
+</p><p>Необходимо:
+<br>SSLCertificateFile /path/to/server.crt
+<br>SSLCertificateKeyFile /path/to/server.key
+<br>SSLCACertificateFile /path/to/ca.crt
+<br>&lt;Directory /path/to/secure/area/&gt;
+<br>&nbsp;&nbsp; SSLVerifyClient require
+<br>&lt;/Directory&gt;
+</p><p>Более правильный вариант настройки авторизации по клиентским сертификатам описан в "Системном администраторе". Вот ссылка: <a href="http://www.samag.ru/cgi-bin/go.pl?q=articles&n=11.2005&a=06">http://www.samag.ru/cgi-bin/go.pl?q=articles&amp;n=11.2005&amp;a=06</a></p></td><td rowspan="2" valign="top" width="55" align="right"><a href="http://www.opennet.ru/~FelixS"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/ecbe8b0f45e6604dd71739597c8a9882" width="40" height="40" border="0"></a></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_7">
+
+</div>
+
+<a name="11"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#11"><font color="#00A000"><b>1.11</b></font></a>, <a href="http://www.opennet.ru/~%E1%CC%C5%CB%D3%C5%CA">Алексей</a>, 18:35, 18/10/2009  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=11">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#11">смотреть все</a>] &nbsp;<script>s_n_a(1255869332,'Алексей')</script>
+</li></td><td class="chdr2"><span id="vt_2_3_5089_11" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_11&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_11&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+Все кто читал эту статью рано или поздно сталкиваются с проблеммой управления сертификатами. Из командной строки или батника не очень удобно. Сел я и написал прогу webPKI
+<br>Качаем на сатйте: <a href="http://alsdx.narod.ru/">http://alsdx.narod.ru</a>
+<p>Очень приветствую здоровую критику в адрес проги
+<br>================================================
+<br></p></td><td rowspan="2" valign="top" width="55" align="right"><a href="http://www.opennet.ru/~%E1%CC%C5%CB%D3%C5%CA"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/39dfecf052b40467396b6dba7be8d994" width="40" height="40" border="0"></a></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_8">
+
+</div>
+
+<a name="12"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#12"><font color="#00A000"><b>1.12</b></font></a>, <a href="http://www.opennet.ru/~%EC%C9%C4%C9%D1">Лидия</a>, 16:28, 27/08/2011  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=12">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#12">смотреть все</a>] &nbsp;<script>s_n_a(1314440892,'Лидия')</script>
+</li></td><td class="chdr2"><span id="vt_2_3_5089_12" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_12&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_12&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+ыв
+<br>апвп
+<br></td><td rowspan="2" valign="top" width="55" align="right"><a href="http://www.opennet.ru/~%EC%C9%C4%C9%D1"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/0c76e53b78f2e0aa1bebfb1345fb5683" width="40" height="40" border="0"></a></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_9">
+
+</div>
+
+<a name="13"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#13"><font color="#00A000"><b>1.13</b></font></a>, <a href="http://www.opennet.ru/~lexus">lexus</a>, 16:18, 18/01/2012  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=13">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#13">смотреть все</a>] &nbsp;<script>s_n_a(1326881898,'lexus')</script>
+</li></td><td class="chdr2"><span id="vt_2_3_5089_13" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_13&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_13&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+Отличная статья! От себя добавлю, что чтобы сертификат сервера принимался Java соединениями, нужно добавить PEM Extensions :
+<br>sudo openssl ca -extfile ca/server_ext ... дальше как указано в статье.
+<p>Пример файла server_ext: 
+</p><p>basicConstraints=CA:FALSE
+<br>keyUsage=digitalSignature, nonRepudiation, keyEncipherment, dataEncipherment
+<br>extendedKeyUsage=serverAuth, clientAuth
+<br>subjectKeyIdentifier=hash
+<br>authorityKeyIdentifier=issuer
+<br></p></td><td rowspan="2" valign="top" width="55" align="right"><a href="http://www.opennet.ru/~lexus"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/2e2a8e4a5730255afc5be29f81965401" width="40" height="40" border="0"></a></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_10">
+
+</div>
+
+<a name="14"></a><table class="cblk"><tbody><tr><td class="chdr"><li><a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#14"><font color="#00A000"><b>1.14</b></font></a>, <a href="http://www.opennet.ru/~soleg">soleg</a>, 02:39, 13/07/2013  [<a href="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi?az=post&om=5089&forum=vsluhforumID3&omm=14">ответить</a>] [<a href="http://www.opennet.ru/openforum/vsluhforumID3/5089.html#14">смотреть все</a>] &nbsp;<script>s_n_a(1373661566,'soleg')</script>
+</li></td><td class="chdr2"><span id="vt_2_3_5089_14" class="vt_d2"><a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_14&#39;,1);" title="Одобряю"><span class="vt_p">+</span></a>/<a href="http://www.opennet.ru/base/sec/ssl_cert.txt.html#" onclick="return o_vote(&#39;2_3_5089_14&#39;,-1);" title="Осуждаю"><span class="vt_m">&#8211;</span></a></span></td></tr><tr><td class="ctxt">
+А можно ли подписывать&nbsp;&nbsp;клиентские сертификаты купленным сертификатом, скажем от комодо?
+<br></td><td rowspan="2" valign="top" width="55" align="right"><a href="http://www.opennet.ru/~soleg"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/90810d474079bfa85ecfb36d6f1c3564" width="40" height="40" border="0"></a></td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+<div id="actshow_0_11">
+</div></td></tr></tbody></table>
+
+
+
+<script language="JavaScript">
+var hidden_msg = new Array(0); 
+var hidden_idx = new Array(0,1); 
+if (text_type == 1){ open_block(5089,3,hidden_msg,1);}
+</script>
+
+
+
+<br></td></tr>
+<tr bgcolor="#C7CBB1"><td><font color="#000090"><b>Ваш комментарий</b></font></td></tr>
+<tr bgcolor="#DDE1C2"><td>
+<form method="post" action="http://www.opennet.ru/cgi-bin/openforum/vsluhboard.cgi">
+<input type="hidden" name="om" value="5089">
+<input type="hidden" name="key_section" value="topic">
+<input type="hidden" name="key_sub" value="sec">
+<input type="hidden" name="key_item" value="ssl_cert">
+<input type="hidden" name="forum" value="vsluhforumID3">
+<input type="hidden" name="omm" value="">
+<input type="hidden" name="az" value="a_mesg">
+
+Имя:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="name" size="30"><br>
+E-Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="email" size="30"><br>
+Заголовок: <input type="text" name="subject" value="Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)" size="30" maxlength="60"><br>
+Текст:<br>
+<textarea name="body" cols="50" rows="8" wrap="virtual"></textarea><br>
+<input type="submit" name="post" value="Отправить">
+</form>
+</td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+<br>
+<!--htdig_noindex-->
+<noindex>
+<br>
+
+<table id="ibm_adv" align="center"><tbody><tr valign="top"><td width="383">
+<iframe src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/adv_ibm.htm" height="240" width="383" scrolling="no" name="lc" border="0" frameborder="0" target="_blank"></iframe>
+</td><td>
+<iframe src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/adv_lc.htm" height="240" width="605" scrolling="no" name="ibm" border="0" frameborder="0" target="_blank" marginheight="0" marginwidth="0"></iframe>
+</td></tr></tbody></table>
+
+</noindex>
+<!--/htdig_noindex-->
+
+
+<!-- footer -->
+<!--htdig_noindex-->
+<br>
+<table border="0" cellspacing="0" cellpadding="1" width="100%" bgcolor="#B0B190">
+<tbody><tr><td>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" valign="MIDDLE">
+<tbody><tr>
+<td width="35%" bgcolor="#E9EAD6" align="LEFT">
+<font size="-1">
+&nbsp;&nbsp;<a href="http://www.opennet.ru/cgi-bin/opennet/bookmark.cgi">Закладки&nbsp;на&nbsp;сайте</a><br>
+&nbsp;&nbsp;<a href="http://www.opennet.ru/cgi-bin/opennet/bookmark.cgi?submit=add" target="blank_">Проследить&nbsp;за&nbsp;страницей</a>
+</font>
+</td>
+<td width="65%" align="RIGHT" bgcolor="#E9EAD6">
+<font size="-1">Created&nbsp;1996-2013&nbsp;by&nbsp;<b><a href="http://www.opennet.ru/contact.shtml" title="email mc@tyumen.ru">Maxim&nbsp;Chirkov</a></b></font>&nbsp;&nbsp;<br>
+<font size="-1"><a href="http://www.opennet.ru/add.shtml">Добавить</a>,&nbsp;<a href="http://www.opennet.ru/reklama.shtml">Реклама</a>,&nbsp;<a href="http://www.opennet.ru/banners2.shtml">Вебмастеру</a>,&nbsp;<a href="http://www.opennet.ru/guide.shtml">ГИД</a></font>&nbsp;&nbsp;
+</td>
+</tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+
+
+<div align="right"><table><tbody><tr><td>
+<a target="_blank" href="http://www.runnet.ru/"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/runnet.gif" border="0" height="31" width="88" alt="RUNNet"></a>
+<a target="_blank" href="http://top.list.ru/jump?from=77689"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/counter(1)" border="0" height="31" width="38" alt="TopList"></a>
+<script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t45.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+//--></script><a href="http://www.liveinternet.ru/click" target="_blank"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/hit" alt="" title="LiveInternet" border="0" width="31" height="31"></a>
+<a target="_blank" href="http://counter.rambler.ru/top100/"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/top100.cnt" width="1" height="1" border="0"><img src="./OpenNET  статья - Авторизация с помощью клиентских SSL сертификатов. (ssl crypt mod_ssl apache)_files/banner.gif" width="88" height="31" border="0"></a>
+</td></tr></tbody></table>
+</div>
+
+<!--/htdig_noindex-->
+<!-- end of footer -->
+
+
+
+
+</body></html>

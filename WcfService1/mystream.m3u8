@@ -1,0 +1,14 @@
+#EXTM3U
+#EXT-X-TARGETDURATION:10
+#EXT-X-MEDIA-SEQUENCE:58
+#EXTINF:10,
+http://127.0.0.1/streaming/mystream-00000058.ts
+#EXTINF:10,
+http://127.0.0.1/streaming/mystream-00000059.ts
+#EXTINF:10,
+http://127.0.0.1/streaming/mystream-00000060.ts
+#EXTINF:10,
+http://127.0.0.1/streaming/mystream-00000061.ts
+#EXTINF:10,
+http://127.0.0.1/streaming/mystream-00000062.ts
+#EXT-X-ENDLIST
