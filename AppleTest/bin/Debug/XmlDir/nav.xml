@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+	<head>
+		<script src="http://trailers.apple.com/appletv/us/js/main.js"/>
+		<script src="http://trailers.apple.com/appletv/us/js/Trailers.js"/>
+		<script src="http://trailers.apple.com/appletv/us/js/Trailers.Log.js"/>
+		<script src="http://trailers.apple.com/appletv/us/js/Trailers.Showtimes.js"/>
+		<script src="http://trailers.apple.com/appletv/us/js/showtimesconfig.js"/>
+	</head>
+	<body>
+		<viewWithNavigationBar id="trailers_navigation" onNavigate="Trailers.handleOnNavigate( event )">
+			<navigation>
+				<navigationItem id="Top"> 
+					<title>TV</title> 
+					<url>http://trailers.apple.com/appletv/us/index.xml</url> 
+				</navigationItem> 
+				<navigationItem id="Top"> 
+					<title>Baskino</title> 
+					<url>http://trailers.apple.com/appletv/us/index.xml</url> 
+				</navigationItem> 
+				<navigationItem id="Calendar"> 
+					<title>Calendar</title> 
+				 <url>http://trailers.apple.com/appletv/us/calendar.xml</url> 
+				</navigationItem> 
+				<navigationItem id="Browse"> 
+					<title>Browse</title> 
+					<url>http://trailers.apple.com/appletv/us/browse.xml</url> 
+				</navigationItem> 
+				<navigationItem id="Showtimes">
+					<title>Showtimes</title>
+				</navigationItem>
+				<navigationItem id="Search"> 
+					<title>Search</title> 
+					<url>http://trailers.apple.com/appletv/us/searchtrailers.xml</url> 
+				</navigationItem>
+			</navigation>
+		</viewWithNavigationBar>
+	</body>
+</atv>
+

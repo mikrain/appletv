@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+	<head>
+		<script src="https://trailers.apple.com/appletv/us/js/main.js" />
+	</head>
+  <body>
+    <scroller id="com.sample.movie-shelf">
+      <items>
+		
+	    
+		
+				
+				<shelf id="shelf_1" columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+										                	<moviePoster id="shelf_item_1" accessibilityLabel="The Imitation Game" featured="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/theimitationgame/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/theimitationgame/index-hd.xml');">
+	                   		<image>https://trailers.apple.com/appletv/us/images/promos/IGBenedictiTunes300x151_20150105135912.jpg</image>
+	                  		<defaultImage>resource://16X9.png</defaultImage>
+	                	</moviePoster>
+															                	<moviePoster id="shelf_item_2" accessibilityLabel="Selma" featured="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/selma/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/selma/index-hd.xml');">
+	                   		<image>https://trailers.apple.com/appletv/us/images/promos/Selma_300x151_glory_v2_20150105135931.jpg</image>
+	                  		<defaultImage>resource://16X9.png</defaultImage>
+	                	</moviePoster>
+															                	<moviePoster id="shelf_item_3" accessibilityLabel="The World Made Straight" featured="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/theworldmadestraight/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/theworldmadestraight/index-hd.xml');">
+	                   		<image>https://trailers.apple.com/appletv/us/images/promos/TWMS_AppleTV_300x1511_20150105102723.jpg</image>
+	                  		<defaultImage>resource://16X9.png</defaultImage>
+	                	</moviePoster>
+															                	<moviePoster id="shelf_item_4" accessibilityLabel="Little Accidents" featured="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/littleaccidents/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/littleaccidents/index-hd.xml');">
+	                   		<image>https://trailers.apple.com/appletv/us/images/promos/LittleAccidents_Promo_300x151_20150105102350.jpg</image>
+	                  		<defaultImage>resource://16X9.png</defaultImage>
+	                	</moviePoster>
+															                	<moviePoster id="shelf_item_5" accessibilityLabel="The Woman in Black 2 Angel of Death" featured="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/relativity/thewomaninblack2angelofdeath/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/relativity/thewomaninblack2angelofdeath/index-hd.xml');">
+	                   		<image>https://trailers.apple.com/appletv/us/images/promos/TheWomanInBlack2_Promo_300x151_20150105110447.jpg</image>
+	                  		<defaultImage>resource://16X9.png</defaultImage>
+	                	</moviePoster>
+									              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+
+									<collectionDivider alignment="left" accessibilityLabel="Just Added">
+					<title>Just Added</title>
+				</collectionDivider>
+		        <shelf id="shelf_2">
+		          <sections>
+		            <shelfSection>
+			          <items>
+													<moviePoster id="shelf_item_6" accessibilityLabel="Little Accidents" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/littleaccidents/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/littleaccidents/videos/trailer-hd.xml');">
+								<title>Little Accidents</title>
+																<image>https://trailers.apple.com/trailers/independent/littleaccidents/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_7" accessibilityLabel="The World Made Straight" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/theworldmadestraight/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/theworldmadestraight/videos/trailer-hd.xml');">
+								<title>The World Made Straight</title>
+																<image>https://trailers.apple.com/trailers/independent/theworldmadestraight/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_8" accessibilityLabel="The Imitation Game" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/theimitationgame/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/theimitationgame/videos/trailer2-hd.xml');">
+								<title>The Imitation Game</title>
+																<image>https://trailers.apple.com/trailers/weinstein/theimitationgame/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_9" accessibilityLabel="Selma" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/selma/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/selma/videos/trailer-hd.xml');">
+								<title>Selma</title>
+																<image>https://trailers.apple.com/trailers/paramount/selma/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_10" accessibilityLabel="[REC] 4: Apocalypse" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/magnolia/rec4apocalypse/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/magnolia/rec4apocalypse/videos/trailer-hd.xml');">
+								<title>[REC] 4: Apocalypse</title>
+																<image>https://trailers.apple.com/trailers/magnolia/rec4apocalypse/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_11" accessibilityLabel="The Woman in Black 2 Angel of Death" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/relativity/thewomaninblack2angelofdeath/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/relativity/thewomaninblack2angelofdeath/videos/trailer-hd.xml');">
+								<title>The Woman in Black 2 Angel of Death</title>
+																<image>https://trailers.apple.com/trailers/relativity/thewomaninblack2angelofdeath/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_12" accessibilityLabel="The Duff" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/theduff/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/theduff/videos/trailer2-hd.xml');">
+								<title>The Duff</title>
+																<image>https://trailers.apple.com/trailers/independent/theduff/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_13" accessibilityLabel="Big Eyes" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/bigeyes/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/bigeyes/videos/trailer-hd.xml');">
+								<title>Big Eyes</title>
+																<image>https://trailers.apple.com/trailers/weinstein/bigeyes/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_14" accessibilityLabel="The Gambler" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/thegambler/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/thegambler/videos/trailer-hd.xml');">
+								<title>The Gambler</title>
+																<image>https://trailers.apple.com/trailers/paramount/thegambler/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_15" accessibilityLabel="Do You Believe?" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/doyoubelieve/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/doyoubelieve/videos/trailer-hd.xml');">
+								<title>Do You Believe?</title>
+																<image>https://trailers.apple.com/trailers/independent/doyoubelieve/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_16" accessibilityLabel="Americons" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/americons/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/americons/videos/trailer-hd.xml');">
+								<title>Americons</title>
+																<image>https://trailers.apple.com/trailers/independent/americons/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_17" accessibilityLabel="Predestination" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/predestination/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/predestination/videos/trailer-hd.xml');">
+								<title>Predestination</title>
+																<image>https://trailers.apple.com/trailers/independent/predestination/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_18" accessibilityLabel="Focus" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/focus/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/focus/videos/trailer2-hd.xml');">
+								<title>Focus</title>
+																<image>https://trailers.apple.com/trailers/wb/focus/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_19" accessibilityLabel="Entourage" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/entourage/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/entourage/videos/trailer-hd.xml');">
+								<title>Entourage</title>
+																<image>https://trailers.apple.com/trailers/wb/entourage/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_20" accessibilityLabel="McFarland, USA" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/disney/mcfarlandusa/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/disney/mcfarlandusa/videos/trailer2-hd.xml');">
+								<title>McFarland, USA</title>
+																<image>https://trailers.apple.com/trailers/disney/mcfarlandusa/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_21" accessibilityLabel="A Most Violent Year" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/amostviolentyear/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/amostviolentyear/videos/trailer2-hd.xml');">
+								<title>A Most Violent Year</title>
+																<image>https://trailers.apple.com/trailers/independent/amostviolentyear/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_22" accessibilityLabel="In the Heart of the Sea" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/intheheartofthesea/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/intheheartofthesea/videos/trailer2-hd.xml');">
+								<title>In the Heart of the Sea</title>
+																<image>https://trailers.apple.com/trailers/wb/intheheartofthesea/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_23" accessibilityLabel="Woman in Gold" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/womaningold/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/womaningold/videos/trailer-hd.xml');">
+								<title>Woman in Gold</title>
+																<image>https://trailers.apple.com/trailers/weinstein/womaningold/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_24" accessibilityLabel="Kumiko, the Treasure Hunter" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/kumikothetreasurehunter/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/kumikothetreasurehunter/videos/trailer-hd.xml');">
+								<title>Kumiko, the Treasure Hunter</title>
+																<image>https://trailers.apple.com/trailers/independent/kumikothetreasurehunter/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_25" accessibilityLabel="Deli Man" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/deliman/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/deliman/videos/trailer-hd.xml');">
+								<title>Deli Man</title>
+																<image>https://trailers.apple.com/trailers/independent/deliman/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_26" accessibilityLabel="R100" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/r100/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/r100/videos/trailer-hd.xml');">
+								<title>R100</title>
+																<image>https://trailers.apple.com/trailers/independent/r100/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_27" accessibilityLabel="Black or White" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/relativity/blackorwhite/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/relativity/blackorwhite/videos/trailer-hd.xml');">
+								<title>Black or White</title>
+																<image>https://trailers.apple.com/trailers/relativity/blackorwhite/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_28" accessibilityLabel="Top Five" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/topfive/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/topfive/videos/trailer-hd.xml');">
+								<title>Top Five</title>
+																<image>https://trailers.apple.com/trailers/paramount/topfive/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_29" accessibilityLabel="American Sniper" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/americansniper/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/americansniper/videos/trailer2-hd.xml');">
+								<title>American Sniper</title>
+																<image>https://trailers.apple.com/trailers/wb/americansniper/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_30" accessibilityLabel="Mr. Turner" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/mrturner/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/mrturner/videos/trailer-hd.xml');">
+								<title>Mr. Turner</title>
+																<image>https://trailers.apple.com/trailers/sony/mrturner/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_31" accessibilityLabel="A Little Chaos" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/focus_features/alittlechaos/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/focus_features/alittlechaos/videos/trailer-hd.xml');">
+								<title>A Little Chaos</title>
+																<image>https://trailers.apple.com/trailers/focus_features/alittlechaos/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_32" accessibilityLabel="Winter Sleep" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/wintersleep/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/wintersleep/videos/trailer-hd.xml');">
+								<title>Winter Sleep</title>
+																<image>https://trailers.apple.com/trailers/independent/wintersleep/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_33" accessibilityLabel="&apos;71" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/71/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/71/videos/trailer-hd.xml');">
+								<title>&apos;71</title>
+																<image>https://trailers.apple.com/trailers/independent/71/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_34" accessibilityLabel="Suburban Gothic" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/suburbangothic/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/suburbangothic/videos/trailer-hd.xml');">
+								<title>Suburban Gothic</title>
+																<image>https://trailers.apple.com/trailers/independent/suburbangothic/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_35" accessibilityLabel="The Gunman" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/thegunman/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/thegunman/videos/trailer-hd.xml');">
+								<title>The Gunman</title>
+																<image>https://trailers.apple.com/trailers/independent/thegunman/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_36" accessibilityLabel="It Follows" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/itfollows/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/itfollows/videos/trailer-hd.xml');">
+								<title>It Follows</title>
+																<image>https://trailers.apple.com/trailers/independent/itfollows/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_37" accessibilityLabel="Backstreet Boys: Show &apos;Em What You&apos;re Made Of" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/backstreetboysshowemwhatyouremadeof/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/backstreetboysshowemwhatyouremadeof/videos/trailer-hd.xml');">
+								<title>Backstreet Boys: Show &apos;Em What You&apos;re Made Of</title>
+																<image>https://trailers.apple.com/trailers/independent/backstreetboysshowemwhatyouremadeof/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_38" accessibilityLabel="The Duke of Burgundy" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/thedukeofburgundy/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/thedukeofburgundy/videos/trailer-hd.xml');">
+								<title>The Duke of Burgundy</title>
+																<image>https://trailers.apple.com/trailers/independent/thedukeofburgundy/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_39" accessibilityLabel="Terminator Genisys" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/terminatorgenisys/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/terminatorgenisys/videos/trailer-hd.xml');">
+								<title>Terminator Genisys</title>
+																<image>https://trailers.apple.com/trailers/paramount/terminatorgenisys/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_40" accessibilityLabel="A Tale of Winter (Conte d&apos;hiver)" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/ataleofwintercontedhiver/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/ataleofwintercontedhiver/videos/trailer-hd.xml');">
+								<title>A Tale of Winter (Conte d&apos;hiver)</title>
+																<image>https://trailers.apple.com/trailers/independent/ataleofwintercontedhiver/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_41" accessibilityLabel="White Rabbit" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/whiterabbit/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/whiterabbit/videos/trailer-hd.xml');">
+								<title>White Rabbit</title>
+																<image>https://trailers.apple.com/trailers/independent/whiterabbit/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_42" accessibilityLabel="Unbroken" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/unbroken/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/unbroken/videos/trailer2-hd.xml');">
+								<title>Unbroken</title>
+																<image>https://trailers.apple.com/trailers/universal/unbroken/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_43" accessibilityLabel="The Divergent Series: Insurgent" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/lions_gate/thedivergentseriesinsurgent/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/lions_gate/thedivergentseriesinsurgent/videos/trailer-hd.xml');">
+								<title>The Divergent Series: Insurgent</title>
+																<image>https://trailers.apple.com/trailers/lions_gate/thedivergentseriesinsurgent/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_44" accessibilityLabel="The Walk" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony_pictures/thewalk/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony_pictures/thewalk/videos/trailer-hd.xml');">
+								<title>The Walk</title>
+																<image>https://trailers.apple.com/trailers/sony_pictures/thewalk/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_45" accessibilityLabel="Still Alice" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/stillalice/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/stillalice/videos/trailer-hd.xml');">
+								<title>Still Alice</title>
+																<image>https://trailers.apple.com/trailers/sony/stillalice/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_46" accessibilityLabel="Black November" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/blacknovember/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/blacknovember/videos/trailer-hd.xml');">
+								<title>Black November</title>
+																<image>https://trailers.apple.com/trailers/independent/blacknovember/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_47" accessibilityLabel="Concerning Violence" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/concerningviolence/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/concerningviolence/videos/trailer-hd.xml');">
+								<title>Concerning Violence</title>
+																<image>https://trailers.apple.com/trailers/independent/concerningviolence/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_48" accessibilityLabel="Paul Blart: Mall Cop 2" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony_pictures/paulblartmallcop2/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony_pictures/paulblartmallcop2/videos/trailer-hd.xml');">
+								<title>Paul Blart: Mall Cop 2</title>
+																<image>https://trailers.apple.com/trailers/sony_pictures/paulblartmallcop2/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_49" accessibilityLabel="Poker Night" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/pokernight/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/pokernight/videos/trailer-hd.xml');">
+								<title>Poker Night</title>
+																<image>https://trailers.apple.com/trailers/independent/pokernight/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_50" accessibilityLabel="Supremacy" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/supremacy/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/supremacy/videos/trailer-hd.xml');">
+								<title>Supremacy</title>
+																<image>https://trailers.apple.com/trailers/independent/supremacy/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_51" accessibilityLabel="Let&apos;s Kill Ward&apos;s Wife" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/letskillwardswife/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/letskillwardswife/videos/trailer-hd.xml');">
+								<title>Let&apos;s Kill Ward&apos;s Wife</title>
+																<image>https://trailers.apple.com/trailers/independent/letskillwardswife/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_52" accessibilityLabel="Wild Card" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/lions_gate/wildcard/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/lions_gate/wildcard/videos/trailer-hd.xml');">
+								<title>Wild Card</title>
+																<image>https://trailers.apple.com/trailers/lions_gate/wildcard/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_53" accessibilityLabel="Inside Out" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/disney/insideout/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/disney/insideout/videos/trailer-hd.xml');">
+								<title>Inside Out</title>
+																<image>https://trailers.apple.com/trailers/disney/insideout/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_54" accessibilityLabel="Night at the Museum: Secret of the Tomb" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox/nightatthemuseumsecretofthetomb/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox/nightatthemuseumsecretofthetomb/videos/trailer2-hd.xml');">
+								<title>Night at the Museum: Secret of the Tomb</title>
+																<image>https://trailers.apple.com/trailers/fox/nightatthemuseumsecretofthetomb/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_55" accessibilityLabel="Preservation" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/preservation/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/preservation/videos/trailer-hd.xml');">
+								<title>Preservation</title>
+																<image>https://trailers.apple.com/trailers/independent/preservation/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+								              </items>
+		            </shelfSection>
+		          </sections>
+		        </shelf>
+									<collectionDivider alignment="left" accessibilityLabel="Top Movies in Theaters">
+					<title>Top Movies in Theaters</title>
+				</collectionDivider>
+		        <shelf id="shelf_3">
+		          <sections>
+		            <shelfSection>
+			          <items>
+													<moviePoster id="shelf_item_56" accessibilityLabel="The Hobbit: The Battle of the Five Armies" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/thehobbitthebattleofthefivearmies/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/thehobbitthebattleofthefivearmies/videos/trailer2-hd.xml');">
+								<title>The Hobbit: The Battle of the Five Armies</title>
+																<image>https://trailers.apple.com/trailers/wb/thehobbitthebattleofthefivearmies/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_57" accessibilityLabel="Into the Woods" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/disney/intothewoods/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/disney/intothewoods/videos/trailer2-hd.xml');">
+								<title>Into the Woods</title>
+																<image>https://trailers.apple.com/trailers/disney/intothewoods/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_58" accessibilityLabel="Unbroken" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/unbroken/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/unbroken/videos/trailer2-hd.xml');">
+								<title>Unbroken</title>
+																<image>https://trailers.apple.com/trailers/universal/unbroken/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_59" accessibilityLabel="The Woman in Black 2 Angel of Death" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/relativity/thewomaninblack2angelofdeath/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/relativity/thewomaninblack2angelofdeath/videos/trailer-hd.xml');">
+								<title>The Woman in Black 2 Angel of Death</title>
+																<image>https://trailers.apple.com/trailers/relativity/thewomaninblack2angelofdeath/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_60" accessibilityLabel="Night at the Museum: Secret of the Tomb" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox/nightatthemuseumsecretofthetomb/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox/nightatthemuseumsecretofthetomb/videos/trailer2-hd.xml');">
+								<title>Night at the Museum: Secret of the Tomb</title>
+																<image>https://trailers.apple.com/trailers/fox/nightatthemuseumsecretofthetomb/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_61" accessibilityLabel="Annie" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony_pictures/annie/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony_pictures/annie/videos/trailer3-hd.xml');">
+								<title>Annie</title>
+																<image>https://trailers.apple.com/trailers/sony_pictures/annie/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_62" accessibilityLabel="The Imitation Game" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/theimitationgame/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/theimitationgame/videos/trailer2-hd.xml');">
+								<title>The Imitation Game</title>
+																<image>https://trailers.apple.com/trailers/weinstein/theimitationgame/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_63" accessibilityLabel="The Hunger Games: Mockingjay, Part 1" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/lions_gate/thehungergamesmockingjaypart1/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/lions_gate/thehungergamesmockingjaypart1/videos/trailer3-hd.xml');">
+								<title>The Hunger Games: Mockingjay, Part 1</title>
+																<image>https://trailers.apple.com/trailers/lions_gate/thehungergamesmockingjaypart1/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_64" accessibilityLabel="The Gambler" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/thegambler/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/thegambler/videos/trailer-hd.xml');">
+								<title>The Gambler</title>
+																<image>https://trailers.apple.com/trailers/paramount/thegambler/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_65" accessibilityLabel="Big Hero 6" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/disney/bighero6/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/disney/bighero6/videos/trailer3-hd.xml');">
+								<title>Big Hero 6</title>
+																<image>https://trailers.apple.com/trailers/disney/bighero6/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_66" accessibilityLabel="Wild" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox_searchlight/wild/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox_searchlight/wild/videos/trailer-hd.xml');">
+								<title>Wild</title>
+																<image>https://trailers.apple.com/trailers/fox_searchlight/wild/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_67" accessibilityLabel="Exodus: Gods and Kings" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox/exodusgodsandkings/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox/exodusgodsandkings/videos/trailer3-hd.xml');">
+								<title>Exodus: Gods and Kings</title>
+																<image>https://trailers.apple.com/trailers/fox/exodusgodsandkings/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_68" accessibilityLabel="The Penguins of Madagascar" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/dreamworks/thepenguinsofmadagascar/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/dreamworks/thepenguinsofmadagascar/videos/trailer2-hd.xml');">
+								<title>The Penguins of Madagascar</title>
+																<image>https://trailers.apple.com/trailers/dreamworks/thepenguinsofmadagascar/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_69" accessibilityLabel="Big Eyes" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/bigeyes/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/bigeyes/videos/trailer-hd.xml');">
+								<title>Big Eyes</title>
+																<image>https://trailers.apple.com/trailers/weinstein/bigeyes/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_70" accessibilityLabel="Interstellar" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/interstellar/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/interstellar/videos/trailer4-hd.xml');">
+								<title>Interstellar</title>
+																<image>https://trailers.apple.com/trailers/paramount/interstellar/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_71" accessibilityLabel="Top Five" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/topfive/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/topfive/videos/trailer-hd.xml');">
+								<title>Top Five</title>
+																<image>https://trailers.apple.com/trailers/paramount/topfive/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_72" accessibilityLabel="The Theory of Everything" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/focus_features/thetheoryofeverything/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/focus_features/thetheoryofeverything/videos/trailer2-hd.xml');">
+								<title>The Theory of Everything</title>
+																<image>https://trailers.apple.com/trailers/focus_features/thetheoryofeverything/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_73" accessibilityLabel="Interview" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/interview/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/interview/videos/trailer-hd.xml');">
+								<title>Interview</title>
+																<image>https://trailers.apple.com/trailers/sony/interview/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_74" accessibilityLabel="Horrible Bosses 2" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/horriblebosses2/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/horriblebosses2/videos/trailer3-hd.xml');">
+								<title>Horrible Bosses 2</title>
+																<image>https://trailers.apple.com/trailers/wb/horriblebosses2/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_75" accessibilityLabel="Foxcatcher" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/foxcatcher/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/foxcatcher/videos/theatricaltrailer-hd.xml');">
+								<title>Foxcatcher</title>
+																<image>https://trailers.apple.com/trailers/sony/foxcatcher/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_76" accessibilityLabel="Birdman" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox_searchlight/birdman/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox_searchlight/birdman/videos/trailer2-hd.xml');">
+								<title>Birdman</title>
+																<image>https://trailers.apple.com/trailers/fox_searchlight/birdman/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_77" accessibilityLabel="Selma" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/selma/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/selma/videos/trailer-hd.xml');">
+								<title>Selma</title>
+																<image>https://trailers.apple.com/trailers/paramount/selma/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_78" accessibilityLabel="American Sniper" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/americansniper/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/americansniper/videos/trailer2-hd.xml');">
+								<title>American Sniper</title>
+																<image>https://trailers.apple.com/trailers/wb/americansniper/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_79" accessibilityLabel="Gone Girl" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox/gonegirl/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox/gonegirl/videos/trailer2-hd.xml');">
+								<title>Gone Girl</title>
+																<image>https://trailers.apple.com/trailers/fox/gonegirl/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_80" accessibilityLabel="Dumb and Dumber To" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/dumbanddumberto/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/dumbanddumberto/videos/trailer-hd.xml');">
+								<title>Dumb and Dumber To</title>
+																<image>https://trailers.apple.com/trailers/universal/dumbanddumberto/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_81" accessibilityLabel="Inherent Vice" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/inherentvice/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/inherentvice/videos/trailer-hd.xml');">
+								<title>Inherent Vice</title>
+																<image>https://trailers.apple.com/trailers/wb/inherentvice/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_82" accessibilityLabel="Mr. Turner" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/mrturner/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/mrturner/videos/trailer-hd.xml');">
+								<title>Mr. Turner</title>
+																<image>https://trailers.apple.com/trailers/sony/mrturner/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_83" accessibilityLabel="Whiplash" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/whiplash/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/whiplash/videos/trailer-hd.xml');">
+								<title>Whiplash</title>
+																<image>https://trailers.apple.com/trailers/sony/whiplash/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_84" accessibilityLabel="A Most Violent Year" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/amostviolentyear/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/amostviolentyear/videos/trailer2-hd.xml');">
+								<title>A Most Violent Year</title>
+																<image>https://trailers.apple.com/trailers/independent/amostviolentyear/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_85" accessibilityLabel="Nightcrawler" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/nightcrawler/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/nightcrawler/videos/teaser-hd.xml');">
+								<title>Nightcrawler</title>
+																<image>https://trailers.apple.com/trailers/independent/nightcrawler/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_86" accessibilityLabel="John Wick" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/summit/johnwick/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/summit/johnwick/videos/trailer-hd.xml');">
+								<title>John Wick</title>
+																<image>https://trailers.apple.com/trailers/summit/johnwick/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_87" accessibilityLabel="Citizenfour" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/citizenfour/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/citizenfour/videos/trailer-hd.xml');">
+								<title>Citizenfour</title>
+																<image>https://trailers.apple.com/trailers/independent/citizenfour/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_88" accessibilityLabel="The Homesman" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/thehomesman/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/thehomesman/videos/trailer-hd.xml');">
+								<title>The Homesman</title>
+																<image>https://trailers.apple.com/trailers/independent/thehomesman/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_89" accessibilityLabel="Leviathan" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/leviathan/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/leviathan/videos/trailer-hd.xml');">
+								<title>Leviathan</title>
+																<image>https://trailers.apple.com/trailers/sony/leviathan/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_90" accessibilityLabel="My Old Lady" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/myoldlady/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/myoldlady/videos/trailer-hd.xml');">
+								<title>My Old Lady</title>
+																<image>https://trailers.apple.com/trailers/independent/myoldlady/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+								              </items>
+		            </shelfSection>
+		          </sections>
+		        </shelf>
+									<collectionDivider alignment="left" accessibilityLabel="Opening Soon">
+					<title>Opening Soon</title>
+				</collectionDivider>
+		        <shelf id="shelf_4">
+		          <sections>
+		            <shelfSection>
+			          <items>
+													<moviePoster id="shelf_item_91" accessibilityLabel="Black November" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/blacknovember/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/blacknovember/videos/trailer-hd.xml');">
+								<title>Black November</title>
+																	<subtitle>1/09</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/blacknovember/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_92" accessibilityLabel="Predestination" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/predestination/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/predestination/videos/trailer-hd.xml');">
+								<title>Predestination</title>
+																	<subtitle>1/09</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/predestination/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_93" accessibilityLabel="Preservation" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/preservation/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/preservation/videos/trailer-hd.xml');">
+								<title>Preservation</title>
+																	<subtitle>1/09</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/preservation/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_94" accessibilityLabel="Taken 3" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox/taken3/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox/taken3/videos/trailer-hd.xml');">
+								<title>Taken 3</title>
+																	<subtitle>1/09</subtitle>
+																<image>https://trailers.apple.com/trailers/fox/taken3/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_95" accessibilityLabel="The World Made Straight" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/theworldmadestraight/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/theworldmadestraight/videos/trailer-hd.xml');">
+								<title>The World Made Straight</title>
+																	<subtitle>1/09</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/theworldmadestraight/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_96" accessibilityLabel="Human Capital" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/humancapital/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/humancapital/videos/trailer-hd.xml');">
+								<title>Human Capital</title>
+																	<subtitle>1/14</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/humancapital/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_97" accessibilityLabel="Appropriate Behavior" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/appropriatebehavior/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/appropriatebehavior/videos/trailer-hd.xml');">
+								<title>Appropriate Behavior</title>
+																	<subtitle>1/16</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/appropriatebehavior/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_98" accessibilityLabel="Blackhat" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/blackhat/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/blackhat/videos/trailer-hd.xml');">
+								<title>Blackhat</title>
+																	<subtitle>1/16</subtitle>
+																<image>https://trailers.apple.com/trailers/universal/blackhat/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_99" accessibilityLabel="Escobar: Paradise Lost" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/escobarparadiselost/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/escobarparadiselost/videos/trailer-hd.xml');">
+								<title>Escobar: Paradise Lost</title>
+																	<subtitle>1/16</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/escobarparadiselost/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_100" accessibilityLabel="Little Accidents" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/littleaccidents/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/littleaccidents/videos/trailer-hd.xml');">
+								<title>Little Accidents</title>
+																	<subtitle>1/16</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/littleaccidents/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_101" accessibilityLabel="Paddington" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/paddington/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/paddington/videos/trailer2-hd.xml');">
+								<title>Paddington</title>
+																	<subtitle>1/16</subtitle>
+																<image>https://trailers.apple.com/trailers/weinstein/paddington/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_102" accessibilityLabel="Son of a Gun" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/sonofagun/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/sonofagun/videos/trailer-hd.xml');">
+								<title>Son of a Gun</title>
+																	<subtitle>1/16</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/sonofagun/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_103" accessibilityLabel="Spare Parts" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/spareparts/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/spareparts/videos/trailer2-hd.xml');">
+								<title>Spare Parts</title>
+																	<subtitle>1/16</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/spareparts/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_104" accessibilityLabel="Still Alice" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/stillalice/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/stillalice/videos/trailer-hd.xml');">
+								<title>Still Alice</title>
+																	<subtitle>1/16</subtitle>
+																<image>https://trailers.apple.com/trailers/sony/stillalice/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_105" accessibilityLabel="The Wedding Ringer" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony_pictures/theweddingringer/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony_pictures/theweddingringer/videos/trailer2-hd.xml');">
+								<title>The Wedding Ringer</title>
+																	<subtitle>1/16</subtitle>
+																<image>https://trailers.apple.com/trailers/sony_pictures/theweddingringer/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_106" accessibilityLabel="Against the Sun" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/againstthesun/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/againstthesun/videos/trailer-hd.xml');">
+								<title>Against the Sun</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/againstthesun/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_107" accessibilityLabel="Americons" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/americons/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/americons/videos/trailer-hd.xml');">
+								<title>Americons</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/americons/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_108" accessibilityLabel="Black Sea" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/focus_features/blacksea/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/focus_features/blacksea/videos/trailer-hd.xml');">
+								<title>Black Sea</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/focus_features/blacksea/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_109" accessibilityLabel="The Boy Next Door" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/theboynextdoor/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/theboynextdoor/videos/trailer-hd.xml');">
+								<title>The Boy Next Door</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/universal/theboynextdoor/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_110" accessibilityLabel="The Duke of Burgundy" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/thedukeofburgundy/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/thedukeofburgundy/videos/trailer-hd.xml');">
+								<title>The Duke of Burgundy</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/thedukeofburgundy/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_111" accessibilityLabel="The Humbling" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/thehumbling/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/thehumbling/videos/trailer-hd.xml');">
+								<title>The Humbling</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/thehumbling/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_112" accessibilityLabel="Killers" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/killers/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/killers/videos/trailer-hd.xml');">
+								<title>Killers</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/killers/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_113" accessibilityLabel="Manny" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/manny/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/manny/videos/trailer2-hd.xml');">
+								<title>Manny</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/manny/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_114" accessibilityLabel="Mortdecai" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/lions_gate/mortdecai/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/lions_gate/mortdecai/videos/trailer2-hd.xml');">
+								<title>Mortdecai</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/lions_gate/mortdecai/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_115" accessibilityLabel="R100" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/r100/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/r100/videos/trailer-hd.xml');">
+								<title>R100</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/r100/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_116" accessibilityLabel="Song One" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/songone/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/songone/videos/trailer-hd.xml');">
+								<title>Song One</title>
+																	<subtitle>1/23</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/songone/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_117" accessibilityLabel="Timbuktu" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/timbuktu/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/timbuktu/videos/trailer-hd.xml');">
+								<title>Timbuktu</title>
+																	<subtitle>1/28</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/timbuktu/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_118" accessibilityLabel="Amira &amp; Sam" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/amirasam/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/amirasam/videos/trailer-hd.xml');">
+								<title>Amira &amp; Sam</title>
+																	<subtitle>1/30</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/amirasam/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_119" accessibilityLabel="Backstreet Boys: Show &apos;Em What You&apos;re Made Of" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/backstreetboysshowemwhatyouremadeof/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/backstreetboysshowemwhatyouremadeof/videos/trailer-hd.xml');">
+								<title>Backstreet Boys: Show &apos;Em What You&apos;re Made Of</title>
+																	<subtitle>1/30</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/backstreetboysshowemwhatyouremadeof/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_120" accessibilityLabel="Black or White" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/relativity/blackorwhite/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/relativity/blackorwhite/videos/trailer-hd.xml');">
+								<title>Black or White</title>
+																	<subtitle>1/30</subtitle>
+																<image>https://trailers.apple.com/trailers/relativity/blackorwhite/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_121" accessibilityLabel="Project Almanac" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/projectalmanac/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/projectalmanac/videos/trailer2-hd.xml');">
+								<title>Project Almanac</title>
+																	<subtitle>1/30</subtitle>
+																<image>https://trailers.apple.com/trailers/paramount/projectalmanac/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_122" accessibilityLabel="Suburban Gothic" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/suburbangothic/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/suburbangothic/videos/trailer-hd.xml');">
+								<title>Suburban Gothic</title>
+																	<subtitle>1/30</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/suburbangothic/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_123" accessibilityLabel="Supremacy" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/supremacy/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/supremacy/videos/trailer-hd.xml');">
+								<title>Supremacy</title>
+																	<subtitle>1/30</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/supremacy/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_124" accessibilityLabel="Ballet 422" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/magnolia/ballet422/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/magnolia/ballet422/videos/trailer-hd.xml');">
+								<title>Ballet 422</title>
+																	<subtitle>2/06</subtitle>
+																<image>https://trailers.apple.com/trailers/magnolia/ballet422/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_125" accessibilityLabel="Jupiter Ascending" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/jupiterascending/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/jupiterascending/videos/trailer3-hd.xml');">
+								<title>Jupiter Ascending</title>
+																	<subtitle>2/06</subtitle>
+																<image>https://trailers.apple.com/trailers/wb/jupiterascending/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_126" accessibilityLabel="Love, Rosie" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/loverosie/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/loverosie/videos/trailer-hd.xml');">
+								<title>Love, Rosie</title>
+																	<subtitle>2/06</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/loverosie/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_127" accessibilityLabel="Pass the Light" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/passthelight/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/passthelight/videos/trailer-hd.xml');">
+								<title>Pass the Light</title>
+																	<subtitle>2/06</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/passthelight/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_128" accessibilityLabel="Seventh Son" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/seventhson/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/seventhson/videos/trailer-hd.xml');">
+								<title>Seventh Son</title>
+																	<subtitle>2/06</subtitle>
+																<image>https://trailers.apple.com/trailers/universal/seventhson/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_129" accessibilityLabel="SpongeBob: Sponge Out of Water" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/spongebobspongeoutofwater/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/spongebobspongeoutofwater/videos/trailer-hd.xml');">
+								<title>SpongeBob: Sponge Out of Water</title>
+																	<subtitle>2/06</subtitle>
+																<image>https://trailers.apple.com/trailers/paramount/spongebobspongeoutofwater/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_130" accessibilityLabel="Da Sweet Blood of Jesus" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/dasweetbloodofjesus/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/dasweetbloodofjesus/videos/trailer-hd.xml');">
+								<title>Da Sweet Blood of Jesus</title>
+																	<subtitle>2/13</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/dasweetbloodofjesus/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_131" accessibilityLabel="Fifty Shades of Grey" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/fiftyshadesofgrey/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/fiftyshadesofgrey/videos/trailer2-hd.xml');">
+								<title>Fifty Shades of Grey</title>
+																	<subtitle>2/13</subtitle>
+																<image>https://trailers.apple.com/trailers/universal/fiftyshadesofgrey/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_132" accessibilityLabel="Kingsman: The Secret Service" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox/kingsmanthesecretservice/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox/kingsmanthesecretservice/videos/trailer-hd.xml');">
+								<title>Kingsman: The Secret Service</title>
+																	<subtitle>2/13</subtitle>
+																<image>https://trailers.apple.com/trailers/fox/kingsmanthesecretservice/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_133" accessibilityLabel="Old Fashioned" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/oldfashioned/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/oldfashioned/videos/trailer-hd.xml');">
+								<title>Old Fashioned</title>
+																	<subtitle>2/13</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/oldfashioned/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_134" accessibilityLabel="White Rabbit" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/whiterabbit/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/whiterabbit/videos/trailer-hd.xml');">
+								<title>White Rabbit</title>
+																	<subtitle>2/13</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/whiterabbit/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_135" accessibilityLabel="The Duff" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/theduff/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/theduff/videos/trailer2-hd.xml');">
+								<title>The Duff</title>
+																	<subtitle>2/20</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/theduff/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_136" accessibilityLabel="McFarland, USA" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/disney/mcfarlandusa/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/disney/mcfarlandusa/videos/trailer2-hd.xml');">
+								<title>McFarland, USA</title>
+																	<subtitle>2/20</subtitle>
+																<image>https://trailers.apple.com/trailers/disney/mcfarlandusa/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_137" accessibilityLabel="&apos;71" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/71/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/71/videos/trailer-hd.xml');">
+								<title>&apos;71</title>
+																	<subtitle>2/27</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/71/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_138" accessibilityLabel="Deli Man" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/deliman/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/deliman/videos/trailer-hd.xml');">
+								<title>Deli Man</title>
+																	<subtitle>2/27</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/deliman/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_139" accessibilityLabel="Focus" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/focus/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/focus/videos/trailer2-hd.xml');">
+								<title>Focus</title>
+																	<subtitle>2/27</subtitle>
+																<image>https://trailers.apple.com/trailers/wb/focus/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_140" accessibilityLabel="Venatus" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/venatus/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/venatus/videos/trailer-hd.xml');">
+								<title>Venatus</title>
+																	<subtitle>3/04</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/venatus/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+								              </items>
+		            </shelfSection>
+		          </sections>
+		        </shelf>
+									<shelf id="shelf_5" columnCount="5">
+		          <sections>
+		            <shelfSection>
+			          <items>
+																                	<moviePoster id="shelf_item_141" accessibilityLabel="[REC] 4: Apocalypse" featured="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/magnolia/rec4apocalypse/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/magnolia/rec4apocalypse/index-hd.xml');">
+			                   		<image>https://trailers.apple.com/appletv/us/images/promos/rec4_Promo_300x151_20150105110600.jpg</image>
+			                  		<defaultImage>resource://16X9.png</defaultImage>
+			                	</moviePoster>
+																							                	<moviePoster id="shelf_item_142" accessibilityLabel="Americons" featured="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/americons/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/americons/index-hd.xml');">
+			                   		<image>https://trailers.apple.com/appletv/us/images/promos/Americons_Promo_300x151_52_20141223095600.jpg</image>
+			                  		<defaultImage>resource://16X9.png</defaultImage>
+			                	</moviePoster>
+																							                	<moviePoster id="shelf_item_143" accessibilityLabel="Woman in Gold" featured="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/womaningold/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/womaningold/index-hd.xml');">
+			                   		<image>https://trailers.apple.com/appletv/us/images/promos/WomanInGold_Promo_300x151_20141222113337.jpg</image>
+			                  		<defaultImage>resource://16X9.png</defaultImage>
+			                	</moviePoster>
+																							                	<moviePoster id="shelf_item_144" accessibilityLabel="In the Heart of the Sea" featured="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/intheheartofthesea/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/intheheartofthesea/index-hd.xml');">
+			                   		<image>https://trailers.apple.com/appletv/us/images/promos/HTS_AppleTV_300x151_20141222105237.jpg</image>
+			                  		<defaultImage>resource://16X9.png</defaultImage>
+			                	</moviePoster>
+																							                	<moviePoster id="shelf_item_145" accessibilityLabel="A Little Chaos" featured="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/focus_features/alittlechaos/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/focus_features/alittlechaos/index-hd.xml');">
+			                   		<image>https://trailers.apple.com/appletv/us/images/promos/FF_Chaos_300x150_20141218093535.jpg</image>
+			                  		<defaultImage>resource://16X9.png</defaultImage>
+			                	</moviePoster>
+															              </items>
+		            </shelfSection>
+		          </sections>
+		        </shelf>
+							<collectionDivider alignment="left" accessibilityLabel="Most Popular Trailers">
+					<title>Most Popular Trailers</title>
+				</collectionDivider>
+		        <shelf id="shelf_6">
+		          <sections>
+		            <shelfSection>
+			          <items>
+													<moviePoster id="shelf_item_146" accessibilityLabel="Americons" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/americons/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/americons/videos/trailer-hd.xml');">
+								<title>Americons</title>
+																<image>https://trailers.apple.com/trailers/independent/americons/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_147" accessibilityLabel="The Duff" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/theduff/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/theduff/videos/trailer2-hd.xml');">
+								<title>The Duff</title>
+																<image>https://trailers.apple.com/trailers/independent/theduff/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_148" accessibilityLabel="[REC] 4: Apocalypse" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/magnolia/rec4apocalypse/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/magnolia/rec4apocalypse/videos/trailer-hd.xml');">
+								<title>[REC] 4: Apocalypse</title>
+																<image>https://trailers.apple.com/trailers/magnolia/rec4apocalypse/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_149" accessibilityLabel="Terminator Genisys" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/terminatorgenisys/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/terminatorgenisys/videos/trailer-hd.xml');">
+								<title>Terminator Genisys</title>
+																<image>https://trailers.apple.com/trailers/paramount/terminatorgenisys/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_150" accessibilityLabel="The Woman in Black 2 Angel of Death" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/relativity/thewomaninblack2angelofdeath/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/relativity/thewomaninblack2angelofdeath/videos/trailer-hd.xml');">
+								<title>The Woman in Black 2 Angel of Death</title>
+																<image>https://trailers.apple.com/trailers/relativity/thewomaninblack2angelofdeath/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_151" accessibilityLabel="Focus" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/focus/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/focus/videos/trailer2-hd.xml');">
+								<title>Focus</title>
+																<image>https://trailers.apple.com/trailers/wb/focus/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_152" accessibilityLabel="R100" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/r100/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/r100/videos/trailer-hd.xml');">
+								<title>R100</title>
+																<image>https://trailers.apple.com/trailers/independent/r100/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_153" accessibilityLabel="Predestination" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/predestination/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/predestination/videos/trailer-hd.xml');">
+								<title>Predestination</title>
+																<image>https://trailers.apple.com/trailers/independent/predestination/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_154" accessibilityLabel="In the Heart of the Sea" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/intheheartofthesea/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/intheheartofthesea/videos/trailer2-hd.xml');">
+								<title>In the Heart of the Sea</title>
+																<image>https://trailers.apple.com/trailers/wb/intheheartofthesea/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_155" accessibilityLabel="American Sniper" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/americansniper/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/americansniper/videos/trailer2-hd.xml');">
+								<title>American Sniper</title>
+																<image>https://trailers.apple.com/trailers/wb/americansniper/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_156" accessibilityLabel="Do You Believe?" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/doyoubelieve/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/doyoubelieve/videos/trailer-hd.xml');">
+								<title>Do You Believe?</title>
+																<image>https://trailers.apple.com/trailers/independent/doyoubelieve/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_157" accessibilityLabel="The Gunman" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/thegunman/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/thegunman/videos/trailer-hd.xml');">
+								<title>The Gunman</title>
+																<image>https://trailers.apple.com/trailers/independent/thegunman/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_158" accessibilityLabel="Star Wars: The Force Awakens" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/lucasfilm/starwarstheforceawakens/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/lucasfilm/starwarstheforceawakens/videos/teaser-hd.xml');">
+								<title>Star Wars: The Force Awakens</title>
+																<image>https://trailers.apple.com/trailers/lucasfilm/starwarstheforceawakens/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_159" accessibilityLabel="Entourage" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/entourage/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/entourage/videos/trailer-hd.xml');">
+								<title>Entourage</title>
+																<image>https://trailers.apple.com/trailers/wb/entourage/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_160" accessibilityLabel="It Follows" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/itfollows/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/itfollows/videos/trailer-hd.xml');">
+								<title>It Follows</title>
+																<image>https://trailers.apple.com/trailers/independent/itfollows/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_161" accessibilityLabel="The Gambler" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/thegambler/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/thegambler/videos/trailer-hd.xml');">
+								<title>The Gambler</title>
+																<image>https://trailers.apple.com/trailers/paramount/thegambler/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_162" accessibilityLabel="Woman in Gold" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/womaningold/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/womaningold/videos/trailer-hd.xml');">
+								<title>Woman in Gold</title>
+																<image>https://trailers.apple.com/trailers/weinstein/womaningold/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_163" accessibilityLabel="A Most Violent Year" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/amostviolentyear/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/amostviolentyear/videos/trailer2-hd.xml');">
+								<title>A Most Violent Year</title>
+																<image>https://trailers.apple.com/trailers/independent/amostviolentyear/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_164" accessibilityLabel="Winter Sleep" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/wintersleep/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/wintersleep/videos/trailer-hd.xml');">
+								<title>Winter Sleep</title>
+																<image>https://trailers.apple.com/trailers/independent/wintersleep/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_165" accessibilityLabel="Big Eyes" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/bigeyes/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/bigeyes/videos/trailer-hd.xml');">
+								<title>Big Eyes</title>
+																<image>https://trailers.apple.com/trailers/weinstein/bigeyes/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_166" accessibilityLabel="A Little Chaos" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/focus_features/alittlechaos/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/focus_features/alittlechaos/videos/trailer-hd.xml');">
+								<title>A Little Chaos</title>
+																<image>https://trailers.apple.com/trailers/focus_features/alittlechaos/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_167" accessibilityLabel="The Imitation Game" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/theimitationgame/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/theimitationgame/videos/trailer2-hd.xml');">
+								<title>The Imitation Game</title>
+																<image>https://trailers.apple.com/trailers/weinstein/theimitationgame/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_168" accessibilityLabel="McFarland, USA" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/disney/mcfarlandusa/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/disney/mcfarlandusa/videos/trailer2-hd.xml');">
+								<title>McFarland, USA</title>
+																<image>https://trailers.apple.com/trailers/disney/mcfarlandusa/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_169" accessibilityLabel="Kumiko, the Treasure Hunter" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/kumikothetreasurehunter/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/kumikothetreasurehunter/videos/trailer-hd.xml');">
+								<title>Kumiko, the Treasure Hunter</title>
+																<image>https://trailers.apple.com/trailers/independent/kumikothetreasurehunter/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_170" accessibilityLabel="&apos;71" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/71/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/71/videos/trailer-hd.xml');">
+								<title>&apos;71</title>
+																<image>https://trailers.apple.com/trailers/independent/71/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_171" accessibilityLabel="Deli Man" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/deliman/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/deliman/videos/trailer-hd.xml');">
+								<title>Deli Man</title>
+																<image>https://trailers.apple.com/trailers/independent/deliman/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_172" accessibilityLabel="The Duke of Burgundy" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/thedukeofburgundy/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/thedukeofburgundy/videos/trailer-hd.xml');">
+								<title>The Duke of Burgundy</title>
+																<image>https://trailers.apple.com/trailers/independent/thedukeofburgundy/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_173" accessibilityLabel="Suburban Gothic" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/suburbangothic/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/suburbangothic/videos/trailer-hd.xml');">
+								<title>Suburban Gothic</title>
+																<image>https://trailers.apple.com/trailers/independent/suburbangothic/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_174" accessibilityLabel="The Divergent Series: Insurgent" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/lions_gate/thedivergentseriesinsurgent/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/lions_gate/thedivergentseriesinsurgent/videos/trailer-hd.xml');">
+								<title>The Divergent Series: Insurgent</title>
+																<image>https://trailers.apple.com/trailers/lions_gate/thedivergentseriesinsurgent/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_175" accessibilityLabel="Unbroken" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/unbroken/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/unbroken/videos/trailer2-hd.xml');">
+								<title>Unbroken</title>
+																<image>https://trailers.apple.com/trailers/universal/unbroken/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_176" accessibilityLabel="Mr. Turner" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/mrturner/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/mrturner/videos/trailer-hd.xml');">
+								<title>Mr. Turner</title>
+																<image>https://trailers.apple.com/trailers/sony/mrturner/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_177" accessibilityLabel="Jurassic World" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/jurassicworld/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/jurassicworld/videos/trailer-hd.xml');">
+								<title>Jurassic World</title>
+																<image>https://trailers.apple.com/trailers/universal/jurassicworld/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_178" accessibilityLabel="Black or White" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/relativity/blackorwhite/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/relativity/blackorwhite/videos/trailer-hd.xml');">
+								<title>Black or White</title>
+																<image>https://trailers.apple.com/trailers/relativity/blackorwhite/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_179" accessibilityLabel="White God" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/magnolia/whitegod/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/magnolia/whitegod/videos/trailer-hd.xml');">
+								<title>White God</title>
+																<image>https://trailers.apple.com/trailers/magnolia/whitegod/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_180" accessibilityLabel="Top Five" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/topfive/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/topfive/videos/trailer-hd.xml');">
+								<title>Top Five</title>
+																<image>https://trailers.apple.com/trailers/paramount/topfive/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_181" accessibilityLabel="Project Almanac" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/projectalmanac/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/projectalmanac/videos/trailer2-hd.xml');">
+								<title>Project Almanac</title>
+																<image>https://trailers.apple.com/trailers/paramount/projectalmanac/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_182" accessibilityLabel="The Hobbit: The Battle of the Five Armies" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/thehobbitthebattleofthefivearmies/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/thehobbitthebattleofthefivearmies/videos/trailer2-hd.xml');">
+								<title>The Hobbit: The Battle of the Five Armies</title>
+																<image>https://trailers.apple.com/trailers/wb/thehobbitthebattleofthefivearmies/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_183" accessibilityLabel="Preservation" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/preservation/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/preservation/videos/trailer-hd.xml');">
+								<title>Preservation</title>
+																<image>https://trailers.apple.com/trailers/independent/preservation/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_184" accessibilityLabel="Backstreet Boys: Show &apos;Em What You&apos;re Made Of" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/backstreetboysshowemwhatyouremadeof/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/backstreetboysshowemwhatyouremadeof/videos/trailer-hd.xml');">
+								<title>Backstreet Boys: Show &apos;Em What You&apos;re Made Of</title>
+																<image>https://trailers.apple.com/trailers/independent/backstreetboysshowemwhatyouremadeof/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_185" accessibilityLabel="While We&apos;re Young" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/whilewereyoung/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/whilewereyoung/videos/trailer-hd.xml');">
+								<title>While We&apos;re Young</title>
+																<image>https://trailers.apple.com/trailers/independent/whilewereyoung/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_186" accessibilityLabel="Pan" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/pan/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/pan/videos/trailer-hd.xml');">
+								<title>Pan</title>
+																<image>https://trailers.apple.com/trailers/wb/pan/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_187" accessibilityLabel="Wild Card" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/lions_gate/wildcard/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/lions_gate/wildcard/videos/trailer-hd.xml');">
+								<title>Wild Card</title>
+																<image>https://trailers.apple.com/trailers/lions_gate/wildcard/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_188" accessibilityLabel="Pioneer" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/magnolia/pioneer/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/magnolia/pioneer/videos/trailer-hd.xml');">
+								<title>Pioneer</title>
+																<image>https://trailers.apple.com/trailers/magnolia/pioneer/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_189" accessibilityLabel="Pitch Perfect 2" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/pitchperfect2/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/pitchperfect2/videos/trailer-hd.xml');">
+								<title>Pitch Perfect 2</title>
+																<image>https://trailers.apple.com/trailers/universal/pitchperfect2/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_190" accessibilityLabel="The Walk" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony_pictures/thewalk/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony_pictures/thewalk/videos/trailer-hd.xml');">
+								<title>The Walk</title>
+																<image>https://trailers.apple.com/trailers/sony_pictures/thewalk/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_191" accessibilityLabel="White Rabbit" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/whiterabbit/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/whiterabbit/videos/trailer-hd.xml');">
+								<title>White Rabbit</title>
+																<image>https://trailers.apple.com/trailers/independent/whiterabbit/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_192" accessibilityLabel="Night at the Museum: Secret of the Tomb" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox/nightatthemuseumsecretofthetomb/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox/nightatthemuseumsecretofthetomb/videos/trailer2-hd.xml');">
+								<title>Night at the Museum: Secret of the Tomb</title>
+																<image>https://trailers.apple.com/trailers/fox/nightatthemuseumsecretofthetomb/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_193" accessibilityLabel="Still Alice" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/stillalice/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/stillalice/videos/trailer-hd.xml');">
+								<title>Still Alice</title>
+																<image>https://trailers.apple.com/trailers/sony/stillalice/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_194" accessibilityLabel="Inside Out" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/disney/insideout/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/disney/insideout/videos/trailer-hd.xml');">
+								<title>Inside Out</title>
+																<image>https://trailers.apple.com/trailers/disney/insideout/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_195" accessibilityLabel="Appropriate Behavior" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/appropriatebehavior/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/appropriatebehavior/videos/trailer-hd.xml');">
+								<title>Appropriate Behavior</title>
+																<image>https://trailers.apple.com/trailers/independent/appropriatebehavior/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+								              </items>
+		            </shelfSection>
+		          </sections>
+		        </shelf>
+									<collectionDivider alignment="left" accessibilityLabel="Top Reviewed from Rotten Tomatoes">
+					<title>Top Reviewed from Rotten Tomatoes</title>
+				</collectionDivider>
+		        <shelf id="shelf_7">
+		          <sections>
+		            <shelfSection>
+			          <items>
+													<moviePoster id="shelf_item_196" accessibilityLabel="Selma" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/selma/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/selma/videos/trailer-hd.xml');">
+								<title>Selma</title>
+																	<subtitle>100%</subtitle>
+																<image>https://trailers.apple.com/trailers/paramount/selma/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_197" accessibilityLabel="The Tale of The Princess Kaguya" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/thetaleoftheprincesskaguya/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/thetaleoftheprincesskaguya/videos/trailer-hd.xml');">
+								<title>The Tale of The Princess Kaguya</title>
+																	<subtitle>100%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/thetaleoftheprincesskaguya/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_198" accessibilityLabel="Mr. Turner" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/mrturner/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/mrturner/videos/trailer-hd.xml');">
+								<title>Mr. Turner</title>
+																	<subtitle>97%</subtitle>
+																<image>https://trailers.apple.com/trailers/sony/mrturner/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_199" accessibilityLabel="The Babadook" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/ifcfilms/thebabadook/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/ifcfilms/thebabadook/videos/trailer-hd.xml');">
+								<title>The Babadook</title>
+																	<subtitle>97%</subtitle>
+																<image>https://trailers.apple.com/trailers/ifcfilms/thebabadook/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_200" accessibilityLabel="Citizenfour" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/citizenfour/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/citizenfour/videos/trailer-hd.xml');">
+								<title>Citizenfour</title>
+																	<subtitle>97%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/citizenfour/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_201" accessibilityLabel="A Girl Walks Home Alone at Night" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/agirlwalkshomealoneatnight/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/agirlwalkshomealoneatnight/videos/trailer-hd.xml');">
+								<title>A Girl Walks Home Alone at Night</title>
+																	<subtitle>96%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/agirlwalkshomealoneatnight/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_202" accessibilityLabel="Whiplash" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/whiplash/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/whiplash/videos/trailer-hd.xml');">
+								<title>Whiplash</title>
+																	<subtitle>96%</subtitle>
+																<image>https://trailers.apple.com/trailers/sony/whiplash/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_203" accessibilityLabel="Nightcrawler" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/nightcrawler/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/nightcrawler/videos/teaser-hd.xml');">
+								<title>Nightcrawler</title>
+																	<subtitle>95%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/nightcrawler/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_204" accessibilityLabel="Force Majeure" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/magnolia/forcemajeure/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/magnolia/forcemajeure/videos/trailer-hd.xml');">
+								<title>Force Majeure</title>
+																	<subtitle>93%</subtitle>
+																<image>https://trailers.apple.com/trailers/magnolia/forcemajeure/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_205" accessibilityLabel="Diplomacy" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/diplomacy/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/diplomacy/videos/trailer-hd.xml');">
+								<title>Diplomacy</title>
+																	<subtitle>93%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/diplomacy/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_206" accessibilityLabel="Birdman" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox_searchlight/birdman/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox_searchlight/birdman/videos/trailer2-hd.xml');">
+								<title>Birdman</title>
+																	<subtitle>92%</subtitle>
+																<image>https://trailers.apple.com/trailers/fox_searchlight/birdman/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_207" accessibilityLabel="Wild" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox_searchlight/wild/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox_searchlight/wild/videos/trailer-hd.xml');">
+								<title>Wild</title>
+																	<subtitle>91%</subtitle>
+																<image>https://trailers.apple.com/trailers/fox_searchlight/wild/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_208" accessibilityLabel="Dear White People" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/dearwhitepeople/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/dearwhitepeople/videos/trailer2-hd.xml');">
+								<title>Dear White People</title>
+																	<subtitle>91%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/dearwhitepeople/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_209" accessibilityLabel="The Imitation Game" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/theimitationgame/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/theimitationgame/videos/trailer2-hd.xml');">
+								<title>The Imitation Game</title>
+																	<subtitle>90%</subtitle>
+																<image>https://trailers.apple.com/trailers/weinstein/theimitationgame/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_210" accessibilityLabel="A Most Violent Year" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/amostviolentyear/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/amostviolentyear/videos/trailer2-hd.xml');">
+								<title>A Most Violent Year</title>
+																	<subtitle>89%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/amostviolentyear/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_211" accessibilityLabel="Top Five" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/topfive/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/topfive/videos/trailer-hd.xml');">
+								<title>Top Five</title>
+																	<subtitle>89%</subtitle>
+																<image>https://trailers.apple.com/trailers/paramount/topfive/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_212" accessibilityLabel="Big Hero 6" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/disney/bighero6/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/disney/bighero6/videos/trailer3-hd.xml');">
+								<title>Big Hero 6</title>
+																	<subtitle>88%</subtitle>
+																<image>https://trailers.apple.com/trailers/disney/bighero6/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_213" accessibilityLabel="Winter Sleep" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/wintersleep/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/wintersleep/videos/trailer-hd.xml');">
+								<title>Winter Sleep</title>
+																	<subtitle>86%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/wintersleep/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_214" accessibilityLabel="Foxcatcher" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony/foxcatcher/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony/foxcatcher/videos/theatricaltrailer-hd.xml');">
+								<title>Foxcatcher</title>
+																	<subtitle>86%</subtitle>
+																<image>https://trailers.apple.com/trailers/sony/foxcatcher/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_215" accessibilityLabel="John Wick" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/summit/johnwick/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/summit/johnwick/videos/trailer-hd.xml');">
+								<title>John Wick</title>
+																	<subtitle>85%</subtitle>
+																<image>https://trailers.apple.com/trailers/summit/johnwick/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_216" accessibilityLabel="Listen Up Philip" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/listenupphilip/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/listenupphilip/videos/trailer-hd.xml');">
+								<title>Listen Up Philip</title>
+																	<subtitle>85%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/listenupphilip/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_217" accessibilityLabel="Beyond the Lights" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/relativity/beyondthelights/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/relativity/beyondthelights/videos/trailer-hd.xml');">
+								<title>Beyond the Lights</title>
+																	<subtitle>83%</subtitle>
+																<image>https://trailers.apple.com/trailers/relativity/beyondthelights/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_218" accessibilityLabel="The Book of Life" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox/thebookoflife/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox/thebookoflife/videos/trailer2-hd.xml');">
+								<title>The Book of Life</title>
+																	<subtitle>82%</subtitle>
+																<image>https://trailers.apple.com/trailers/fox/thebookoflife/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_219" accessibilityLabel="The Homesman" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/thehomesman/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/thehomesman/videos/trailer-hd.xml');">
+								<title>The Homesman</title>
+																	<subtitle>81%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/thehomesman/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_220" accessibilityLabel="The Theory of Everything" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/focus_features/thetheoryofeverything/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/focus_features/thetheoryofeverything/videos/trailer2-hd.xml');">
+								<title>The Theory of Everything</title>
+																	<subtitle>81%</subtitle>
+																<image>https://trailers.apple.com/trailers/focus_features/thetheoryofeverything/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_221" accessibilityLabel="Point and Shoot" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/pointandshoot/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/pointandshoot/videos/trailer-hd.xml');">
+								<title>Point and Shoot</title>
+																	<subtitle>80%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/pointandshoot/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_222" accessibilityLabel="Fury" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony_pictures/fury/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony_pictures/fury/videos/trailer-hd.xml');">
+								<title>Fury</title>
+																	<subtitle>78%</subtitle>
+																<image>https://trailers.apple.com/trailers/sony_pictures/fury/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_223" accessibilityLabel="American Sniper" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/americansniper/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/americansniper/videos/trailer2-hd.xml');">
+								<title>American Sniper</title>
+																	<subtitle>75%</subtitle>
+																<image>https://trailers.apple.com/trailers/wb/americansniper/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_224" accessibilityLabel="Rosewater" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/rosewater/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/rosewater/videos/trailer-hd.xml');">
+								<title>Rosewater</title>
+																	<subtitle>74%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/rosewater/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_225" accessibilityLabel="Interstellar" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/interstellar/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/interstellar/videos/trailer4-hd.xml');">
+								<title>Interstellar</title>
+																	<subtitle>73%</subtitle>
+																<image>https://trailers.apple.com/trailers/paramount/interstellar/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_226" accessibilityLabel="Kill the Messenger" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/focus_features/killthemessenger/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/focus_features/killthemessenger/videos/trailer-hd.xml');">
+								<title>Kill the Messenger</title>
+																	<subtitle>73%</subtitle>
+																<image>https://trailers.apple.com/trailers/focus_features/killthemessenger/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_227" accessibilityLabel="The Penguins of Madagascar" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/dreamworks/thepenguinsofmadagascar/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/dreamworks/thepenguinsofmadagascar/videos/trailer2-hd.xml');">
+								<title>The Penguins of Madagascar</title>
+																	<subtitle>72%</subtitle>
+																<image>https://trailers.apple.com/trailers/dreamworks/thepenguinsofmadagascar/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_228" accessibilityLabel="Big Eyes" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/bigeyes/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/bigeyes/videos/trailer-hd.xml');">
+								<title>Big Eyes</title>
+																	<subtitle>71%</subtitle>
+																<image>https://trailers.apple.com/trailers/weinstein/bigeyes/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_229" accessibilityLabel="Inherent Vice" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/inherentvice/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/inherentvice/videos/trailer-hd.xml');">
+								<title>Inherent Vice</title>
+																	<subtitle>71%</subtitle>
+																<image>https://trailers.apple.com/trailers/wb/inherentvice/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_230" accessibilityLabel="Into the Woods" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/disney/intothewoods/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/disney/intothewoods/videos/trailer2-hd.xml');">
+								<title>Into the Woods</title>
+																	<subtitle>70%</subtitle>
+																<image>https://trailers.apple.com/trailers/disney/intothewoods/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_231" accessibilityLabel="Laggies" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/laggies/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/laggies/videos/trailer-hd.xml');">
+								<title>Laggies</title>
+																	<subtitle>69%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/laggies/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_232" accessibilityLabel="Alexander and the Terrible, Horrible, No Good, Very Bad Day" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/disney/alexanderandtheterriblehorriblenogoodverybadday/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/disney/alexanderandtheterriblehorriblenogoodverybadday/videos/trailer-hd.xml');">
+								<title>Alexander and the Terrible, Horrible, No Good, Very Bad Day</title>
+																	<subtitle>66%</subtitle>
+																<image>https://trailers.apple.com/trailers/disney/alexanderandtheterriblehorriblenogoodverybadday/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_233" accessibilityLabel="St. Vincent" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/weinstein/stvincent/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/weinstein/stvincent/videos/trailer-hd.xml');">
+								<title>St. Vincent</title>
+																	<subtitle>66%</subtitle>
+																<image>https://trailers.apple.com/trailers/weinstein/stvincent/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_234" accessibilityLabel="The Hunger Games: Mockingjay, Part 1" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/lions_gate/thehungergamesmockingjaypart1/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/lions_gate/thehungergamesmockingjaypart1/videos/trailer3-hd.xml');">
+								<title>The Hunger Games: Mockingjay, Part 1</title>
+																	<subtitle>65%</subtitle>
+																<image>https://trailers.apple.com/trailers/lions_gate/thehungergamesmockingjaypart1/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_235" accessibilityLabel="Rudderless" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/rudderless/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/rudderless/videos/trailer-hd.xml');">
+								<title>Rudderless</title>
+																	<subtitle>64%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/rudderless/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_236" accessibilityLabel="The Hobbit: The Battle of the Five Armies" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/thehobbitthebattleofthefivearmies/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/thehobbitthebattleofthefivearmies/videos/trailer2-hd.xml');">
+								<title>The Hobbit: The Battle of the Five Armies</title>
+																	<subtitle>61%</subtitle>
+																<image>https://trailers.apple.com/trailers/wb/thehobbitthebattleofthefivearmies/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_237" accessibilityLabel="The Interview" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/sony_pictures/theinterview/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/sony_pictures/theinterview/videos/trailer2-hd.xml');">
+								<title>The Interview</title>
+																	<subtitle>54%</subtitle>
+																<image>https://trailers.apple.com/trailers/sony_pictures/theinterview/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_238" accessibilityLabel="Unbroken" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/universal/unbroken/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/universal/unbroken/videos/trailer2-hd.xml');">
+								<title>Unbroken</title>
+																	<subtitle>49%</subtitle>
+																<image>https://trailers.apple.com/trailers/universal/unbroken/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_239" accessibilityLabel="Low Down" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/oscilloscope/lowdown/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/oscilloscope/lowdown/videos/trailer-hd.xml');">
+								<title>Low Down</title>
+																	<subtitle>49%</subtitle>
+																<image>https://trailers.apple.com/trailers/oscilloscope/lowdown/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_240" accessibilityLabel="Night at the Museum: Secret of the Tomb" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox/nightatthemuseumsecretofthetomb/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox/nightatthemuseumsecretofthetomb/videos/trailer2-hd.xml');">
+								<title>Night at the Museum: Secret of the Tomb</title>
+																	<subtitle>48%</subtitle>
+																<image>https://trailers.apple.com/trailers/fox/nightatthemuseumsecretofthetomb/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_241" accessibilityLabel="White Bird in a Blizzard" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/magnolia/whitebirdinablizzard/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/magnolia/whitebirdinablizzard/videos/trailer-hd.xml');">
+								<title>White Bird in a Blizzard</title>
+																	<subtitle>48%</subtitle>
+																<image>https://trailers.apple.com/trailers/magnolia/whitebirdinablizzard/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_242" accessibilityLabel="The Judge" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/thejudge/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/thejudge/videos/trailer2-hd.xml');">
+								<title>The Judge</title>
+																	<subtitle>48%</subtitle>
+																<image>https://trailers.apple.com/trailers/wb/thejudge/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_243" accessibilityLabel="The Gambler" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/paramount/thegambler/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/paramount/thegambler/videos/trailer-hd.xml');">
+								<title>The Gambler</title>
+																	<subtitle>45%</subtitle>
+																<image>https://trailers.apple.com/trailers/paramount/thegambler/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_244" accessibilityLabel="The Better Angels" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/thebetterangels/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/thebetterangels/videos/trailer2-hd.xml');">
+								<title>The Better Angels</title>
+																	<subtitle>40%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/thebetterangels/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+													<moviePoster id="shelf_item_245" accessibilityLabel="Before I Go To Sleep" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/beforeigotosleep/index-hd.xml');"  onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/beforeigotosleep/videos/trailer-hd.xml');">
+								<title>Before I Go To Sleep</title>
+																	<subtitle>36%</subtitle>
+																<image>https://trailers.apple.com/trailers/independent/beforeigotosleep/images/poster-large.jpg</image>
+								<defaultImage>resource://Poster.png</defaultImage>
+							</moviePoster>
+								              </items>
+		            </shelfSection>
+		          </sections>
+		        </shelf>
+		      </items>
+    </scroller>
+  </body>
+</atv>

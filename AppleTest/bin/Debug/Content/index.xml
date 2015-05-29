@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+	<head>
+		<script src="http://trailers.apple.com/appletv/us/js/main.js"/>
+		<script src="http://trailers.apple.com/appletv/us/js/Trailers.js"/>
+		<script src="http://trailers.apple.com/appletv/us/js/Trailers.Log.js"/>
+		<script src="http://trailers.apple.com/appletv/us/js/Trailers.Showtimes.js"/>
+		<script src="http://trailers.apple.com/appletv/us/js/showtimesconfig.js"/>
+	</head>
+	<body>
+		<viewWithNavigationBar id="trailers_navigation" onNavigate="Trailers.handleOnNavigate( event )">
+			<navigation>
+				<navigationItem id="EnTv"> 
+					<title>UniTV</title> 
+					<url>http://trailers.apple.com/appletv?channel=http://www.yunisov-tv.com/tv2_1/8qydwa__1dwua/kwe9jeq_wq13__A/_DEFINST_/menuGroups.xml</url> 
+				</navigationItem> 
+				<!-- <navigationItem id="TorTv"> 
+					<title>TorrentTv</title> 
+					<url>http://trailers.apple.com/appletv?channel=listChannels</url> 
+				</navigationItem>  -->
+			<navigationItem id="UkozSer"> 
+					<title>UkozMultSer</title> 
+					<url>http://trailers.apple.com/GetUcozMultSerial</url> 
+				</navigationItem>
+			<navigationItem id="UkozMult"> 
+					<title>UkozMult</title> 
+					<url>http://trailers.apple.com/GetUcozMult</url> 
+				</navigationItem>
+				<navigationItem id="Ukoz"> 
+					<title>1080</title> 
+					<url>http://trailers.apple.com/GetKino1080</url> 
+				</navigationItem>
+				<navigationItem id="BaskinoMult"> 
+					<title>BaskinoMult</title> 
+					<url>http://trailers.apple.com/baskinoMutliOnline?page=1</url> 
+				</navigationItem> 
+				<navigationItem id="Ukoz"> 
+					<title>Ukoz</title> 
+					<url>http://trailers.apple.com/GetUcoz</url> 
+				</navigationItem>
+					<navigationItem id="UkozSerial"> 
+					<title>UkozSerial</title> 
+					<url>http://trailers.apple.com/GetUcozSerial</url> 
+				</navigationItem>
+				<navigationItem id="Baskino"> 
+					<title>Baskino</title> 
+					<url>http://trailers.apple.com/appleMoviesOnline?page=1</url> 
+				</navigationItem> 
+				<navigationItem id="Friends"> 
+					<title>Friends</title> 
+					<url>http://trailers.apple.com/FriendsSeason</url> 
+				</navigationItem> 
+				<navigationItem id="EnMovies"> 
+					<title>En Movies</title> 
+					<url>http://trailers.apple.com/movieBoxMovie</url> 
+				</navigationItem> 
+				
+				<!-- <navigationItem id="DisneyMovies"> 
+					<title>Русские Мульт</title> 
+					<url>http://trailers.apple.com/MultPoisk?ext=sssrmult</url> 
+				</navigationItem>  -->
+			<!-- 	<navigationItem id="DisneyMovies"> 
+					<title>2013 Мульт</title> 
+					<url>http://trailers.apple.com/MultPoisk?ext=mult2013</url> 
+				</navigationItem> 
+					<navigationItem id="DisneyMovies"> 
+					<title>Детские Мульт</title> 
+					<url>http://trailers.apple.com/MultPoisk?ext=mult</url> 
+				</navigationItem> -->
+				<navigationItem id="EnShows"> 
+					<title>En Shows</title> 
+					<url>http://trailers.apple.com/movieBoxMovieShow</url> 
+				</navigationItem> 
+				<!-- <navigationItem id="Calendar"> 
+					<title>Calendar</title> 
+				 <url>http://trailers.apple.com/appletv/us/calendar.xml</url> 
+				</navigationItem> 
+				<navigationItem id="Browse"> 
+					<title>Browse</title> 
+					<url>http://trailers.apple.com/appletv/us/browse.xml</url> 
+				</navigationItem> 
+				<navigationItem id="Showtimes">
+					<title>Showtimes</title>
+				</navigationItem>
+				<navigationItem id="Search"> 
+					<title>Search</title> 
+					<url>http://trailers.apple.com/appletv/us/searchtrailers.xml</url> 
+				</navigationItem> -->
+			</navigation>
+		</viewWithNavigationBar>
+	</body>
+</atv>
+

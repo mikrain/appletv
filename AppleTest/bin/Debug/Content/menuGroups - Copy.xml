@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<plist>
+
+<Group Name="Популярные" idGroup="1">
+		<item idMovie="1" linkIconSmall="http://yunisov-tv.com/i/1.jpg" linkIconLarge="http://yunisov-tv.com/i/1.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-1-20">Первый канал</item>
+
+                <item idMovie="1111" linkIconSmall="http://yunisov-tv.com/i/1.jpg" linkIconLarge="http://yunisov-tv.com/i/1.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-122-20">Первый канал HD</item>
+  <item idMovie="1002" linkIconSmall="http://yunisov-tv.com/i/1.jpg" linkIconLarge="http://yunisov-tv.com/i/1.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-160-20">Первый канал (+3 ч.)</item>
+	
+			
+		<item idMovie="2" linkIconSmall="http://yunisov-tv.com/i/3.jpg" linkIconLarge="http://yunisov-tv.com/i/3.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-2-20">Россия 1</item>
+<item idMovie="2002" linkIconSmall="http://yunisov-tv.com/i/3.jpg" linkIconLarge="http://yunisov-tv.com/i/3.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-161-20">Россия 1 (+3 ч.)</item>
+		<item idMovie="3" linkIconSmall="http://yunisov-tv.com/i/5.jpg" linkIconLarge="http://yunisov-tv.com/i/5.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-3-20">ТВ Центр</item>
+	        
+	        <item idMovie="5" linkIconSmall="http://yunisov-tv.com/i/8.jpg" linkIconLarge="http://yunisov-tv.com/i/8.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-6-20">Россия 2</item>
+	        <item idMovie="6" linkIconSmall="http://yunisov-tv.com/i/13.jpg" linkIconLarge="http://yunisov-tv.com/i/13.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-14-20">Пятый канал</item>
+        <item idMovie="6002" linkIconSmall="http://yunisov-tv.com/i/13.jpg" linkIconLarge="http://yunisov-tv.com/i/13.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-162-20">Пятый канал (+3 ч.)</item>
+	        <item idMovie="7" linkIconSmall="http://yunisov-tv.com/i/19.jpg" linkIconLarge="http://yunisov-tv.com/i/19.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-50-20">Россия HD</item>
+	        <item idMovie="8" linkIconSmall="http://yunisov-tv.com/i/44.jpg" linkIconLarge="http://yunisov-tv.com/i/44.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-123-20">Россия РТР</item>
+	        <item idMovie="9" linkIconSmall="http://yunisov-tv.com/i/9.jpg" linkIconLarge="http://yunisov-tv.com/i/9.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-7-20">ТНТ</item>
+  <item idMovie="9002" linkIconSmall="http://yunisov-tv.com/i/9.jpg" linkIconLarge="http://yunisov-tv.com/i/9.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-166-20">ТНТ (+3 ч.)</item>
+	        <item idMovie="10" linkIconSmall="http://yunisov-tv.com/i/12.jpg" linkIconLarge="http://yunisov-tv.com/i/12.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-8-20">Домашний</item>
+	        <item idMovie="11" linkIconSmall="http://yunisov-tv.com/i/10.jpg" linkIconLarge="http://yunisov-tv.com/i/10.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-9-20">РЕН</item>
+ <item idMovie="1102" linkIconSmall="http://yunisov-tv.com/i/10.jpg" linkIconLarge="http://yunisov-tv.com/i/10.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-163-20">РЕН (+3 ч.)</item>
+	        <item idMovie="12" linkIconSmall="http://yunisov-tv.com/i/11.jpg" linkIconLarge="http://yunisov-tv.com/i/11.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-10-20">СТС</item>
+ <item idMovie="1202" linkIconSmall="http://yunisov-tv.com/i/11.jpg" linkIconLarge="http://yunisov-tv.com/i/11.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-167-20">СТС (+3 ч.)</item>
+	        <item idMovie="13" linkIconSmall="http://yunisov-tv.com/i/16.jpg" linkIconLarge="http://yunisov-tv.com/i/16.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-11-20">ТВ 3</item>
+   <item idMovie="1302" linkIconSmall="http://yunisov-tv.com/i/16.jpg" linkIconLarge="http://yunisov-tv.com/i/16.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-164-20">ТВ 3 (+3 ч.)</item>
+	        <item idMovie="14" linkIconSmall="http://yunisov-tv.com/i/15.jpg" linkIconLarge="http://yunisov-tv.com/i/15.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-12-20">Перец</item>
+    <item idMovie="1402" linkIconSmall="http://yunisov-tv.com/i/15.jpg" linkIconLarge="http://yunisov-tv.com/i/15.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-165-20">Перец (+3 ч.)</item>
+	        <item idMovie="15" linkIconSmall="http://yunisov-tv.com/i/23.jpg" linkIconLarge="http://yunisov-tv.com/i/23.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-13-20">2x2</item>
+<item idMovie="1502" linkIconSmall="http://yunisov-tv.com/i/23.jpg" linkIconLarge="http://yunisov-tv.com/i/23.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-169-20">2x2 (+2 ч.)</item>
+	        <item idMovie="16" linkIconSmall="http://yunisov-tv.com/i/h/18.jpg" linkIconLarge="http://yunisov-tv.com/i/h/18.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-54-20">Пятница!</item>
+	        <item idMovie="1602" linkIconSmall="http://yunisov-tv.com/i/h/18.jpg" linkIconLarge="http://yunisov-tv.com/i/h/18.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-168-20">Пятница! (+3 ч.)</item>
+	        <item idMovie="17" linkIconSmall="http://yunisov-tv.com/i/k/42.jpg" linkIconLarge="http://yunisov-tv.com/i/k/42.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-94-20">Ю ТВ</item>
+	</Group>
+	<Group Name="Спорт" idGroup="2">
+		<item idMovie="18" linkIconSmall="http://yunisov-tv.com/i/q/23.jpg" linkIconLarge="http://yunisov-tv.com/i/q/23.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-31-20">Спорт</item>
+		<item idMovie="19" linkIconSmall="http://yunisov-tv.com/i/s/2.jpg" linkIconLarge="http://yunisov-tv.com/i/s/2.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-32-20">Спорт 1</item>
+	<item idMovie="199" linkIconSmall="http://yunisov-tv.com/i/s/2.jpg" linkIconLarge="http://yunisov-tv.com/i/s/2.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-124-20">Спорт 1 HD</item>
+
+	        <item idMovie="209" linkIconSmall="http://yunisov-tv.com/i/s/3.jpg" linkIconLarge="http://yunisov-tv.com/i/s/3.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/football1.m3u8">Футбoл</item>
+		   <item idMovie="2091" linkIconSmall="http://yunisov-tv.com/i/s/3.jpg" linkIconLarge="http://yunisov-tv.com/i/s/3.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/football1HD.m3u8">Футбoл (доп.)</item>
+	  
+		<item idMovie="21" linkIconSmall="http://yunisov-tv.com/i/s/4.jpg" linkIconLarge="http://yunisov-tv.com/i/s/4.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/football2.m3u8">Футбoл 2</item>
+
+		<item idMovie="22" linkIconSmall="http://yunisov-tv.com/i/h/foot.jpg" linkIconLarge="http://yunisov-tv.com/i/h/foot.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-57-20">РФПЛ</item>
+		
+<item idMovie="228" linkIconSmall="http://www.yunisov-tv.com/i/s/22.jpg" linkIconLarge="http://www.yunisov-tv.com/i/s/22.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-143-20">ТРК Футбол</item>
+		<item idMovie="23" linkIconSmall="http://yunisov-tv.com/i/s/5.jpg" linkIconLarge="http://yunisov-tv.com/i/s/5.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-128-20">КХЛ</item>
+		<item idMovie="24" linkIconSmall="http://yunisov-tv.com/i/s/6.jpg" linkIconLarge="http://yunisov-tv.com/i/s/6.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/tennis.m3u8">Теннис</item>
+		<item idMovie="25" linkIconSmall="http://yunisov-tv.com/i/s/7.jpg" linkIconLarge="http://yunisov-tv.com/i/s/7.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/basketball.m3u8">Баскетбoл</item>
+		<item idMovie="26" linkIconSmall="http://yunisov-tv.com/i/s/8.jpg" linkIconLarge="http://yunisov-tv.com/i/s/8.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-47-20">Реслинг</item>
+		<item idMovie="27" linkIconSmall="http://yunisov-tv.com/i/s/151.jpg" linkIconLarge="http://yunisov-tv.com/i/s/151.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-58-20">Боец</item>
+		<item idMovie="28" linkIconSmall="http://yunisov-tv.com/i/u/6.jpg" linkIconLarge="http://yunisov-tv.com/i/u/6.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-135-20">Бойцовский клуб</item>
+		<item idMovie="29" linkIconSmall="http://yunisov-tv.com/i/u/28.jpg" linkIconLarge="http://yunisov-tv.com/i/u/28.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/extreme.m3u8">Экстрим</item>
+	</Group> 
+
+	<Group Name="Для детей" idGroup="3">
+		<item idMovie="300" linkIconSmall="http://yunisov-tv.com/i/k/1.jpg" linkIconLarge="http://yunisov-tv.com/i/k/1.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-111-20">Карусель</item>
+		<item idMovie="30" linkIconSmall="http://yunisov-tv.com/i/k/9.jpg" linkIconLarge="http://yunisov-tv.com/i/k/9.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-24-20">Барбарики</item>
+		<item idMovie="31" linkIconSmall="http://yunisov-tv.com/i/h/disney.jpg" linkIconLarge="http://yunisov-tv.com/i/h/disney.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-129-20">Disney</item>
+		<item idMovie="32" linkIconSmall="http://yunisov-tv.com/i/k/12.jpg" linkIconLarge="http://yunisov-tv.com/i/k/12.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-23-20">Gulli</item>
+		<item idMovie="33" linkIconSmall="http://yunisov-tv.com/i/k/11.jpg" linkIconLarge="http://yunisov-tv.com/i/k/11.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-26-20">Ti Ji</item>
+		<item idMovie="34" linkIconSmall="http://yunisov-tv.com/i/k/5.jpg" linkIconLarge="http://yunisov-tv.com/i/k/5.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-27-20">Jim Jam</item>
+		<item idMovie="340" linkIconSmall="http://www.yunisov-tv.com/i/d/n/6.jpg" linkIconLarge="http://www.yunisov-tv.com/i/d/n/6.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-116-20">Nickelodeon</item>
+		<item idMovie="341" linkIconSmall="http://www.yunisov-tv.com/i/d/7.jpg" linkIconLarge="http://www.yunisov-tv.com/i/d/7.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/cartoon_network.m3u8">Cartoon Network</item>
+	</Group> 
+
+	<Group Name="Познавательные" idGroup="4">
+		<item idMovie="35" linkIconSmall="http://yunisov-tv.com/i/h/7.jpg" linkIconLarge="http://yunisov-tv.com/i/h/7.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-29-20">Наука 2.0</item>
+		<item idMovie="36" linkIconSmall="http://yunisov-tv.com/i/h/4.jpg" linkIconLarge="http://yunisov-tv.com/i/h/4.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-30-20">Моя планета</item>
+		<item idMovie="37" linkIconSmall="http://yunisov-tv.com/i/k/nationalgeo.jpg" linkIconLarge="http://yunisov-tv.com/i/k/nationalgeo.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/nationalgeographic.m3u8">National Geographic</item>
+		<item idMovie="38" linkIconSmall="http://yunisov-tv.com/i/k/33.jpg" linkIconLarge="http://yunisov-tv.com/i/k/33.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-92-20">24 Техно</item>
+<item idMovie="391" linkIconSmall="http://www.yunisov-tv.com/i/s/15.jpg" linkIconLarge="http://www.yunisov-tv.com/i/s/15.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-119-20">Нано ТВ</item>
+		<item idMovie="39" linkIconSmall="http://yunisov-tv.com/i/n/7.jpg" linkIconLarge="http://yunisov-tv.com/i/n/7.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-100-20">Russia Today Д</item>
+	
+			<item idMovie="3900" linkIconSmall="http://pleasureview.ucoz.ru/app/xml/pic/19.png" linkIconLarge="http://pleasureview.ucoz.ru/app/xml/pic/19.png" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-170-20">МКС ТВ</item>
+
+	</Group>
+
+	<Group Name="Новости" idGroup="5">
+		<item idMovie="40" linkIconSmall="http://yunisov-tv.com/i/n/5.jpg" linkIconLarge="http://yunisov-tv.com/i/n/5.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-90-20">Москва 24</item>
+		<item idMovie="41" linkIconSmall="http://yunisov-tv.com/i/n/s/1.jpg" linkIconLarge="http://yunisov-tv.com/i/n/s/1.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-18-20">Россия 24</item>
+		<item idMovie="42" linkIconSmall="http://yunisov-tv.com/i/k/rbk.jpg" linkIconLarge="http://yunisov-tv.com/i/k/rbk.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-16-20">РБК</item>
+		<item idMovie="43" linkIconSmall="http://yunisov-tv.com/i/n/6.jpg" linkIconLarge="http://yunisov-tv.com/i/n/6.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-17-20">РИА</item>
+		<item idMovie="44" linkIconSmall="http://yunisov-tv.com/i/n/3.jpg" linkIconLarge="http://yunisov-tv.com/i/n/3.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-95-20">Euro News</item>
+
+		<item idMovie="444" linkIconSmall="http://www.yunisov-tv.com/i/n/29.jpg" linkIconLarge="http://www.yunisov-tv.com/i/n/29.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-157-20">Life News (beta)</item>
+
+	</Group>
+
+	<Group Name="Музыка" idGroup="6">
+
+		<item idMovie="45" linkIconSmall="http://www.yunisov-tv.com/i/m/30.jpg" linkIconLarge="http://www.yunisov-tv.com/i/m/30.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-152-20">MTV HITs</item>
+		<item idMovie="450" linkIconSmall="http://www.yunisov-tv.com/i/m/31.jpg" linkIconLarge="http://www.yunisov-tv.com/i/m/31.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-151-20">MTV Dance</item>
+		<item idMovie="451" linkIconSmall="http://www.yunisov-tv.com/i/m/32.jpg" linkIconLarge="http://www.yunisov-tv.com/i/m/32.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-153-20">MTV Rocks</item>
+		<item idMovie="46" linkIconSmall="http://yunisov-tv.com/i/m/101.jpg" linkIconLarge="http://yunisov-tv.com/i/m/101.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-55-20">МУЗ ТВ</item>
+		<item idMovie="47" linkIconSmall="http://yunisov-tv.com/i/m/12.jpg" linkIconLarge="http://yunisov-tv.com/i/m/12.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-19-20">Europa Plus</item>
+		<item idMovie="48" linkIconSmall="http://yunisov-tv.com/i/m/6.jpg" linkIconLarge="http://yunisov-tv.com/i/m/6.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-20-20">Russian Music Box</item>
+		<item idMovie="49" linkIconSmall="http://yunisov-tv.com/i/m/5.jpg" linkIconLarge="http://yunisov-tv.com/i/m/5.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-96-20">Music Box</item>
+		<item idMovie="50" linkIconSmall="http://yunisov-tv.com/i/m/3.jpg" linkIconLarge="http://yunisov-tv.com/i/m/3.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/music1.m3u8">Музыка 1</item>
+		<item idMovie="51" linkIconSmall="http://yunisov-tv.com/i/m/4.jpg" linkIconLarge="http://yunisov-tv.com/i/m/4.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-22-20">RU TV</item>
+		<item idMovie="52" linkIconSmall="http://yunisov-tv.com/i/y/1.jpg" linkIconLarge="http://yunisov-tv.com/i/y/1.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-42-20">Первый Музыкальный HD</item>
+		<item idMovie="520" linkIconSmall="http://www.yunisov-tv.com/i/k/19.jpg" linkIconLarge="http://www.yunisov-tv.com/i/k/19.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-147-20">A-One Hip-Hop</item>
+	</Group>
+
+	<Group Name="Досуг" idGroup="7">
+		<item idMovie="53" linkIconSmall="http://yunisov-tv.com/i/4.jpg" linkIconLarge="http://yunisov-tv.com/i/4.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/comedytv.m3u8">Comedy</item>
+		<item idMovie="54" linkIconSmall="http://yunisov-tv.com/i/d/2.jpg" linkIconLarge="http://yunisov-tv.com/i/d/2.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/kuchnya.m3u8">Кухня ТВ</item>
+		<item idMovie="55" linkIconSmall="http://yunisov-tv.com/i/d/3.jpg" linkIconLarge="http://yunisov-tv.com/i/d/3.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/eda.m3u8">Еда</item>
+                <item idMovie="550" linkIconSmall="http://www.yunisov-tv.com/i/h/29.jpg" linkIconLarge="http://www.yunisov-tv.com/i/h/29.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-146-20">Мать и дитя</item>
+		<item idMovie="56" linkIconSmall="http://yunisov-tv.com/i/q/5.jpg" linkIconLarge="http://yunisov-tv.com/i/q/5.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-45-20">Иллюзион +</item>
+		<item idMovie="57" linkIconSmall="http://yunisov-tv.com/i/d/26.jpg" linkIconLarge="http://yunisov-tv.com/i/d/26.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/rusilluzion.m3u8">Русский иллюзион</item>
+		<item idMovie="58" linkIconSmall="http://yunisov-tv.com/i/14.jpg" linkIconLarge="http://yunisov-tv.com/i/14.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-15-20">Звезда</item>
+		<item idMovie="59" linkIconSmall="http://yunisov-tv.com/i/7.jpg" linkIconLarge="http://yunisov-tv.com/i/7.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-5-20">Россия К</item>
+		<item idMovie="60" linkIconSmall="http://yunisov-tv.com/i/d/5.jpg" linkIconLarge="http://yunisov-tv.com/i/d/5.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/domkino.m3u8">Дом кино</item>
+		<item idMovie="61" linkIconSmall="http://yunisov-tv.com/i/n/1.jpg" linkIconLarge="http://yunisov-tv.com/i/n/1.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-127-20">FOX</item>
+		<item idMovie="62" linkIconSmall="http://yunisov-tv.com/i/103.jpg" linkIconLarge="http://yunisov-tv.com/i/103.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/foxlife.m3u8">FOX Life</item>
+		<item idMovie="63" linkIconSmall="http://yunisov-tv.com/i/104.jpg" linkIconLarge="http://yunisov-tv.com/i/104.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/divauniversal.m3u8">DIVA Universal</item>
+		<item idMovie="64" linkIconSmall="http://yunisov-tv.com/i/autoru.jpg" linkIconLarge="http://yunisov-tv.com/i/autoru.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-48-20">Авто Плюс</item>
+		
+		<item idMovie="645" linkIconSmall="http://www.yunisov-tv.com/i/d/102.jpg" linkIconLarge="http://www.yunisov-tv.com/i/d/102.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-101-20">Драйв</item>
+             
+		<item idMovie="66" linkIconSmall="http://www.yunisov-tv.com/i/d/76.jpg" linkIconLarge="http://www.yunisov-tv.com/i/d/76.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-156-20">Cyber Game</item>
+   <item idMovie="65" linkIconSmall="http://www.yunisov-tv.com/i/d/71.jpg" linkIconLarge="http://www.yunisov-tv.com/i/d/71.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-91-20">Домашние животные</item>
+		<item idMovie="660" linkIconSmall="http://yunisov-tv.com/i/oh_i_rib.jpg" linkIconLarge="http://yunisov-tv.com/i/oh_i_rib.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/hunterandfish.m3u8">Охота и рыбалка</item>
+	</Group>
+
+	<Group Name="Кинотеатр" idGroup="8">
+		<item idMovie="67" linkIconSmall="http://yunisov-tv.com/i/y/1.jpg" linkIconLarge="http://yunisov-tv.com/i/y/1.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/zal1.m3u8">Зал 1</item>
+		<item idMovie="68" linkIconSmall="http://yunisov-tv.com/i/y/1.jpg" linkIconLarge="http://yunisov-tv.com/i/y/1.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/zal2.m3u8">Зал 2</item>
+		<item idMovie="69" linkIconSmall="http://yunisov-tv.com/i/y/1.jpg" linkIconLarge="http://yunisov-tv.com/i/y/1.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/zal3.m3u8">Зал 3</item>
+		<item idMovie="70" linkIconSmall="http://yunisov-tv.com/i/y/1.jpg" linkIconLarge="http://yunisov-tv.com/i/y/1.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/zal4.m3u8">Зал 4</item>
+		<item idMovie="71" linkIconSmall="http://yunisov-tv.com/i/y/1.jpg" linkIconLarge="http://yunisov-tv.com/i/y/1.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/zal5.m3u8">Зал 5</item>
+		<item idMovie="72" linkIconSmall="http://yunisov-tv.com/i/y/1.jpg" linkIconLarge="http://yunisov-tv.com/i/y/1.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/vip_1.m3u8">VIP 1</item>
+		<item idMovie="73" linkIconSmall="http://yunisov-tv.com/i/y/1.jpg" linkIconLarge="http://yunisov-tv.com/i/y/1.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/vip_2.m3u8">VIP 2</item>
+	</Group>
+
+	<Group Name="Украинские" idGroup="9">
+		<item idMovie="74" linkIconSmall="http://yunisov-tv.com/i/u/500.jpg" linkIconLarge="http://yunisov-tv.com/i/u/500.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/inter.m3u8">IНТЕР</item>
+		<item idMovie="75" linkIconSmall="http://yunisov-tv.com/i/u/501.jpg" linkIconLarge="http://yunisov-tv.com/i/u/501.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/1plus1.m3u8">1+1</item>
+		<item idMovie="76" linkIconSmall="http://yunisov-tv.com/i/u/502.jpg" linkIconLarge="http://yunisov-tv.com/i/u/502.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/2plus2.m3u8">2+2</item>
+		<item idMovie="77" linkIconSmall="http://yunisov-tv.com/i/u/503.jpg" linkIconLarge="http://yunisov-tv.com/i/u/503.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/stb.m3u8">СТБ</item>
+		<item idMovie="78" linkIconSmall="http://yunisov-tv.com/i/u/504.jpg" linkIconLarge="http://yunisov-tv.com/i/u/504.jpg" linkMovie="http://stream.ictv.ua/live/ictv.stream/playlist.m3u8">ICTV</item>
+                <item idMovie="82" linkIconSmall="http://yunisov-tv.com/i/u/4.jpg" linkIconLarge="http://yunisov-tv.com/i/u/4.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-109-20">5 канал</item>
+                <item idMovie="820" linkIconSmall="http://www.yunisov-tv.com/i/u/26.jpg" linkIconLarge="http://www.yunisov-tv.com/i/u/26.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/noviykanal.m3u8">Новый канал</item>
+		<item idMovie="79" linkIconSmall="http://yunisov-tv.com/i/u/7.jpg" linkIconLarge="http://yunisov-tv.com/i/u/7.jpg" linkMovie="http://yunisov-tv.com/europe/0-0-1-103-20">Ukrainian Music Box</item>
+		<item idMovie="80" linkIconSmall="http://yunisov-tv.com/i/u/xsport.jpg" linkIconLarge="http://yunisov-tv.com/i/u/xsport.jpg" linkMovie="http://www.yunisov-tv.com/streams/_enel_/montreux/xsport.m3u8">Хокей</item>
+	
+
+	</Group>
+       <Group Name="Зарубежные" idGroup="10">
+		<item idMovie="83" linkIconSmall="http://yunisov-tv.com/i/n/8.jpg" linkIconLarge="http://yunisov-tv.com/i/n/8.jpg" linkMovie="http:/yunisov-tv.com/europe/0-0-1-110-20">Russia Today</item>
+		<item idMovie="830" linkIconSmall="http://yunisov-tv.com/i/n/9.jpg" linkIconLarge="http://yunisov-tv.com/i/n/9.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-114-20">Deutsche Welle</item>
+		<item idMovie="831" linkIconSmall="http://yunisov-tv.com/i/n/11.jpg" linkIconLarge="http://yunisov-tv.com/i/n/11.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-115-20">CNN</item>
+		<item idMovie="832" linkIconSmall="http://www.yunisov-tv.com/i/n/12.jpg" linkIconLarge="http://www.yunisov-tv.com/i/n/12.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-117-20">France 24</item>
+		<item idMovie="833" linkIconSmall="http://www.yunisov-tv.com/i/n/13.jpg" linkIconLarge="http://www.yunisov-tv.com/i/n/13.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-118-20">BBC News</item>
+		<item idMovie="836" linkIconSmall="http://www.yunisov-tv.com/i/s/19.jpg" linkIconLarge="http://www.yunisov-tv.com/i/s/19.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-154-20">Bloomberg</item>
+		<item idMovie="835" linkIconSmall="http://www.yunisov-tv.com/i/k/18.jpg" linkIconLarge="http://www.yunisov-tv.com/i/k/18.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-149-20">NHK World TV</item>
+<item idMovie="834" linkIconSmall="http://www.yunisov-tv.com/i/h/19.jpg" linkIconLarge="http://www.yunisov-tv.com/i/h/19.jpg" linkMovie="http://www.yunisov-tv.com/europe/0-0-1-140-20">English Club</item>
+</Group>
+
+</plist>

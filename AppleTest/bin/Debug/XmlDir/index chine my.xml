@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+			<atv><body><listScrollerSplit id="com.sample.list-scroller-split"><menu><sections><menuSection><header><textDivider alignment="left"><title><![CDATA[Apple TV Liar]]></title></textDivider></header><items>
+			<oneLineMenuItem id="tabLeft1"><label><![CDATA[TV]]></label><preview><link>http://trailers.apple.com/appletv?channel=mainchannels</link></preview></oneLineMenuItem>
+			<oneLineMenuItem id="tabLeft2"><label><![CDATA[BasKino page 1]]></label><preview><link>http://trailers.apple.com/appleMoviesOnline?page=1</link></preview></oneLineMenuItem>
+			<oneLineMenuItem id="tabLeft3"><label><![CDATA[BasKino page 2]]></label><preview><link>http://trailers.apple.com/appleMoviesOnline?page=2</link></preview></oneLineMenuItem>
+			<oneLineMenuItem id="tabLeft4"><label><![CDATA[BasKino page 3]]></label><preview><link>http://trailers.apple.com/appleMoviesOnline?page=3</link></preview></oneLineMenuItem>
+			<oneLineMenuItem id="tabLeft5"><label><![CDATA[BasKino page 4]]></label><preview><link>http://trailers.apple.com/appleMoviesOnline?page=4</link></preview></oneLineMenuItem>
+			<oneLineMenuItem id="tabLeft6"><label><![CDATA[BasKino page 5]]></label><preview><link>http://trailers.apple.com/appleMoviesOnline?page=5</link></preview></oneLineMenuItem></items></menuSection></sections></menu></listScrollerSplit></body></atv>

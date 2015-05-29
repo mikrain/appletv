@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<atv>
+  <body>
+    <itemDetail id="com.apple.trailers">
+      <title>  Сумерки. Сага. Затмение </title>
+      <!-- <subtitle>Independent</subtitle> -->
+      <rating>NR</rating>
+      <summary>Описание фильма: Мы рады сообщить всем любителям фантастических фильмов с романтическим сюжетом, что вышел третья часть фильма «Сумерки. Сага. Затмение». И в данной части война между оборотня и вампирами обретет новый сюжет. 
+На этот раз американский город Сиэтл потрясло новое событие, в нем стали происходить загадочные убийства людей. И оказывается всему виной, рождение новых вампиров, которые еще очень злые и очень голодные. И возглавляет эту армию вампиров Виктория. А ее главная цель, это отомстить Эдварду за смерть ее любимого. И опять же в центре события оказывается обычная смертная девушка Белла. Вообщем, смотрите «Сумерки. Сага. Затмение» онлайн и вы не будете разочарованны от просмотра данной части.
+	</summary>
+      <image style="moviePoster">http://kino1080.com/uploads/images/poster_b/part1/sumerki-saga-zatmenie.jpg</image>
+      <defaultImage>resource://Poster.png</defaultImage>
+      <centerShelf>
+        <shelf id="centerShelf" columnCount="4" center="true">
+          <sections>
+            <shelfSection>
+              <items>
+                <actionButton id="playhd" onSelect="atv.loadURL('http://trailers.apple.com/Playmovie?url=http%3A%2F%2Fkino1080.com%2F%2Fuploads%2Ffilms%2F534.mp4')" onPlay="atv.loadURL('http://trailers.apple.com/Playmovie?url=http%3A%2F%2Fkino1080.com%2F%2Fuploads%2Ffilms%2F534.mp4')">
+                  <title>play hd</title>
+                  <image>resource://Play.png</image>
+                  <focusedImage>resource://PlayFocused.png</focusedImage>
+                </actionButton>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+      </centerShelf>
+    </itemDetail>
+  </body>
+</atv>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+  <body>
+    <videoPlayer id="com.sample.video-player">
+		<httpFileVideoAsset id="teaser11306">
+			<mediaURL>http://trailers.apple.com/405/us/media/trailers/independent/helloherman/helloherman-tlr_a720p.m4v</mediaURL>
+			<title>Hello Herman - Trailer</title>
+			<description>Set in the not so distant future in Any Town, USA, sixteen-year-old Herman Howards (Garrett Backstrom) makes a fateful decision. He enters his suburban school and kills thirty-nine students, two teachers, and a police officer. Just before his arrest he emails his idol, journalist Lax Morales (Norman Reedus). &quot;I want to tell my story on your show.&quot; Lax, haunted by his own fateful past and the loss of his love Isa Luz (Martha Higareda), now sits face to face with Herman. As he helps Herman to explore and understand his demons, Lax must finally face his own.</description>
+			<image>http://trailers.apple.com/trailers/independent/helloherman/images/thumbnail_11306.jpg</image>
+		</httpFileVideoAsset>
+	</videoPlayer>
+  </body>
+</atv>

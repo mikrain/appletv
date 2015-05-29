@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+	<head>
+		<script src="http://trailers.apple.com/appletv/us/js/main.js" />
+	</head>
+  <body>
+    <scroller id="com.sample.movie-shelf">
+      <items>
+	   <collectionDivider alignment="left" accessibilityLabel="Боря ТВ :)">
+          <title>Боря ТВ :)</title>
+        </collectionDivider>
+        <shelf id="shelf_1"  columnCount="4">
+          <sections>
+            <shelfSection>
+              <items>
+			  	 <moviePoster id="shelf_item_121" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=autoplus');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=autoplus');">
+                  <title>Auto Plus</title>
+                  <image>http://tv-films.me/uploads/posts/2013-11/1385394748_0.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+			 <moviePoster id="shelf_item_134" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=outdoor');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=outdoor');">
+                  <title>Outdoor channel</title>
+                  <image>http://nufletch.org/wpNuFletch/wp-content/uploads/EasyRotatorStorage/user-content/erc_72_1344277252/content/assets/outdoor_channel_Sld-0.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				 <moviePoster id="shelf_item_135" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=rusextreme');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=rusextreme');">
+                  <title>Russian Extreme</title>
+                  <image>https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFKgTjIDbxEevf0o6WaHtEao0G42hDXNaZ9I7QJtZ0SywVjRJj</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				 <moviePoster id="shelf_item_136" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=firstauto');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=firstauto');">
+                  <title>First Auto</title>
+                  <image>http://hq720.tv/upload/post/tv/pervyi_avtomobilnyi.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_137" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=oxota');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=oxota');">
+                  <title>OXOTA</title>
+                  <image>http://online-teve.com/wp-content/uploads/2013/08/ohota.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+		<collectionDivider alignment="left" accessibilityLabel="TV">
+          <title>Common</title>
+        </collectionDivider>
+        <shelf id="shelf_2"  columnCount="3">
+          <sections>
+            <shelfSection>
+              <items>
+			  <moviePoster id="shelf_item_111" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=ort');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=foodnetwork');">
+                  <title>OPT</title>
+                  <image>http://img1.1tv.ru/imgsize640x360/PR20110128165734.JPG</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				 <moviePoster id="shelf_item_112" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=e');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=e');">
+                  <title>E</title>
+                  <image>http://kardashianasamediacommodidty.files.wordpress.com/2011/11/e-entertainment-television-logo.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>  
+				<moviePoster id="shelf_item_119" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=stv');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=stv');">
+                  <title>Stv</title>
+                  <image>http://www.wkrb13.com/logos/stv-group-plc-logo.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster> 
+				<moviePoster id="shelf_item_120" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=u');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=u');">
+                  <title>U</title>
+                  <image>http://kabantv.tv/uploads/posts/2012-10/1351426353_you-tv-online.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster> 
+				<moviePoster id="shelf_item_112" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=vtv');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=vtv');">
+                  <title>BTB</title>
+                  <image>http://img4.wikia.nocookie.net/__cb20120429194726/tvpedia/ru/images/2/27/%D0%92%D0%A2%D0%92.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster> 
+				 <moviePoster id="shelf_item_111" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=history');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=history');">
+                  <title>history</title>
+                  <image>http://dariusaryadigs.com/wp-content/uploads/2012/11/history_channel_logo.jpeg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				 <moviePoster id="shelf_item_151" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=discoveryhd');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=discoveryhd');">
+                  <title>discoveryhd</title>
+                  <image>http://images.bwwstatic.com/columnpic6/945A4BCE-CE65-E74C-66DFF05055F04FE1.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				 <moviePoster id="shelf_item_152" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=disid');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=disid');">
+                  <title>discovery id</title>
+                  <image>http://upload.wikimedia.org/wikipedia/en/e/ef/Discovery_ID.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_111" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=natgeo');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=tnt');">
+                  <title>National Geographic</title>
+                  <image>https://d22r54gnmuhwmk.cloudfront.net/photos/5/tj/sd/RStjSdnanIFgQyS-556x313-noPad.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+			<moviePoster id="shelf_item_120" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=sts');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=sts');">
+                  <title>CTC</title>
+                  <image>http://images.wikia.com/tvpedia/ru/images/archive/b/b4/20120621182526!%D0%A1%D0%A2%D0%A1_3.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				 <moviePoster id="shelf_item_111" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=tnt');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=tnt');">
+                  <title>THT</title>
+                  <image>http://sat-krim.com/_dr/8/805.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster> 
+				<moviePoster id="shelf_item_111" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=comedyhd');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=comedyhd');">
+                  <title>TV 1000 Comedy</title>
+                  <image>http://iptv.ho.ua/images/channelua/vs%20(27).png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+		 <collectionDivider alignment="left" accessibilityLabel="Cartoons">
+          <title>Movies</title>
+        </collectionDivider>
+        <shelf id="shelf_2"  columnCount="3">
+          <sections>
+            <shelfSection>
+              <items>
+			  <moviePoster id="shelf_item_114" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=illusion');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=illusion');">
+                  <title>illusion</title>
+                  <image>http://www.telezri.ru/pic/illyuzion.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+				<moviePoster id="shelf_item_119" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=unichannel');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=unichannel');">
+                  <title>universal channel</title>
+                  <image>http://upload.wikimedia.org/wikipedia/commons/2/22/Universal_Channel_2013.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_118" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=goodwin');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=goodwin');">
+                  <title>goodwin</title>
+                  <image>http://torrent-tv.ru/uploads/j0rd9TvgCTcCRB8nJ12Ke1mxZ7geKS.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_114" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=fox');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=fox');">
+                  <title>fox</title>
+                  <image>http://www.hollywoodreporter.com/sites/default/files/imagecache/thumbnail_570x321/2011/10/fox_logo_a_l.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_114" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=eurokino');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=eurokino');">
+                  <title>eurokino</title>
+                  <image>http://satfly.ru/news2011/eurokino.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+			 
+				 <moviePoster id="shelf_item_111" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=go');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=go');">
+                  <title>go</title>
+                  <image>http://upload.wikimedia.org/wikipedia/commons/5/5a/GO!-logo.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster> 
+				<moviePoster id="shelf_item_123" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=sonysci');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=sonysci');">
+                  <title>sonysci</title>
+                  <image>http://upload.wikimedia.org/wikipedia/ru/1/1b/Sony-Sci-Fi.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+					<moviePoster id="shelf_item_116" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=foxlife');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=foxlife');">
+                  <title>fox life</title>
+                  <image>http://elitedecosat.net/wp-content/uploads/2014/01/logo-foxlife-alta_01.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+		 <collectionDivider alignment="left" accessibilityLabel="Cartoons">
+          <title>Cartoons</title>
+        </collectionDivider>
+        <shelf id="shelf_2"  columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+			  <moviePoster id="shelf_item_111" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=cartoon');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=cartoon');">
+                  <title>cartoon network</title>
+                  <image>http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cartoon_Network_2004_logo.svg/744px-Cartoon_Network_2004_logo.svg.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				 <moviePoster id="shelf_item_111" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=disney');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=disney');">
+                  <title>disney</title>
+                  <image>http://static.tumblr.com/fafdb8cf93127d4a87029a038a1e7f94/auda28e/gMHmtuk1s/tumblr_static_disney-logo.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_311" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=neckel');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=neckel');">
+                  <title>nickelodeon</title>
+                  <image>http://mtvbase-com.scenic-q.mtvi.com/gsp/Music_Entertainment/Migration-News/kids-channel-nickelodeon-challenges-school-kids-to-get-colourful-1310.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_314" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=nickjr');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=nickjr');">
+                  <title>nickjr</title>
+                  <image>http://dearbornlibrary.org/wordpress/wp-content/uploads/EasyRotatorStorage/user-content/erc_94_1375728101/content/assets/nick-jr-0.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_312" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=multimania');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=multimania');">
+                  <title>multimania</title>
+                  <image>http://oreh.tv/foto/multimania%20online.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_313" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=plusplus');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=plusplus');">
+                  <title>plusplus</title>
+                  <image>http://digital-tv.com.ua/uploads/dsn/b0/60/001/original_logo___02_01.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+				</items>
+    </scroller>
+  </body>
+</atv>

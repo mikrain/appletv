@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+	<head>
+		<script src="http://trailers.apple.com/appletv/us/js/main.js" />
+	</head>
+  <body>
+    <scroller id="com.sample.movie-shelf">
+      <items>
+
+									<collectionDivider alignment="left" accessibilityLabel="Русские программы">
+					<title>Русские программы</title>
+				</collectionDivider>
+		        <shelf id="shelf_2"  columnCount="4">
+		          <sections>
+		            <shelfSection>
+		
+		<items>
+					  
+				 
+				
+				 
+				
+				
+				
+			
+			<moviePoster id="shelf_item_341" alwaysShowTitles="true" accessibilityLabel="КОМЕДИИ" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=komedii');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=tnt');">
+                  <title>КОМЕДИИ</title>
+                  <image>http://oreh.tv/foto/komedija%20tv%20online.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+				
+				
+				
+				 <moviePoster id="shelf_item_333" alwaysShowTitles="true" accessibilityLabel="5 Канал" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=5kanal');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=tnt');">
+                  <title>5 Канал</title>
+                  <image>http://kyzyl-online.ru/images/afisha/medium/event_505/581394f92917317ff41cca28a7a59e4a.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+				 <moviePoster id="shelf_item_33" alwaysShowTitles="true" accessibilityLabel="АМЕДИА" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=amedia');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=tnt');">
+                  <title>АМЕДИА</title>
+                  <image>http://smartpr.ru/files/1011396/LOGO-AMEDIA.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+			
+				 
+				
+				
+				
+				 <moviePoster id="shelf_item_32" alwaysShowTitles="true" accessibilityLabel="MGM" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=mgm');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=tnt');">
+                  <title>MGM</title>
+                  <image>http://horrorzone.ru/uploads/2-photos-and-pictures/persons-photos/m/mgm/mgm00.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+				 <moviePoster id="shelf_item_37" alwaysShowTitles="true" accessibilityLabel="ROSSIA 1" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=rossia1');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=tnt');">
+                  <title>ROSSIA 1</title>
+                  <image>http://www.tvwatch.ru/images/stories/rossia1.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+             
+<moviePoster id="shelf_item_15" alwaysShowTitles="true" accessibilityLabel="Иллузион Плюс" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=illusionplus');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=illusionplus');">
+                  <title>Иллузион Плюс</title>
+                  <image>http://medialan.ru/files/images/illusion_plus.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_5" alwaysShowTitles="true" accessibilityLabel="СТС" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=sts');"  onPlay="atv.loadURL('http://trailers.apple.com/playSts');">
+                  <title>СТС</title>
+                  <image>http://serialguru.ru/blog/wp-content/uploads/2013/03/ctcnovost.jpeg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_1" alwaysShowTitles="true" accessibilityLabel="ОРТ" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=ort');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=ort');">
+                  <title>ОРТ</title>
+                  <image>http://cineworld-cinema.org/_ld/0/49029428.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_2" alwaysShowTitles="true" accessibilityLabel="НТВ" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=ntv');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=ntv');">
+                  <title>НТВ</title>
+                  <image>http://www.sporttvnews.ru/news_photo/ntv.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+   
+								              </items>
+		            </shelfSection>
+		          </sections>
+		        </shelf>
+ <collectionDivider alignment="left" accessibilityLabel="Зарубежные  программы">
+          <title>каналы</title>
+        </collectionDivider>
+        <shelf id="shelf_2"  columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+			 
+				   <moviePoster id="shelf_item_21" accessibilityLabel="Феникс тв" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=feniksplus');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=feniksplus');">
+                  <title>Феникс тв</title>
+                  <image>http://tvnetnews.ru/_ph/1/2/808783835.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+				<moviePoster id="shelf_item_51" alwaysShowTitles="true" accessibilityLabel="HCT" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=hct');"  onPlay="atv.loadURL('http://trailers.apple.com/playSts');">
+                  <title>HCT</title>
+                  <image>http://zaortv.ru/wp-content/uploads/HCT.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+				 <moviePoster id="shelf_item_3" alwaysShowTitles="true" accessibilityLabel="ТНТ" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=tnt');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=tnt');">
+                  <title>ТНТ</title>
+                  <image>http://mradio.in/uploads/posts/2011-09/1316771274_tnt.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+				
+			   <moviePoster id="shelf_item_4" alwaysShowTitles="true" accessibilityLabel="ПЕРЕЦ" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=perec');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=perec');">
+                  <title>ПЕРЕЦ</title>
+                  <image>http://tv-zona.net/uploads/posts/2012-09/1348181595_logo_perets.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+          
+			  <moviePoster id="shelf_item_511" alwaysShowTitles="true" accessibilityLabel="ТВ 3" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=tv3');"  onPlay="atv.loadURL('http://trailers.apple.com/playSts');">
+                  <title>ТВ 3</title>
+                  <image>http://static.debilizator.tv/static/logos/tv-3.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+				
+				 <moviePoster id="shelf_item_321" alwaysShowTitles="true" accessibilityLabel="Россия 24" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=rossia24');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=tnt');">
+                  <title>Россия 24</title>
+                  <image>http://tornaobox.org/images/tv/tv-humor/russia-tv-24.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+			  
+			  		 <moviePoster id="shelf_item_11" alwaysShowTitles ="true" accessibilityLabel="ТЕХНО" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=techno');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=tnt');">
+                  <title>ТЕХНО</title>
+                  <image>http://www.yourstv.ru/_pu/0/30698985.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+			  
+			  
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+
+       
+				</items>
+    </scroller>
+  </body>
+</atv>

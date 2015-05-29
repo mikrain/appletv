@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+  <body>
+    <itemDetail id="com.apple.trailers">
+      <title>Channel</title>
+      <!-- <subtitle>Independent</subtitle> -->
+      <!-- <rating>NR</rating> -->
+      <summary></summary>
+      <image style="moviePoster"></image>
+      <defaultImage>resource://Poster.png</defaultImage>    
+      <bottomShelf>
+        <shelf id="centerShelf" columnCount="1" center="false">
+          <sections>
+            <shelfSection>
+              <items>
+					                <actionButton id="play" onSelect="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/helloherman/videos/trailer-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/studios/independent/helloherman/videos/trailer-hd.xml');">
+	                  <title>Play</title>
+	                  <image>resource://Play.png</image>
+	                  <focusedImage>resource://PlayFocused.png</focusedImage>
+					  <badge>HD</badge>	                </actionButton>
+								              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+      </bottomShelf>
+     
+    </itemDetail>
+  </body>
+</atv>

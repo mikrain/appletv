@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atv>
+  <body>
+    <search id="com.trailers.search">
+      <header>
+        <simpleHeader accessibilityLabel="Search Trailers">
+          <title>Search Movie</title>
+        </simpleHeader>
+      </header>
+      <baseURL>http://trailers.apple.com/searchMovieBox?q=</baseURL>
+	  <!-- <baseURL>http://trailers.apple.com/trailers/global/atv/search.php?q=</baseURL> -->
+    </search>
+  </body>
+</atv>

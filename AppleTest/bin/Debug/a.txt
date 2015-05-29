@@ -1,0 +1,3611 @@
+<html>
+<head>
+<TITLE>Телепрограмма на неделю НТВ-Мир : </TITLE>
+<meta http-equiv="content-language" content="ru">
+<meta name="Description" content="телепрограмма всех каналов с анонсами НТВ-Мир : ">
+<meta name="KeyWords" content=" НТВ-Мир : ">
+<META content="7 days" name=revisit-after>
+<META content="INDEX, FOLLOW" name=robots>
+<link rel="stylesheet" type="text/css" href="images/style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
+
+        <script language=JavaScript>
+function CheckFrmSMSearch() {
+	var error = 0;
+	var validlenght = "^.{2,}$";
+	if ((FrmSmSearch.search_text.value=="" || FrmSmSearch.search_text.value=="Поиск по телепрограмме") && error==0) { alert ('Введите строку поиска.'); error = 1; }
+	if (FrmSmSearch.search_text.value.match(validlenght)==null && error==0) { alert ('Строка поиска слишком мала.'); error = 1; }
+	if (error==0) {
+		FrmSmSearch.var_search.value = "search";
+		FrmSmSearch.submit ();
+	}
+}
+
+function getBrowserInfo() {
+ var t,v = undefined;
+ if (window.opera) t = 'Opera';
+ else if (document.all) {
+  t = 'IE';
+  var nv = navigator.appVersion;
+  var s = nv.indexOf('MSIE')+5;
+  v = nv.substring(s,s+1);
+ }
+ else if (navigator.appName) t = 'Netscape';
+ return {type:t,version:v};
+}
+
+function bookmark(a){
+ var url = window.document.location;
+ var title = window.document.title;
+ var b = getBrowserInfo();
+ if (b.type == 'IE' && 7 > b.version && b.version >= 4) window.external.AddFavorite(url,title);
+ else if (b.type == 'Opera') {
+  a.href = url;
+  a.rel = "sidebar";
+  a.title = url+','+title;
+  return true;
+ }
+ else if (b.type == "Netscape") window.sidebar.addPanel(title,url,"");
+ else alert("Нажмите CTRL-D, чтобы добавить страницу в закладки.");
+ return false;
+}
+  </script>
+
+<table border="0" width="100%" id="table1" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="76" bgcolor="#0066FF" width="220" style="border-bottom: 5px double #C6E2FF"><img border="0" src="images/logo.jpg" width="160" height="79"></td>
+		<td height="76" bgcolor="#0099FF" style="border-bottom: 5px double #C6E2FF" align="left" valign="top">
+		<table border="0" width="100%" id="table3" cellspacing="0" cellpadding="0" height="88">
+			<tr>
+				<td bgcolor="#0066FF" width="243" height="26" valign="top">
+				<table border="0" width="100%" id="table7" height="24">
+					<tr>
+						<td bgcolor="#0000FF" nowrap>
+						<p align="left" style="margin-left: 10px">
+				<a href="smi.htm"><font face="Tahoma" color="#FFFFFF">
+				<span style="font-size: 9pt; font-weight: 700; ">
+						телепрограмма для газет, сми</span></font></a></td>
+					</tr>
+				</table>
+	      </td>
+				<td width="146px" bgcolor="#0066FF" rowspan="3" valign="top">
+				<table width="146"  border="0" id="table6" height="85">
+					<tr>
+						<td width="146" height="21" bgcolor="#0000FF">
+						<p align="center"><font face="Tahoma" color="#00FFFF">
+						<span style="font-size: 9pt; font-weight: 700">новые
+						телеканалы</span></font></td>
+					</tr>
+					<tr>
+						<td  style="border: 1px solid #0000FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px;" id="new_chan" ><p style="margin-top: 0px; margin-bottom: 0px"><span style="font-size: x-small">&bull;&nbsp;&nbsp;<a href="http://www.star.poltava.ua/index2.php?set_channel=%D2%C2-1000+Comedy+HD">TV1000 Comedy HD</a></span></p>
+<p style="margin-top: 0px; margin-bottom: 0px"><span style="font-size: x-small">&bull;&nbsp;&nbsp;<a href="http://www.star.poltava.ua/index2.php?set_channel=%D2%C2-1000+Megahit+HD">TV1000 Megahit HD</a></span></p>
+<p style="margin-top: 0px; margin-bottom: 0px"><span style="font-size: x-small">&bull;&nbsp;&nbsp;<a href="http://www.star.poltava.ua/index2.php?set_channel=%D2%C2-1000+Premium+HD">TV1000 Premium HD</a></span></p>
+<p style="margin-top: 0px; margin-bottom: 0px"><span style="font-size: x-small">&bull;&nbsp;&nbsp;<a href="http://www.star.poltava.ua/index2.php?set_channel=%CD%CB%CE-%D2%C2">НЛО-ТВ</a></span></p></td>
+					</tr>
+				</table></td>
+              <td width="150px" bgcolor="#0066FF" rowspan="3" valign="top">
+				<table width="110px" border="0" id="table6" height="85">
+					<tr>
+						<td  height="21" bgcolor="#0000FF">
+						<p align="center"><font face="Tahoma" color="#00FFFF">
+						<span style="font-size: 9pt; font-weight: 700; padding:5px;">новости сайта</span></font></td>
+
+					</tr>
+					<tr>
+						<td  style="border: 1px solid #0000FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px;" id="new_chan" ><p style="text-align: center"><a href="http://www.star.poltava.ua/index.php?id=135">IPTV Приставка<br />
+предлагаем для<br />
+кабельных <br />
+операторов</a></p></td>
+					</tr>
+				</table>
+			  </td>
+			  <td valign="middle" bgcolor="#0066FF" rowspan="3">
+							  <script type="text/javascript"><!--
+							  google_ad_client = "pub-4127624421011099";
+							  /* 234x60, створено 03.10.11 */
+							  google_ad_slot = "7109042582";
+							  google_ad_width = 234;
+							  google_ad_height = 60;
+							  //-->
+							  </script>
+							  <script type="text/javascript"
+							  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">;
+							  </script>
+							</td>
+			  				<td width="487" rowspan="3" bgcolor="#0066FF">
+				<div align="center">
+					<table border="0" width="95%" id="table4" bordercolor="#FFFFFF" cellspacing="0" cellpadding="0" height="42">
+						<tr>
+							<td bgcolor="#0066FF">
+							<div align="right" >
+                            <form style="margin:0; padding:0;" name="authChoice" action="index2.php?id=2" method="post">
+								<table border="0" width="205" id="table5" cellspacing="0" cellpadding="0">
+									<tr>
+										<td width="205"  height="21" colspan="3" bgcolor="#0000FF">
+										<p align="center"><b>
+										<font face="Tahoma" size="2" color="#FFFFFF">
+										<span lang="ru">Авторизация</span></font></b></td>
+									</tr>
+									<tr>
+										<td width="55" height="40" valign="top">
+										<font face="Tahoma" size="2" color="#FFFFFF">
+										&#1083;&#1086;&#1075;&#1080;&#1085;:</font><p style="margin-top: 7px; margin-bottom: 0">
+										<font face="Tahoma" size="2" color="#FFFFFF">
+										&#1087;&#1072;&#1088;&#1086;&#1083;&#1100;:</font></td>
+										<td width="83" height="40" valign="top">
+										<font face="Tahoma" size="2">
+                                        <input type="hidden" name="auth_id">
+										<input  size="10" name="inlogin" style="float: left; border: 1px solid #0000FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><input type="password" size="10" name="inpassword" style="border: 1px solid #0000FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px; float:left"></font></td>
+										<td width="64" height="40" valign="middle">
+										<p align="center"><b>
+										<font face="Tahoma" size="2" color="#FFFFFF">
+										<span style="cursor:pointer" onClick="if(document.authChoice.inlogin.value!='' && document.authChoice.inpassword.value!='') document.authChoice.submit (); ">&#1074;&#1093;&#1086;&#1076;</span></font></b></td>
+									</tr>									<tr>
+										<td width="205" colspan="3">
+										<font face="Tahoma" size="2" color="#00FFFF">
+										<a href="index2.php?id=129"><font face="Tahoma" size="2" color="#00FFFF">
+• Регистрация</font></a> &nbsp; <a href="index2.php?id=130"><font face="Tahoma" size="2" color="#00FFFF">• Забыли пароль?</font></a></font></td>
+									</tr>
+								</table>
+                                </form>
+							</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="243" valign="bottom" bgcolor="#0066FF" height="16">
+				<p style="margin-left: 10px">
+				<font size="2" face="Tahoma" color="#FFFFFF">
+    13 июня 2013 22:39 </font></td>
+				</tr>
+			<tr>
+				<td width="243" bgcolor="#0066FF"><map name="FPMap0">
+				<area href="kontakt.html" shape="rect" coords="10, 4, 36, 23" alt="Контакты">
+				<area alt="Гостевая книга" href="index2.php?id=124" shape="rect" coords="42, 4, 69, 22">
+                <area alt="В избранное"  href="javascript:void(0);" onClick="return bookmark(this);" shape="rect" coords="107,3,137,23">
+                <area alt="Сделать стартовой"   href="#" shape="rect" coords="140,3,170,23">
+				</map>
+<img border="0" src="images/kontakt.jpg" width="177" height="26" usemap="#FPMap0"></td>
+				</tr>
+		</table>		</td>
+	</tr></table>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+		<td width="258" bgcolor="#C6E2FF" style="border-bottom: 2px solid #3399FF;" colspan="3">&nbsp;</td>
+		<td bgcolor="#C6E2FF" colspan="5" valign="middle" style="border-bottom: 2px solid #3399FF; padding-bottom:4px " >
+		<p align="center" style="margin-left: 10px">
+<a id="main_menu" title="Телепрограмма всех каналов. Анонсы. Новости кино." href="index2.php?id=2">ТЕЛЕПРОГРАММА</a> |
+<a id="main_menu" href="index2.php?id=55">ПОЛТАВА</a> |
+<a id="main_menu" href="index2.php?id=60">ССЫЛКИ</a> |
+<a id="main_menu" href="index2.php?id=78">ПОГОДА</a> |
+<a id="main_menu" href="index2.php?id=95">ИНТЕРЕСНОСТИ</a> |
+<a id="main_menu" href="index2.php?id=96">JTV</a> |
+<a id="main_menu" href="http://www.star.poltava.ua/Inna/Glavin.htm">У ИННЫ</a></p></td>
+		<td bgcolor="#C6E2FF" valign="middle" style="border-bottom: 2px solid #3399FF; " >&nbsp;		</td>
+		<td bgcolor="#C6E2FF" width="258" valign="middle" style="border-bottom: 2px solid #3399FF;" >&nbsp;</td>
+	</tr>
+	<tr>
+		<td  colspan="3" align="center" valign="top" bgcolor="#EAF4FF" style="border-bottom-style: none; border-bottom-width: medium">
+		 <div style="width:189px; height:70px; background-color:#C6E2FF; font-size: 9pt">
+    <div id='week_cur' style="padding:10px">ТЕЛЕПРОГРАММА НА НЕДЕЛЮ</div>
+	      часовой пояс
+		  <select size="1" name="time_zone" style=" font-weight: bold; font-size:9pt" onChange="window.location = 'index2.php?id=2&set_time_zone='+this.value+'&set_channel=%CD%D2%C2-%CC%E8%F0';">
+          <option  value="-12">GMT -10</option>
+          <option  value="-11">GMT -9</option>
+          <option  value="-10">GMT -8</option>
+          <option  value="-9">GMT -7</option>
+          <option  value="-8">GMT -6</option>
+          <option  value="-7">GMT -5</option>
+          <option  value="-6">GMT -4</option>
+          <option  value="-5">GMT -3</option>
+          <option  value="-4">GMT -2</option>
+          <option  value="-3">GMT -1</option>
+		    <option  value="-2">GMT +0</option>
+		    <option  value="-1">GMT +1</option>
+            <option selected value="0">GMT +2</option>
+		    <option  value="1">GMT +3</option>
+		    <option  value="2">GMT +4</option>
+		    <option  value="3">GMT +5</option>
+		    <option  value="4">GMT +6</option>
+            <option  value="5">GMT +7</option>
+		    <option  value="6">GMT +8</option>
+		    <option  value="7">GMT +9</option>
+		    <option  value="8">GMT +10</option>
+	      </select>	 </div>
+          <span style="font-size: 8pt; color:#CC0000">на русском языке</span>
+<div id='right_div'>
+<span style="font-size: 9pt"><b>телепрограмма</b></span><br>
+<a id='right_menu' href="index2.php?id=2&set_lang=ru">на русском</a> | <a id='right_menu' href="index2.php?id=2&set_lang=ua">на украинском</a><br>
+<span style="font-size: 9pt"><b>анонсы</b></span><br>
+<a id='right_menu' href="index2.php?id=54&set_lang=ru">на русском</a> | <a id='right_menu' href="index2.php?id=54&set_lang=ua">на украинском</a>
+   </div> <br>
+<div id='right_div'>
+<a id='right_menu' href="index2.php?id=98">cейчас на ТВ</a><br>
+<a id='right_menu' href="index2.php?id=99">подобрать на день</a><br>
+<a id="right_menu" href="index2.php?id=127">текстовый вариант</a> <br>
+<a id="right_menu" href="index2.php?id=129">свой выбор</a><br>
+<a id="right_menu" href="index2.php?id=132">скачать телепрограмму</a><br>
+</div>
+<!----  NOW FILMS ----------------------------->
+<div style="background-color:#C6E2FF; width:100%; margin-top:20px; font-size:9pt; font-weight:bold; padding-top:1px; padding-bottom:1px">сейчас в эфире: фильмы</div>  <table width="100%" id='text' style="margin-left:4px; margin-top:7px">
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=8+%EA%E0%ED%E0%EB+%28%D0%EE%F1%F1%E8%FF%29">8 канал (Россия)</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Т/с &quot;Тайны разума&quot; 17 с. (16+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=Enter-%F4%E8%EB%FC%EC">Enter-фильм</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Х/ф &quot;Нет неизвестных солдат&quot;</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:55</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=ICTV">ICTV</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Т/с &quot;Прокурорская проверка&quot;</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:30</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%C4%EE%EC+%CA%E8%ED%EE">Дом Кино</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Комедия &quot;Перекрёсток&quot; 1998 г. (12+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:30</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%C7%E2%E5%E7%E4%E0">Звезда</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Т/с &quot;Блокада&quot; 1, 12 ч.</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">20:30</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%C8%ED%F2%E5%F0">Интер</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Т/с &quot;Улицы разбитых фонарей 13&quot;</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:25</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CA%E0%ED%E0%EB+%222%2B2%22">Канал "2+2"</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Х/ф &quot;Нападение на остров Дьявола-2: Гора Смерти&quot; (2)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:50</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CA%E0%ED%E0%EB+%22%D3%EA%F0%E0%E8%ED%E0%22">Канал "Украина"</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Т/с &quot;След&quot; (1)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:30</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CA%E8%ED%EE+%CF%EB%FE%F1">Кино Плюс</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Драма &quot;Отель &quot;Пацифик&quot; (Польша) 1975 г. (16+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:05</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CA%E8%ED%EE%EA%EB%F3%E1">Киноклуб</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Боевик &quot;Каскадёрша&quot; (Гонконг) 1996 г. (16+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:20</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CA%E8%ED%EE%F0%E5%E9%F1+1">Кинорейс 1</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Биографический &quot;Легенда №17&quot; (Россия) 2013 г.</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CA%E8%ED%EE%F0%E5%E9%F1+2">Кинорейс 2</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Боевик &quot;Паркер&quot; (США) 2013 г.</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:40</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CA%E8%ED%EE%F0%E5%E9%F1+3">Кинорейс 3</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Триллер &quot;Мама&quot; (Испания-Канада) 2013 г.</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:20</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CA%E8%ED%EE%F0%E5%E9%F1+4">Кинорейс 4</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Драма &quot;Место под соснами&quot; (США) 2012 г.</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:40</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CA%E8%ED%EE%F0%E5%E9%F1+5">Кинорейс 5</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Комедия &quot;Реальные парни&quot; (США) 2012 г.</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:40</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CA%E8%ED%EE%F5%E8%F2">Кинохит</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Комедия &quot;Большой Лебовски&quot; (США-Великобритания) 1998 г. (18+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CC%ED%EE%E3%EE+%D2%C2">Много ТВ</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Детектив &quot;Кубала, Морено и Мончон&quot;. 3 с. &quot;Модель поведения&quot; (18+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">20:30</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CD%E0%F8%E5+%EA%E8%ED%EE">Наше кино</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Х/ф &quot;Бедная Маша&quot; 2 с. 1981 г. (6+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CD%E0%F8%E5+%EB%FE%E1%E8%EC%EE%E5+%EA%E8%ED%EE">Наше любимое кино</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Х/ф &quot;Макаров&quot; 1993 г. (18+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:15</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CD%E0%F8%E5+%ED%EE%E2%EE%E5+%EA%E8%ED%EE">Наше новое кино</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Мелодрама &quot;Дикарка&quot; (Россия) 2001 г. (12+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CD%EE%E2%FB%E9+%EA%E0%ED%E0%EB">Новый канал</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Т/с &quot;Светофор&quot;</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:35</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CD%D2%C2">НТВ</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Т/с &quot;Крапленый&quot; (16+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">20:30</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB">Первый канал</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Х/ф &quot;Форсаж-5&quot; (16+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:10</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CF%E5%F2%E5%F0%E1%F3%F0%E3+-+5+%EA%E0%ED%E0%EB">Петербург - 5 канал</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Комедия &quot;Женатый холостяк&quot; (12+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CF%F0%E5%EC%FC%E5%F0%E0">Премьера</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Мелодрама &quot;Хорошие поступки&quot; (США) 2012 г. (16+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">20:30</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D1%D2%D1">СТС</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Х/ф &quot;Викинги против пришельцев&quot; (США-Германия) 2008 г. (16+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D2%C2-1000">ТВ-1000</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Триллер &quot;В чужом ряду&quot; (США) 2002 г. (12+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:55</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D2%C2-1000+Action">ТВ-1000 Action</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Боевик &quot;Блэйд 2&quot; (США-Германия) 2002 г.</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:40</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D2%C2-1000+%D0%F3%F1%F1%EA%EE%E5+%EA%E8%ED%EE">ТВ-1000 Русское кино</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Комедия &quot;Эйфория&quot; (Россия) 2006 г. (16+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:55</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D2%C2-21">ТВ-21</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Триллер &quot;Джорджино&quot; (Франция-США) 1994 г. (16+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D2%C23">ТВ3</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Х/ф &quot;Организм&quot; (США) 2008 г. (16+)</td></tr>
+</table>
+<!----  NOW SPORT ---------------->
+<div style="background-color:#C6E2FF; width:100%; margin-top:20px; font-size:9pt; font-weight:bold; padding-top:1px; padding-bottom:1px">сейчас в эфире: спорт</div><table width="100%" id='text' style="margin-left:4px; margin-top:7px">
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=ESPN+classic">ESPN classic</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">30 фильмов о спорте и спортсменах</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:30</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=Eurosport">Eurosport</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Боевые искусства. Бойцовский клуб (16+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:30</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=Eurosport+2">Eurosport 2</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Про рестлинг. Винтажная коллекция. США</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">20:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=Viasat+Sport">Viasat Sport</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Бейсбол. MLB. Нью-Йорк Метс-Сент-Луис Кардиналз (6+)</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">20:40</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CD%E0%F8+%D4%F3%F2%E1%EE%EB">Наш Футбол</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Чемпионат России по футболу сезона 2012 г. / 2013 г. 11-й тур. &quot;Динамо&quot;-&quot;Анжи&quot;</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%CD%D2%C2%2B+%D4%F3%F2%E1%EE%EB+2">НТВ+ Футбол 2</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">&quot;Хроника прошедшего сезона&quot;. Чемпионат Италии. &quot;Фиорентина&quot;-&quot;Ювентус&quot;</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:05</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D0%EE%F1%F1%E8%FF+2">Россия 2</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">&quot;Полигон&quot;</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D1%EF%EE%F0%F2">Спорт</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Гольф. &quot;US Open&quot;. Прямая трансляция</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:00</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D1%EF%EE%F0%F2+1">Спорт 1</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Гольф. Major US Open. Первый день. LIVE</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">20:55</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D1%EF%EE%F0%F2+1+%28%D0%EE%F1%F1%E8%FF%29">Спорт 1 (Россия)</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Футбол. Чемпионат Европы. Молодежные сборные. Испания-Нидерланды. Трансляция из Израиля</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">20:55</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D1%EF%EE%F0%F2+2">Спорт 2</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Футбол. Англия. nPower Championship. Сезон 2012 г.-2013 г. Блэкпул-Брайтон</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">20:50</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D1%EF%EE%F0%F2+%CF%EB%FE%F1">Спорт Плюс</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Легкая атлетика. Diamond League в Норвегии. Прямая трансляция</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">22:20</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D1%EF%EE%F0%F2+%D1%EE%FE%E7">Спорт Союз</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Теннис. &quot;Head to head: Р. Федерер-Н. Джокович&quot;. Турнир &quot;Masters&quot; в Монреале. 2007 г. Финал</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">20:55</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D4%F3%F2%E1%EE%EB">Футбол</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">&quot;Хроника прошедшего сезона&quot;. Лига чемпионов. &quot;Челси&quot;-&quot;Ювентус&quot;</td></tr>
+<tr><td valign="top" id='week_cur' style="font-weight:bold; font-size:8pt">21:30</td><td> <b><a style="font-size: 8pt; font-weight: 700" href="index2.php?current_week&on_day=3&set_channel=%D4%F3%F2%E1%EE%EB%2B">Футбол+</a></b></td></tr>
+<tr><td></td><td style="font-size: 8pt">Россия-Германия. ЕВРО 2013 г. (U21)</td></tr>
+</table>
+
+      </td>
+		<td >&nbsp;</td>
+		<td width="100%" colspan="4" valign="top" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 1px solid #3399FF">
+		  <div id="text">
+		    		    		    		    		    <script language="javascript">
+var d = document;
+var offsetfromcursorY=15 // y offset of tooltip
+var ie=d.all && !window.opera;
+var ns6=d.getElementById && !d.all;
+var tipobj,op;
+
+function tooltip(el,tipobj1) {
+tipobj=tipobj1;	
+op = 0.1;   
+tipobj.style.opacity = op; 
+tipobj.style.visibility="visible";
+el.onmousemove=positiontip;
+appear();
+}
+ 
+function hide_info(el) {
+tipobj.style.visibility='hidden';
+el.onmousemove='';
+}
+
+function ietruebody(){
+return (d.compatMode && d.compatMode!="BackCompat")? d.documentElement : d.body
+}
+
+function positiontip(e) {
+var curX=(ns6)?e.pageX : event.clientX+ietruebody().scrollLeft;
+var curY=(ns6)?e.pageY : event.clientY+ietruebody().scrollTop;
+var winwidth=ie? ietruebody().clientWidth : window.innerWidth-20
+var winheight=ie? ietruebody().clientHeight : window.innerHeight-20
+
+var rightedge=ie? winwidth-event.clientX : winwidth-e.clientX;
+var bottomedge=ie? winheight-event.clientY-offsetfromcursorY : winheight-e.clientY-offsetfromcursorY;
+
+if (rightedge < tipobj.offsetWidth)  tipobj.style.left=curX-tipobj.offsetWidth+"px";
+else tipobj.style.left=curX+"px";
+ 
+if (bottomedge < tipobj.offsetHeight) tipobj.style.top=curY-tipobj.offsetHeight-offsetfromcursorY+"px"
+else tipobj.style.top=curY+offsetfromcursorY+"px";
+}
+
+function appear() { 
+if(op < 1) {
+op += 0.1;
+tipobj.style.opacity = op;
+tipobj.style.filter = 'alpha(opacity='+op*100+')';
+t = setTimeout('appear()', 30);
+}
+}
+</script>
+<div align="center" style="padding-bottom:10px; color:#CC0000;">
+<a id='week' href="index2.php?last_week&set_channel=%CD%D2%C2-%CC%E8%F0">предыдущая</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a id='week_cur' href="index2.php?current_week&set_channel=%CD%D2%C2-%CC%E8%F0">на неделю с 10.06.2013 по 16.06.2013</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+<a id='week' href="index2.php?next_week&set_channel=%CD%D2%C2-%CC%E8%F0">следующая</a></div>
+<div align="center">
+<span style="background-color: #3399FF; color:#FFF">&nbsp;на неделю&nbsp;</span>&nbsp;&nbsp; 
+<a id='main_wek_day' href="index2.php?current_week&on_day=3&set_channel=%CD%D2%C2-%CC%E8%F0">на сегодня</a>&nbsp;&nbsp; 
+<a id='main_wek_day' href="index2.php?current_week&on_day=3&end_day&set_channel=%CD%D2%C2-%CC%E8%F0">до конца дня</a> </div>
+
+<div id="prog">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-right-width: 0px; border-bottom-width: 0px" id="table6">
+	<tr>
+		<td width="6"></td>
+	  <td width="8" rowspan="5">&nbsp;</td>
+		<td width="132" valign="bottom">&nbsp;
+		</td>
+		<td width="245">&nbsp;</td>
+		<td  valign="bottom" colspan="2">&nbsp;
+		</td>
+		<td width="17" style="border-right: medium none #6699FF; ">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td width="6" rowspan="4" bgcolor="#6699FF">&nbsp;&nbsp;&nbsp;</td>
+		<td width="377" valign="bottom" colspan="2">
+<b><font face="Tahoma" color="#CC0066" style="font-size: 14pt">НТВ-Мир</font></b></td>
+		<td width="209" valign="bottom">
+		</td>
+	  <td valign="bottom" align="right"><select size="1" name="D2" style="font-family: Tahoma; font-size: 8pt" onchange="if(this.value!=0) window.location = 'index2.php?set_channel='+this.value;">
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;УКРАИНА </option>
+            
+		<option  value="%CA%E0%ED%E0%EB+%221%2B1%22">1+1</option>
+                    
+		<option  value="1%2B1+%CC%E5%E6%E4%F3%ED%E0%F0%EE%E4%ED%FB%E9">1+1 Международный</option>
+                    
+		<option  value="%D1%F2%E5%F0%F5">11 канал (Днепр.)</option>
+                    
+		<option  value="27+%EA%E0%ED%E0%EB">27 канал (Донецк)</option>
+                    
+		<option  value="2+%D2">2Т</option>
+                    
+		<option  value="34+%EA%E0%ED%E0%EB">34 канал (Днепр.)</option>
+                    
+		<option  value="5+%EA%E0%ED%E0%EB">5 канал</option>
+                    
+		<option  value="51+%EA%E0%ED%E0%EB">51 канал (Днепр.)</option>
+                    
+		<option  value="9+%EA%E0%ED%E0%EB">9 канал  (Днепр.)</option>
+                    
+		<option  value="A-one+%D3%EA%F0%E0%E8%ED%E0">A-one Украина</option>
+                    
+		<option  value="ATR">ATR</option>
+                    
+		<option  value="Business">Business</option>
+                    
+		<option  value="Dobro+TV">Dobro-tv</option>
+                    
+		<option  value="Englishclub+TV">Englishclub TV</option>
+                    
+		<option  value="Enter-%F4%E8%EB%FC%EC">Enter фильм</option>
+                    
+		<option  value="ICTV">ICTV</option>
+                    
+		<option  value="MAXXI-TV">MAXXI</option>
+                    
+		<option  value="MTV-%D3%EA%F0%E0%E8%ED%E0">MTV Украина</option>
+                    
+		<option  value="Music+Box+UA">Music Box UA</option>
+                    
+		<option  value="NewsOne">NewsOne</option>
+                    
+		<option  value="O-TV">O-TV</option>
+                    
+		<option  value="Pro+%C2%F1%E5">Pro Все</option>
+                    
+		<option  value="QTV">QTV</option>
+                    
+		<option  value="Real+Estate+TV">Real Estate TV</option>
+                    
+		<option  value="StarTV">StarTV</option>
+                    
+		<option  value="XSport">XSport</option>
+                    
+		<option  value="ZIK">ZIK</option>
+                    
+		<option  value="%C1%E0%E1%E0%E9+%D2%C2">Бабай ТВ</option>
+                    
+		<option  value="%C3%E0%EC%EC%E0">Гамма</option>
+                    
+		<option  value="%C3%EB%E0%F1">Глас</option>
+                    
+		<option  value="%C3%EB%E0%F1+%28%CE%E4%E5%F1%F1%E0%29">Глас (Одесса)</option>
+                    
+		<option  value="%C3%F3%EC%EE%F0+%D2%C2">Гумор ТВ</option>
+                    
+		<option  value="%C4%EE%ED%E1%E0%F1%F1">Донбасс</option>
+                    
+		<option  value="%C7%E0%EF%EE%F0%EE%E6%FC%E5">Запорожье</option>
+                    
+		<option  value="%C8%ED%F2%E5%F0">Интер</option>
+                    
+		<option  value="%C8%ED%F2%E5%F0%2B">Интер+</option>
+                    
+		<option  value="%CA1">К1</option>
+                    
+		<option  value="%CA2">К2</option>
+                    
+		<option  value="%CA%E8%EA%EE">КiКо</option>
+                    
+		<option  value="%CA%E0%ED%E0%EB+%222%2B2%22">Канал "2+2"</option>
+                    
+		<option  value="%CA%E0%ED%E0%EB+%2224%22">Канал "24"</option>
+                    
+		<option  value="%CA%C4%D0%D2%D0%CA">КДРТРК</option>
+                    
+		<option  value="%CA%E8%E5%E2%F1%EA%E0%FF+%D0%F3%F1%FC">Киевская Русь</option>
+                    
+		<option  value="%CA%F3%EB%FC%F2%F3%F0%E0+%28%D3%EA%F0%E0%E8%ED%E0%29">Культура (Украина)</option>
+                    
+		<option  value="%CC-1">М-1</option>
+                    
+		<option  value="%CC-2">М-2</option>
+                    
+		<option  value="%CC%E0%EB%FF%F2%EA%EE+%D2%C2">Малятко ТВ</option>
+                    
+		<option  value="%CC%E5%E3%E0">Мега</option>
+                    
+		<option  value="%CC%E5%ED%FE+%D2%C2">Меню ТВ</option>
+                    
+		<option  value="%CC%EE%FF+%E4%E8%F2%E8%ED%E0">Моя дитина</option>
+                    
+		<option  value="%CD%CB%CE-%D2%C2">НЛО-ТВ</option>
+                    
+		<option  value="%CD%EE%E2%FB%E9+%EA%E0%ED%E0%EB">Новый канал</option>
+                    
+		<option  value="%CD%D2%C0">НТА</option>
+                    
+		<option  value="%CD%D2%CD">НТН</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%C0%E2%F2%EE%EC%EE%E1%E8%EB%FC%ED%FB%E9">Первый Автомобильный</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%C4%E5%EB%EE%E2%EE%E9">Первый Деловой</option>
+                    
+		<option  value="%D3%D2-1">Первый национальный</option>
+                    
+		<option  value="%CF%E8%EA%F1%E5%EB%FC">Пиксель</option>
+                    
+		<option  value="%CF%EB%E0%ED%E5%F2%E0">Планета</option>
+                    
+		<option  value="%CF%EB%FE%F1%CF%EB%FE%F1">ПлюсПлюс</option>
+                    
+		<option  value="%CF%EE%E3%EE%E4%E0+%D2%C2">Погода ТВ</option>
+                    
+		<option  value="%D1%E2%E8%F2">Свiт</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+1">Спорт 1</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+2">Спорт 2</option>
+                    
+		<option  value="%D1%D2%C1">СТБ</option>
+                    
+		<option  value="%D1%F2%F0%E0%ED%E0+%F1%EE%E2%E5%F2%EE%E2">Страна советов</option>
+                    
+		<option  value="%D2%C2-5+%28%C7%E0%EF%EE%F0%EE%E6%FC%E5%29">ТВ-5 (Запорожье)</option>
+                    
+		<option  value="%D2%C2i">ТВi</option>
+                    
+		<option  value="%D2%C5%D2">ТЕТ</option>
+                    
+		<option  value="%D2%E8%F1%E0-1">Тиса-1</option>
+                    
+		<option  value="%D2%CA+%22%CA%E8%E5%E2%22">ТК "Киев"</option>
+                    
+		<option  value="%D2%EE%ED%E8%F1">Тонис</option>
+                    
+		<option  value="%CA%E0%ED%E0%EB+%22%D3%EA%F0%E0%E8%ED%E0%22">ТРК "Украина"</option>
+                    
+		<option  value="%D2%D0%CA+%22%DE%ED%E8%EE%ED%22">ТРК "Юнион"</option>
+                    
+		<option  value="%D2%D0%CA+%22%C0%CB%C5%CA%D1%22">ТРК Алекс</option>
+                    
+		<option  value="%D2%D0%CA+%C1%F3%EA%EE%E2%E8%ED%E0">ТРК Буковина</option>
+                    
+		<option  value="%D2%D0%CA+%22%CB%F2%E0%E2%E0%22">ТРК Лтава</option>
+                    
+		<option  value="%D3%C1%D0">УБР</option>
+                    
+		<option  value="%D3%CD%C8%C0%CD+%D2%C2">УНИАН ТВ</option>
+                    
+		<option  value="%D3%D2%D0">УТР</option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB+%28%D3%EA%F0%E0%E8%ED%E0%29">Футбол</option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB%2B">Футбол+</option>
+                    
+		<option  value="%D7%CF+INFO">ЧП.INFO</option>
+                    
+		<option  value="%DD%CA%CE-%D2%C2">Эко-ТВ</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;РОССИЯ </option>
+            
+		<option  value="100+%D2%C2">100 ТВ</option>
+                    
+		<option  value="21%2B">21+</option>
+                    
+		<option  value="24+%C4%EE%EA">24 Док</option>
+                    
+		<option  value="24+%D2%E5%F5%ED%EE">24 Техно</option>
+                    
+		<option  value="2x2">2x2</option>
+                    
+		<option  value="365+%C4%ED%E5%E9+%D2%C2">365 Дней</option>
+                    
+		<option  value="4+%EA%E0%ED%E0%EB">4 канал</option>
+                    
+		<option  value="%CF%E5%F2%E5%F0%E1%F3%F0%E3+-+5+%EA%E0%ED%E0%EB">5 канал Петербург</option>
+                    
+		<option  value="8+%EA%E0%ED%E0%EB+%28%D0%EE%F1%F1%E8%FF%29">8 канал</option>
+                    
+		<option  value="9+%EA%E0%ED%E0%EB">9 канал</option>
+                    
+		<option  value="9+%EA%E0%ED%E0%EB+%CE%F0%E1%E8%F2%E0">9 канал Орбита</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%C0%EB%FC%F2%E5%F0%ED%E0%F2%E8%E2%ED%FB%E9">A-ONE</option>
+                    
+		<option  value="Amazing+Life+%28%D3%E4%E8%E2%E8%F2%E5%EB%FC%ED%E0%FF+%E6%E8%E7%ED%FC%29">Amazing Life</option>
+                    
+		<option  value="Amedia">Amedia</option>
+                    
+		<option  value="Bridge+TV">Bridge TV</option>
+                    
+		<option  value="CNL+%D1%E8%E1%E8%F0%FC">CNL Сибирь</option>
+                    
+		<option  value="Europa+Plus+TV">Europa Plus TV</option>
+                    
+		<option  value="HD-life">HD-life</option>
+                    
+		<option  value="Look+TV">Look TV</option>
+                    
+		<option  value="Music+Box+RU">Music Box RU</option>
+                    
+		<option  value="Ocean+TV">Ocean TV</option>
+                    
+		<option  value="PRO+D%E5%ED%FC%E3%E8">PRO Dеньги</option>
+                    
+		<option  value="PROPOKER">PROPOKER</option>
+                    
+		<option  value="RAP+ru">RAP.ru</option>
+                    
+		<option  value="RTG">RTG</option>
+                    
+		<option  value="RU+TV">RU TV</option>
+                    
+		<option  value="Style">Style</option>
+                    
+		<option  value="Teen+TV">Teen TV</option>
+                    
+		<option  value="TTC">TTC</option>
+                    
+		<option  value="TVCAM">TVCAM</option>
+                    
+		<option  value="TVCi">TVCi</option>
+                    
+		<option  value="Universal">Universal</option>
+                    
+		<option  value="%C0%E2%F2%EE%2B">Авто+</option>
+                    
+		<option  value="%C0%E3%F0%EE+%D2%C2">Агро ТВ</option>
+                    
+		<option  value="%C0%F1%F2%F0%EE+%D2%C2">Астро ТВ</option>
+                    
+		<option  value="%C1%E0%F1%EA%E5%F2%E1%EE%EB+%28%CD%D2%C2%2B%29">Баскетбол (НТВ+)</option>
+                    
+		<option  value="%C1%EE%E5%F6">Боец</option>
+                    
+		<option  value="%C1%F3%EB%FC%E2%E0%F0+%D2%C2">Бульвар ТВ</option>
+                    
+		<option  value="%C2%CA%D2+%D1%E5%EC%FC%FF">ВКТ Семья</option>
+                    
+		<option  value="%C2%EE%EB%E3%E0">Волга</option>
+                    
+		<option  value="%C2%EE%EF%F0%EE%F1%FB+%E8+%CE%F2%E2%E5%F2%FB">Вопросы и Ответы</option>
+                    
+		<option  value="%C2%F0%E5%EC%FF">Время</option>
+                    
+		<option  value="%C2%F1%E5%E3%E4%E0+%F1+%F2%EE%E1%EE%E9">Всегда с тобой</option>
+                    
+		<option  value="%C2%F1%FF+%D3%F4%E0">Вся Уфа</option>
+                    
+		<option  value="%C4%E5%F2%F1%EA%E8%E9+%EA%E0%ED%E0%EB">Детский канал</option>
+                    
+		<option  value="%C4%E5%F2%F1%EA%E8%E9+%EC%E8%F0">Детский мир</option>
+                    
+		<option  value="%C4%E5%F2%F1%EA%E8%E9+%EC%E8%F0-%D2%E5%EB%E5%EA%EB%F3%E1">Детский мир-Телеклуб</option>
+                    
+		<option  value="%C4%E8%F1%EA%EE%F2%E5%EA%E0+%D2%C2">Дискотека ТВ</option>
+                    
+		<option  value="%C4%EE%E2%E5%F0%E8%E5">Доверие</option>
+                    
+		<option  value="%C4%EE%E6%E4%FC">Дождь</option>
+                    
+		<option  value="%C4%EE%EC+%CA%E8%ED%EE">Дом Кино</option>
+                    
+		<option  value="%C4%EE%EC%E0%F8%ED%E8%E5+%E6%E8%E2%EE%F2%ED%FB%E5">Домашние животные</option>
+                    
+		<option  value="%C4%EE%EC%E0%F8%ED%E8%E9">Домашний</option>
+                    
+		<option  value="%C4%F0%E0%E9%E2+%D2%C2">Драйв ТВ</option>
+                    
+		<option  value="%C5%E2%F0%EE%EA%E8%ED%EE">Еврокино</option>
+                    
+		<option  value="%C5%E4%E0">Еда</option>
+                    
+		<option  value="%C5%ED%E8%F1%E5%E9-%F0%E5%E3%E8%EE%ED">Енисей-регион</option>
+                    
+		<option  value="%C6%E5%ED%F1%EA%E8%E9+%EC%E8%F0">Женский мир</option>
+                    
+		<option  value="%C6%E8%E2%E8%21">Живи</option>
+                    
+		<option  value="%C7%E0%E3%EE%F0%EE%E4%ED%E0%FF+%E6%E8%E7%ED%FC">Загородная жизнь</option>
+                    
+		<option  value="%C7%E0%E3%EE%F0%EE%E4%ED%FB%E9">Загородный</option>
+                    
+		<option  value="%C7%E0%EA%EE%ED">Закон ТВ</option>
+                    
+		<option  value="%C7%E2%E5%E7%E4%E0">Звезда</option>
+                    
+		<option  value="%C7%E4%EE%F0%EE%E2%EE%E5+%D2%C2">Здоровое ТВ</option>
+                    
+		<option  value="%C7%ED%E0%ED%E8%E5">Знание</option>
+                    
+		<option  value="%C7%EE%EE%EF%E0%F0%EA">Зоопарк</option>
+                    
+		<option  value="%C8%E4%E5%E0%EB%FC%ED%FB%E9+%EC%E8%F0">Идеальный мир</option>
+                    
+		<option  value="%C8%EB%EB%FE%E7%E8%EE%ED%2B">Иллюзион+</option>
+                    
+		<option  value="%C8%ED%E4%E8%FF+%D2%C2">Индия ТВ</option>
+                    
+		<option  value="%C8%ED%F2%E5%F0%E5%F1%ED%EE%E5+%D2%C2">Интересное ТВ</option>
+                    
+		<option  value="%CA%2B">К+</option>
+                    
+		<option  value="%CA%E0%F0%F3%F1%E5%EB%FC">Карусель</option>
+                    
+		<option  value="%CA%E0%F0%F3%F1%E5%EB%FC+Int">Карусель Int</option>
+                    
+		<option  value="%CA%E8%ED%EE+%CF%EB%FE%F1">Кино Плюс</option>
+                    
+		<option  value="%CA%E8%ED%EE%EA%EB%F3%E1">Киноклуб</option>
+                    
+		<option  value="%CA%E8%ED%EE%CB%FE%EA%F1">КиноЛюкс</option>
+                    
+		<option  value="%CA%E8%ED%EE%EC%E0%ED%E8%FF">Киномания</option>
+                    
+		<option  value="%CA%E8%ED%EE%EF%EE%EA%E0%E7">Кинопоказ</option>
+                    
+		<option  value="%CA%E8%ED%EE%F0%E5%E9%F1+1">Кинорейс 1</option>
+                    
+		<option  value="%CA%E8%ED%EE%F0%E5%E9%F1+2">Кинорейс 2</option>
+                    
+		<option  value="%CA%E8%ED%EE%F0%E5%E9%F1+3">Кинорейс 3</option>
+                    
+		<option  value="%CA%E8%ED%EE%F0%E5%E9%F1+4">Кинорейс 4</option>
+                    
+		<option  value="%CA%E8%ED%EE%F0%E5%E9%F1+5">Кинорейс 5</option>
+                    
+		<option  value="%CA%E8%ED%EE%F1%EE%FE%E7">Киносоюз</option>
+                    
+		<option  value="%CA%E8%ED%EE%F5%E8%F2">Кинохит</option>
+                    
+		<option  value="%CA%EE%EC%E5%E4%E8+%D2%C2">Комеди ТВ</option>
+                    
+		<option  value="%CA%EE%EC%E5%E4%E8%FF+%D2%C2">Комедия ТВ</option>
+                    
+		<option  value="%CA%F2%EE+%E5%F1%F2%FC+%EA%F2%EE">Кто есть кто</option>
+                    
+		<option  value="%CA%F3%F5%ED%FF+%D2%C2">Кухня ТВ</option>
+                    
+		<option  value="%CA%D5%CB+%D2%C2">КХЛ</option>
+                    
+		<option  value="%CB%FF-%EC%E8%ED%EE%F0+%28%D8%E0%ED%F1%EE%ED%29">Ля-минор</option>
+                    
+		<option  value="%CC%E0%F2%FC+%E8+%E4%E8%F2%FF">Мать и дитя</option>
+                    
+		<option  value="%CC%E8%F0">Мир</option>
+                    
+		<option  value="%CC%E8%F0+%F1%E5%F0%E8%E0%EB%E0">Мир сериала</option>
+                    
+		<option  value="%CC%ED%EE%E3%EE+%D2%C2">Много ТВ</option>
+                    
+		<option  value="%CC%EE%F1%EA%E2%E0+24">Москва 24</option>
+                    
+		<option  value="%CC%EE%FF+%EF%EB%E0%ED%E5%F2%E0">Моя планета</option>
+                    
+		<option  value="%CC%F3%E6%F1%EA%EE%E9">Мужской</option>
+                    
+		<option  value="%CC%F3%E7-%D2%C2">Муз-ТВ</option>
+                    
+		<option  value="%CC%F3%E7%FB%EA%E0+%CF%E5%F0%E2%EE%E3%EE">Музыка Первого</option>
+                    
+		<option  value="%CC%F3%EB%FC%F2%E8%EC%E0%ED%E8%FF">Мультимания</option>
+                    
+		<option  value="%CD%E0%ED%EE+%D2%C2">Нано ТВ</option>
+                    
+		<option  value="%CD%E0%F3%EA%E0+2">Наука 2.0</option>
+                    
+		<option  value="%CD%C0%D8">Наш</option>
+                    
+		<option  value="%CD%E0%F8+%D4%F3%F2%E1%EE%EB">Наш футбол</option>
+                    
+		<option  value="%CD%E0%F8%E5+%EA%E8%ED%EE">Наше кино</option>
+                    
+		<option  value="%CD%E0%F8%E5+%EB%FE%E1%E8%EC%EE%E5+%EA%E8%ED%EE">Наше любимое кино</option>
+                    
+		<option  value="%CD%E0%F8%E5+%ED%EE%E2%EE%E5+%EA%E8%ED%EE">Наше новое кино</option>
+                    
+		<option  value="%CD%E5%E4%E2%E8%E6%E8%EC%EE%F1%F2%FC+%D2%C2">Недвижимость ТВ</option>
+                    
+		<option  value="%CD%CD%D2%C2">ННТВ</option>
+                    
+		<option  value="%CD%EE%F1%F2%E0%EB%FC%E3%E8%FF">Ностальгия</option>
+                    
+		<option  value="%CD%EE%F7%ED%EE%E9+%EA%E0%ED%E0%EB">Ночной канал</option>
+                    
+		<option  value="%CD%E0%F1%F2%EE%FF%F9%E5%E5+%D1%F2%F0%E0%F8%ED%EE%E5+%D2%E5%EB%E5%E2%E8%E4%E5%ED%E8%E5">НСТ Страшное</option>
+                    
+		<option  value="%CD%D2%C2">НТВ</option>
+                    
+		<option  value="%CD%D2%C2+%28%D1%EF%F3%F2%ED%E8%EA+3%29">НТВ (Спутник 3)</option>
+                    
+		<option  value="%CD%D2%C2+%28%D1%EF%F3%F2%ED%E8%EA+4%29">НТВ (Спутник 4)</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2">НТВ+ Спорт</option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB">НТВ+ Футбол</option>
+                    
+		<option  value="%CD%D2%C2%2B+%D4%F3%F2%E1%EE%EB+2">НТВ+ Футбол 2</option>
+                    
+		<option  selected="selected" value="%CD%D2%C2-%CC%E8%F0">НТВ-Мир</option>
+                    
+		<option  value="%CD%D2%CC">НТМ</option>
+                    
+		<option  value="%CE2%D2%C2">О2ТВ</option>
+                    
+		<option  value="%CE%F0%F3%E6%E8%E5">Оружие</option>
+                    
+		<option  value="%CE%D2%C2">ОТВ</option>
+                    
+		<option  value="%CE%F2%EA%F0%FB%F2%FB%E9+%EC%E8%F0">Открытый мир</option>
+                    
+		<option  value="%CE%F5%EE%F2%E0+%E8+%D0%FB%E1%E0%EB%EA%E0">Охота и Рыбалка</option>
+                    
+		<option  value="%CE%F5%EE%F2%ED%E8%EA+%E8+%D0%FB%E1%EE%EB%EE%E2">Охотник и рыболов</option>
+                    
+		<option  value="%CF%E0%F0%EA+%D0%E0%E7%E2%EB%E5%F7%E5%ED%E8%E9">Парк Развлечений</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB+%28%CE%F0%E1%E8%F2%E0+3%29">Первый (Орбита 3)</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB+%28%CE%F0%E1%E8%F2%E0+4%29">Первый (Орбита 4)</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB">Первый канал</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB+%28%C5%E2%F0%EE%EF%E0%29">Первый канал Европа</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB+%28%D1%CD%C3%29">Первый канал СНГ</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB+%28%D3%EA%F0%E0%E8%ED%E0%29">Первый канал Украина</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%CC%C5%D2%C5%CE">Первый МЕТЕО</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EE%E1%F0%E0%E7%EE%E2%E0%F2%E5%EB%FC%ED%FB%E9">Первый образовательный</option>
+                    
+		<option  value="%CF%E5%F0%E5%F6">Перец</option>
+                    
+		<option  value="%CF%EB%E0%ED%E5%F2%E0-%D1%CD%C3">Планета СНГ</option>
+                    
+		<option  value="%CF%EE%E4%EC%EE%F1%EA%EE%E2%FC%E5">Подмосковье</option>
+                    
+		<option  value="%CF%F0%E5%EC%FC%E5%F0%E0">Премьера</option>
+                    
+		<option  value="%CF%F1%E8%F5%EE%EB%EE%E3%E8%FF+21">Психология21</option>
+                    
+		<option  value="%CF%FF%F2%ED%E8%F6%E0%21">Пятница!</option>
+                    
+		<option  value="%D0%E0%E4%EE%F1%F2%FC+%EC%EE%FF">Радость моя</option>
+                    
+		<option  value="%D0%E0%E7%D2%C2">РазТВ</option>
+                    
+		<option  value="%D0%C1%CA">РБК</option>
+                    
+		<option  value="REN+TV">РенТВ</option>
+                    
+		<option  value="%D0%E5%F2%F0%EE+%D2%C2">Ретро ТВ</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1">Россия 1</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1+%28%C4%F3%E1%EB%FC+1%29">Россия 1 (Дубль 1)</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1++%28%C4%F3%E1%EB%FC+2%29">Россия 1 (Дубль 2)</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1+%28%C4%F3%E1%EB%FC+3%29">Россия 1 (Дубль 3)</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1+%28%C4%F3%E1%EB%FC+4%29">Россия 1 (Дубль 4)</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1+%28%D2%FE%EC%E5%ED%FC%29">Россия 1 (Тюмень)</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+2">Россия 2</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+24">Россия 24</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+%CA">Россия К</option>
+                    
+		<option  value="%D0%D2%D0-%CF%EB%E0%ED%E5%F2%E0">РТР Планета</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E0%FF+%CD%EE%F7%FC">Русская Ночь</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E8%E9+%E1%E5%F1%F2%F1%E5%EB%EB%E5%F0">Русский бестселлер</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E8%E9+%C8%EB%EB%FE%E7%E8%EE%ED">Русский Иллюзион</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E8%E9+%F0%EE%EC%E0%ED">Русский роман</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E8%E9+%D1%E5%E2%E5%F0">Русский Север</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E8%E9+%DD%EA%F1%F2%F0%E8%EC">Русский Экстрим</option>
+                    
+		<option  value="%D1%E0%F0%E0%F4%E0%ED-%D2%C2">Сарафан ТВ</option>
+                    
+		<option  value="%D1%C3%D3+%D2%C2">СГУ</option>
+                    
+		<option  value="%D1%EE%E2%E5%F0%F8%E5%ED%ED%EE+%D1%E5%EA%F0%E5%F2%ED%EE">Совершенно Секретно</option>
+                    
+		<option  value="%D1%EE%FE%E7">Союз</option>
+                    
+		<option  value="%D1%EF%E0%F1">Спас</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+1+%28%D0%EE%F1%F1%E8%FF%29">Спорт 1 (Россия)</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+2+%28%D0%EE%F1%F1%E8%FF%29">Спорт 2 (Россия)</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+%CA%EB%E0%F1%F1%E8%EA%E0">Спорт Классика</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2-%CE%ED%EB%E0%E9%ED">Спорт Онлайн</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+%CF%EB%FE%F1">Спорт Плюс</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+%D1%EE%FE%E7+">Спорт Союз </option>
+                    
+		<option  value="%D1%F2%F0%E0%ED%E0">Страна</option>
+                    
+		<option  value="%D1%F2%F0%E8%EC+%D0%F3%F1%F1%EA%E0%FF+%E6%E8%E7%ED%FC">Стрим Русская жизнь</option>
+                    
+		<option  value="%D1%D2%D1">СТС</option>
+                    
+		<option  value="%D1%D2%D1+%2B7">СТС +7</option>
+                    
+		<option  value="%D1%D2%D1+International">СТС International</option>
+                    
+		<option  value="%D2%C1%CD-%D0%EE%F1%F1%E8%FF">ТБН</option>
+                    
+		<option  value="%D2%C2+%CA%EB%F3%E1">ТВ Клуб</option>
+                    
+		<option  value="%D2%C2-%D6%E5%ED%F2%F0">ТВ Центр</option>
+                    
+		<option  value="%D2%C2+%D6%E5%ED%F2%F0+%28%D1%E8%E1%E8%F0%FC%29">ТВ Центр (Сибирь)</option>
+                    
+		<option  value="%D2%C23">ТВ-3</option>
+                    
+		<option  value="%D2%E2%EE%E9+%D2%C2+%CF%E5%F2%E5%F0%E1%F3%F0%E3">Твой ТВ Петербург</option>
+                    
+		<option  value="%D2%C4%CA">ТДК</option>
+                    
+		<option  value="%D2%E5%EB%E5%EA%E0%F4%E5">Телекафе</option>
+                    
+		<option  value="%D2%E5%EB%E5%EA%EB%F3%E1">Телеклуб</option>
+                    
+		<option  value="%D2%E5%EB%E5%EF%F3%F2%E5%F8%E5%F1%F2%E2%E8%FF">Телепутешествия</option>
+                    
+		<option  value="%D2%E5%ED%ED%E8%F1">Теннис</option>
+                    
+		<option  value="%D2%E0%F2%E0%F0%F1%F2%E0%ED+-+%CD%EE%E2%FB%E9+%C2%E5%EA">ТНВ</option>
+                    
+		<option  value="%D2%CD%C2+%CF%EB%E0%ED%E5%F2%E0">ТНВ Планета</option>
+                    
+		<option  value="%D2%CD%D2">ТНТ</option>
+                    
+		<option  value="%D2%EE%ED%F3%F1+%D2%C2">Тонус ТВ</option>
+                    
+		<option  value="%D2%D0%CE">ТРО</option>
+                    
+		<option  value="%D3%EB%FB%E1%EA%E0+%F0%E5%E1%E5%ED%EA%E0">Улыбка ребенка</option>
+                    
+		<option  value="%D3%F1%E0%E4%FC%E1%E0+%D2%C2">Усадьба</option>
+                    
+		<option  value="%D3%F1%EF%E5%F5">Успех</option>
+                    
+		<option  value="%D4%E5%ED%E8%EA%F1+%2B+%CA%E8%ED%EE">Феникс+Кино</option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB+%28%D0%EE%F1%F1%E8%FF%29">Футбол</option>
+                    
+		<option  value="%DD%E3%EE%E8%F1%F2+%D2%C2">Эгоист ТВ</option>
+                    
+		<option  value="%DD%EA%F1%EF%E5%F0%F2+%D2%C2">Эксперт ТВ</option>
+                    
+		<option  value="%DE">Ю</option>
+                    
+		<option  value="%DE%E3%F0%E0">Югра</option>
+                    
+		<option  value="%DE%EC%EE%F0+%D2%C2">Юмор ТВ</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;ПРИБАЛТИКА </option>
+            
+		<option  value="3+plus+%28%C1%E0%EB%F2%E8%EA%E0%29">3+ (Балтика)</option>
+                    
+		<option  value="Eesti+Televisioon+%28%C1%E0%EB%F2%E8%EA%E0%29">Eesti Televisioon</option>
+                    
+		<option  value="Kanal+2+%28%C1%E0%EB%F2%E8%EA%E0%29">Kanal 2 (Эстония)</option>
+                    
+		<option  value="LNT">LNT (Латвия)</option>
+                    
+		<option  value="LTV-1">LTV-1 (Латвия)</option>
+                    
+		<option  value="LTV-7">LTV-7 (Латвия)</option>
+                    
+		<option  value="PRO100TV+LV">PRO100TV</option>
+                    
+		<option  value="REN+TV+%28%CB%E0%F2%E2%E8%FF%29">REN TV (Латвия)</option>
+                    
+		<option  value="REN+TV+%28%DD%F1%F2%EE%ED%E8%FF%29">REN TV (Эстония)</option>
+                    
+		<option  value="TV-6+%28%CB%E0%F2%E2%E8%FF%29">TV-6 (Латвия)</option>
+                    
+		<option  value="TV3+%28%C1%E0%EB%F2%E8%EA%E0%29">TV3 (Эстония)</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%C1%E0%EB%F2%E8%E9%F1%EA%E8%E9+%EA%E0%ED%E0%EB+%28%CB%E0%F2%E2%E8%FF%29">Первый  (Латвия)</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%C1%E0%EB%F2%E8%E9%F1%EA%E8%E9+%EA%E0%ED%E0%EB+%28%DD%F1%F2%EE%ED%E8%FF%29">Первый (Эстония)</option>
+                    
+		<option  value="%D0%D2%D0-%CF%EB%E0%ED%E5%F2%E0+%28%C1%E0%EB%F2%E8%EA%E0%29">РТР Планета</option>
+                    
+		<option  value="%D2%C2-5+%28%CB%E0%F2%E2%E8%FF%29">ТВ-5 (Латвия)</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;БЕЛАРУСЬ </option>
+            
+		<option  value="%2B%D2%C2+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">+TV BELVIASAT</option>
+                    
+		<option  value="8+%EA%E0%ED%E0%EB">8 канал</option>
+                    
+		<option  value="Cinema">Cinema</option>
+                    
+		<option  value="%C1%E5%EB%E0%F0%F3%F1%FC+1+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">Беларусь 1</option>
+                    
+		<option  value="%C1%E5%EB%E0%F0%F3%F1%FC+24+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">Беларусь 24</option>
+                    
+		<option  value="%C1%E5%EB%F1%E0%F2+%D2%C2">Белсат ТВ</option>
+                    
+		<option  value="%C1%F3%E3-%D2%C2+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">Буг-ТВ</option>
+                    
+		<option  value="%C2%D2%C2">ВТВ</option>
+                    
+		<option  value="%CB%C0%C4+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">ЛАД</option>
+                    
+		<option  value="%CD%D2%C2-%C1%E5%EB%E0%F0%F3%F1%FC">НТВ Беларусь</option>
+                    
+		<option  value="%CE%CD%D2+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">ОНТ</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EC%F3%E7%FB%EA%E0%EB%FC%ED%FB%E9+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">Первый музыкальный</option>
+                    
+		<option  value="%D0%D2%D0-%C1%C5%CB%C0%D0%D3%D1%DC">РТР Беларусь</option>
+                    
+		<option  value="%D1%D2%C2+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">СТВ</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;ПОЛЬША </option>
+            
+		<option  value="%C4%D1%D4+%28%CF%EE%EB%FC%F8%E0%29">DSF</option>
+                    
+		<option  value="Polonia+%28%CF%EE%EB%FC%F8%E0%29">Polonia</option>
+                    
+		<option  value="Polsat+%28%CF%EE%EB%FC%F8%E0%29">Polsat</option>
+                    
+		<option  value="TVP+1+%28%CF%EE%EB%FC%F8%E0%29">TVP 1</option>
+                    
+		<option  value="TVP+2+%28%CF%EE%EB%FC%F8%E0%29">TVP 2</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;РУССКОЯЗЫЧНЫЕ </option>
+            
+		<option  value="Adjara+TV">Adjara TV</option>
+                    
+		<option  value="Animal+Planet">Animal Planet</option>
+                    
+		<option  value="Animal+Planet+CEE">Animal Planet CEE</option>
+                    
+		<option  value="AXN+Sci-fi">AXN Sci-fi</option>
+                    
+		<option  value="CBS+Drama">CBS Drama</option>
+                    
+		<option  value="CCTV+%D0%F3%F1%F1%EA%E8%E9">CCTV Русский</option>
+                    
+		<option  value="CNL+%D3%EA%F0%E0%E8%ED%E0">CNL Украина</option>
+                    
+		<option  value="Da+Vinci+Learning+%D0%EE%F1%F1%E8%FF">Da Vinci Learning Россия</option>
+                    
+		<option  value="Da+Vinci+Learning+%D3%EA%F0%E0%E8%ED%E0">Da Vinci Learning Украина</option>
+                    
+		<option  value="Discovery+Channel+Central+%26+Eastern+Europe">Discovery Channel CEE</option>
+                    
+		<option  value="Discovery+Channel+%D3%EA%F0%E0%E8%ED%E0">Discovery Channel Украина</option>
+                    
+		<option  value="Discovery+Channel">Discovery Russia</option>
+                    
+		<option  value="Discovery+Science">Discovery Science</option>
+                    
+		<option  value="Discovery+Travel+%26+Living">Discovery Travel & Living</option>
+                    
+		<option  value="Discovery+World">Discovery World</option>
+                    
+		<option  value="Disney+Channel">Disney Channel</option>
+                    
+		<option  value="Diva+Universal">Diva Universal</option>
+                    
+		<option  value="ESPN+Classic+Sport">ESPN Classic Sport</option>
+                    
+		<option  value="EuroNews">EuroNews</option>
+                    
+		<option  value="EuroSport">EuroSport</option>
+                    
+		<option  value="EuroSport+2">EuroSport 2</option>
+                    
+		<option  value="Extreme+Sports+Channel">Extreme Sport</option>
+                    
+		<option  value="Fine+Living+Network">Fine Living Network</option>
+                    
+		<option  value="Fox">Fox</option>
+                    
+		<option  value="FoxLife">Fox Life</option>
+                    
+		<option  value="Gulli">Gulli</option>
+                    
+		<option  value="ID+Investigation+Discovery">ID Investigation Discovery</option>
+                    
+		<option  value="JimJam">JimJam</option>
+                    
+		<option  value="KidsCo">KidsCo</option>
+                    
+		<option  value="LUXE+TV">LUXE TV</option>
+                    
+		<option  value="Mini+Movie">Mini Movie</option>
+                    
+		<option  value="Nat+Geo+Wild">Nat Geo Wild</option>
+                    
+		<option  value="National+Geographic+Channel">National Geographic</option>
+                    
+		<option  value="NBA+TV">NBA TV</option>
+                    
+		<option  value="Nick+Jr">Nick Jr</option>
+                    
+		<option  value="Nickelodeon">Nickelodeon</option>
+                    
+		<option  value="Outdoor+Channel">Outdoor Channel</option>
+                    
+		<option  value="R1+%28%D0%F3%F1%F1%EA%E8%E9+%EF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB%29">R1</option>
+                    
+		<option  value="RTVi">RTVi</option>
+                    
+		<option  value="RTVi+%28%C5%E2%F0%EE%EF%E0%29">RTVi Европа</option>
+                    
+		<option  value="Russia+Today">Russia Today</option>
+                    
+		<option  value="SET">SET</option>
+                    
+		<option  value="Sony+Turbo">Sony Turbo</option>
+                    
+		<option  value="Syfy+Universal">Syfy Universal</option>
+                    
+		<option  value="TiJi">TiJi</option>
+                    
+		<option  value="TLC">TLC</option>
+                    
+		<option  value="TLC+PAN-Regional">TLC PAN-Regional</option>
+                    
+		<option  value="Travel+Channel">Travel Channel</option>
+                    
+		<option  value="%D2%C2-1000">TV 1000</option>
+                    
+		<option  value="%D2%C2-1000+Action">TV 1000 Action East</option>
+                    
+		<option  value="%D2%C2-1000+%D0%F3%F1%F1%EA%EE%E5+%EA%E8%ED%EE">TV 1000 Русское кино</option>
+                    
+		<option  value="%D2%C2-21">TV XXI</option>
+                    
+		<option  value="Viasat+Explorer">Viasat Explorer</option>
+                    
+		<option  value="Viasat+History">Viasat History</option>
+                    
+		<option  value="Viasat+Nature">Viasat Nature</option>
+                    
+		<option  value="Viasat+Sport">Viasat Sport</option>
+                    
+		<option  value="Zee+TV">Zee TV</option>
+                    
+		<option  value="Reality">Zone Reality</option>
+                    
+		<option  value="%C1%D1%D2">БСТ</option>
+                    
+		<option  value="%C8%E7%F0%E0%E8%EB%FC%2B">Израиль+</option>
+                    
+		<option  value="%D2%F3%F0%E8%ED%F4%EE">Туринфо</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;ОСТАЛЬНЫЕ </option>
+            
+		<option  value="AB+Moteurs">AB Moteurs</option>
+                    
+		<option  value="Arirang+TV">Arirang TV</option>
+                    
+		<option  value="Baby+TV">Baby TV</option>
+                    
+		<option  value="BBC+Entertainment">BBC Entertainment</option>
+                    
+		<option  value="BBC+World">BBC World</option>
+                    
+		<option  value="%C1%EB%F3%EC%E1%E5%F0%E3">Bloomberg</option>
+                    
+		<option  value="Boomerang">Boomerang</option>
+                    
+		<option  value="C+Music+TV">C Music TV</option>
+                    
+		<option  value="Cartoon+Network">Cartoon Network</option>
+                    
+		<option  value="CCTV9">CCTV9</option>
+                    
+		<option  value="CNBC">CNBC</option>
+                    
+		<option  value="CNN+International">CNN International</option>
+                    
+		<option  value="Deutsche+Welle">Deutsche Welle</option>
+                    
+		<option  value="Dorcel+TV">Dorcel TV</option>
+                    
+		<option  value="Europa+Plus+TV">Europa Plus TV</option>
+                    
+		<option  value="Fashion+One">Fashion One</option>
+                    
+		<option  value="Fashion+TV">Fashion TV</option>
+                    
+		<option  value="France+24">France 24</option>
+                    
+		<option  value="Hustler+TV">Hustler TV</option>
+                    
+		<option  value="MCM+TOP">MCM TOP</option>
+                    
+		<option  value="Melody+Zen">Melody Zen</option>
+                    
+		<option  value="Mezzo">Mezzo</option>
+                    
+		<option  value="MGM">MGM</option>
+                    
+		<option  value="Motors+TV">Motors TV</option>
+                    
+		<option  value="MTV+Dance">MTV Dance</option>
+                    
+		<option  value="MTV+Hits">MTV Hits</option>
+                    
+		<option  value="MTV2">MTV TWO</option>
+                    
+		<option  value="Music+Box+TV">Music Box TV</option>
+                    
+		<option  value="NEO+Television">NEO Television</option>
+                    
+		<option  value="Private+Spice">Private Spice</option>
+                    
+		<option  value="Rusong+TV">Rusong TV</option>
+                    
+		<option  value="%D2%D1%CC">TCM Europe</option>
+                    
+		<option  value="Trace+TV">Trace TV</option>
+                    
+		<option  value="TV5+Monde">TV5 Monde</option>
+                    
+		<option  value="Ukrainian+Fashion">Ukrainian Fashion</option>
+                    
+		<option  value="VH-1">VH1</option>
+                    
+		<option  value="VH-1+Classic">VH1 Classic</option>
+                    
+		<option  value="VH-1+%28%D0%EE%F1%F1%E8%FF%29">VH1 Россия</option>
+                    
+		<option  value="World+Fashion+Channel">World Fashion Channel</option>
+                    
+		<option  value="World+Music+Channel">World Music Channel</option>
+                    
+		<option  value="XXL">XXL</option>
+                    
+		<option  value="Zone+Club">Zone Club</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;СПОРТ </option>
+            
+		<option  value="ESPN+Classic">ESPN Classic</option>
+                    
+		<option  value="EuroSport">EuroSport</option>
+                    
+		<option  value="EuroSport+2">EuroSport 2</option>
+                    
+		<option  value="Viasat+Sport">Viasat Sport</option>
+                    
+		<option  value="%C1%E0%F1%EA%E5%F2%E1%EE%EB+%28%CD%D2%C2%2B%29">Баскетбол (НТВ+)</option>
+                    
+		<option  value="%CA%D5%CB+%D2%C2">КХЛ</option>
+                    
+		<option  value="%CD%E0%F8+%D4%F3%F2%E1%EE%EB">Наш Футбол</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2">НТВ+ Спорт</option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB">НТВ+ Футбол</option>
+                    
+		<option  value="%CD%D2%C2%2B+%D4%F3%F2%E1%EE%EB+2">НТВ+ Футбол 2</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+2">Россия 2</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+1">Спорт 1</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+1+%28%D0%EE%F1%F1%E8%FF%29">Спорт 1 (Россия)</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+2">Спорт 2</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+2+%28%D0%EE%F1%F1%E8%FF%29">Спорт 2 (Россия)</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+%CF%EB%FE%F1">Спорт Плюс</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+%D1%EE%FE%E7+">Спорт Союз </option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB%2B">Футбол+</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;HD ТЕЛЕКАНАЛЫ </option>
+            
+		<option  value="Animal+Planet+HD">Animal Planet HD</option>
+                    
+		<option  value="Discovery+HD+Showcase">Discovery HD Showcase</option>
+                    
+		<option  value="Eurosport+HD">Eurosport HD</option>
+                    
+		<option  value="Fashion+TV+HD">Fashion TV HD</option>
+                    
+		<option  value="Fox+HD">Fox Crime HD</option>
+                    
+		<option  value="FoxLife+HD">Fox Life HD</option>
+                    
+		<option  value="HD+%CA%E8%ED%EE">HD Кино</option>
+                    
+		<option  value="HD+%CA%E8%ED%EE+2">HD Кино 2</option>
+                    
+		<option  value="HD+%D1%EF%EE%F0%F2">HD Спорт</option>
+                    
+		<option  value="High+Life">High Life</option>
+                    
+		<option  value="Melody+Zen">Melody Zen</option>
+                    
+		<option  value="MGM+HD">MGM HD</option>
+                    
+		<option  value="Nat+Geo+Wild+HD">Nat Geo Wild HD</option>
+                    
+		<option  value="National+Geographic+HD">National Geographic HD</option>
+                    
+		<option  value="Nickelodeon+HD">Nickelodeon HD</option>
+                    
+		<option  value="RUSH+HD">RUSH HD</option>
+                    
+		<option  value="%D2%C2-1000+Comedy+HD">TV1000 Comedy HD</option>
+                    
+		<option  value="%D2%C2-1000+Megahit+HD">TV1000 Megahit HD</option>
+                    
+		<option  value="%D2%C2-1000+Premium+HD">TV1000 Premium HD</option>
+                    
+		<option  value="Viasat+Nature+History+HD">Viasat Nature/History HD</option>
+                    
+		<option  value="%CA%E8%ED%EE%EF%EE%EA%E0%E7+HD-1">Кинопоказ HD-1</option>
+                    
+		<option  value="%CA%E8%ED%EE%EF%EE%EA%E0%E7+HD-2">Кинопоказ HD-2</option>
+                    
+		<option  value="%CD%D2%C2%2B+%D4%F3%F2%E1%EE%EB+2+HD">НТВ+ Футбол 2 HD</option>
+                    
+		<option  value="%CD%D2%C2%2B+%D4%F3%F2%E1%EE%EB+HD">НТВ+ Футбол HD</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+1+HD">Спорт 1 HD</option>
+                    
+		<option  value="%D2%E5%EB%E5%EF%F3%F2%E5%F8%E5%F1%F2%E2%E8%FF+HD">Телепутешествия HD</option>
+        		</select></td>
+		<td width="13" style="border-right: 4px solid #6699FF">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="132" valign="top" colspan="3" height="25" >
+		<a id='main_wek_day' href="index2.php?st&set_channel=%CD%D2%C2-%CC%E8%F0" style="font-weight:bold">телепрограмма</a>&nbsp;|&nbsp;<a id='main_wek_day' href="index2.php?id=54&set_ann=%CD%D2%C2-%CC%E8%F0" style="font-weight:bold">анонсы</a></td>
+		<td align="right">
+       <u><font style="font-size: 8pt" color="#CC0066">
+<span style="cursor:pointer" onclick="document.getElementById('prog').style.display='none'; document.getElementById('about').style.display='block';">Подробней о телеканале</span></font></u>
+</td>
+		<td width="13" style="border-right: 4px solid #6699FF">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="367" colspan="2" style="border-left: medium none #3399FF; border-right: medium none #3399FF; border-top: 1px solid #3399FF; border-bottom: medium none #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px" bgcolor="#EAF4FF">
+		<font face="Tahoma" style="font-size: 8pt; font-weight: 700" color="#0000FF">
+		<span lang="ru">сейчас на телеканале </span></font></td>
+        		<td width="367" colspan="2" style="border-left: medium none #3399FF; border-right: medium none #3399FF; border-top: 1px solid #3399FF; border-bottom: medium none #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px" bgcolor="#EAF4FF">
+		<font face="Tahoma" style="font-size: 8pt; font-weight: 700" color="#0000FF">
+		<span lang="ru">следующая передача</span></font></td>
+		<td width="5" style="border-left:medium none #3399FF; border-right:4px solid #6699FF; border-top:medium none #3399FF; border-bottom:medium none #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px; ">&nbsp;
+		</td>
+	</tr>
+	<tr>
+  <td valign="top" width="366" colspan="2" style="border-left: medium none #3399FF; border-right: medium none #3399FF; border-top: medium none #3399FF; border-bottom: 1px solid #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 0px; padding-bottom: 5px;" bgcolor="#EAF4FF">
+         <div style="float:left; color:#CC0066; font-size: 8pt; font-weight:bold;">22:15 </div><div style="font-size: 8pt" id="text_prg">&quot;Сегодня. Итоги&quot;</div></td>
+<td valign="top" width="367" style="border-left: medium none #3399FF; border-right: medium none #3399FF; border-top: medium none #3399FF; border-bottom: 1px solid #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 0px; padding-bottom: 0px; font-size:4px;" bgcolor="#EAF4FF" colspan="2">
+        	 <div style="float:left; color:#CC0066; font-size: 8pt; font-weight:bold;">22:40</div><div style="font-size: 8pt" id="text_prg">Т/с &quot;Чужой район&quot;</div></td>
+		<td width="5" style="border-left:medium none #3399FF; border-right:4px solid #6699FF; border-top:medium none #3399FF; border-bottom:medium none #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px; font-size:4px; ">&nbsp;</td>
+	</tr>
+</table>
+<br />
+<table border="0" width="100%" cellspacing="0" cellpadding="0" id="table7">
+	<tr>
+		<td width="6" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" bgcolor="#C0C0C0">&nbsp;&nbsp;&nbsp;</td>
+		<td width="521" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" colspan="2">
+<a id='day' href="index2.php?on_day=0&set_channel=%CD%D2%C2-%CC%E8%F0">понедельник</a><a id='day' href="index2.php?on_day=1&set_channel=%CD%D2%C2-%CC%E8%F0">вторник</a><a id='day' href="index2.php?on_day=2&set_channel=%CD%D2%C2-%CC%E8%F0">среда</a><a id='day' href="index2.php?on_day=3&set_channel=%CD%D2%C2-%CC%E8%F0">четверг</a><a id='day' href="index2.php?on_day=4&set_channel=%CD%D2%C2-%CC%E8%F0">пятница</a><a id='day' href="index2.php?on_day=5&set_channel=%CD%D2%C2-%CC%E8%F0">суббота</a><a id='day' href="index2.php?on_day=6&set_channel=%CD%D2%C2-%CC%E8%F0">воскресенье</a>
+</td>
+<form name="prn" action="print.php" target="_blank" method="post">
+		<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" width="241" align="right">
+    <span onclick="document.getElementById('prnt').value=document.getElementById('print_div').innerHTML; document.prn.submit()" face="Tahoma" style="font-size: 8pt; cursor:pointer">&nbsp;&nbsp;&nbsp;<u>версия для печати</u></span>
+    <input id="prnt" type="hidden" name="print" value="#" />
+    <input type="hidden" name="channel" value='НТВ-Мир' />
+</td></form>
+	</tr>
+  </table>
+	<br />
+	
+<div id='print_div'>
+<table width="100%" >
+
+
+
+<tr>
+		<td  style="border-bottom: 2px dotted #6699FF"  bgcolor="#EAF4FF">
+<div id='week_text'>, 10 </div></td>
+		<td colspan="2"  style="border-bottom: 2px dotted #6699FF">&nbsp;</td>
+  </tr><tr><td valign="top" width="33%"><div style="float:left; " id="ann_time">05:00</div>
+<div id="text_prg">&quot;НТВ утром&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">07:10</div>
+<div id="text_prg">Т/с &quot;Возвращение Мухтара-2&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:25</div>
+<div id="text_prg">Александр Журбин. Мелодии на память</div>
+
+
+
+<div style="float:left; " id="ann_time">10:05</div>
+<div id="text_prg">&quot;Русские сенсации&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">11:05</div>
+<div id="text_prg">&quot;Ты не поверишь&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:35</div>
+<div id="text_prg">&quot;До суда&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">13:35</div><div id="text_prg">Суд присяжных</div>
+
+
+
+<div style="float:left; " id="ann_time">14:35</div><div id="text_prg">Обзор. Чрезвычайное происшествие</div>
+
+
+
+<div style="float:left; " id="ann_time">15:00</div><div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">15:30</div><div id="text_prg">&quot;Суд присяжных. Окончательный вердикт&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">16:40</div><div id="text_prg">Т/с &quot;Из жизни капитана Черняева&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">17:35</div><div id="text_prg">Обзор. Чрезвычайное происшествие</div>
+
+
+
+<div style="float:left; " id="ann_time">18:00</div><div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">18:30</div><div id="text_prg">&quot;Прокурорская проверка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">19:35</div><div id="text_prg">&quot;Говорим и показываем&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">20:25</div><div id="text_prg">Т/с &quot;Крапленый&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">22:15</div><div id="text_prg">&quot;Сегодня. Итоги&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">22:40</div><div id="text_prg">Т/с &quot;Чужой район&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">00:35</div><div id="text_prg">Т/с &quot;Сёмин&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">02:25</div><div id="text_prg">&quot;Прокурорская проверка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">03:35</div><div id="text_prg">&quot;Говорим и показываем&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">04:30</div><div id="text_prg">&quot;Криминальная Россия. Современные хроники&quot;</div>
+
+</td></tr>
+
+<tr>
+		<td  style="border-bottom: 2px dotted #6699FF"  bgcolor="#EAF4FF">
+<div id='week_text'>, 11 </div></td>
+		<td colspan="2"  style="border-bottom: 2px dotted #6699FF">&nbsp;</td>
+  </tr><tr><td valign="top" width="33%"><div style="float:left; " id="ann_time">05:00</div>
+<div id="text_prg">&quot;НТВ утром&quot; (Вместе с &quot;НТВ&quot;)</div>
+
+
+
+<div style="float:left; " id="ann_time">07:10</div>
+<div id="text_prg">Т/с &quot;Возвращение Мухтара-2&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:25</div>
+<div id="text_prg">&quot;Кулинарный поединок&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">10:25</div>
+<div id="text_prg">Русская начинка</div>
+
+
+
+<div style="float:left; " id="ann_time">11:00</div>
+<div id="text_prg">Т/с &quot;Дальнобойщики. Десять лет спустя&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:35</div>
+<div id="text_prg">&quot;До суда&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">13:35</div><div id="text_prg">Суд присяжных</div>
+
+
+
+<div style="float:left; " id="ann_time">14:35</div><div id="text_prg">Обзор. Чрезвычайное происшествие</div>
+
+
+
+<div style="float:left; " id="ann_time">15:00</div><div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">15:30</div><div id="text_prg">&quot;Суд присяжных. Окончательный вердикт&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">16:40</div><div id="text_prg">Т/с &quot;Из жизни капитана Черняева&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">17:35</div><div id="text_prg">Обзор. Чрезвычайное происшествие</div>
+
+
+
+<div style="float:left; " id="ann_time">18:00</div><div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">18:30</div><div id="text_prg">&quot;Прокурорская проверка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">19:35</div><div id="text_prg">&quot;Говорим и показываем&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">20:25</div><div id="text_prg">Т/с &quot;Крапленый&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">22:15</div><div id="text_prg">&quot;Сегодня. Итоги&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">22:40</div><div id="text_prg">Т/с &quot;Чужой район&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">00:35</div><div id="text_prg">Т/с &quot;Сёмин&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">02:30</div><div id="text_prg">&quot;Прокурорская проверка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">03:40</div><div id="text_prg">&quot;Говорим и показываем&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">04:30</div><div id="text_prg">&quot;Криминальная Россия. Современные хроники&quot;</div>
+
+</td></tr>
+
+<tr>
+		<td  style="border-bottom: 2px dotted #6699FF"  bgcolor="#EAF4FF">
+<div id='week_text'>, 12 </div></td>
+		<td colspan="2"  style="border-bottom: 2px dotted #6699FF">&nbsp;</td>
+  </tr><tr><td valign="top" width="33%"><div style="float:left; " id="ann_time">05:00</div>
+<div id="text_prg">Х/ф &quot;Одиночка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">07:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">07:20</div>
+<div id="text_prg">Их нравы</div>
+
+
+
+<div style="float:left; " id="ann_time">08:00</div>
+<div id="text_prg">Т/с &quot;Возвращение Мухтара-2&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:25</div>
+<div id="text_prg">Квартирный вопрос</div>
+
+
+
+<div style="float:left; " id="ann_time">10:30</div>
+<div id="text_prg">&quot;Поедем, поедим!&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">11:00</div>
+<div id="text_prg">Т/с &quot;Дальнобойщики. Десять лет спустя&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:25</div>
+<div id="text_prg">&quot;До суда&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">13:25</div><div id="text_prg">Суд присяжных</div>
+
+
+
+<div style="float:left; " id="ann_time">14:30</div><div id="text_prg">Х/ф &quot;Найди меня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">16:20</div><div id="text_prg">&quot;Нонна и Слава. Жестокий роман&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">17:00</div><div id="text_prg">Т/с &quot;Из жизни капитана Черняева&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">18:00</div><div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">18:30</div><div id="text_prg">Х/ф &quot;Честь самурая&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">20:25</div><div id="text_prg">Т/с &quot;Крапленый&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">22:20</div><div id="text_prg">Т/с &quot;Чужой район&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">00:15</div><div id="text_prg">Т/с &quot;Сёмин&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">02:05</div><div id="text_prg">&quot;Прокурорская проверка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">03:15</div><div id="text_prg">&quot;Говорим и показываем&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">04:10</div><div id="text_prg">&quot;Криминальная Россия. Современные хроники&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">04:45</div><div id="text_prg">&quot;Достопримечательности&quot;</div>
+
+</td></tr>
+
+<tr>
+		<td  style="border-bottom: 2px dotted #6699FF"  bgcolor="#EAF4FF">
+<div id='week_text'>, 13 </div></td>
+		<td colspan="2"  style="border-bottom: 2px dotted #6699FF">&nbsp;</td>
+  </tr><tr><td valign="top" width="33%"><div style="float:left; " id="ann_time">05:00</div>
+<div id="text_prg">&quot;НТВ утром&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">07:10</div>
+<div id="text_prg">Т/с &quot;Возвращение Мухтара-2&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:00</div>
+<div id="text_prg">Сегодня</div>
+
+
+
+<div style="float:left; " id="ann_time">09:25</div>
+<div id="text_prg">Дачный ответ</div>
+
+
+
+<div style="float:left; " id="ann_time">10:30</div>
+<div id="text_prg">&quot;Медицинские тайны&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">11:05</div>
+<div id="text_prg">Т/с &quot;Дальнобойщики. Десять лет спустя&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:35</div>
+<div id="text_prg">&quot;До суда&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">13:35</div><div id="text_prg">Суд присяжных</div>
+
+
+
+<div style="float:left; " id="ann_time">14:35</div><div id="text_prg">Обзор. Чрезвычайное происшествие</div>
+
+
+
+<div style="float:left; " id="ann_time">15:00</div><div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">15:30</div><div id="text_prg">&quot;Суд присяжных. Окончательный вердикт&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">16:40</div><div id="text_prg">Т/с &quot;Из жизни капитана Черняева&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">17:35</div><div id="text_prg">Обзор. Чрезвычайное происшествие</div>
+
+
+
+<div style="float:left; " id="ann_time">18:00</div><div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">18:30</div><div id="text_prg">&quot;Прокурорская проверка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">19:35</div><div id="text_prg">&quot;Говорим и показываем&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">20:25</div><div id="text_prg">Т/с &quot;Крапленый&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">22:15</div><div id="text_prg">&quot;Сегодня. Итоги&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">22:40</div><div id="text_prg">Т/с &quot;Чужой район&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">00:30</div><div id="text_prg">Т/с &quot;Сёмин&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">02:20</div><div id="text_prg">&quot;Прокурорская проверка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">03:30</div><div id="text_prg">&quot;Говорим и показываем&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">04:25</div><div id="text_prg">&quot;Криминальная Россия. Современные хроники&quot;</div>
+
+</td></tr>
+
+<tr>
+		<td  style="border-bottom: 2px dotted #6699FF"  bgcolor="#EAF4FF">
+<div id='week_text'>, 14 </div></td>
+		<td colspan="2"  style="border-bottom: 2px dotted #6699FF">&nbsp;</td>
+  </tr><tr><td valign="top" width="33%"><div style="float:left; " id="ann_time">05:00</div>
+<div id="text_prg">&quot;НТВ утром&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">07:10</div>
+<div id="text_prg">Т/с &quot;Возвращение Мухтара-2&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:25</div>
+<div id="text_prg">&quot;Очная ставка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">10:25</div>
+<div id="text_prg">Спасатели</div>
+
+
+
+<div style="float:left; " id="ann_time">11:00</div>
+<div id="text_prg">Т/с &quot;Дальнобойщики. Десять лет спустя&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:35</div>
+<div id="text_prg">&quot;До суда&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">13:35</div><div id="text_prg">Суд присяжных</div>
+
+
+
+<div style="float:left; " id="ann_time">14:35</div><div id="text_prg">Обзор. Чрезвычайное происшествие</div>
+
+
+
+<div style="float:left; " id="ann_time">15:00</div><div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">15:30</div><div id="text_prg">&quot;Суд присяжных. Окончательный вердикт&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">16:40</div><div id="text_prg">&quot;Таинственная Россия: Хабаровский край. Царство драконов?&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">17:35</div><div id="text_prg">Обзор. Чрезвычайное происшествие</div>
+
+
+
+<div style="float:left; " id="ann_time">18:00</div><div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">18:35</div><div id="text_prg">&quot;Прокурорская проверка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">19:45</div><div id="text_prg">&quot;Говорим и показываем&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">20:40</div><div id="text_prg">Т/с &quot;Крапленый&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">00:30</div><div id="text_prg">Х/ф &quot;Гром ярости&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">02:20</div><div id="text_prg">&quot;Школа злословия&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">03:10</div><div id="text_prg">Т/с &quot;Москва. Центральный округ- 2&quot;</div>
+
+</td></tr>
+
+<tr>
+		<td  style="border-bottom: 2px dotted #6699FF"  bgcolor="#EAF4FF">
+<div id='week_text'>, 15 </div></td>
+		<td colspan="2"  style="border-bottom: 2px dotted #6699FF">&nbsp;</td>
+  </tr><tr><td valign="top" width="33%"><div style="float:left; " id="ann_time">07:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">07:20</div>
+<div id="text_prg">Смотр</div>
+
+
+
+<div style="float:left; " id="ann_time">07:55</div>
+<div id="text_prg">Главная дорога</div>
+
+
+
+<div style="float:left; " id="ann_time">08:25</div>
+<div id="text_prg">&quot;Готовим с Алексеем Зиминым&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:25</div>
+<div id="text_prg">Русская начинка</div>
+
+
+
+<div style="float:left; " id="ann_time">09:55</div>
+<div id="text_prg">&quot;Кулинарный поединок&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">10:55</div>
+<div id="text_prg">Квартирный вопрос</div>
+
+
+
+<div style="float:left; " id="ann_time">12:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:25</div>
+<div id="text_prg">Своя игра</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">13:10</div><div id="text_prg">&quot;Наши&quot; со Львом Новоженовым&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">14:00</div><div id="text_prg">Т/с &quot;Возвращение Мухтара-2&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">15:55</div><div id="text_prg">Следствие вели...</div>
+
+
+
+<div style="float:left; " id="ann_time">16:50</div><div id="text_prg">Александр Журбин. Мелодии на память</div>
+
+
+
+<div style="float:left; " id="ann_time">17:30</div><div id="text_prg">&quot;Луч Света&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">18:00</div><div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">18:25</div><div id="text_prg">Т/с &quot;Порох и дробь&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">22:05</div><div id="text_prg">&quot;Русские сенсации&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">23:05</div><div id="text_prg">&quot;Ты не поверишь&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">00:00</div><div id="text_prg">Т/с &quot;Мент в законе-5&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">01:55</div><div id="text_prg">&quot;Реакция Вассермана&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">02:30</div><div id="text_prg">Т/с &quot;Москва. Центральный округ -2&quot;</div>
+
+</td></tr>
+
+<tr>
+		<td  style="border-bottom: 2px dotted #6699FF"  bgcolor="#EAF4FF">
+<div id='week_text'>, 16 </div></td>
+		<td colspan="2"  style="border-bottom: 2px dotted #6699FF">&nbsp;</td>
+  </tr><tr><td valign="top" width="33%"><div style="float:left; " id="ann_time">06:15</div>
+<div id="text_prg">&quot;Женский взгляд&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">07:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">07:20</div>
+<div id="text_prg">Сказки Баженова</div>
+
+
+
+<div style="float:left; " id="ann_time">07:50</div>
+<div id="text_prg">&quot;Академия красоты&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">08:20</div>
+<div id="text_prg">Их нравы</div>
+
+
+
+<div style="float:left; " id="ann_time">09:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:25</div>
+<div id="text_prg">&quot;Первая передача&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">09:55</div>
+<div id="text_prg">Едим дома!</div>
+
+
+
+<div style="float:left; " id="ann_time">10:25</div>
+<div id="text_prg">&quot;Чудо техники&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">11:00</div>
+<div id="text_prg">Дачный ответ</div>
+
+
+
+<div style="float:left; " id="ann_time">12:00</div>
+<div id="text_prg">&quot;Сегодня&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">12:30</div>
+<div id="text_prg">Т/с &quot;Дорожный патруль-4&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">16:20</div><div id="text_prg">&quot;Очная ставка&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">17:20</div><div id="text_prg">Золотая пыль</div>
+
+
+
+<div style="float:left; " id="ann_time">18:00</div><div id="text_prg">&quot;Сегодня. Итоговая программа&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">19:00</div><div id="text_prg">Чистосердечное признание</div>
+
+
+
+<div style="float:left; " id="ann_time">19:40</div><div id="text_prg">&quot;Центральное телевидение&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">20:35</div><div id="text_prg">&quot;Железные леди&quot;</div>
+
+
+
+
+</td><td valign="top" width="33%"><div style="float:left; " id="ann_time">21:25</div><div id="text_prg">Х/ф &quot;Оружие&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">23:10</div><div id="text_prg">Чрезвычайное происшествие. Обзор за неделю</div>
+
+
+
+<div style="float:left; " id="ann_time">23:45</div><div id="text_prg">Т/с &quot;Мент в законе-5&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">01:40</div><div id="text_prg">&quot;Кремлевские дети&quot;. &quot;Дети Хрущева. Цветы оттепели&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">02:35</div><div id="text_prg">Х/ф &quot;В шесть часов вечера после войны&quot;</div>
+
+
+
+<div style="float:left; " id="ann_time">04:25</div><div id="text_prg">&quot;Криминальная Россия. Современные хроники&quot;</div>
+
+</td></tr></table><br />	</div>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" id="table7"> 
+	<tr>
+		<td width="269" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" colspan="2">&nbsp;</td>
+		<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" width="269">&nbsp;</td>
+		<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" width="241">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="10" bgcolor="#C0C0C0">&nbsp;&nbsp;&nbsp;</td>
+		<td width="252" rowspan="2">
+		<p style="margin-left: 3px; margin-top: 0; margin-bottom: 0">
+		<font style="FONT-SIZE: 8pt" face="Arial" color="#800000">Программы телепередач публикуются по мере поступления. Если сейчас программа для этого канала отсутствует, возможно, она появится позже.</font></td>
+		<td width="269">&nbsp;</td>
+		<td  align="right" valign="top">
+    <span onclick="document.getElementById('prnt').value=document.getElementById('print_div').innerHTML; document.prn.submit()" face="Tahoma" style="font-size: 8pt; cursor:pointer">&nbsp;&nbsp;&nbsp;<u>версия для печати</u></span>
+        </td>
+	</tr>
+	<tr>
+		<td width="10" height="20" bgcolor="#C0C0C0">&nbsp;</td>
+		<td height="20" width="269">&nbsp;</td>
+		<td height="20" width="241">&nbsp;</td>
+	</tr>
+</table>
+</div>
+
+
+
+<div id="about" style="display:none">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" style="border-right-width: 0px; border-bottom-width: 0px" id="table6">
+	<tr>
+		<td width="1" ></td>
+		<td width="8" rowspan="5">&nbsp;</td>
+        <td> </td>
+		<td  valign="bottom">&nbsp;
+		</td>
+		<td >&nbsp;</td>
+		<td valign="bottom" colspan="2">&nbsp;
+		</td>
+		<td width="17" style="border-right: medium none #6699FF; ">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="1" rowspan="4" bgcolor="#6699FF">&nbsp;&nbsp;&nbsp;</td>
+		<td></td>
+		<td valign="bottom">
+	    </td>
+		<td  valign="bottom" colspan="2"></td>
+		<td align="right">
+<select size="1" name="D2" style="font-family: Tahoma; font-size: 8pt" onchange="if(this.value!=0) window.location = 'index2.php?set_channel='+this.value;">
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;УКРАИНА </option>
+            
+		<option  value="%CA%E0%ED%E0%EB+%221%2B1%22">1+1</option>
+                    
+		<option  value="1%2B1+%CC%E5%E6%E4%F3%ED%E0%F0%EE%E4%ED%FB%E9">1+1 Международный</option>
+                    
+		<option  value="%D1%F2%E5%F0%F5">11 канал (Днепр.)</option>
+                    
+		<option  value="27+%EA%E0%ED%E0%EB">27 канал (Донецк)</option>
+                    
+		<option  value="2+%D2">2Т</option>
+                    
+		<option  value="34+%EA%E0%ED%E0%EB">34 канал (Днепр.)</option>
+                    
+		<option  value="5+%EA%E0%ED%E0%EB">5 канал</option>
+                    
+		<option  value="51+%EA%E0%ED%E0%EB">51 канал (Днепр.)</option>
+                    
+		<option  value="9+%EA%E0%ED%E0%EB">9 канал  (Днепр.)</option>
+                    
+		<option  value="A-one+%D3%EA%F0%E0%E8%ED%E0">A-one Украина</option>
+                    
+		<option  value="ATR">ATR</option>
+                    
+		<option  value="Business">Business</option>
+                    
+		<option  value="Dobro+TV">Dobro-tv</option>
+                    
+		<option  value="Englishclub+TV">Englishclub TV</option>
+                    
+		<option  value="Enter-%F4%E8%EB%FC%EC">Enter фильм</option>
+                    
+		<option  value="ICTV">ICTV</option>
+                    
+		<option  value="MAXXI-TV">MAXXI</option>
+                    
+		<option  value="MTV-%D3%EA%F0%E0%E8%ED%E0">MTV Украина</option>
+                    
+		<option  value="Music+Box+UA">Music Box UA</option>
+                    
+		<option  value="NewsOne">NewsOne</option>
+                    
+		<option  value="O-TV">O-TV</option>
+                    
+		<option  value="Pro+%C2%F1%E5">Pro Все</option>
+                    
+		<option  value="QTV">QTV</option>
+                    
+		<option  value="Real+Estate+TV">Real Estate TV</option>
+                    
+		<option  value="StarTV">StarTV</option>
+                    
+		<option  value="XSport">XSport</option>
+                    
+		<option  value="ZIK">ZIK</option>
+                    
+		<option  value="%C1%E0%E1%E0%E9+%D2%C2">Бабай ТВ</option>
+                    
+		<option  value="%C3%E0%EC%EC%E0">Гамма</option>
+                    
+		<option  value="%C3%EB%E0%F1">Глас</option>
+                    
+		<option  value="%C3%EB%E0%F1+%28%CE%E4%E5%F1%F1%E0%29">Глас (Одесса)</option>
+                    
+		<option  value="%C3%F3%EC%EE%F0+%D2%C2">Гумор ТВ</option>
+                    
+		<option  value="%C4%EE%ED%E1%E0%F1%F1">Донбасс</option>
+                    
+		<option  value="%C7%E0%EF%EE%F0%EE%E6%FC%E5">Запорожье</option>
+                    
+		<option  value="%C8%ED%F2%E5%F0">Интер</option>
+                    
+		<option  value="%C8%ED%F2%E5%F0%2B">Интер+</option>
+                    
+		<option  value="%CA1">К1</option>
+                    
+		<option  value="%CA2">К2</option>
+                    
+		<option  value="%CA%E8%EA%EE">КiКо</option>
+                    
+		<option  value="%CA%E0%ED%E0%EB+%222%2B2%22">Канал "2+2"</option>
+                    
+		<option  value="%CA%E0%ED%E0%EB+%2224%22">Канал "24"</option>
+                    
+		<option  value="%CA%C4%D0%D2%D0%CA">КДРТРК</option>
+                    
+		<option  value="%CA%E8%E5%E2%F1%EA%E0%FF+%D0%F3%F1%FC">Киевская Русь</option>
+                    
+		<option  value="%CA%F3%EB%FC%F2%F3%F0%E0+%28%D3%EA%F0%E0%E8%ED%E0%29">Культура (Украина)</option>
+                    
+		<option  value="%CC-1">М-1</option>
+                    
+		<option  value="%CC-2">М-2</option>
+                    
+		<option  value="%CC%E0%EB%FF%F2%EA%EE+%D2%C2">Малятко ТВ</option>
+                    
+		<option  value="%CC%E5%E3%E0">Мега</option>
+                    
+		<option  value="%CC%E5%ED%FE+%D2%C2">Меню ТВ</option>
+                    
+		<option  value="%CC%EE%FF+%E4%E8%F2%E8%ED%E0">Моя дитина</option>
+                    
+		<option  value="%CD%CB%CE-%D2%C2">НЛО-ТВ</option>
+                    
+		<option  value="%CD%EE%E2%FB%E9+%EA%E0%ED%E0%EB">Новый канал</option>
+                    
+		<option  value="%CD%D2%C0">НТА</option>
+                    
+		<option  value="%CD%D2%CD">НТН</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%C0%E2%F2%EE%EC%EE%E1%E8%EB%FC%ED%FB%E9">Первый Автомобильный</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%C4%E5%EB%EE%E2%EE%E9">Первый Деловой</option>
+                    
+		<option  value="%D3%D2-1">Первый национальный</option>
+                    
+		<option  value="%CF%E8%EA%F1%E5%EB%FC">Пиксель</option>
+                    
+		<option  value="%CF%EB%E0%ED%E5%F2%E0">Планета</option>
+                    
+		<option  value="%CF%EB%FE%F1%CF%EB%FE%F1">ПлюсПлюс</option>
+                    
+		<option  value="%CF%EE%E3%EE%E4%E0+%D2%C2">Погода ТВ</option>
+                    
+		<option  value="%D1%E2%E8%F2">Свiт</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+1">Спорт 1</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+2">Спорт 2</option>
+                    
+		<option  value="%D1%D2%C1">СТБ</option>
+                    
+		<option  value="%D1%F2%F0%E0%ED%E0+%F1%EE%E2%E5%F2%EE%E2">Страна советов</option>
+                    
+		<option  value="%D2%C2-5+%28%C7%E0%EF%EE%F0%EE%E6%FC%E5%29">ТВ-5 (Запорожье)</option>
+                    
+		<option  value="%D2%C2i">ТВi</option>
+                    
+		<option  value="%D2%C5%D2">ТЕТ</option>
+                    
+		<option  value="%D2%E8%F1%E0-1">Тиса-1</option>
+                    
+		<option  value="%D2%CA+%22%CA%E8%E5%E2%22">ТК "Киев"</option>
+                    
+		<option  value="%D2%EE%ED%E8%F1">Тонис</option>
+                    
+		<option  value="%CA%E0%ED%E0%EB+%22%D3%EA%F0%E0%E8%ED%E0%22">ТРК "Украина"</option>
+                    
+		<option  value="%D2%D0%CA+%22%DE%ED%E8%EE%ED%22">ТРК "Юнион"</option>
+                    
+		<option  value="%D2%D0%CA+%22%C0%CB%C5%CA%D1%22">ТРК Алекс</option>
+                    
+		<option  value="%D2%D0%CA+%C1%F3%EA%EE%E2%E8%ED%E0">ТРК Буковина</option>
+                    
+		<option  value="%D2%D0%CA+%22%CB%F2%E0%E2%E0%22">ТРК Лтава</option>
+                    
+		<option  value="%D3%C1%D0">УБР</option>
+                    
+		<option  value="%D3%CD%C8%C0%CD+%D2%C2">УНИАН ТВ</option>
+                    
+		<option  value="%D3%D2%D0">УТР</option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB+%28%D3%EA%F0%E0%E8%ED%E0%29">Футбол</option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB%2B">Футбол+</option>
+                    
+		<option  value="%D7%CF+INFO">ЧП.INFO</option>
+                    
+		<option  value="%DD%CA%CE-%D2%C2">Эко-ТВ</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;РОССИЯ </option>
+            
+		<option  value="100+%D2%C2">100 ТВ</option>
+                    
+		<option  value="21%2B">21+</option>
+                    
+		<option  value="24+%C4%EE%EA">24 Док</option>
+                    
+		<option  value="24+%D2%E5%F5%ED%EE">24 Техно</option>
+                    
+		<option  value="2x2">2x2</option>
+                    
+		<option  value="365+%C4%ED%E5%E9+%D2%C2">365 Дней</option>
+                    
+		<option  value="4+%EA%E0%ED%E0%EB">4 канал</option>
+                    
+		<option  value="%CF%E5%F2%E5%F0%E1%F3%F0%E3+-+5+%EA%E0%ED%E0%EB">5 канал Петербург</option>
+                    
+		<option  value="8+%EA%E0%ED%E0%EB+%28%D0%EE%F1%F1%E8%FF%29">8 канал</option>
+                    
+		<option  value="9+%EA%E0%ED%E0%EB">9 канал</option>
+                    
+		<option  value="9+%EA%E0%ED%E0%EB+%CE%F0%E1%E8%F2%E0">9 канал Орбита</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%C0%EB%FC%F2%E5%F0%ED%E0%F2%E8%E2%ED%FB%E9">A-ONE</option>
+                    
+		<option  value="Amazing+Life+%28%D3%E4%E8%E2%E8%F2%E5%EB%FC%ED%E0%FF+%E6%E8%E7%ED%FC%29">Amazing Life</option>
+                    
+		<option  value="Amedia">Amedia</option>
+                    
+		<option  value="Bridge+TV">Bridge TV</option>
+                    
+		<option  value="CNL+%D1%E8%E1%E8%F0%FC">CNL Сибирь</option>
+                    
+		<option  value="Europa+Plus+TV">Europa Plus TV</option>
+                    
+		<option  value="HD-life">HD-life</option>
+                    
+		<option  value="Look+TV">Look TV</option>
+                    
+		<option  value="Music+Box+RU">Music Box RU</option>
+                    
+		<option  value="Ocean+TV">Ocean TV</option>
+                    
+		<option  value="PRO+D%E5%ED%FC%E3%E8">PRO Dеньги</option>
+                    
+		<option  value="PROPOKER">PROPOKER</option>
+                    
+		<option  value="RAP+ru">RAP.ru</option>
+                    
+		<option  value="RTG">RTG</option>
+                    
+		<option  value="RU+TV">RU TV</option>
+                    
+		<option  value="Style">Style</option>
+                    
+		<option  value="Teen+TV">Teen TV</option>
+                    
+		<option  value="TTC">TTC</option>
+                    
+		<option  value="TVCAM">TVCAM</option>
+                    
+		<option  value="TVCi">TVCi</option>
+                    
+		<option  value="Universal">Universal</option>
+                    
+		<option  value="%C0%E2%F2%EE%2B">Авто+</option>
+                    
+		<option  value="%C0%E3%F0%EE+%D2%C2">Агро ТВ</option>
+                    
+		<option  value="%C0%F1%F2%F0%EE+%D2%C2">Астро ТВ</option>
+                    
+		<option  value="%C1%E0%F1%EA%E5%F2%E1%EE%EB+%28%CD%D2%C2%2B%29">Баскетбол (НТВ+)</option>
+                    
+		<option  value="%C1%EE%E5%F6">Боец</option>
+                    
+		<option  value="%C1%F3%EB%FC%E2%E0%F0+%D2%C2">Бульвар ТВ</option>
+                    
+		<option  value="%C2%CA%D2+%D1%E5%EC%FC%FF">ВКТ Семья</option>
+                    
+		<option  value="%C2%EE%EB%E3%E0">Волга</option>
+                    
+		<option  value="%C2%EE%EF%F0%EE%F1%FB+%E8+%CE%F2%E2%E5%F2%FB">Вопросы и Ответы</option>
+                    
+		<option  value="%C2%F0%E5%EC%FF">Время</option>
+                    
+		<option  value="%C2%F1%E5%E3%E4%E0+%F1+%F2%EE%E1%EE%E9">Всегда с тобой</option>
+                    
+		<option  value="%C2%F1%FF+%D3%F4%E0">Вся Уфа</option>
+                    
+		<option  value="%C4%E5%F2%F1%EA%E8%E9+%EA%E0%ED%E0%EB">Детский канал</option>
+                    
+		<option  value="%C4%E5%F2%F1%EA%E8%E9+%EC%E8%F0">Детский мир</option>
+                    
+		<option  value="%C4%E5%F2%F1%EA%E8%E9+%EC%E8%F0-%D2%E5%EB%E5%EA%EB%F3%E1">Детский мир-Телеклуб</option>
+                    
+		<option  value="%C4%E8%F1%EA%EE%F2%E5%EA%E0+%D2%C2">Дискотека ТВ</option>
+                    
+		<option  value="%C4%EE%E2%E5%F0%E8%E5">Доверие</option>
+                    
+		<option  value="%C4%EE%E6%E4%FC">Дождь</option>
+                    
+		<option  value="%C4%EE%EC+%CA%E8%ED%EE">Дом Кино</option>
+                    
+		<option  value="%C4%EE%EC%E0%F8%ED%E8%E5+%E6%E8%E2%EE%F2%ED%FB%E5">Домашние животные</option>
+                    
+		<option  value="%C4%EE%EC%E0%F8%ED%E8%E9">Домашний</option>
+                    
+		<option  value="%C4%F0%E0%E9%E2+%D2%C2">Драйв ТВ</option>
+                    
+		<option  value="%C5%E2%F0%EE%EA%E8%ED%EE">Еврокино</option>
+                    
+		<option  value="%C5%E4%E0">Еда</option>
+                    
+		<option  value="%C5%ED%E8%F1%E5%E9-%F0%E5%E3%E8%EE%ED">Енисей-регион</option>
+                    
+		<option  value="%C6%E5%ED%F1%EA%E8%E9+%EC%E8%F0">Женский мир</option>
+                    
+		<option  value="%C6%E8%E2%E8%21">Живи</option>
+                    
+		<option  value="%C7%E0%E3%EE%F0%EE%E4%ED%E0%FF+%E6%E8%E7%ED%FC">Загородная жизнь</option>
+                    
+		<option  value="%C7%E0%E3%EE%F0%EE%E4%ED%FB%E9">Загородный</option>
+                    
+		<option  value="%C7%E0%EA%EE%ED">Закон ТВ</option>
+                    
+		<option  value="%C7%E2%E5%E7%E4%E0">Звезда</option>
+                    
+		<option  value="%C7%E4%EE%F0%EE%E2%EE%E5+%D2%C2">Здоровое ТВ</option>
+                    
+		<option  value="%C7%ED%E0%ED%E8%E5">Знание</option>
+                    
+		<option  value="%C7%EE%EE%EF%E0%F0%EA">Зоопарк</option>
+                    
+		<option  value="%C8%E4%E5%E0%EB%FC%ED%FB%E9+%EC%E8%F0">Идеальный мир</option>
+                    
+		<option  value="%C8%EB%EB%FE%E7%E8%EE%ED%2B">Иллюзион+</option>
+                    
+		<option  value="%C8%ED%E4%E8%FF+%D2%C2">Индия ТВ</option>
+                    
+		<option  value="%C8%ED%F2%E5%F0%E5%F1%ED%EE%E5+%D2%C2">Интересное ТВ</option>
+                    
+		<option  value="%CA%2B">К+</option>
+                    
+		<option  value="%CA%E0%F0%F3%F1%E5%EB%FC">Карусель</option>
+                    
+		<option  value="%CA%E0%F0%F3%F1%E5%EB%FC+Int">Карусель Int</option>
+                    
+		<option  value="%CA%E8%ED%EE+%CF%EB%FE%F1">Кино Плюс</option>
+                    
+		<option  value="%CA%E8%ED%EE%EA%EB%F3%E1">Киноклуб</option>
+                    
+		<option  value="%CA%E8%ED%EE%CB%FE%EA%F1">КиноЛюкс</option>
+                    
+		<option  value="%CA%E8%ED%EE%EC%E0%ED%E8%FF">Киномания</option>
+                    
+		<option  value="%CA%E8%ED%EE%EF%EE%EA%E0%E7">Кинопоказ</option>
+                    
+		<option  value="%CA%E8%ED%EE%F0%E5%E9%F1+1">Кинорейс 1</option>
+                    
+		<option  value="%CA%E8%ED%EE%F0%E5%E9%F1+2">Кинорейс 2</option>
+                    
+		<option  value="%CA%E8%ED%EE%F0%E5%E9%F1+3">Кинорейс 3</option>
+                    
+		<option  value="%CA%E8%ED%EE%F0%E5%E9%F1+4">Кинорейс 4</option>
+                    
+		<option  value="%CA%E8%ED%EE%F0%E5%E9%F1+5">Кинорейс 5</option>
+                    
+		<option  value="%CA%E8%ED%EE%F1%EE%FE%E7">Киносоюз</option>
+                    
+		<option  value="%CA%E8%ED%EE%F5%E8%F2">Кинохит</option>
+                    
+		<option  value="%CA%EE%EC%E5%E4%E8+%D2%C2">Комеди ТВ</option>
+                    
+		<option  value="%CA%EE%EC%E5%E4%E8%FF+%D2%C2">Комедия ТВ</option>
+                    
+		<option  value="%CA%F2%EE+%E5%F1%F2%FC+%EA%F2%EE">Кто есть кто</option>
+                    
+		<option  value="%CA%F3%F5%ED%FF+%D2%C2">Кухня ТВ</option>
+                    
+		<option  value="%CA%D5%CB+%D2%C2">КХЛ</option>
+                    
+		<option  value="%CB%FF-%EC%E8%ED%EE%F0+%28%D8%E0%ED%F1%EE%ED%29">Ля-минор</option>
+                    
+		<option  value="%CC%E0%F2%FC+%E8+%E4%E8%F2%FF">Мать и дитя</option>
+                    
+		<option  value="%CC%E8%F0">Мир</option>
+                    
+		<option  value="%CC%E8%F0+%F1%E5%F0%E8%E0%EB%E0">Мир сериала</option>
+                    
+		<option  value="%CC%ED%EE%E3%EE+%D2%C2">Много ТВ</option>
+                    
+		<option  value="%CC%EE%F1%EA%E2%E0+24">Москва 24</option>
+                    
+		<option  value="%CC%EE%FF+%EF%EB%E0%ED%E5%F2%E0">Моя планета</option>
+                    
+		<option  value="%CC%F3%E6%F1%EA%EE%E9">Мужской</option>
+                    
+		<option  value="%CC%F3%E7-%D2%C2">Муз-ТВ</option>
+                    
+		<option  value="%CC%F3%E7%FB%EA%E0+%CF%E5%F0%E2%EE%E3%EE">Музыка Первого</option>
+                    
+		<option  value="%CC%F3%EB%FC%F2%E8%EC%E0%ED%E8%FF">Мультимания</option>
+                    
+		<option  value="%CD%E0%ED%EE+%D2%C2">Нано ТВ</option>
+                    
+		<option  value="%CD%E0%F3%EA%E0+2">Наука 2.0</option>
+                    
+		<option  value="%CD%C0%D8">Наш</option>
+                    
+		<option  value="%CD%E0%F8+%D4%F3%F2%E1%EE%EB">Наш футбол</option>
+                    
+		<option  value="%CD%E0%F8%E5+%EA%E8%ED%EE">Наше кино</option>
+                    
+		<option  value="%CD%E0%F8%E5+%EB%FE%E1%E8%EC%EE%E5+%EA%E8%ED%EE">Наше любимое кино</option>
+                    
+		<option  value="%CD%E0%F8%E5+%ED%EE%E2%EE%E5+%EA%E8%ED%EE">Наше новое кино</option>
+                    
+		<option  value="%CD%E5%E4%E2%E8%E6%E8%EC%EE%F1%F2%FC+%D2%C2">Недвижимость ТВ</option>
+                    
+		<option  value="%CD%CD%D2%C2">ННТВ</option>
+                    
+		<option  value="%CD%EE%F1%F2%E0%EB%FC%E3%E8%FF">Ностальгия</option>
+                    
+		<option  value="%CD%EE%F7%ED%EE%E9+%EA%E0%ED%E0%EB">Ночной канал</option>
+                    
+		<option  value="%CD%E0%F1%F2%EE%FF%F9%E5%E5+%D1%F2%F0%E0%F8%ED%EE%E5+%D2%E5%EB%E5%E2%E8%E4%E5%ED%E8%E5">НСТ Страшное</option>
+                    
+		<option  value="%CD%D2%C2">НТВ</option>
+                    
+		<option  value="%CD%D2%C2+%28%D1%EF%F3%F2%ED%E8%EA+3%29">НТВ (Спутник 3)</option>
+                    
+		<option  value="%CD%D2%C2+%28%D1%EF%F3%F2%ED%E8%EA+4%29">НТВ (Спутник 4)</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2">НТВ+ Спорт</option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB">НТВ+ Футбол</option>
+                    
+		<option  value="%CD%D2%C2%2B+%D4%F3%F2%E1%EE%EB+2">НТВ+ Футбол 2</option>
+                    
+		<option  selected="selected" value="%CD%D2%C2-%CC%E8%F0">НТВ-Мир</option>
+                    
+		<option  value="%CD%D2%CC">НТМ</option>
+                    
+		<option  value="%CE2%D2%C2">О2ТВ</option>
+                    
+		<option  value="%CE%F0%F3%E6%E8%E5">Оружие</option>
+                    
+		<option  value="%CE%D2%C2">ОТВ</option>
+                    
+		<option  value="%CE%F2%EA%F0%FB%F2%FB%E9+%EC%E8%F0">Открытый мир</option>
+                    
+		<option  value="%CE%F5%EE%F2%E0+%E8+%D0%FB%E1%E0%EB%EA%E0">Охота и Рыбалка</option>
+                    
+		<option  value="%CE%F5%EE%F2%ED%E8%EA+%E8+%D0%FB%E1%EE%EB%EE%E2">Охотник и рыболов</option>
+                    
+		<option  value="%CF%E0%F0%EA+%D0%E0%E7%E2%EB%E5%F7%E5%ED%E8%E9">Парк Развлечений</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB+%28%CE%F0%E1%E8%F2%E0+3%29">Первый (Орбита 3)</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB+%28%CE%F0%E1%E8%F2%E0+4%29">Первый (Орбита 4)</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB">Первый канал</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB+%28%C5%E2%F0%EE%EF%E0%29">Первый канал Европа</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB+%28%D1%CD%C3%29">Первый канал СНГ</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB+%28%D3%EA%F0%E0%E8%ED%E0%29">Первый канал Украина</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%CC%C5%D2%C5%CE">Первый МЕТЕО</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EE%E1%F0%E0%E7%EE%E2%E0%F2%E5%EB%FC%ED%FB%E9">Первый образовательный</option>
+                    
+		<option  value="%CF%E5%F0%E5%F6">Перец</option>
+                    
+		<option  value="%CF%EB%E0%ED%E5%F2%E0-%D1%CD%C3">Планета СНГ</option>
+                    
+		<option  value="%CF%EE%E4%EC%EE%F1%EA%EE%E2%FC%E5">Подмосковье</option>
+                    
+		<option  value="%CF%F0%E5%EC%FC%E5%F0%E0">Премьера</option>
+                    
+		<option  value="%CF%F1%E8%F5%EE%EB%EE%E3%E8%FF+21">Психология21</option>
+                    
+		<option  value="%CF%FF%F2%ED%E8%F6%E0%21">Пятница!</option>
+                    
+		<option  value="%D0%E0%E4%EE%F1%F2%FC+%EC%EE%FF">Радость моя</option>
+                    
+		<option  value="%D0%E0%E7%D2%C2">РазТВ</option>
+                    
+		<option  value="%D0%C1%CA">РБК</option>
+                    
+		<option  value="REN+TV">РенТВ</option>
+                    
+		<option  value="%D0%E5%F2%F0%EE+%D2%C2">Ретро ТВ</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1">Россия 1</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1+%28%C4%F3%E1%EB%FC+1%29">Россия 1 (Дубль 1)</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1++%28%C4%F3%E1%EB%FC+2%29">Россия 1 (Дубль 2)</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1+%28%C4%F3%E1%EB%FC+3%29">Россия 1 (Дубль 3)</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1+%28%C4%F3%E1%EB%FC+4%29">Россия 1 (Дубль 4)</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+1+%28%D2%FE%EC%E5%ED%FC%29">Россия 1 (Тюмень)</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+2">Россия 2</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+24">Россия 24</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+%CA">Россия К</option>
+                    
+		<option  value="%D0%D2%D0-%CF%EB%E0%ED%E5%F2%E0">РТР Планета</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E0%FF+%CD%EE%F7%FC">Русская Ночь</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E8%E9+%E1%E5%F1%F2%F1%E5%EB%EB%E5%F0">Русский бестселлер</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E8%E9+%C8%EB%EB%FE%E7%E8%EE%ED">Русский Иллюзион</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E8%E9+%F0%EE%EC%E0%ED">Русский роман</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E8%E9+%D1%E5%E2%E5%F0">Русский Север</option>
+                    
+		<option  value="%D0%F3%F1%F1%EA%E8%E9+%DD%EA%F1%F2%F0%E8%EC">Русский Экстрим</option>
+                    
+		<option  value="%D1%E0%F0%E0%F4%E0%ED-%D2%C2">Сарафан ТВ</option>
+                    
+		<option  value="%D1%C3%D3+%D2%C2">СГУ</option>
+                    
+		<option  value="%D1%EE%E2%E5%F0%F8%E5%ED%ED%EE+%D1%E5%EA%F0%E5%F2%ED%EE">Совершенно Секретно</option>
+                    
+		<option  value="%D1%EE%FE%E7">Союз</option>
+                    
+		<option  value="%D1%EF%E0%F1">Спас</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+1+%28%D0%EE%F1%F1%E8%FF%29">Спорт 1 (Россия)</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+2+%28%D0%EE%F1%F1%E8%FF%29">Спорт 2 (Россия)</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+%CA%EB%E0%F1%F1%E8%EA%E0">Спорт Классика</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2-%CE%ED%EB%E0%E9%ED">Спорт Онлайн</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+%CF%EB%FE%F1">Спорт Плюс</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+%D1%EE%FE%E7+">Спорт Союз </option>
+                    
+		<option  value="%D1%F2%F0%E0%ED%E0">Страна</option>
+                    
+		<option  value="%D1%F2%F0%E8%EC+%D0%F3%F1%F1%EA%E0%FF+%E6%E8%E7%ED%FC">Стрим Русская жизнь</option>
+                    
+		<option  value="%D1%D2%D1">СТС</option>
+                    
+		<option  value="%D1%D2%D1+%2B7">СТС +7</option>
+                    
+		<option  value="%D1%D2%D1+International">СТС International</option>
+                    
+		<option  value="%D2%C1%CD-%D0%EE%F1%F1%E8%FF">ТБН</option>
+                    
+		<option  value="%D2%C2+%CA%EB%F3%E1">ТВ Клуб</option>
+                    
+		<option  value="%D2%C2-%D6%E5%ED%F2%F0">ТВ Центр</option>
+                    
+		<option  value="%D2%C2+%D6%E5%ED%F2%F0+%28%D1%E8%E1%E8%F0%FC%29">ТВ Центр (Сибирь)</option>
+                    
+		<option  value="%D2%C23">ТВ-3</option>
+                    
+		<option  value="%D2%E2%EE%E9+%D2%C2+%CF%E5%F2%E5%F0%E1%F3%F0%E3">Твой ТВ Петербург</option>
+                    
+		<option  value="%D2%C4%CA">ТДК</option>
+                    
+		<option  value="%D2%E5%EB%E5%EA%E0%F4%E5">Телекафе</option>
+                    
+		<option  value="%D2%E5%EB%E5%EA%EB%F3%E1">Телеклуб</option>
+                    
+		<option  value="%D2%E5%EB%E5%EF%F3%F2%E5%F8%E5%F1%F2%E2%E8%FF">Телепутешествия</option>
+                    
+		<option  value="%D2%E5%ED%ED%E8%F1">Теннис</option>
+                    
+		<option  value="%D2%E0%F2%E0%F0%F1%F2%E0%ED+-+%CD%EE%E2%FB%E9+%C2%E5%EA">ТНВ</option>
+                    
+		<option  value="%D2%CD%C2+%CF%EB%E0%ED%E5%F2%E0">ТНВ Планета</option>
+                    
+		<option  value="%D2%CD%D2">ТНТ</option>
+                    
+		<option  value="%D2%EE%ED%F3%F1+%D2%C2">Тонус ТВ</option>
+                    
+		<option  value="%D2%D0%CE">ТРО</option>
+                    
+		<option  value="%D3%EB%FB%E1%EA%E0+%F0%E5%E1%E5%ED%EA%E0">Улыбка ребенка</option>
+                    
+		<option  value="%D3%F1%E0%E4%FC%E1%E0+%D2%C2">Усадьба</option>
+                    
+		<option  value="%D3%F1%EF%E5%F5">Успех</option>
+                    
+		<option  value="%D4%E5%ED%E8%EA%F1+%2B+%CA%E8%ED%EE">Феникс+Кино</option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB+%28%D0%EE%F1%F1%E8%FF%29">Футбол</option>
+                    
+		<option  value="%DD%E3%EE%E8%F1%F2+%D2%C2">Эгоист ТВ</option>
+                    
+		<option  value="%DD%EA%F1%EF%E5%F0%F2+%D2%C2">Эксперт ТВ</option>
+                    
+		<option  value="%DE">Ю</option>
+                    
+		<option  value="%DE%E3%F0%E0">Югра</option>
+                    
+		<option  value="%DE%EC%EE%F0+%D2%C2">Юмор ТВ</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;ПРИБАЛТИКА </option>
+            
+		<option  value="3+plus+%28%C1%E0%EB%F2%E8%EA%E0%29">3+ (Балтика)</option>
+                    
+		<option  value="Eesti+Televisioon+%28%C1%E0%EB%F2%E8%EA%E0%29">Eesti Televisioon</option>
+                    
+		<option  value="Kanal+2+%28%C1%E0%EB%F2%E8%EA%E0%29">Kanal 2 (Эстония)</option>
+                    
+		<option  value="LNT">LNT (Латвия)</option>
+                    
+		<option  value="LTV-1">LTV-1 (Латвия)</option>
+                    
+		<option  value="LTV-7">LTV-7 (Латвия)</option>
+                    
+		<option  value="PRO100TV+LV">PRO100TV</option>
+                    
+		<option  value="REN+TV+%28%CB%E0%F2%E2%E8%FF%29">REN TV (Латвия)</option>
+                    
+		<option  value="REN+TV+%28%DD%F1%F2%EE%ED%E8%FF%29">REN TV (Эстония)</option>
+                    
+		<option  value="TV-6+%28%CB%E0%F2%E2%E8%FF%29">TV-6 (Латвия)</option>
+                    
+		<option  value="TV3+%28%C1%E0%EB%F2%E8%EA%E0%29">TV3 (Эстония)</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%C1%E0%EB%F2%E8%E9%F1%EA%E8%E9+%EA%E0%ED%E0%EB+%28%CB%E0%F2%E2%E8%FF%29">Первый  (Латвия)</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%C1%E0%EB%F2%E8%E9%F1%EA%E8%E9+%EA%E0%ED%E0%EB+%28%DD%F1%F2%EE%ED%E8%FF%29">Первый (Эстония)</option>
+                    
+		<option  value="%D0%D2%D0-%CF%EB%E0%ED%E5%F2%E0+%28%C1%E0%EB%F2%E8%EA%E0%29">РТР Планета</option>
+                    
+		<option  value="%D2%C2-5+%28%CB%E0%F2%E2%E8%FF%29">ТВ-5 (Латвия)</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;БЕЛАРУСЬ </option>
+            
+		<option  value="%2B%D2%C2+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">+TV BELVIASAT</option>
+                    
+		<option  value="8+%EA%E0%ED%E0%EB">8 канал</option>
+                    
+		<option  value="Cinema">Cinema</option>
+                    
+		<option  value="%C1%E5%EB%E0%F0%F3%F1%FC+1+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">Беларусь 1</option>
+                    
+		<option  value="%C1%E5%EB%E0%F0%F3%F1%FC+24+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">Беларусь 24</option>
+                    
+		<option  value="%C1%E5%EB%F1%E0%F2+%D2%C2">Белсат ТВ</option>
+                    
+		<option  value="%C1%F3%E3-%D2%C2+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">Буг-ТВ</option>
+                    
+		<option  value="%C2%D2%C2">ВТВ</option>
+                    
+		<option  value="%CB%C0%C4+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">ЛАД</option>
+                    
+		<option  value="%CD%D2%C2-%C1%E5%EB%E0%F0%F3%F1%FC">НТВ Беларусь</option>
+                    
+		<option  value="%CE%CD%D2+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">ОНТ</option>
+                    
+		<option  value="%CF%E5%F0%E2%FB%E9+%EC%F3%E7%FB%EA%E0%EB%FC%ED%FB%E9+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">Первый музыкальный</option>
+                    
+		<option  value="%D0%D2%D0-%C1%C5%CB%C0%D0%D3%D1%DC">РТР Беларусь</option>
+                    
+		<option  value="%D1%D2%C2+%28%C1%E5%EB%E0%F0%F3%F1%FC%29">СТВ</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;ПОЛЬША </option>
+            
+		<option  value="%C4%D1%D4+%28%CF%EE%EB%FC%F8%E0%29">DSF</option>
+                    
+		<option  value="Polonia+%28%CF%EE%EB%FC%F8%E0%29">Polonia</option>
+                    
+		<option  value="Polsat+%28%CF%EE%EB%FC%F8%E0%29">Polsat</option>
+                    
+		<option  value="TVP+1+%28%CF%EE%EB%FC%F8%E0%29">TVP 1</option>
+                    
+		<option  value="TVP+2+%28%CF%EE%EB%FC%F8%E0%29">TVP 2</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;РУССКОЯЗЫЧНЫЕ </option>
+            
+		<option  value="Adjara+TV">Adjara TV</option>
+                    
+		<option  value="Animal+Planet">Animal Planet</option>
+                    
+		<option  value="Animal+Planet+CEE">Animal Planet CEE</option>
+                    
+		<option  value="AXN+Sci-fi">AXN Sci-fi</option>
+                    
+		<option  value="CBS+Drama">CBS Drama</option>
+                    
+		<option  value="CCTV+%D0%F3%F1%F1%EA%E8%E9">CCTV Русский</option>
+                    
+		<option  value="CNL+%D3%EA%F0%E0%E8%ED%E0">CNL Украина</option>
+                    
+		<option  value="Da+Vinci+Learning+%D0%EE%F1%F1%E8%FF">Da Vinci Learning Россия</option>
+                    
+		<option  value="Da+Vinci+Learning+%D3%EA%F0%E0%E8%ED%E0">Da Vinci Learning Украина</option>
+                    
+		<option  value="Discovery+Channel+Central+%26+Eastern+Europe">Discovery Channel CEE</option>
+                    
+		<option  value="Discovery+Channel+%D3%EA%F0%E0%E8%ED%E0">Discovery Channel Украина</option>
+                    
+		<option  value="Discovery+Channel">Discovery Russia</option>
+                    
+		<option  value="Discovery+Science">Discovery Science</option>
+                    
+		<option  value="Discovery+Travel+%26+Living">Discovery Travel & Living</option>
+                    
+		<option  value="Discovery+World">Discovery World</option>
+                    
+		<option  value="Disney+Channel">Disney Channel</option>
+                    
+		<option  value="Diva+Universal">Diva Universal</option>
+                    
+		<option  value="ESPN+Classic+Sport">ESPN Classic Sport</option>
+                    
+		<option  value="EuroNews">EuroNews</option>
+                    
+		<option  value="EuroSport">EuroSport</option>
+                    
+		<option  value="EuroSport+2">EuroSport 2</option>
+                    
+		<option  value="Extreme+Sports+Channel">Extreme Sport</option>
+                    
+		<option  value="Fine+Living+Network">Fine Living Network</option>
+                    
+		<option  value="Fox">Fox</option>
+                    
+		<option  value="FoxLife">Fox Life</option>
+                    
+		<option  value="Gulli">Gulli</option>
+                    
+		<option  value="ID+Investigation+Discovery">ID Investigation Discovery</option>
+                    
+		<option  value="JimJam">JimJam</option>
+                    
+		<option  value="KidsCo">KidsCo</option>
+                    
+		<option  value="LUXE+TV">LUXE TV</option>
+                    
+		<option  value="Mini+Movie">Mini Movie</option>
+                    
+		<option  value="Nat+Geo+Wild">Nat Geo Wild</option>
+                    
+		<option  value="National+Geographic+Channel">National Geographic</option>
+                    
+		<option  value="NBA+TV">NBA TV</option>
+                    
+		<option  value="Nick+Jr">Nick Jr</option>
+                    
+		<option  value="Nickelodeon">Nickelodeon</option>
+                    
+		<option  value="Outdoor+Channel">Outdoor Channel</option>
+                    
+		<option  value="R1+%28%D0%F3%F1%F1%EA%E8%E9+%EF%E5%F0%E2%FB%E9+%EA%E0%ED%E0%EB%29">R1</option>
+                    
+		<option  value="RTVi">RTVi</option>
+                    
+		<option  value="RTVi+%28%C5%E2%F0%EE%EF%E0%29">RTVi Европа</option>
+                    
+		<option  value="Russia+Today">Russia Today</option>
+                    
+		<option  value="SET">SET</option>
+                    
+		<option  value="Sony+Turbo">Sony Turbo</option>
+                    
+		<option  value="Syfy+Universal">Syfy Universal</option>
+                    
+		<option  value="TiJi">TiJi</option>
+                    
+		<option  value="TLC">TLC</option>
+                    
+		<option  value="TLC+PAN-Regional">TLC PAN-Regional</option>
+                    
+		<option  value="Travel+Channel">Travel Channel</option>
+                    
+		<option  value="%D2%C2-1000">TV 1000</option>
+                    
+		<option  value="%D2%C2-1000+Action">TV 1000 Action East</option>
+                    
+		<option  value="%D2%C2-1000+%D0%F3%F1%F1%EA%EE%E5+%EA%E8%ED%EE">TV 1000 Русское кино</option>
+                    
+		<option  value="%D2%C2-21">TV XXI</option>
+                    
+		<option  value="Viasat+Explorer">Viasat Explorer</option>
+                    
+		<option  value="Viasat+History">Viasat History</option>
+                    
+		<option  value="Viasat+Nature">Viasat Nature</option>
+                    
+		<option  value="Viasat+Sport">Viasat Sport</option>
+                    
+		<option  value="Zee+TV">Zee TV</option>
+                    
+		<option  value="Reality">Zone Reality</option>
+                    
+		<option  value="%C1%D1%D2">БСТ</option>
+                    
+		<option  value="%C8%E7%F0%E0%E8%EB%FC%2B">Израиль+</option>
+                    
+		<option  value="%D2%F3%F0%E8%ED%F4%EE">Туринфо</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;ОСТАЛЬНЫЕ </option>
+            
+		<option  value="AB+Moteurs">AB Moteurs</option>
+                    
+		<option  value="Arirang+TV">Arirang TV</option>
+                    
+		<option  value="Baby+TV">Baby TV</option>
+                    
+		<option  value="BBC+Entertainment">BBC Entertainment</option>
+                    
+		<option  value="BBC+World">BBC World</option>
+                    
+		<option  value="%C1%EB%F3%EC%E1%E5%F0%E3">Bloomberg</option>
+                    
+		<option  value="Boomerang">Boomerang</option>
+                    
+		<option  value="C+Music+TV">C Music TV</option>
+                    
+		<option  value="Cartoon+Network">Cartoon Network</option>
+                    
+		<option  value="CCTV9">CCTV9</option>
+                    
+		<option  value="CNBC">CNBC</option>
+                    
+		<option  value="CNN+International">CNN International</option>
+                    
+		<option  value="Deutsche+Welle">Deutsche Welle</option>
+                    
+		<option  value="Dorcel+TV">Dorcel TV</option>
+                    
+		<option  value="Europa+Plus+TV">Europa Plus TV</option>
+                    
+		<option  value="Fashion+One">Fashion One</option>
+                    
+		<option  value="Fashion+TV">Fashion TV</option>
+                    
+		<option  value="France+24">France 24</option>
+                    
+		<option  value="Hustler+TV">Hustler TV</option>
+                    
+		<option  value="MCM+TOP">MCM TOP</option>
+                    
+		<option  value="Melody+Zen">Melody Zen</option>
+                    
+		<option  value="Mezzo">Mezzo</option>
+                    
+		<option  value="MGM">MGM</option>
+                    
+		<option  value="Motors+TV">Motors TV</option>
+                    
+		<option  value="MTV+Dance">MTV Dance</option>
+                    
+		<option  value="MTV+Hits">MTV Hits</option>
+                    
+		<option  value="MTV2">MTV TWO</option>
+                    
+		<option  value="Music+Box+TV">Music Box TV</option>
+                    
+		<option  value="NEO+Television">NEO Television</option>
+                    
+		<option  value="Private+Spice">Private Spice</option>
+                    
+		<option  value="Rusong+TV">Rusong TV</option>
+                    
+		<option  value="%D2%D1%CC">TCM Europe</option>
+                    
+		<option  value="Trace+TV">Trace TV</option>
+                    
+		<option  value="TV5+Monde">TV5 Monde</option>
+                    
+		<option  value="Ukrainian+Fashion">Ukrainian Fashion</option>
+                    
+		<option  value="VH-1">VH1</option>
+                    
+		<option  value="VH-1+Classic">VH1 Classic</option>
+                    
+		<option  value="VH-1+%28%D0%EE%F1%F1%E8%FF%29">VH1 Россия</option>
+                    
+		<option  value="World+Fashion+Channel">World Fashion Channel</option>
+                    
+		<option  value="World+Music+Channel">World Music Channel</option>
+                    
+		<option  value="XXL">XXL</option>
+                    
+		<option  value="Zone+Club">Zone Club</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;СПОРТ </option>
+            
+		<option  value="ESPN+Classic">ESPN Classic</option>
+                    
+		<option  value="EuroSport">EuroSport</option>
+                    
+		<option  value="EuroSport+2">EuroSport 2</option>
+                    
+		<option  value="Viasat+Sport">Viasat Sport</option>
+                    
+		<option  value="%C1%E0%F1%EA%E5%F2%E1%EE%EB+%28%CD%D2%C2%2B%29">Баскетбол (НТВ+)</option>
+                    
+		<option  value="%CA%D5%CB+%D2%C2">КХЛ</option>
+                    
+		<option  value="%CD%E0%F8+%D4%F3%F2%E1%EE%EB">Наш Футбол</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2">НТВ+ Спорт</option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB">НТВ+ Футбол</option>
+                    
+		<option  value="%CD%D2%C2%2B+%D4%F3%F2%E1%EE%EB+2">НТВ+ Футбол 2</option>
+                    
+		<option  value="%D0%EE%F1%F1%E8%FF+2">Россия 2</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+1">Спорт 1</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+1+%28%D0%EE%F1%F1%E8%FF%29">Спорт 1 (Россия)</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+2">Спорт 2</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+2+%28%D0%EE%F1%F1%E8%FF%29">Спорт 2 (Россия)</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+%CF%EB%FE%F1">Спорт Плюс</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+%D1%EE%FE%E7+">Спорт Союз </option>
+                    
+		<option  value="%D4%F3%F2%E1%EE%EB%2B">Футбол+</option>
+                            <option value="0" disabled="disabled" style="background:#000; color:#FFF" >&nbsp;&nbsp;&nbsp;&nbsp;HD ТЕЛЕКАНАЛЫ </option>
+            
+		<option  value="Animal+Planet+HD">Animal Planet HD</option>
+                    
+		<option  value="Discovery+HD+Showcase">Discovery HD Showcase</option>
+                    
+		<option  value="Eurosport+HD">Eurosport HD</option>
+                    
+		<option  value="Fashion+TV+HD">Fashion TV HD</option>
+                    
+		<option  value="Fox+HD">Fox Crime HD</option>
+                    
+		<option  value="FoxLife+HD">Fox Life HD</option>
+                    
+		<option  value="HD+%CA%E8%ED%EE">HD Кино</option>
+                    
+		<option  value="HD+%CA%E8%ED%EE+2">HD Кино 2</option>
+                    
+		<option  value="HD+%D1%EF%EE%F0%F2">HD Спорт</option>
+                    
+		<option  value="High+Life">High Life</option>
+                    
+		<option  value="Melody+Zen">Melody Zen</option>
+                    
+		<option  value="MGM+HD">MGM HD</option>
+                    
+		<option  value="Nat+Geo+Wild+HD">Nat Geo Wild HD</option>
+                    
+		<option  value="National+Geographic+HD">National Geographic HD</option>
+                    
+		<option  value="Nickelodeon+HD">Nickelodeon HD</option>
+                    
+		<option  value="RUSH+HD">RUSH HD</option>
+                    
+		<option  value="%D2%C2-1000+Comedy+HD">TV1000 Comedy HD</option>
+                    
+		<option  value="%D2%C2-1000+Megahit+HD">TV1000 Megahit HD</option>
+                    
+		<option  value="%D2%C2-1000+Premium+HD">TV1000 Premium HD</option>
+                    
+		<option  value="Viasat+Nature+History+HD">Viasat Nature/History HD</option>
+                    
+		<option  value="%CA%E8%ED%EE%EF%EE%EA%E0%E7+HD-1">Кинопоказ HD-1</option>
+                    
+		<option  value="%CA%E8%ED%EE%EF%EE%EA%E0%E7+HD-2">Кинопоказ HD-2</option>
+                    
+		<option  value="%CD%D2%C2%2B+%D4%F3%F2%E1%EE%EB+2+HD">НТВ+ Футбол 2 HD</option>
+                    
+		<option  value="%CD%D2%C2%2B+%D4%F3%F2%E1%EE%EB+HD">НТВ+ Футбол HD</option>
+                    
+		<option  value="%D1%EF%EE%F0%F2+1+HD">Спорт 1 HD</option>
+                    
+		<option  value="%D2%E5%EB%E5%EF%F3%F2%E5%F8%E5%F1%F2%E2%E8%FF+HD">Телепутешествия HD</option>
+        		</select>
+		</td>
+		<td width="17" style="border-right: 4px solid #6699FF">&nbsp;</td>
+	</tr>
+	<tr>
+	<td rowspan="3" valign="middle"><img hspace="10" src="/files/Image/logo/147_logo.jpg" /></td>
+	  <td colspan="3" valign="middle">
+				<font face="Tahoma" color="#CC0066" style="font-size: 14pt; font-weight:bold">НТВ-Мир</font>
+		  </td>
+	  <td width="100%" align="right">
+      <u><font face="Arial" style="font-size: 8pt" color="#CC0066">
+<span style="cursor:pointer;" onclick="document.getElementById('prog').style.display='block'; document.getElementById('about').style.display='none';">Телепрограмма канала</span></font></u></td>
+		<td width="17" style="border-right: 4px solid #6699FF; border-bottom-style: none; border-bottom-width: medium">&nbsp;</td>
+	</tr>
+	<tr>
+
+		<td colspan="4" width="367" style="border-left: medium none #3399FF; border-right: medium none #3399FF; border-top: 1px solid #3399FF; border-bottom: medium none #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px" bgcolor="#EAF4FF">
+		<font face="Tahoma" style="font-size: 10pt; font-weight: 700">
+		<span lang="ru">телепрограмма</span></font>
+        &nbsp;&nbsp;&nbsp;&nbsp;<a id='main_wek_day' href="index2.php?current_week&on_day=3&set_channel=%CD%D2%C2-%CC%E8%F0">на сегодня</a> | <a id='main_wek_day' href="index2.php?current_week&set_channel=%CD%D2%C2-%CC%E8%F0">на неделю</a></td>
+		<td width="17" style="border-left:medium none #3399FF; border-right:4px solid #6699FF; border-top:medium none #3399FF; border-bottom:medium none #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px; ">&nbsp;
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border-left: medium none #3399FF; border-right: medium none #3399FF; border-top: medium none #3399FF; border-bottom: 1px solid #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 0px; padding-bottom: 5px;" bgcolor="#EAF4FF" nowrap="nowrap">
+			<font face="Tahoma" style="font-size: 10pt; font-weight: 700">
+		<span lang="ru">анонсы</span></font>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a id='main_wek_day' href="index2.php?current_week&id=54&on_day=3&set_ann=%CD%D2%C2-%CC%E8%F0">на сегодня</a> | <a id='main_wek_day' href="index2.php?id=54&current_week&set_ann=%CD%D2%C2-%CC%E8%F0">на неделю</a></td>
+		<td bgcolor="#EAF4FF" width="367" colspan="2" style="border-left: medium none #3399FF; border-right: medium none #3399FF; border-top: medium none #3399FF; border-bottom: 1px solid #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 0px; padding-bottom: 0px; font-size:4px;">&nbsp;</td>
+		<td width="17" style="border-left:medium none #3399FF; border-right:4px solid #6699FF; border-top:medium none #3399FF; border-bottom:medium none #3399FF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px; ">&nbsp;
+		</td>
+	</tr>
+</table>
+<br />
+<table border="0" width="100%" cellspacing="0" cellpadding="0" id="table7">
+	<tr>
+		<td width="10" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" bgcolor="#C0C0C0">&nbsp;&nbsp;&nbsp;</td>
+		<td width="521" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" colspan="2"> <div id="chl_abo">о телеканале</div></td>
+		<td align="right" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0">
+    <span onclick="document.getElementById('prnt').value=document.getElementById('print_div_about').innerHTML; document.prn.submit()" face="Tahoma" style="font-size: 8pt; cursor:pointer">&nbsp;&nbsp;&nbsp;<u>версия для печати</u></span>
+    </td>
+	</tr>
+</table><br /><div id="print_div_about"><p style="text-align: justify">Телекомпания НТВ является крупнейшей российской независимой телекомпанией. Высокий уровень репортажей и объективная подача информации - это стиль работы журналистского коллектива НТВ, сформировавшийся за десять лет существования телекомпании. Канал предлагает широкий выбор информационных, образовательных и развлекательных программ, способный заинтересовать самый широкий круг зрителей. Нашему каналу присущи высокий уровень новостных программ и новаторский подход к составлению сетки вещания, соответствующий самым высоким мировым стандартам.</p>
+<p style="text-align: justify">В силу различных исторических причин, миллионы русскоязычных людей оказались разбросанными по всему свету. НТВ Мир и НТВ Америка призваны стать для них связующим звеном с Россией, достоверным источником независимой информации о событиях в их родной стране, будь то Россия, Грузия, Казахстан, или любая из стран-республик бывшего Советского Союза.</p>
+<p style="text-align: justify">Мы стремимся заинтересовать самый широкий круг русскоязычных зрителей, независимо от того, в какой точке мира они живут, и к какому поколению они принадлежат. Представители старшего поколения, многие из которых покинули родные места много лет назад, все еще скучают по своей родине и с интересом следят за происходящими там событиями. Их дети и внуки в большей степени адаптировались к новым условиям, но и они заинтересованы в сохранении языковых корней и поддержании культурных связей с Россией.</p>
+<p style="text-align: justify">НТВ Мир и НТВ Америка расскажут зрителям всех возрастов о современной жизни в России и происходящих в ней изменениях и станут источником самой свежей информации для всех, кто интересуется Россией.</p>
+<p><a href="http://www.ntvmir.ntv.ru/"><span style="color: #0000ff">http://www.ntvmir.ntv.ru/</span></a></p></div>
+<table border="0" width="100%" cellspacing="0" cellpadding="0" id="table7"> 
+	<tr>
+		<td width="269" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" colspan="2">&nbsp;</td>
+		<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" width="269">&nbsp;</td>
+		<td style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0" width="241">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="10" bgcolor="#C0C0C0">&nbsp;</td>
+		<td width="252" rowspan="2">
+		<p style="margin-left: 3px; margin-top: 0; margin-bottom: 0">
+		<font style="FONT-SIZE: 8pt" face="Arial" color="#800000">Программы телепередач публикуются по мере поступления. Если сейчас программа для этого канала отсутствует, возможно, она появится позже.</font></td>
+		<td width="269">&nbsp;</td>
+		<td align="right">
+    <span onclick="document.getElementById('prnt').value=document.getElementById('print_div_about').innerHTML; document.prn.submit()" face="Tahoma" style="font-size: 8pt; cursor:pointer">&nbsp;&nbsp;&nbsp;<u>версия для печати</u></span>
+        </td>
+	</tr>
+	<tr>
+		<td width="10" height="20" bgcolor="#C0C0C0">&nbsp;&nbsp;&nbsp;</td>
+		<td height="20" width="269">&nbsp;</td>
+		<td height="20" width="241">&nbsp;</td>
+	</tr>
+</table></div>
+					                                        		    	        </div>
+	    </td>
+		<td >&nbsp;</td>
+		<td valign="top"  bgcolor="#EAF4FF" >
+        <div align="center" style="background-color:#C6E2FF; width:210px; height:80px;">
+          <form name=FrmSmSearch action="index2.php" method="post" onSubmit="return CheckFrmSMSearch();">
+          <input type="text" name="search_text"  size=27 value="Поиск по телепрограмме"  style="color: #0099FF; font-family: Tahoma; border: 1px solid #3399FF; padding-left: 4px; padding-right: 4px; margin-top: 7px; padding-bottom:1px; font-size:8pt" onFocus="if(this.value=='Поиск по телепрограмме') this.value=''">
+          <table style="font-size: 8pt;" border="0" width="155" id="table8" cellspacing="0" cellpadding="0">
+				<tr>
+					<td style="padding-top:4px;" width="24"><input type="radio" value="1" style="height:14px;" checked name="R1"></td>
+                    <td width="104">текущая  неделя</font></span></td>
+                    <td rowspan="3"><input onClick="CheckFrmSMSearch();" type="button" value="ОК" style="font-size: 8pt; border: 1px solid #0000FF; padding:1px 4px 1px 4px;"></td>
+					<tr><td><input  style="height:14px;" type="radio" name="R1" value="2"></td><td>до конца недели</td></tr>
+					<tr><td><input  style="height:14px;" type="radio" name="R1" value="3"></td><td>везде</td></tr>
+			</table>
+           <input type=hidden name=var_search>
+</form>
+        </div>
+<div style=" font-size:9pt; text-align: justify; padding:0px; width:100%"><style fprolloverstyle>A:hover {color: #0000FF; font-family: Tahoma}
+body{font:.8em Arial,Helvetica,sans-serif;position:relative;z-index:0;margin:0;padding:0 0 1em 0;color:#000;background:#fff}.b-page{display:block;width:100%;min-width:74em;background:#fff}.b-body-items{padding-left:0;position:relative;max-width:58em}.b-serp-list{margin:0;padding:0;list-style:none}.b-serp-item{margin:0 0 1.3em 0}.b-serp-item{margin-bottom:1.3em;padding-left:130px;margin-left:5px}.b-serp-item__text{position:relative;line-height:1.3em;word-wrap:break-word}</style>
+
+<body link="#000000" vlink="#000000" alink="#0000FF">
+
+<table id="table1" cellspacing="0" cellpadding="0" width="210" border="0">
+    <tbody>
+        <tr>
+            <td width="213" colspan="2">
+            &nbsp;</td>
+            <td width="11">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="213" colspan="2">
+            <p align="right" style="margin-right: 7px"><font face="Tahoma"><span style="font-size: 9pt">
+			<a class="menu" href="?id=100">новости телевидения</a></span></font></p>
+            </td>
+            <td width="11" bgcolor="#6699ff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="213" colspan="2">
+            <p align="right" style="margin-right: 7px"><font face="Tahoma" style="font-size: 9pt">
+			<a class="menu" href="?id=113">описание телеканалов</a></font></p>
+            </td>
+            <td width="11" bgcolor="#6699ff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="213" colspan="2">
+            <p align="right" style="margin-right: 7px">&nbsp;</p>
+            </td>
+            <td width="11" bgcolor="#6699ff">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="213" colspan="2">&nbsp;</td>
+            <td width="11">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="9">&nbsp;</td>
+            <td width="194" bgcolor="#CC0000" rowspan="3" style="border:2px solid #FF0000; padding-right: 4px; padding-left: 4px; padding-bottom: 1px; padding-top: 1px; ">
+            <p align="right">
+			<font face="Tahoma" color="#FFFFFF" style="font-size: 9pt">При<b> 
+			<a href="index.php?id=129"><font color="#FFFFFF">регистрации</font></a></b><a href="index.php?id=129"><font color="#FFFFFF">
+			</font>
+			<b><font color="#FFFFFF">на сайте</font></b></a> <br>
+			вы можете установить часовой пояс, выбрать телеканалы и жанры передач которые отображаются на&nbsp;странице</font></p>
+            </td>
+            <td width="11">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="9">&nbsp;</td>
+            <td width="11">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="9">&nbsp;</td>
+            <td width="11">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="223" colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="223" bgcolor="#c6e2ff" colspan="3" height="21">
+            <p align="center"><font face="Tahoma"><b>
+			<font style="font-size: 9pt">анонсы на этой неделе</font></b></font></p>
+            </td>
+        </tr>
+        <tr>
+            <td width="223" colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td valign="top" width="223" colspan="3" rowspan="42">
+            <div align="center">
+            <table id="table2" cellspacing="0" cellpadding="0" width="176" border="0">
+                <tbody>
+                    <tr>
+                        <td>
+						<p align="justify" style="margin-top: 0; margin-bottom: 0">
+			<a href="?id=54&current_week&set_ann=ТВ-1000">
+			<img border="0" src="foto_anons/tv1000_2.jpg" width="175" height="120" alt="Анонсы телеканала TV1000"></a><p align="justify" style="margin-top: 0; margin-bottom: 0">
+			<font face="Tahoma" size="2" color="#FFFFFF">
+			<span style="background-color: #CC0000"><b>&nbsp;&nbsp;<font color="#FFFFFF"><span style="text-decoration: none"><a title="Телепрограмма TV1000" href="?current_week&set_channel=ТВ-1000"><span style="text-decoration: none"><font color="#FFFFFF">TV1000</font></span></a> </span></font>
+			&nbsp;</b></span></font><p align="justify" style="margin-top: 0; margin-bottom: 0">
+						<font face="Tahoma" size="1">
+						<span style="text-decoration: none"><b>Воскресенье, 16 
+						июня<br>
+						&quot;МОЙ ДОМАШНИЙ ДИНОЗАВР&quot;<br>
+						Великобритания/США/Австралия,</b> <font color="#0000FF">
+						фэнтези/ приключения, 2007</font><br>
+						Агнус МакМорроу, простой необщительный мальчик, однажды 
+						находит на берегу таинственное большое яйцо, из которого 
+						вылупляется нечто очень похожее на мифическое существо, 
+						известное как &quot;водяная лошадь&quot;. Агнус называет своего 
+						нового маленького друга Крузо, но Крузо не долго 
+						остается маленьким. Он начинает<br>
+						расти с пугающей скоростью, и скоро становится ясно, что 
+						долго держать его в тайне - и в безопасности - не 
+						получится.<br>
+						</span></font>
+						<a href="?id=54&current_week&set_ann=Канал+&quot;1+1&quot;">
+			<br>
+			<img border="0" src="foto_anons/1+1.jpg" width="175" height="120" alt="Анонсы телеканала 1+1"></a><p align="justify" style="margin-top: 0px; margin-bottom: 0px"><font color="#ffffff" size="2" face="Tahoma"><span style="background-color: #cc0000"><b>&nbsp;&nbsp;<font color="#ffffff"><span style="text-decoration: none"><a title="Телепрограмма НТВ" href="http://www.star.poltava.ua/index.php?current_week&amp;set_channel=НТВ"><font color="#ffffff"><span style="text-decoration: none">НТВ</span></font></a> </span></font>&nbsp;</b></span></font></p>
+                        <p align="justify" style="margin-top: 0px; margin-bottom: 0px">
+						<font face="Tahoma" size="1">
+						<span style="text-decoration: none"><b>Среда, 12 июня<br>
+						&quot;СИБИРЯК&quot;. Россия, 2011 г.</b><br>
+						<font color="#0000FF">Боевик.&nbsp; </font>Несколько лет 
+						назад Молотов погрузил все необходимые вещи в багажник 
+						своей машины<br>
+						и приехал в Питер из далекого, заснеженного Усть-Илимска. 
+						В общем, начал новую жизнь. Молотов вместе с новым 
+						приятелем Шуваловым организовали строительную фирму. 
+						Сначала был один дом, который они вдвоем и строили. 
+						Затем два. Дальше четыре.<br>
+						Сейчас Молотов и Артем учредители крупной строительной 
+						копании. У них работают несколько бригад. Компания не 
+						ограничивается постройками дачных деревяшек,<br>
+						участвует в городских тендерах. Дела идут в гору. С 
+						сибирских времен у Молотова сохранилась одна страсть — 
+						охота. Вместе с ним к охоте пристрастился и Шувалов. На 
+						этот раз партнеры уехали далеко, больше чем за тысячу<br>
+						километров. Охота обещала быть опасной. И Шувалов 
+						планировал вернуться назад в Питер уже один. Только он 
+						забыл, что Молотов — настоящий сибиряк.</span></font><br>
+						<a href="http://www.star.poltava.ua/index.php?id=54&current_week&set_ann=НТН">
+						<font face="Tahoma" size="1">
+						<span style="text-decoration: none">
+			<br>
+			<img border="0" src="foto_anons/ntn.jpg" width="175" height="120" alt="Анонсы телеканала НТН"></span></font></a></p>
+						<p align="justify" style="margin-top: 0; margin-bottom: 0">
+			<font face="Tahoma" size="2" color="#FFFFFF">
+			<span style="background-color: #CC0000"><b>&nbsp;&nbsp;<font color="#FFFFFF"><span style="text-decoration: none"><a title="Телепрограмма НТН" href="http://www.star.poltava.ua/index.php?current_week&set_channel=НТН"><font color="#FFFFFF"><span style="text-decoration: none">НТН</span></font></a></span></font>&nbsp;
+			</b>
+			</span></font>
+						<p align="justify" style="margin-top: 0; margin-bottom: 0">
+						<font face="Tahoma" size="1"><b>Воскресенье, 16 июня <br>
+						&quot;ЛЮБИТЬ ПО-РУССКИ - 2&quot;<br>
+						Россия, 1996</b>, <font color="#0000FF">боевик, 
+						мелодрама</font><br>
+						В первой части трилогии Матвеева шестеро провинциалов 
+						воевали за право жить на своей земле. В <br>
+						этом фильме женщины берутся доказать, что их напрасно 
+						называют слабым полом. Они в одиночку <br>
+						вступают в бой с местными бандитами и продажными 
+						чиновниками и добиваются-таки <br>
+						освобождения своих мужей, которых &quot;упрятали за решетку&quot; 
+						после сумасшедшей выходки с <br>
+						пулеметом. Далее события принимают весьма неожиданный 
+						оборот. Недавние узники городской <br>
+						тюрьмы становятся важными фигурами в предвыборной 
+						кампании. А вчерашнего зэка Мухина <br>
+						народ выдвигает на должность губернатора... <br>
+						<br>
+						<span style="font-weight: 400">
+						<a href="?id=54&current_week&set_ann=Новый+канал">
+			<img border="0" src="foto_anons/newkanal.jpg" width="175" height="120" alt="Анонсы телеканала Новый канал"></a></span></font></p><p align="justify" style="margin-top: 0; margin-bottom: 0">
+			<span style="font-weight:400"><font face="Tahoma" size="1">&nbsp;</font></span><font face="Tahoma" size="2" color="#FFFFFF"><span style="background-color: #CC0000"><b>&nbsp;&nbsp;<a title="Телепрограмма Новый канал" href="?current_week&set_channel=Новый+канал"><font color="#FFFFFF"><span style="text-decoration: none"> 
+			Новый канал&nbsp;</span></font>&nbsp;</a> </b>
+			</span></font>
+						<p align="justify" style="margin-top: 0; margin-bottom: 0">
+						<font face="Tahoma" size="1"><b>Понедельник, 10 июня<br>
+						&quot;СВАДЕБНЫЙ ПЕРЕПОЛОХ&quot;<span lang="ru">, </span>США 2001 
+						г.,</b> <font color="#0000FF">мелодрама, комедия</font><br>
+						Мало кто так хорошо разбирается в любви и браке, как 
+						Мэри Фиоре, ведь она - свадебный церемонимейстер. Однако 
+						её собственная личная жизнь оставляет желать лучшего...<span lang="ru">
+						</span>Однажды, при весьма необычных обстоятельствах, 
+						Мэри знакомится со Стивом <span lang="ru">&nbsp;</span>Эдисоном. 
+						Эта встреча заставила героиню фильма поверить в любовь. 
+						Каково же было её разочарование, когда она узнала, что 
+						Стив должен жениться на очень богатой клиентке! Что 
+						победит в душе женщины: разум или чувства, трезвый 
+						расчёт или любовь?<br>
+						</font>
+			<br>
+						<a title="Анонсы телеканала СТБ" href="http://www.star.poltava.ua/index.php?current_week&id=54&on_day=2&set_ann=СТБ"><img border="0" src="foto_anons/stb.jpg" width="175" height="120"></a></p>
+						<p align="justify" style="margin-top: 0; margin-bottom: 0">
+			<font face="Tahoma" size="2" color="#FFFFFF">
+			<span style="background-color: #CC0000"><b>&nbsp;&nbsp; &nbsp;<font color="#FFFFFF"><span style="text-decoration: none"><a title="Телепрограмма СТБ" href="http://www.star.poltava.ua/index.php?set_channel=СТБ"><font color="#FFFFFF"><span style="text-decoration: none">СТБ</span></font></a></span></font>&nbsp; &nbsp; </b>
+			</span></font><b>
+			<font face="Tahoma" size="2" color="#FFFFFF"><span style="background-color: #CC0000">
+			<br>
+			</span></font>
+			</b><font face="Tahoma" size="1"><b>Воскресенье, 16 июня<br>
+			&quot;ЗОЛУШКА.РУ&quot;</b><br>
+			Начинающий певец из провинциального городка Андрей мечтает о славе, 
+			большой сцене,<br>
+			миллионах долларов... И однажды известный продюсер предлагает ему 
+			заключить выгодный контракт. Андрей без колебаний соглашается, 
+			оставляет любимую девушку Наташу и едет в Москву. Спустя некоторое 
+			время девушка узнает из светской хроники, что Андрей помолвлен с &quot;нефтяной 
+			принцессой&quot; Еленой.Расстроенной Наташе советуют обратиться в брачное 
+			агентство &quot;Золушка&quot;, устраивающее браки с миллионерами. Она 
+			соглашается и приезжает в Москву для встречи с потенциальными 
+			женихами. Но агентство оказывается подставным, Наташу жестоко 
+			обманывают и она остается в столице без жениха и без денег. 
+			Вернуться в родной город девушка не может, поэтому устраивается на 
+			работу официанткой.</font><b><font face="Tahoma" size="2" color="#FFFFFF"><span style="background-color: #CC0000"><br>
+&nbsp;</span></font></b></td>
+                    </tr>
+                    <tr>
+                        <td>
+						&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table></div></td>
+	</tr>
+  <tr>
+		<td width="258" bgcolor="#C6E2FF" valign="top">&nbsp;</td>
+		<td width="258" bgcolor="#C6E2FF" valign="top">&nbsp;</td>
+		<td width="258" bgcolor="#C6E2FF" valign="top">&nbsp;</td>
+		<td  height="23">&nbsp;</td>
+		<td  height="23" valign="top" colspan="4" align="center" style="border-left-width: 1px; border-right-width: 1px; border-top: 1px solid #0000FF; border-bottom-width: 1px">
+		<a href="index2.php?id=2" class="bot_menu">телепрограмма</a>&nbsp;&nbsp; <a href="index2.php?id=54" class="bot_menu">анонсы</a>&nbsp; <a href="index2.php?id=98" class="bot_menu">сейчас на тв</a>&nbsp;
+		<a href="index2.php?id=99" class="bot_menu">свой выбор</a>&nbsp; <a href="index2.php?id=100" class="bot_menu">новости телевидения</a></td>
+		<td  height="23">&nbsp;</td>
+		<td  bgcolor="#C6E2FF" valign="top">&nbsp;		</td>
+		</tr>
+	<tr>
+		<td width="774" bgcolor="#EAF4FF" colspan="3" rowspan="3" >
+		<p align="center">&nbsp;<div align="center">
+		<table border="0" width="180" height="70">
+	<tr>
+		<td width="96" valign="bottom" align="center" height="38">&nbsp;<noindex><!--Rating@Mail.ru COUNTER--><script language="JavaScript"><!--
+d=document;a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3"><!--
+js=13//--></script><script language="JavaScript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=65075"'+
+' target=_top><img src="http://top.list.ru/counter'+
+'?id=65075;t=52;js='+js+a+';rand='+Math.random()+
+'" alt="Рейтинг@Mail.ru"'+' border=0 height=31 width=88></a>')
+if(js>11)d.write('<'+'!-- ')//--></script><noscript><a
+target=_top href="http://top.mail.ru/jump?from=65075"><img
+src="http://top.list.ru/counter?js=na;id=65075;t=52"
+border=0 height=31 width=88
+alt="Рейтинг@Mail.ru"></a></noscript><script language="JavaScript"><!--
+if(js>11)d.write('--'+'>')//--></script><!--/COUNTER--></td>
+		<td valign="middle" align="center" height="38">
+		<a href="http://u342.58.spylog.com/cnt?f=3&p=0" target=_blank>
+<img src="http://u342.58.spylog.com/cnt?p=0" alt='SpyLOG' border='0' width=88 height=31 ></a></td>
+	</tr>
+	<tr>
+		<td width="96" valign="middle" align="center"><!-- BEGIN OF PING CODE v5.1 -->
+&nbsp;<script language="javascript">//<!--
+id="051200231026";img="count6";script="http://counter.topping.com.ua:80/cgi-bin/pinger.cgi";d=document;an=navigator.appName;rf=escape(d.referrer);w="";c="";jv="0";je="u";//-->
+</script><script language="javascript1.1">//<!--
+jv="1";je = (navigator.javaEnabled()?"y":"n");//-->
+</script><script language="javascript1.2">//<!--
+s=screen;w=s.width;an!="Netscape"?c=s.colorDepth:c=s.pixelDepth;jv="2";//-->
+</script><script language="javascript1.3">//<!--
+jv="3";//-->
+</script><script language="javascript">//<!--
+pi="";pi+="\""+script+"?id="+id+"&img="+img+"&w="+w+"&c="+c+"&ref="+rf+"&jsv="+jv+"&jen="+je+"\"";pi="<a href=http://www.topping.com.ua/ target=_blank><img src="+pi+" width=88 height=31 border=0 alt=\"Rated by PING\"></a>";d.write(pi);//-->
+</script><noscript><a href=http://www.topping.com.ua/ target=_blank><img src=http://counter.topping.com.ua:80/cgi-bin/ping.cgi?051200231026;count6 width=88 height=31 border=0 alt="Rated by PING"></a>
+</noscript><!-- END OF PING CODE v5.1 --></td>
+		<td valign="middle" align="center">
+		<a href="http://top100.rambler.ru/top100/">
+<img src="http://top100-images.rambler.ru/top100/banner-88x31-rambler-gray2.gif" alt="Rambler's Top100" width=88 height=31 border=0></a></noindex><!--end of Top100 logo --></td>
+	</tr>
+</table></div>
+
+</td>
+		<td  height="23">&nbsp;</td>
+		<td  height="23" valign="top">&nbsp;		</td>
+		<td  height="23" valign="top">&nbsp;		</td>
+		<td  height="23" valign="top">&nbsp;		</td>
+		<td  height="23" valign="top">&nbsp;		</td>
+		<td  height="23">&nbsp;</td>
+		<td  bgcolor="#EAF4FF" valign="top">&nbsp;		</td>
+		</tr>
+	<tr>
+		<td  height="23">&nbsp;</td>
+		<td  height="23" valign="bottom">
+		<font face="Tahoma" style="font-size: 9pt" color="#C0C0C0">рекламный
+		блок</font></td>
+		<td  height="23" valign="top">&nbsp;		</td>
+		<td  height="23" valign="top">&nbsp;		</td>
+		<td  height="23" valign="bottom">
+		<p align="right">
+		<font face="Tahoma" style="font-size: 9pt" color="#C0C0C0">рекламный
+		блок</font></td>
+		<td  height="23">&nbsp;</td>
+		<td  bgcolor="#EAF4FF" valign="top">&nbsp;		</td>
+		</tr>
+	<tr>
+		<td  height="46">&nbsp;</td>
+		<td  height="46" valign="top" colspan="4" rowspan="2" style="border: 1px solid #99CCFF; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px"><div>
+			<p style="margin-top: 0; margin-bottom: 0"><p align="center">&nbsp;<script type="text/javascript"><!--
+google_ad_client = "pub-4127624421011099";
+/* 468x60, создано 10.12.08 */
+google_ad_slot = "5234212395";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script> <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p>
+<p></div>
+		<p align="center" style="margin-top: 0; margin-bottom: 0">
+		<font size="1"></font>
+</td>
+
+		<td  height="46">&nbsp;</td>
+		<td  bgcolor="#EAF4FF" valign="top">&nbsp;		</td>
+		</tr>
+	<tr>
+		<td width="258" bgcolor="#EAF4FF" valign="top">&nbsp;</td>
+		<td width="258" bgcolor="#EAF4FF" valign="top">&nbsp;</td>
+		<td width="258" bgcolor="#EAF4FF" valign="top">&nbsp;</td>
+		<td  height="23">&nbsp;</td>
+		<td  height="23">&nbsp;</td>
+		<td  bgcolor="#EAF4FF" valign="top">&nbsp;		</td>
+		</tr>
+	<tr>
+		<td width="258" bgcolor="#EAF4FF" valign="top">&nbsp;</td>
+		<td width="258" bgcolor="#EAF4FF" valign="top">&nbsp;</td>
+		<td width="258" bgcolor="#EAF4FF" valign="top">&nbsp;</td>
+		<td  height="23">&nbsp;</td>
+		<td  height="23" valign="top" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0">&nbsp;		</td>
+		<td  height="23" valign="top" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0">&nbsp;		</td>
+		<td  height="23" valign="top" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0">&nbsp;		</td>
+		<td  height="23" valign="top" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom: 3px solid #C0C0C0">&nbsp;		</td>
+		<td  height="23">&nbsp;</td>
+		<td  bgcolor="#EAF4FF" valign="top" >&nbsp;		</td>
+		</tr>
+	<tr>
+		<td width="258" bgcolor="#EAF4FF" valign="top">&nbsp;</td>
+		<td width="258" bgcolor="#EAF4FF" valign="top">&nbsp;</td>
+		<td width="258" bgcolor="#EAF4FF" valign="top">&nbsp;</td>
+		<td  height="23">&nbsp;</td>
+		<td  height="23" valign="middle" colspan="4" style="padding-top:8px">
+		<div style="float:left; font-size: 9pt; font-weight: 700">© 2000-20<span lang="en-us">10</span> Информационный ресурс Star Site <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Разработано <noindex><a href="http://kpd.pl.ua">KPD.pl.ua</a></noindex><br>
+		&#9679; <span style="font-weight:normal"><u><a href="kontakt.html">контакты</a></u>&nbsp;<u><a href="index2.php?id=124">гостевая</a></u></span></div>
+        <div style="float:right; width:400px">
+		<p style="margin-top: 1px"><font face="Tahoma">
+		<span style="font-size: 8pt">Администрация сайта не несет
+		ответственности за изменения в программе телеканалов и за содержание
+		рекламных баннеров. <font color="#FF0000">Использование материалов сайта
+		без разрешения администрации запрещено</font></span><span style="font-size: 9pt"> </span></font><br><br></div>
+&nbsp;</td>
+		<td  height="23">&nbsp;</td>
+		<td  bgcolor="#EAF4FF" valign="top" >&nbsp;		</td>
+		</tr>
+	</table>
+</body>
+
+</html>

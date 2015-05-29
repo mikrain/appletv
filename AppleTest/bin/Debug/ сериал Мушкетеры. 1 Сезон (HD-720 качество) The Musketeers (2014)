@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<atv>
+  <head>
+    <script src="http://trailers.apple.com/appletv/us/js/main.js" />
+    <script src="http://trailers.apple.com/appletv/us/js/Trailers.js" />
+    <script src="http://trailers.apple.com/appletv/us/js/Trailers.Showtimes.js" />
+    <script src="http://trailers.apple.com/appletv/us/js/Trailers.Log.js" />
+    <script src="http://trailers.apple.com/appletv/us/js/showtimesconfig.js" />
+  </head>
+  <body>
+    <itemDetail id="com.apple.trailers">
+      <title> сериал Мушкетеры. 1 Сезон (HD-720 качество) The Musketeers (2014) </title>
+      <!-- <subtitle>Independent</subtitle> -->
+      <rating>NR</rating>
+      <summary></summary>
+      <image style="moviePoster">http://hd-720.ucoz.ru/http://hd-720.ucoz.ru//poster/52/mushketery_velik.jpg</image>
+      <defaultImage>resource://Poster.png</defaultImage>
+      <bottomShelf>
+        <shelf id="bottomShelf" columnCount="4">
+          <sections>
+            <shelfSection>
+              <items>
+                <moviePoster id="shelf_item_0" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65253113%26id%3D167293294%26hash%3D23d1cd4e6377a49e%26hd%3D2&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%201%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs525414.vk.me%2Fu219263005%2Fvideo%2Fl_2be95edd.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65253113%26id%3D167293294%26hash%3D23d1cd4e6377a49e%26hd%3D2&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%201%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs525414.vk.me%2Fu219263005%2Fvideo%2Fl_2be95edd.jpg')">
+                  <title>1 сезон, 1 серия | LostFilm</title>
+                  <image>http://cs525414.vk.me/u219263005/video/l_2be95edd.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_1" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-64882682%26id%3D167524900%26hash%3D467e0e5def761103%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%201%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs529304.vk.me%2Fu209250716%2Fvideo%2Fl_f3693a99.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-64882682%26id%3D167524900%26hash%3D467e0e5def761103%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%201%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs529304.vk.me%2Fu209250716%2Fvideo%2Fl_f3693a99.jpg')">
+                  <title>1 сезон, 1 серия | NewStudio</title>
+                  <image>http://cs529304.vk.me/u209250716/video/l_f3693a99.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_2" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-64889335%26id%3D167392531%26hash%3Dd7899d47bd6fd0f6%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%201%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs534513.vk.me%2Fu147089852%2Fvideo%2Fl_a3c99548.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-64889335%26id%3D167392531%26hash%3Dd7899d47bd6fd0f6%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%201%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs534513.vk.me%2Fu147089852%2Fvideo%2Fl_a3c99548.jpg')">
+                  <title>1 сезон, 1 серия | BaibaKo</title>
+                  <image>http://cs534513.vk.me/u147089852/video/l_a3c99548.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_3" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-64909950%26id%3D167365782%26hash%3D0eb3986a57d18844%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%201%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20Jimmy%20J.&amp;image=http%3A%2F%2Fcs535405.vk.me%2Fu195644370%2Fvideo%2Fl_25cd05b6.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-64909950%26id%3D167365782%26hash%3D0eb3986a57d18844%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%201%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20Jimmy%20J.&amp;image=http%3A%2F%2Fcs535405.vk.me%2Fu195644370%2Fvideo%2Fl_25cd05b6.jpg')">
+                  <title>1 сезон, 1 серия | Jimmy J.</title>
+                  <image>http://cs535405.vk.me/u195644370/video/l_25cd05b6.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_4" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65317366%26id%3D167230473%26hash%3D031852de6e35275d&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%202%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs535523.vk.me%2Fu219263005%2Fvideo%2Fl_552fd5d7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65317366%26id%3D167230473%26hash%3D031852de6e35275d&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%202%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs535523.vk.me%2Fu219263005%2Fvideo%2Fl_552fd5d7.jpg')">
+                  <title>1 сезон, 2 серия | LostFilm</title>
+                  <image>http://cs535523.vk.me/u219263005/video/l_552fd5d7.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_5" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65317366%26id%3D167223288%26hash%3D42a6e55179a74917%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%202%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs513504.vk.me%2Fu219263005%2Fvideo%2Fl_69204331.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65317366%26id%3D167223288%26hash%3D42a6e55179a74917%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%202%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs513504.vk.me%2Fu219263005%2Fvideo%2Fl_69204331.jpg')">
+                  <title>1 сезон, 2 серия | NewStudio</title>
+                  <image>http://cs513504.vk.me/u219263005/video/l_69204331.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_6" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65797047%26id%3D167577648%26hash%3D13da074eb4c0eac0%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%202%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs528205.vk.me%2Fu209250716%2Fvideo%2Fl_24c5a57b.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65797047%26id%3D167577648%26hash%3D13da074eb4c0eac0%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%202%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs528205.vk.me%2Fu209250716%2Fvideo%2Fl_24c5a57b.jpg')">
+                  <title>1 сезон, 2 серия | BaibaKo</title>
+                  <image>http://cs528205.vk.me/u209250716/video/l_24c5a57b.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_7" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65797047%26id%3D167576074%26hash%3D9cd616b6334aacc5%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%203%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs525202.vk.me%2Fu209250716%2Fvideo%2Fl_0e91419c.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65797047%26id%3D167576074%26hash%3D9cd616b6334aacc5%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%203%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs525202.vk.me%2Fu209250716%2Fvideo%2Fl_0e91419c.jpg')">
+                  <title>1 сезон, 3 серия | NewStudio</title>
+                  <image>http://cs525202.vk.me/u209250716/video/l_0e91419c.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_8" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65797047%26id%3D167577438%26hash%3D3291dcf1de449910%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%203%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs525406.vk.me%2Fu209250716%2Fvideo%2Fl_10f967c7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-65797047%26id%3D167577438%26hash%3D3291dcf1de449910%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%203%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs525406.vk.me%2Fu209250716%2Fvideo%2Fl_10f967c7.jpg')">
+                  <title>1 сезон, 3 серия | BaibaKo</title>
+                  <image>http://cs525406.vk.me/u209250716/video/l_10f967c7.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_9" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-61534774%26id%3D167348823%26hash%3Db8b320e6b38a719a%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%203%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs525413.vk.me%2Fu201882992%2Fvideo%2Fl_c4334099.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-61534774%26id%3D167348823%26hash%3Db8b320e6b38a719a%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%203%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs525413.vk.me%2Fu201882992%2Fvideo%2Fl_c4334099.jpg')">
+                  <title>1 сезон, 3 серия | LostFilm</title>
+                  <image>http://cs525413.vk.me/u201882992/video/l_c4334099.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_10" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-66214371%26id%3D167243503%26hash%3D0cb3507e65392c25%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%204%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs528301.vk.me%2Fu210586855%2Fvideo%2Fl_f5d88851.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-66214371%26id%3D167243503%26hash%3D0cb3507e65392c25%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%204%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs528301.vk.me%2Fu210586855%2Fvideo%2Fl_f5d88851.jpg')">
+                  <title>1 сезон, 4 серия | NewStudio</title>
+                  <image>http://cs528301.vk.me/u210586855/video/l_f5d88851.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_11" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-66231525%26id%3D167866084%26hash%3D45a52bc8d9118b99%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%204%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs528321.vk.me%2Fu210586855%2Fvideo%2Fl_bbcdd0a6.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-66231525%26id%3D167866084%26hash%3D45a52bc8d9118b99%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%204%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs528321.vk.me%2Fu210586855%2Fvideo%2Fl_bbcdd0a6.jpg')">
+                  <title>1 сезон, 4 серия | BaibaKo</title>
+                  <image>http://cs528321.vk.me/u210586855/video/l_bbcdd0a6.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_12" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-66231525%26id%3D167874051%26hash%3D8fa15fbbc01e87dd%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%204%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs533514.vk.me%2Fu210586855%2Fvideo%2Fl_637b1b3f.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-66231525%26id%3D167874051%26hash%3D8fa15fbbc01e87dd%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%204%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs533514.vk.me%2Fu210586855%2Fvideo%2Fl_637b1b3f.jpg')">
+                  <title>1 сезон, 4 серия | LostFilm</title>
+                  <image>http://cs533514.vk.me/u210586855/video/l_637b1b3f.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_13" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67054181%26id%3D167627928%26hash%3De87186c827a1b00d%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%205%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs525520.vk.me%2Fu190086139%2Fvideo%2Fl_465d3acf.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67054181%26id%3D167627928%26hash%3De87186c827a1b00d%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%205%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs525520.vk.me%2Fu190086139%2Fvideo%2Fl_465d3acf.jpg')">
+                  <title>1 сезон, 5 серия | NewStudio</title>
+                  <image>http://cs525520.vk.me/u190086139/video/l_465d3acf.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_14" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-66646213%26id%3D167710215%26hash%3Dd900cb6891c6a3d3%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%205%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs528302.vk.me%2Fu211614158%2Fvideo%2Fl_5415645b.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-66646213%26id%3D167710215%26hash%3Dd900cb6891c6a3d3%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%205%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs528302.vk.me%2Fu211614158%2Fvideo%2Fl_5415645b.jpg')">
+                  <title>1 сезон, 5 серия | BaibaKo</title>
+                  <image>http://cs528302.vk.me/u211614158/video/l_5415645b.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_15" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67103387%26id%3D167695373%26hash%3D2994889a9589f247%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%205%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs540202.vk.me%2Fu190086139%2Fvideo%2Fl_3ed017c7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67103387%26id%3D167695373%26hash%3D2994889a9589f247%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%205%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs540202.vk.me%2Fu190086139%2Fvideo%2Fl_3ed017c7.jpg')">
+                  <title>1 сезон, 5 серия | LostFilm</title>
+                  <image>http://cs540202.vk.me/u190086139/video/l_3ed017c7.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_16" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D218994001%26id%3D167634223%26hash%3D0b36fb53f11c1645%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%206%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs532516.vk.me%2Fu218994001%2Fvideo%2Fl_c8ed8bae.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D218994001%26id%3D167634223%26hash%3D0b36fb53f11c1645%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%206%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs532516.vk.me%2Fu218994001%2Fvideo%2Fl_c8ed8bae.jpg')">
+                  <title>1 сезон, 6 серия | NewStudio</title>
+                  <image>http://cs532516.vk.me/u218994001/video/l_c8ed8bae.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_17" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-66646213%26id%3D167710103%26hash%3D3a350caa5fb153d0%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%206%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs540200.vk.me%2Fu211614158%2Fvideo%2Fl_983331dc.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-66646213%26id%3D167710103%26hash%3D3a350caa5fb153d0%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%206%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs540200.vk.me%2Fu211614158%2Fvideo%2Fl_983331dc.jpg')">
+                  <title>1 сезон, 6 серия | BaibaKo</title>
+                  <image>http://cs540200.vk.me/u211614158/video/l_983331dc.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_18" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67527529%26id%3D167749677%26hash%3D2c4241ff799eda71%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%206%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs540400.vk.me%2Fu213400161%2Fvideo%2Fl_0cb8743b.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67527529%26id%3D167749677%26hash%3D2c4241ff799eda71%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%206%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs540400.vk.me%2Fu213400161%2Fvideo%2Fl_0cb8743b.jpg')">
+                  <title>1 сезон, 6 серия | LostFilm</title>
+                  <image>http://cs540400.vk.me/u213400161/video/l_0cb8743b.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_19" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67861769%26id%3D167843726%26hash%3Dd9f6adbeb5e7ce3c%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%207%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs540507.vk.me%2Fu201882992%2Fvideo%2Fl_b2cba073.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67861769%26id%3D167843726%26hash%3Dd9f6adbeb5e7ce3c%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%207%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20NewStudio&amp;image=http%3A%2F%2Fcs540507.vk.me%2Fu201882992%2Fvideo%2Fl_b2cba073.jpg')">
+                  <title>1 сезон, 7 серия | NewStudio</title>
+                  <image>http://cs540507.vk.me/u201882992/video/l_b2cba073.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_20" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67874039%26id%3D167968032%26hash%3Db18deab1b59cb171%26hd%3D2&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%207%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs540207.vk.me%2Fu201882992%2Fvideo%2Fl_d4aa1ed5.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67874039%26id%3D167968032%26hash%3Db18deab1b59cb171%26hd%3D2&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%207%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20BaibaKo&amp;image=http%3A%2F%2Fcs540207.vk.me%2Fu201882992%2Fvideo%2Fl_d4aa1ed5.jpg')">
+                  <title>1 сезон, 7 серия | BaibaKo</title>
+                  <image>http://cs540207.vk.me/u201882992/video/l_d4aa1ed5.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_21" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67917794%26id%3D168113145%26hash%3Dc8d9c44b863d0d51%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%207%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs540306.vk.me%2Fu245640602%2Fvideo%2Fl_6ef03195.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/ShowUcozSer?ser=http%3A%2F%2Fvk.com%2Fvideo_ext.php%3Foid%3D-67917794%26id%3D168113145%26hash%3Dc8d9c44b863d0d51%26hd%3D3&amp;title=1%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%2C%207%20%D1%81%D0%B5%D1%80%D0%B8%D1%8F%20%7C%20LostFilm&amp;image=http%3A%2F%2Fcs540306.vk.me%2Fu245640602%2Fvideo%2Fl_6ef03195.jpg')">
+                  <title>1 сезон, 7 серия | LostFilm</title>
+                  <image>http://cs540306.vk.me/u245640602/video/l_6ef03195.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+      </bottomShelf>
+    </itemDetail>
+  </body>
+</atv>

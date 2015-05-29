@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+  <body>
+    <videoPlayer id="com.sample.video-player">
+		<httpFileVideoAsset id="teaser8983">
+			<title>42 - Trailer 2</title>
+			<description>FRIENDS</description>
+			<image>http://trailers.apple.com/trailers/wb/42/images/thumbnail_8983.jpg</image>
+		</httpFileVideoAsset>
+	</videoPlayer>
+  </body>
+</atv>

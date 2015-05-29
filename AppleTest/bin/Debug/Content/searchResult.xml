@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+	<body>
+		<searchResults id="trailers.searchResults">
+			<menu>
+				<sections>
+					<menuSection>
+						<header>
+							<horizontalDivider alignment="center" accessibilityLabel="Trailers">
+								<title>Matching Movie Titles</title>
+							</horizontalDivider>
+						</header>
+						<items>
+														<!-- <posterMenuItem id="trailer_0" accessibilityLabel="Poster Menu Item for Movie 1" onSelect="atv.loadURL('http://trailers.apple.com/appletv/us//studios/independent/theabcsofdeath/index-hd.xml');" onPlay="atv.loadURL('http://trailers.apple.com/appletv/us//studios/independent/theabcsofdeath/videos/trailer-hd.xml');">
+								<label>The ABCs of Death</label>
+								<image>http://trailers.apple.com/trailers/independent/theabcsofdeath/images/poster.jpg</image>
+							</posterMenuItem> -->
+													</items>
+					</menuSection>
+				</sections>
+			</menu>
+		</searchResults>
+	</body>
+</atv>

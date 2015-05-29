@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+  <body>
+    <videoPlayer id="com.sample.video-player">
+		<httpFileVideoAsset id="teaser8983">
+			<mediaURL>http://trailers.apple.com/405/us/media/trailers/wb/42/42-tlr2_a720p.m4v</mediaURL>
+			<title>42 - Trailer 2</title>
+			<description>Warner Bros. Pictures and Legendary Pictures are teaming up with director Brian Helgeland for &quot;42,&quot; the powerful story of Jackie Robinson, the legendary baseball player who broke Major League Baseball&apos;s color barrier when he joined the roster of the Brooklyn Dodgers. &quot;42&quot; will star Academy Award(R) nominee Harrison Ford (&quot;Witness&quot;) as the innovative Dodger&apos;s general manager Branch Rickey, the MLB executive who first signed Robinson to the minors and then helped to bring him up to the show, and Chadwick Boseman (&quot;The Express&quot;) as Robinson, the heroic African American who was the first man to break the color line in the big leagues.</description>
+			<image>http://trailers.apple.com/trailers/wb/42/images/thumbnail_8983.jpg</image>
+		</httpFileVideoAsset>
+	</videoPlayer>
+  </body>
+</atv>

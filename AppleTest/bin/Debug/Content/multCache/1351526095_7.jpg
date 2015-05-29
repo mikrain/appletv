@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<atv>
+  <head>
+    <script src="http://trailers.apple.com/appletv/us/js/main.js" />
+    <script src="http://trailers.apple.com/appletv/us/js/Trailers.js" />
+    <script src="http://trailers.apple.com/appletv/us/js/Trailers.Showtimes.js" />
+    <script src="http://trailers.apple.com/appletv/us/js/Trailers.Log.js" />
+    <script src="http://trailers.apple.com/appletv/us/js/showtimesconfig.js" />
+  </head>
+  <body>
+    <itemDetail id="com.apple.trailers">
+      <title>F•R•I•E•N•D•S</title>
+      <!-- <subtitle>Independent</subtitle> -->
+      <rating>NR</rating>
+      <summary>The lives, loves, and laughs of six young friends living in Manhattan.</summary>
+      <image style="moviePoster">http://multpoisk.net/uploads/posts/2012-10/1351526095_7.jpg</image>
+      <defaultImage>resource://Poster.png</defaultImage>
+      <bottomShelf>
+        <shelf id="bottomShelf" columnCount="4">
+          <sections>
+            <shelfSection>
+              <items>
+                <moviePoster id="shelf_item_0" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025107%26hash%3D8a3d066e64f5b064%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025107%26hash%3D8a3d066e64f5b064%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12482.vk.me/u2019664/video/l_ed263501.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_1" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025104%26hash%3D6779b82c8677d158%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025104%26hash%3D6779b82c8677d158%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12884.vk.me/u2268929/video/l_a25d226b.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_2" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025108%26hash%3Dc16442ef82b2f3ed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025108%26hash%3Dc16442ef82b2f3ed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12539.vk.me/u2019664/video/l_48d74a84.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_3" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025103%26hash%3Dc4c41a62e5538d2f%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025103%26hash%3Dc4c41a62e5538d2f%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://video419.vkadre.ru/assets/thumbnails/aab11f7b72434771.320.vk.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_4" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025109%26hash%3D43818f4d5aa94427%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025109%26hash%3D43818f4d5aa94427%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12767.vk.me/u2019664/video/l_7f589eea.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_5" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025111%26hash%3D19bb9513d125efed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025111%26hash%3D19bb9513d125efed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12887.vk.me/u2019664/video/l_d24fb39a.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_6" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025105%26hash%3D4909fd886047ab94%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025105%26hash%3D4909fd886047ab94%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12904.vk.me/u2019664/video/l_cd201f71.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_7" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025110%26hash%3Dc4d0d45f72e1ba81%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025110%26hash%3Dc4d0d45f72e1ba81%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12881.vk.me/u2019664/video/l_90932058.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_8" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025112%26hash%3D1c7bd773288db313%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025112%26hash%3D1c7bd773288db313%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12719.vk.me/u2268929/video/l_2271d622.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_9" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025113%26hash%3Ddc546378b088fa57%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025113%26hash%3Ddc546378b088fa57%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://video386.vkadre.ru/assets/thumbnails/9659b92499607203.320.vk.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_10" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025114%26hash%3D062be34fe36d824c%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025114%26hash%3D062be34fe36d824c%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12581.vk.me/u2268929/video/l_7fbff2f4.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_11" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025115%26hash%3Dc8b617d19d7ecf94%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025115%26hash%3Dc8b617d19d7ecf94%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12765.vk.me/u2019664/video/l_bb370ebc.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_12" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025116%26hash%3D072f32f063fac423%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025116%26hash%3D072f32f063fac423%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://video471.vkadre.ru/assets/thumbnails/0d70205b92689481.320.vk.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_13" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025117%26hash%3Dcaeb37932f54a2f2%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025117%26hash%3Dcaeb37932f54a2f2%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12525.vk.me/u2268929/video/l_36b0e468.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_14" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025118%26hash%3D6f937f55d131f6ee%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025118%26hash%3D6f937f55d131f6ee%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12531.vk.me/u2268929/video/l_fb807aac.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_15" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025119%26hash%3D919cafb06d787b26%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025119%26hash%3D919cafb06d787b26%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12801.vk.me/u2268929/video/l_f8e039ec.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_16" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025120%26hash%3D710bfc3774695f9a%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025120%26hash%3D710bfc3774695f9a%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://video470.vkadre.ru/assets/thumbnails/845bd7e392626300.320.vk.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_17" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025121%26hash%3Db84228478e5f16ed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025121%26hash%3Db84228478e5f16ed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12773.vk.me/u2019664/video/l_5ad7c41f.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_18" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025123%26hash%3D31648f9d46bff935%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025123%26hash%3D31648f9d46bff935%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://video9.vkadre.ru/assets/thumbnails/5361fa414085654.320.vk.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_19" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025122%26hash%3Dad7ab890894a49d0%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025122%26hash%3Dad7ab890894a49d0%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12437.vk.me/u2019664/video/l_a7b9b23c.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_20" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025125%26hash%3D7ea042b4e6060060%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025125%26hash%3D7ea042b4e6060060%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12510.vk.me/u2268929/video/l_fdac2256.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_21" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025126%26hash%3Da08730cc66258d58%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025126%26hash%3Da08730cc66258d58%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12439.vk.me/u2268929/video/l_e6eb8aad.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_22" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025124%26hash%3D52c3b6d2d5726813%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025124%26hash%3D52c3b6d2d5726813%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12757.vk.me/u2019664/video/l_33084457.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_23" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025127%26hash%3Dc2b9679dfe7273c7%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025127%26hash%3Dc2b9679dfe7273c7%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12829.vk.me/u2268929/video/l_475c536c.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_24" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025128%26hash%3D54e1d03fa7f98fb9%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025128%26hash%3D54e1d03fa7f98fb9%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://video17.vkadre.ru/assets/thumbnails/ed3fb2124079810.320.vk.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_25" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025130%26hash%3D3ef5c1f25e389ca5%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025130%26hash%3D3ef5c1f25e389ca5%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12756.vk.me/u2019664/video/l_e8934a3a.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_26" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025129%26hash%3D9f1d3ec3beca438a%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025129%26hash%3D9f1d3ec3beca438a%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12388.vk.me/u2019664/video/l_fe229895.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_27" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025131%26hash%3D382a4836035b7130%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025131%26hash%3D382a4836035b7130%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12732.vk.me/u2268929/video/l_f99f2359.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_28" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025132%26hash%3D0e882cbf4798422a%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025132%26hash%3D0e882cbf4798422a%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12612.vk.me/u2268929/video/l_63ddb213.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_29" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025133%26hash%3D2e7561a180cc4fac%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025133%26hash%3D2e7561a180cc4fac%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12709.vk.me/u2268929/video/l_fae6d2f9.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_30" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025134%26hash%3D99fe07bd456da1e6%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025134%26hash%3D99fe07bd456da1e6%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12424.vk.me/u2019664/video/l_6b66cb83.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_31" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025136%26hash%3D6f27dd8d9c369cdb%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025136%26hash%3D6f27dd8d9c369cdb%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12937.vk.me/u2019664/video/l_3049e89f.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_32" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025137%26hash%3D22daf941fe17e5b1%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025137%26hash%3D22daf941fe17e5b1%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12918.vk.me/u2268929/video/l_f5953a26.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_33" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025138%26hash%3Ddfe606c359e24746%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025138%26hash%3Ddfe606c359e24746%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs13080.vk.me/u2268929/video/l_1332495b.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_34" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025139%26hash%3D9f17d3bc07c968e0%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025139%26hash%3D9f17d3bc07c968e0%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12435.vk.me/u2019664/video/l_eef4116f.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_35" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025140%26hash%3D36ed3a0df53e7b22%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025140%26hash%3D36ed3a0df53e7b22%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12754.vk.me/u2019664/video/l_26e1a803.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_36" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025142%26hash%3D55a1585081635a77%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025142%26hash%3D55a1585081635a77%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12876.vk.me/u2019664/video/l_8bc329a4.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_37" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025141%26hash%3D776050108e6d0919%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025141%26hash%3D776050108e6d0919%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12461.vk.me/u2019664/video/l_83213fd1.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_38" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025144%26hash%3D6ec0f879728bc549%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025144%26hash%3D6ec0f879728bc549%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12788.vk.me/u2019664/video/l_390336fb.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_39" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025143%26hash%3D55e96b8102a91782%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025143%26hash%3D55e96b8102a91782%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12491.vk.me/u2019664/video/l_92dd72b0.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_40" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025148%26hash%3D1a3f8fa5f6e1a279%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025148%26hash%3D1a3f8fa5f6e1a279%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12707.vk.me/u2019664/video/l_3df8c607.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_41" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025151%26hash%3Dc1bf5253adde09ed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025151%26hash%3Dc1bf5253adde09ed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12414.vk.me/u2019664/video/l_a699d8ba.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_42" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025147%26hash%3D9960bb00572c079a%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025147%26hash%3D9960bb00572c079a%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12424.vk.me/u2019664/video/l_ed636cd1.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_43" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025149%26hash%3D9ec0b1e77fea618a%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025149%26hash%3D9ec0b1e77fea618a%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12785.vk.me/u2019664/video/l_fe9e8583.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_44" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025152%26hash%3De70372b670b66f53%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025152%26hash%3De70372b670b66f53%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12437.vk.me/u2019664/video/l_9fd29875.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_45" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025150%26hash%3D1ac5bcb4840ab262%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025150%26hash%3D1ac5bcb4840ab262%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12630.vk.me/u2019664/video/l_75db7142.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_46" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025154%26hash%3Df7194de5963c87c7%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025154%26hash%3Df7194de5963c87c7%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12861.vk.me/u2019664/video/l_39db1867.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_47" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025153%26hash%3Da71fd878b0dd03ed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025153%26hash%3Da71fd878b0dd03ed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12552.vk.me/u2019664/video/l_58b68f42.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_48" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025156%26hash%3Dc70aacae82c0658b%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025156%26hash%3Dc70aacae82c0658b%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12528.vk.me/u2019664/video/l_a8b014ce.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_49" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025159%26hash%3Df573da9e6fe9c565%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025159%26hash%3Df573da9e6fe9c565%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12498.vk.me/u2019664/video/l_f0adda42.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_50" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025157%26hash%3D65105408e7f0ec32%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025157%26hash%3D65105408e7f0ec32%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12447.vk.me/u2019664/video/l_ce1c3eb1.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_51" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025160%26hash%3Dd46b0c3160f9c2ed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025160%26hash%3Dd46b0c3160f9c2ed%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12454.vk.me/u2019664/video/l_ce65084f.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_52" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025161%26hash%3D615b4066d47e9a42%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025161%26hash%3D615b4066d47e9a42%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12732.vk.me/u2019664/video/l_2657014c.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_53" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025163%26hash%3D962ecb8afa4e6f13%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025163%26hash%3D962ecb8afa4e6f13%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12940.vk.me/u2019664/video/l_da761078.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_54" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025165%26hash%3Ddbc8c85886caeb21%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025165%26hash%3Ddbc8c85886caeb21%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12625.vk.me/u2019664/video/l_f357ec8a.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_55" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025164%26hash%3D2bb9e610576f38ff%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025164%26hash%3D2bb9e610576f38ff%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12943.vk.me/u2019664/video/l_9eb6e8ff.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_56" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025166%26hash%3D333f89d0511ea1af%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025166%26hash%3D333f89d0511ea1af%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12414.vk.me/u2019664/video/l_47459e68.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_57" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025167%26hash%3Dbcf64e0532ddb53f%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025167%26hash%3Dbcf64e0532ddb53f%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12935.vk.me/u2019664/video/l_8612f355.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_58" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025168%26hash%3Da2dd171ac06dd737%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025168%26hash%3Da2dd171ac06dd737%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12572.vk.me/u2019664/video/l_e3a861fa.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_59" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025169%26hash%3Dce04d5850b01390d%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025169%26hash%3Dce04d5850b01390d%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12774.vk.me/u2019664/video/l_0010d0cf.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_60" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025171%26hash%3D7739e220afb1d0f3%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025171%26hash%3D7739e220afb1d0f3%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12735.vk.me/u2019664/video/l_036d46a1.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_61" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025170%26hash%3Dfb98d3985f732243%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025170%26hash%3Dfb98d3985f732243%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12755.vk.me/u2019664/video/l_de40bcc0.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_62" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025174%26hash%3D6235a8ded9291030%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025174%26hash%3D6235a8ded9291030%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12481.vk.me/u2019664/video/l_6b57eb30.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_63" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025172%26hash%3D04395a9842560a3b%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025172%26hash%3D04395a9842560a3b%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12850.vk.me/u2019664/video/l_1ddd280f.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_64" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025178%26hash%3Dcd040304f1382902%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025178%26hash%3Dcd040304f1382902%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12881.vk.me/u2019664/video/l_7fa473c0.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_65" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025175%26hash%3Dd00bd1f2c5f7acdc%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025175%26hash%3Dd00bd1f2c5f7acdc%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12436.vk.me/u2019664/video/l_8ea7e6f1.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_66" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025180%26hash%3De897cdcb4a494416%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025180%26hash%3De897cdcb4a494416%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12747.vk.me/u2019664/video/l_2479d85d.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_67" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025179%26hash%3D8edb76ac36b6f2d7%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025179%26hash%3D8edb76ac36b6f2d7%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12645.vk.me/u2019664/video/l_1bbc45f9.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_68" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025182%26hash%3D1f9b03a5b61143c0%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025182%26hash%3D1f9b03a5b61143c0%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://video414.vkadre.ru/assets/thumbnails/412c7fa699353689.320.vk.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_69" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025181%26hash%3D1c875c6afa7180e8%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025181%26hash%3D1c875c6afa7180e8%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12919.vk.me/u2019664/video/l_6628b7bb.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_70" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025184%26hash%3D0526c2733db8a1a6%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025184%26hash%3D0526c2733db8a1a6%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12798.vk.me/u2019664/video/l_8b878a7e.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_71" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025183%26hash%3D5030e3a72c9996b3%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025183%26hash%3D5030e3a72c9996b3%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12486.vk.me/u2019664/video/l_e8b04bab.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_72" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025185%26hash%3D1a6cf8aa0cad8d7c%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025185%26hash%3D1a6cf8aa0cad8d7c%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://video543.vkadre.ru/assets/thumbnails/27146605109267273.320.vk.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_73" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025186%26hash%3De4bd39f04b5400d0%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025186%26hash%3De4bd39f04b5400d0%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12513.vk.me/u2019664/video/l_f16c77d9.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_74" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025189%26hash%3D773a78b506965302%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025189%26hash%3D773a78b506965302%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12604.vk.me/u2019664/video/l_180d0c5a.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_75" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025187%26hash%3De3935a199c5b1298%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025187%26hash%3De3935a199c5b1298%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12598.vk.me/u2019664/video/l_c02f3392.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_76" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025188%26hash%3Dfca33799fd81e9e3%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025188%26hash%3Dfca33799fd81e9e3%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12413.vk.me/u2019664/video/l_ab13850d.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_77" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025190%26hash%3D6a0a18035ffdc7fc%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025190%26hash%3D6a0a18035ffdc7fc%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12583.vk.me/u2019664/video/l_e837308c.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_78" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025193%26hash%3D48d543f8d22d1542%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025193%26hash%3D48d543f8d22d1542%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://video19.vkadre.ru/assets/thumbnails/d7407c2b4088856.320.vk.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_79" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025192%26hash%3D0ce085b227cc01e9%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025192%26hash%3D0ce085b227cc01e9%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12448.vk.me/u2019664/video/l_e3539146.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_80" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025194%26hash%3D9b4652bf6fe54507%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025194%26hash%3D9b4652bf6fe54507%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12774.vk.me/u2019664/video/l_4bfc688c.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_81" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025191%26hash%3Df4a9cbcce482e61f%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025191%26hash%3Df4a9cbcce482e61f%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12660.vk.me/u2019664/video/l_fdacc9e7.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_82" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025197%26hash%3Dffb07a00a6d3a0c0%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025197%26hash%3Dffb07a00a6d3a0c0%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12428.vk.me/u2019664/video/l_5f37de5d.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_83" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025199%26hash%3D731873df35e54de9%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025199%26hash%3D731873df35e54de9%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12895.vk.me/u2019664/video/l_25338953.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_84" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025198%26hash%3Da6b9285d3283a497%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025198%26hash%3Da6b9285d3283a497%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12584.vk.me/u2019664/video/l_64e0e54e.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_85" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025201%26hash%3D12071579ab83668d%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025201%26hash%3D12071579ab83668d%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12574.vk.me/u2019664/video/l_6dc2aac6.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_86" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025196%26hash%3D1f0bd3f2185b1c55%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025196%26hash%3D1f0bd3f2185b1c55%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12840.vk.me/u2019664/video/l_09ca6c1c.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_87" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025203%26hash%3D23cf65ee91035de2%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025203%26hash%3D23cf65ee91035de2%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12426.vk.me/u2019664/video/l_d78c528f.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_88" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025195%26hash%3D898a3ca7e236d4d6%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025195%26hash%3D898a3ca7e236d4d6%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12608.vk.me/u2019664/video/l_55e6a3dd.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_89" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025200%26hash%3D3d4a221dd47a364b%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025200%26hash%3D3d4a221dd47a364b%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12841.vk.me/u2019664/video/l_8afee804.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_90" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025202%26hash%3D5008fd90e908fb31%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025202%26hash%3D5008fd90e908fb31%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12864.vk.me/u2019664/video/l_d43abc02.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_91" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025205%26hash%3D3d4da1bef021e0b0%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025205%26hash%3D3d4da1bef021e0b0%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12536.vk.me/u2019664/video/l_279d2a5c.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_92" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025204%26hash%3D19b4cc3af59adec1%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025204%26hash%3D19b4cc3af59adec1%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12400.vk.me/u2019664/video/l_76f17bd8.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_93" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025209%26hash%3D462938875c60f078%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025209%26hash%3D462938875c60f078%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12592.vk.me/u2019664/video/l_29b3fc73.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_94" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025210%26hash%3D553dc8deb91c0174%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025210%26hash%3D553dc8deb91c0174%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12414.vk.me/u2019664/video/l_2de8ace9.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_95" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025211%26hash%3D44a575e1c9072ad4%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025211%26hash%3D44a575e1c9072ad4%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12321.vk.me/u8801478/video/l_b88f87bf.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_96" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025207%26hash%3D54d292e30a810789%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025207%26hash%3D54d292e30a810789%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12911.vk.me/u2019664/video/l_d0354ec0.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_97" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025212%26hash%3Da5650be6291868c2%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025212%26hash%3Da5650be6291868c2%26sd&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12352.vk.me/u8801478/video/l_5c5cc6eb.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_98" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025206%26hash%3D060f4f249ca8f7ac%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025206%26hash%3D060f4f249ca8f7ac%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12485.vk.me/u2019664/video/l_9a428298.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_99" accessibilityLabel="" alwaysShowTitles="true" onSelect="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025208%26hash%3Dcbb4caf36a9934a5%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')" onPlay="loadTrailerDetailPage('http://trailers.apple.com/multiSingle?multiPlayHref=http%3A%2F%2Fvkontakte.ru%2Fvideo_ext.php%3Foid%3D125463179%26id%3D163025208%26hash%3Dcbb4caf36a9934a5%26hd%3D1&amp;imgSource=http%3A%2F%2Fmultpoisk.net%2Fuploads%2Fposts%2F2012-10%2F1351526095_7.jpg')">
+                  <title></title>
+                  <image>http://cs12439.vk.me/u2019664/video/l_b0bbd483.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+      </bottomShelf>
+    </itemDetail>
+  </body>
+</atv>

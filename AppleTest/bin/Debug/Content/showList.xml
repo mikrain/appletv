@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+<head>
+<script src="http://trailers.apple.com/appletv/us/js/main.js"/>
+<script src="http://trailers.apple.com/appletv/us/js/Trailers.js"/>
+<script src="http://trailers.apple.com/appletv/us/js/Trailers.Showtimes.js"/>
+<script src="http://trailers.apple.com/appletv/us/js/Trailers.Log.js"/>
+<script src="http://trailers.apple.com/appletv/us/js/showtimesconfig.js"/>
+</head>
+  <body>
+    <itemDetail id="com.apple.trailers">
+      <title>F•R•I•E•N•D•S</title>
+      <!-- <subtitle>Independent</subtitle> -->
+      <rating>NR</rating>
+      <summary>The lives, loves, and laughs of six young friends living in Manhattan.</summary>
+      <image style="moviePoster"></image>
+      <defaultImage>resource://Poster.png</defaultImage>
+           
+      <bottomShelf>
+        <shelf id="bottomShelf" columnCount="4">
+          <sections>
+            <shelfSection>
+              <items>
+					                
+								              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+      </bottomShelf>
+     
+    </itemDetail>
+  </body>
+</atv>

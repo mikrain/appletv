@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+			<atv><body><preview><scrollerPreview id="com.sample.scrollerPreview"><items>
+<collectionDivider alignment="left" accessibilityLabel=""><title><![CDATA[本页共34个视频 分7行显示]]></title></collectionDivider><grid id="1572677755" columnCount="5"><items><sixteenByNinePoster id="shelf_item_1" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300159.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300159.m3u8')">
+							<title><![CDATA[河南卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/henan.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_2" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D3%26type%3Dhls')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D3%26type%3Dhls')">
+							<title><![CDATA[东方卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/dongfang.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_3" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D36%26type%3Dhls')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D36%26type%3Dhls')">
+							<title><![CDATA[北京台]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/beijing.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_4" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D43%26type%3Dhls')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D43%26type%3Dhls')">
+							<title><![CDATA[广东卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/guangdong.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_5" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D83%26type%3Dhls')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D83%26type%3Dhls')">
+							<title><![CDATA[深圳卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/shenzhen.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_6" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D51%26type%3Dhls')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D51%26type%3Dhls')">
+							<title><![CDATA[江苏卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/jiangsu.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_7" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D31%26type%3Dhls')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D31%26type%3Dhls')">
+							<title><![CDATA[浙江卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/zhejiang.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_8" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300172.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300172.m3u8')">
+							<title><![CDATA[黑龙江]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/heilongjiang.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_9" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300160.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300160.m3u8')">
+							<title><![CDATA[天津卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/tianjin.jpg]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_10" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300175.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300175.m3u8')">
+							<title><![CDATA[东南卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/dongnan.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_11" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300158.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300158.m3u8')">
+							<title><![CDATA[旅游卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/lvyou.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_12" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300174.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300174.m3u8')">
+							<title><![CDATA[贵州卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/guizhou.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_13" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300168.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300168.m3u8')">
+							<title><![CDATA[江西卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/jiangxi.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_14" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300178.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300178.m3u8')">
+							<title><![CDATA[广西卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/guangxi.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_15" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300146.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300146.m3u8')">
+							<title><![CDATA[湖北卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/hubei.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_16" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300171.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300171.m3u8')">
+							<title><![CDATA[辽宁卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/liaoning.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_17" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300167.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300167.m3u8')">
+							<title><![CDATA[山西卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/shanxi.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_18" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300170.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300170.m3u8')">
+							<title><![CDATA[陕西卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/shanxi3.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_19" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300181.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300181.m3u8')">
+							<title><![CDATA[云南卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/yunnan.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_20" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300144.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300144.m3u8')">
+							<title><![CDATA[重庆卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/chongqing.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_21" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300173.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300173.m3u8')">
+							<title><![CDATA[内蒙古]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/neimenggu.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_22" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300162.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300162.m3u8')">
+							<title><![CDATA[安徽卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/anhui.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_23" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300148.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300148.m3u8')">
+							<title><![CDATA[甘肃卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/gansu.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_24" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300176.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300176.m3u8')">
+							<title><![CDATA[吉林卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/jilin.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_25" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300161.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300161.m3u8')">
+							<title><![CDATA[山东卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/shandong.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_26" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300180.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300180.m3u8')">
+							<title><![CDATA[青海卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/qinghai.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_27" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300143.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300143.m3u8')">
+							<title><![CDATA[河北卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/hebei.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_28" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300169.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300169.m3u8')">
+							<title><![CDATA[厦门卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/xiamen.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_29" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300177.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300177.m3u8')">
+							<title><![CDATA[四川卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/sichuan.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_30" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300157.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fweb-play.pptv.com%2Fweb-m3u8-300157.m3u8')">
+							<title><![CDATA[兵团卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/bingtuan.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_31" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D33%26type%3Dhls')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D33%26type%3Dhls')">
+							<title><![CDATA[宁夏卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/ningxia.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_32" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D16%26type%3Dhls')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2Fgslb.tv.sohu.com%2Flive%3Fcid%3D16%26type%3Dhls')">
+							<title><![CDATA[南方卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/nanfang.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_33" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2F3glivehntv.doplive.com.cn%2Fvideo1%2Findex_128k.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2F3glivehntv.doplive.com.cn%2Fvideo1%2Findex_128k.m3u8')">
+							<title><![CDATA[湖南卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/hunan.jpg]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster><sixteenByNinePoster id="shelf_item_34" accessibilityLabel="" alwaysShowTitles="true" onSelect="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2F58.248.254.7%3A1935%2Flive%2Fizhuhai.sdp%2Fplaylist.m3u8')" onPlay="atv.loadURL('http://4.appletv3.sinaapp.com/index.php?m=play&amp;u=http%3A%2F%2F58.248.254.7%3A1935%2Flive%2Fizhuhai.sdp%2Fplaylist.m3u8')">
+							<title><![CDATA[珠海卫视]]></title>
+							<image><![CDATA[http://appletv.googlecode.com/svn/ico/zhuhai.gif]]></image>
+							<defaultImage>resource://16X9.png</defaultImage>
+						</sixteenByNinePoster></items></grid></items></scrollerPreview></preview></body></atv>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><atv>
+	<head>
+		<script src="http://trailers.apple.com/appletv/us/js/main.js" />
+	</head>
+  <body>
+    <scroller id="com.sample.movie-shelf">
+      <items>
+
+									<collectionDivider alignment="left" accessibilityLabel="Русские программы">
+					<title>Русские программы</title>
+				</collectionDivider>
+		        <shelf id="shelf_2"  columnCount="4">
+		          <sections>
+		            <shelfSection>
+			          <items>
+					  
+				 <moviePoster id="shelf_item_3" alwaysShowTitles="true" accessibilityLabel="ТНТ" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=tnt');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=tnt');">
+                  <title>ТНТ</title>
+                  <image>http://mradio.in/uploads/posts/2011-09/1316771274_tnt.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+
+                <moviePoster id="shelf_item_4" alwaysShowTitles="true" accessibilityLabel="ПЕРЕЦ" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=perec');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=perec');">
+                  <title>ПЕРЕЦ</title>
+                  <image>http://riper.tv/images/perec_online.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+<moviePoster id="shelf_item_15" alwaysShowTitles="true" accessibilityLabel="Иллузион Плюс" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=illusionplus');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=illusionplus');">
+                  <title>Иллузион Плюс</title>
+                  <image>http://medialan.ru/files/images/illusion_plus.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_5" alwaysShowTitles="true" accessibilityLabel="СТС" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=sts');"  onPlay="atv.loadURL('http://trailers.apple.com/playSts');">
+                  <title>СТС</title>
+                  <image>http://serialguru.ru/blog/wp-content/uploads/2013/03/ctcnovost.jpeg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_1" alwaysShowTitles="true" accessibilityLabel="ОРТ" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=ort');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=ort');">
+                  <title>ОРТ</title>
+                  <image>http://cineworld-cinema.org/_ld/0/49029428.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_2" alwaysShowTitles="true" accessibilityLabel="НТВ" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=ntv');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=ntv');">
+                  <title>НТВ</title>
+                  <image>http://www.sporttvnews.ru/news_photo/ntv.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				
+   <moviePoster id="shelf_item_21" accessibilityLabel="Феникс тв" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=feniksplus');"  onPlay="atv.loadURL('http://trailers.apple.com/appleChannels?channel=feniksplus');">
+                  <title>Феникс тв</title>
+                  <image>http://tvnetnews.ru/_ph/1/2/808783835.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+
+								              </items>
+		            </shelfSection>
+		          </sections>
+		        </shelf>
+ <collectionDivider alignment="left" accessibilityLabel="Зарубежные программы">
+          <title>Зарубежные программы</title>
+        </collectionDivider>
+        <shelf id="shelf_2"  columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+			  <moviePoster id="shelf_item_111" alwaysShowTitles="true" accessibilityLabel="Food Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=foodnetwork');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=foodnetwork');">
+                  <title>Food Network</title>
+                  <image>https://s-media-cache-ec9.pinimg.com/avatars/foodnetwork-1358455853_600.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_11" alwaysShowTitles="true" accessibilityLabel="THRILL MOVIE" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=thrillmovie');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=thrillmovie');">
+                  <title>THRILL MOVIE</title>
+                  <image>https://si0.twimg.com/profile_images/1419747842/Thrillicon.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_12" alwaysShowTitles="true" accessibilityLabel="Universal MOVIE" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=universal');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=universal');">
+                  <title>Universal MOVIE</title>
+                  <image>http://news.doddleme.com/wp-content/uploads/2011/12/Universal-Studios-Logo.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_13" alwaysShowTitles="true" accessibilityLabel="Start world movie" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=startworldhd');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=startworldhd');">
+                  <title>Start world movie</title>
+                  <image>http://b.vimeocdn.com/ts/244/146/244146303_640.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>                
+                <moviePoster id="shelf_item_15" alwaysShowTitles="true" accessibilityLabel="Crime" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=crime');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=crime');">
+                  <title>Crime</title>
+                  <image>http://cdn.realscreen.com/wp/wp-content/uploads/2011/11/Crime-Investigation.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_14" alwaysShowTitles="true" accessibilityLabel="Comedy Central" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=centralcomedy');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=centralcomedy');">
+                  <title>Comedy Central</title>
+                  <image>http://4.bp.blogspot.com/_rlKBD8KhrzE/SwP2YhwooxI/AAAAAAAAAp0/Dod41FJUIus/s1600/Neon+Logo.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+		<collectionDivider alignment="left" accessibilityLabel="Зарубежные программы">
+          <title>Детские программы</title>
+        </collectionDivider>
+        <shelf id="shelf_3"  columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+                <moviePoster id="shelf_item_14" alwaysShowTitles="true" accessibilityLabel="Cartoon HD" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=cartoonhd');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=cartoonhd');">
+                  <title>Cartoon HD</title>
+                  <image>http://madeira.hccanet.org/project2_2010/woodwardp2/cartoon_network_hd.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_15" alwaysShowTitles="true" accessibilityLabel="BabyTv" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=babytv');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=babytv');">
+                  <title>BabyTv</title>
+                  <image>http://upload.wikimedia.org/wikipedia/en/4/45/BabyTV.png</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				 <moviePoster id="shelf_item_17" alwaysShowTitles="true" accessibilityLabel="Dragon ball" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=disney');"  onPlay="atv.loadURL('http://trailers.apple.com/playDisney');">
+                  <title>Dragon ball</title>
+                  <image>http://radioteve.com/tele/Nortamerica2/logo/dbgt.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				 <moviePoster id="shelf_item_26" alwaysShowTitles="true" accessibilityLabel="Cartoon Network" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=nickelodion');"  onPlay="atv.loadURL('http://trailers.apple.com/nickelodion');">
+                  <title>Cartoon Network</title>
+                  <image>http://userserve-ak.last.fm/serve/_/10939257/Cartoon+Network.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster> 
+				<moviePoster id="shelf_item_27" alwaysShowTitles="true" accessibilityLabel="Cartoon Club" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=cartoonclub');"  onPlay="atv.loadURL('http://trailers.apple.com/nickelodion');">
+                  <title>Cartoon Club</title>
+                  <image>http://www.bangkokbiznews.com/home/media/2012/03/27/images/pr_news_img_17803_2.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+        <collectionDivider alignment="left" accessibilityLabel="Зарубежные программы">
+          <title>Музыкальные программы</title>
+        </collectionDivider>
+        <shelf id="shelf_4"  columnCount="5">
+          <sections>
+            <shelfSection>
+              <items>
+                 <moviePoster id="shelf_item_16" alwaysShowTitles="true" accessibilityLabel="M Channel Music" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=mchannelhd');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=mchannelhd');">
+                  <title>M Channel Music</title>
+                  <image>http://yazidanefantasy.com/wp-content/uploads/2012/10/Watch-MTunes-HD-Live-Streaming-Online.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_17" alwaysShowTitles="true" accessibilityLabel="MTV HD" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=mtvhd');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=mtvhd');">
+                  <title>MTV HD</title>
+                  <image>http://www.hdtvuk.tv/mtv_logo.gif</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+                <moviePoster id="shelf_item_18" alwaysShowTitles="true" accessibilityLabel="NAT GEO MUSIC" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=natgeomusic');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=natgeomusic');">
+                  <title>NAT GEO MUSIC</title>
+                  <image>http://media.al.com/bargain-mom/photo/nat-geo-musicjpg-00ae71cfbf727aba_large.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+				<moviePoster id="shelf_item_19" alwaysShowTitles="true" accessibilityLabel="Appolo FM Music" onSelect="atv.loadURL('http://trailers.apple.com/appletv?channel=popmusic');"  onPlay="atv.loadURL('http://trailers.apple.com/channel?channel=popmusic');">
+                  <title>Appolo FM Music</title>
+                  <image>http://phandroid.s3.amazonaws.com/wp-content/uploads/2012/11/apollo-banner.jpg</image>
+                  <defaultImage>resource://Poster.png</defaultImage>
+                </moviePoster>
+              </items>
+            </shelfSection>
+          </sections>
+        </shelf>
+				</items>
+    </scroller>
+  </body>
+</atv>
