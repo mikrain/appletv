@@ -63,18 +63,25 @@ namespace AppleTvLiar.AppleChannels.TvManager
 
         private XmlDocument GenereateChannels(string channels)
         {
-            //var asd = XDocument.Load("http://www.yunisov-tv.com/streams/_enel_/montreux/mnem_sisi/swiss_s.xml");
+            var asd = XDocument.Load(channels);
 
-            var xDocment = XDocument.Load(Path.Combine(MikrainService.MikrainProgramm._xmlPath, string.Format(@"Content\{0}.xml", "menuGroups")));
+            var linkMovies = asd.Descendants(XName.Get("LinkMovies"));
+            var link = linkMovies.ElementAt(0).Value;
+
+            var xmlRaw = HttpRequestsString(link);
+            xmlRaw = xmlRaw.Replace("group", "Group");
+            var parsed = XDocument.Parse(xmlRaw);
+
+            //var xDocment = XDocument.Load(Path.Combine(MikrainService.MikrainProgramm._xmlPath, string.Format(@"Content\{0}.xml", "menuGroups")));
             var x = new System.Xml.Serialization.XmlSerializer(typeof(plist));
-            var playelist = (plist)x.Deserialize(xDocment.CreateReader());
+            var playelist = (plist)x.Deserialize(parsed.CreateReader());
 
             XElement root = CreateRoot();
             CreateHead(root);
             XElement items = CreateBody(root);
 
 
-          
+
 
             for (int i = 0; i < playelist._Group.Count(); i++)
             {
@@ -172,11 +179,11 @@ namespace AppleTvLiar.AppleChannels.TvManager
                     itemsTmp = itemsRoot;
                     imageTmp = "resource://16x9-default.png";
                     moviePoster = new XElement(XName.Get("showcasePoster"));
-                    moviePoster.Add(new XAttribute(XName.Get("id"),  group.items[i].IdMovie));
+                    moviePoster.Add(new XAttribute(XName.Get("id"), group.items[i].IdMovie));
                 }
                 else
                 {
-                    
+
                     imageTmp = "resource://Poster.png";
                     moviePoster = new XElement(XName.Get("moviePoster"));
                     itemsTmp = items;
@@ -188,12 +195,12 @@ namespace AppleTvLiar.AppleChannels.TvManager
                 }
 
 
-                
-                
+
+
                 moviePoster.Add(new XAttribute(XName.Get("accessibilityLabel"), group.items[i].Text));
                 moviePoster.SetAttributeValue("onSelect", string.Format("atv.loadURL('http://trailers.apple.com/playChannel?href={0}')", Uri.EscapeDataString(group.items[i].LinkMovie)));
                 moviePoster.SetAttributeValue("onPlay", string.Format("atv.loadURL('http://trailers.apple.com/playChannel?href={0}')", Uri.EscapeDataString(group.items[i].LinkMovie)));
-               
+
                 var image = new XElement(XName.Get("image"));
                 image.SetValue(group.items[i].LinkIconLarge);
                 moviePoster.Add(image);
@@ -208,8 +215,8 @@ namespace AppleTvLiar.AppleChannels.TvManager
             {
                 itemsRoot.Add(shelf);
             }
-           
-            
+
+
         }
 
         private XElement CreateBody(XElement root)

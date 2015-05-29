@@ -25,7 +25,7 @@ namespace AppleTvLiar.Helper
          
             if (ips.Count() > 1)
             {
-                var asdc= ips[1].ToString();
+                var asdc= ips[0].ToString();
             }
 
             //var ipcorrect = ips.FirstOrDefault(address => address.ToString().StartsWith("192."));
@@ -33,7 +33,7 @@ namespace AppleTvLiar.Helper
             //return ipcorrect;
             if (ips.Any())
             {
-                return ips[1];
+                return ips[0];
             }
             return IPAddress.Parse(ipadress);
         }
