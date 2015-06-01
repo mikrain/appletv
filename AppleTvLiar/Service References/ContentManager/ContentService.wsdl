@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://ivsmedia.iptv-distribution.net" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ContentService" targetNamespace="http://ivsmedia.iptv-distribution.net" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ivsmedia.iptv-distribution.net/Imports">
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd0" namespace="http://ivsmedia.iptv-distribution.net" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Data" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/IVS.Common" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/IVsServices" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Common" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/IVS.Media.Client" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ContentService_GetClientContentGenres_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientContentGenres" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientContentGenres_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientContentGenresResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppContentGenres_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppContentGenres" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppContentGenres_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppContentGenresResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_RateItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:RateItem" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_RateItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RateItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientChannels_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientChannels" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientChannels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientChannelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppChannels_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppChannels" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppChannels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppChannelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientProgramGuide_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientProgramGuide" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientProgramGuide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientProgramGuideResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientRelatedProgramGuide_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientRelatedProgramGuide" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientRelatedProgramGuide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientRelatedProgramGuideResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppProgramGuide_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppProgramGuide" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppProgramGuide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppProgramGuideResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppRelatedProgramGuide_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppRelatedProgramGuide" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppRelatedProgramGuide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppRelatedProgramGuideResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientOnDemandContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientOnDemandContent" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientOnDemandContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientOnDemandContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientRelatedOnDemandContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientRelatedOnDemandContent" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientRelatedOnDemandContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientRelatedOnDemandContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppRelatedOnDemandContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppRelatedOnDemandContent" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppRelatedOnDemandContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppRelatedOnDemandContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppOnDemandContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppOnDemandContent" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppOnDemandContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppOnDemandContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetProgramRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramRoles" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetProgramRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProgramRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetContributions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContributions" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetContributions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContributionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetActivities_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivities" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetActivities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActivitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientContentGenresByRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientContentGenresByRequest" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientContentGenresByRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientContentGenresByRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppContentGenresByRequest_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppContentGenresByRequest" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppContentGenresByRequest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppContentGenresByRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetVODGenresMap_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVODGenresMap" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetVODGenresMap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVODGenresMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetWebsiteTVGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteTVGroup" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetWebsiteTVGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebsiteTVGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetChannelStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChannelStatus" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetChannelStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChannelStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_AddFavorites_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddFavorites" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_AddFavorites_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddFavoritesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_DeleteFavorites_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFavorites" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_DeleteFavorites_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFavoritesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetFavorites_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavorites" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetFavorites_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavoritesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetFavPrograms_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavPrograms" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetFavPrograms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavProgramsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetFavOnDemandContent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavOnDemandContent" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetFavOnDemandContent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavOnDemandContentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetFavOnDemandContentFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavOnDemandContentFilter" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetFavOnDemandContentFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavOnDemandContentFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetFavChannels_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavChannels" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetFavChannels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavChannelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetArchiveTimeSpan_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetArchiveTimeSpan" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetArchiveTimeSpan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetArchiveTimeSpanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetTvGuide_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTvGuide" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetTvGuide_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTvGuideResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetTVGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTVGrid" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetTVGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTVGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientItemMisc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientItemMisc" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetClientItemMisc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientItemMiscResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppItemMisc_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppItemMisc" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAppItemMisc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppItemMiscResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_SetClientItemMisc_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetClientItemMisc" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_SetClientItemMisc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetClientItemMiscResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_SetItemWatchedPosition_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetItemWatchedPosition" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_SetItemWatchedPosition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetItemWatchedPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_SetItemsWatchedPosition_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetItemsWatchedPosition" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_SetItemsWatchedPosition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetItemsWatchedPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAvailableSubscriptions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableSubscriptions" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_GetAvailableSubscriptions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableSubscriptionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_RecordFutureProgram_InputMessage">
+    <wsdl:part name="parameters" element="tns:RecordFutureProgram" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_RecordFutureProgram_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RecordFutureProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_RecordedChannels_InputMessage">
+    <wsdl:part name="parameters" element="tns:RecordedChannels" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_RecordedChannels_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RecordedChannelsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_RequestItemProperties_InputMessage">
+    <wsdl:part name="parameters" element="tns:RequestItemProperties" />
+  </wsdl:message>
+  <wsdl:message name="ContentService_RequestItemProperties_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RequestItemPropertiesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ContentService">
+    <wsdl:operation name="GetClientContentGenres">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientContentGenres" message="tns:ContentService_GetClientContentGenres_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientContentGenresResponse" message="tns:ContentService_GetClientContentGenres_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppContentGenres">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppContentGenres" message="tns:ContentService_GetAppContentGenres_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppContentGenresResponse" message="tns:ContentService_GetAppContentGenres_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RateItem">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/RateItem" message="tns:ContentService_RateItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/RateItemResponse" message="tns:ContentService_RateItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientChannels">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientChannels" message="tns:ContentService_GetClientChannels_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientChannelsResponse" message="tns:ContentService_GetClientChannels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppChannels">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppChannels" message="tns:ContentService_GetAppChannels_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppChannelsResponse" message="tns:ContentService_GetAppChannels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientProgramGuide">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientProgramGuide" message="tns:ContentService_GetClientProgramGuide_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientProgramGuideResponse" message="tns:ContentService_GetClientProgramGuide_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientRelatedProgramGuide">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientRelatedProgramGuide" message="tns:ContentService_GetClientRelatedProgramGuide_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientRelatedProgramGuideResponse" message="tns:ContentService_GetClientRelatedProgramGuide_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppProgramGuide">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppProgramGuide" message="tns:ContentService_GetAppProgramGuide_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppProgramGuideResponse" message="tns:ContentService_GetAppProgramGuide_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppRelatedProgramGuide">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppRelatedProgramGuide" message="tns:ContentService_GetAppRelatedProgramGuide_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppRelatedProgramGuideResponse" message="tns:ContentService_GetAppRelatedProgramGuide_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientOnDemandContent">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientOnDemandContent" message="tns:ContentService_GetClientOnDemandContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientOnDemandContentResponse" message="tns:ContentService_GetClientOnDemandContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientRelatedOnDemandContent">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientRelatedOnDemandContent" message="tns:ContentService_GetClientRelatedOnDemandContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientRelatedOnDemandContentResponse" message="tns:ContentService_GetClientRelatedOnDemandContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppRelatedOnDemandContent">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppRelatedOnDemandContent" message="tns:ContentService_GetAppRelatedOnDemandContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppRelatedOnDemandContentResponse" message="tns:ContentService_GetAppRelatedOnDemandContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppOnDemandContent">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppOnDemandContent" message="tns:ContentService_GetAppOnDemandContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppOnDemandContentResponse" message="tns:ContentService_GetAppOnDemandContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramRoles">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetProgramRoles" message="tns:ContentService_GetProgramRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetProgramRolesResponse" message="tns:ContentService_GetProgramRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContributions">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetContributions" message="tns:ContentService_GetContributions_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetContributionsResponse" message="tns:ContentService_GetContributions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActivities">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetActivities" message="tns:ContentService_GetActivities_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetActivitiesResponse" message="tns:ContentService_GetActivities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientContentGenresByRequest">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientContentGenresByRequest" message="tns:ContentService_GetClientContentGenresByRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientContentGenresByRequestResponse" message="tns:ContentService_GetClientContentGenresByRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppContentGenresByRequest">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppContentGenresByRequest" message="tns:ContentService_GetAppContentGenresByRequest_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppContentGenresByRequestResponse" message="tns:ContentService_GetAppContentGenresByRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVODGenresMap">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetVODGenresMap" message="tns:ContentService_GetVODGenresMap_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetVODGenresMapResponse" message="tns:ContentService_GetVODGenresMap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteTVGroup">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetWebsiteTVGroup" message="tns:ContentService_GetWebsiteTVGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetWebsiteTVGroupResponse" message="tns:ContentService_GetWebsiteTVGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChannelStatus">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetChannelStatus" message="tns:ContentService_GetChannelStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetChannelStatusResponse" message="tns:ContentService_GetChannelStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFavorites">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/AddFavorites" message="tns:ContentService_AddFavorites_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/AddFavoritesResponse" message="tns:ContentService_AddFavorites_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFavorites">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/DeleteFavorites" message="tns:ContentService_DeleteFavorites_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/DeleteFavoritesResponse" message="tns:ContentService_DeleteFavorites_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFavorites">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetFavorites" message="tns:ContentService_GetFavorites_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetFavoritesResponse" message="tns:ContentService_GetFavorites_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFavPrograms">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetFavPrograms" message="tns:ContentService_GetFavPrograms_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetFavProgramsResponse" message="tns:ContentService_GetFavPrograms_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFavOnDemandContent">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetFavOnDemandContent" message="tns:ContentService_GetFavOnDemandContent_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetFavOnDemandContentResponse" message="tns:ContentService_GetFavOnDemandContent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFavOnDemandContentFilter">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetFavOnDemandContentFilter" message="tns:ContentService_GetFavOnDemandContentFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetFavOnDemandContentFilterResponse" message="tns:ContentService_GetFavOnDemandContentFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFavChannels">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetFavChannels" message="tns:ContentService_GetFavChannels_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetFavChannelsResponse" message="tns:ContentService_GetFavChannels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArchiveTimeSpan">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetArchiveTimeSpan" message="tns:ContentService_GetArchiveTimeSpan_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetArchiveTimeSpanResponse" message="tns:ContentService_GetArchiveTimeSpan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTvGuide">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetTvGuide" message="tns:ContentService_GetTvGuide_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetTvGuideResponse" message="tns:ContentService_GetTvGuide_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTVGrid">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetTVGrid" message="tns:ContentService_GetTVGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetTVGridResponse" message="tns:ContentService_GetTVGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientItemMisc">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientItemMisc" message="tns:ContentService_GetClientItemMisc_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetClientItemMiscResponse" message="tns:ContentService_GetClientItemMisc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppItemMisc">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppItemMisc" message="tns:ContentService_GetAppItemMisc_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAppItemMiscResponse" message="tns:ContentService_GetAppItemMisc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetClientItemMisc">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/SetClientItemMisc" message="tns:ContentService_SetClientItemMisc_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/SetClientItemMiscResponse" message="tns:ContentService_SetClientItemMisc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetItemWatchedPosition">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/SetItemWatchedPosition" message="tns:ContentService_SetItemWatchedPosition_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/SetItemWatchedPositionResponse" message="tns:ContentService_SetItemWatchedPosition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetItemsWatchedPosition">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/SetItemsWatchedPosition" message="tns:ContentService_SetItemsWatchedPosition_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/SetItemsWatchedPositionResponse" message="tns:ContentService_SetItemsWatchedPosition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableSubscriptions">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAvailableSubscriptions" message="tns:ContentService_GetAvailableSubscriptions_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/GetAvailableSubscriptionsResponse" message="tns:ContentService_GetAvailableSubscriptions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordFutureProgram">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/RecordFutureProgram" message="tns:ContentService_RecordFutureProgram_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/RecordFutureProgramResponse" message="tns:ContentService_RecordFutureProgram_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordedChannels">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/RecordedChannels" message="tns:ContentService_RecordedChannels_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/RecordedChannelsResponse" message="tns:ContentService_RecordedChannels_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RequestItemProperties">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/RequestItemProperties" message="tns:ContentService_RequestItemProperties_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ContentService/RequestItemPropertiesResponse" message="tns:ContentService_RequestItemProperties_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ContentService" type="tns:ContentService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetClientContentGenres">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetClientContentGenres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppContentGenres">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetAppContentGenres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RateItem">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/RateItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientChannels">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetClientChannels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppChannels">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetAppChannels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientProgramGuide">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetClientProgramGuide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientRelatedProgramGuide">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetClientRelatedProgramGuide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppProgramGuide">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetAppProgramGuide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppRelatedProgramGuide">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetAppRelatedProgramGuide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientOnDemandContent">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetClientOnDemandContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientRelatedOnDemandContent">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetClientRelatedOnDemandContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppRelatedOnDemandContent">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetAppRelatedOnDemandContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppOnDemandContent">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetAppOnDemandContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramRoles">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetProgramRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContributions">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetContributions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActivities">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetActivities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientContentGenresByRequest">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetClientContentGenresByRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppContentGenresByRequest">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetAppContentGenresByRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVODGenresMap">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetVODGenresMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebsiteTVGroup">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetWebsiteTVGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChannelStatus">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetChannelStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFavorites">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/AddFavorites" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFavorites">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/DeleteFavorites" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFavorites">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetFavorites" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFavPrograms">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetFavPrograms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFavOnDemandContent">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetFavOnDemandContent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFavOnDemandContentFilter">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetFavOnDemandContentFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFavChannels">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetFavChannels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArchiveTimeSpan">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetArchiveTimeSpan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTvGuide">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetTvGuide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTVGrid">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetTVGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientItemMisc">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetClientItemMisc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppItemMisc">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetAppItemMisc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetClientItemMisc">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/SetClientItemMisc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetItemWatchedPosition">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/SetItemWatchedPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetItemsWatchedPosition">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/SetItemsWatchedPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableSubscriptions">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/GetAvailableSubscriptions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordFutureProgram">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/RecordFutureProgram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordedChannels">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/RecordedChannels" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RequestItemProperties">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ContentService/RequestItemProperties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ContentService">
+    <wsdl:port name="BasicHttpBinding_ContentService" binding="tns:BasicHttpBinding_ContentService">
+      <soap:address location="http://ivsmedia.iptv-distribution.net/ContentService.svc/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

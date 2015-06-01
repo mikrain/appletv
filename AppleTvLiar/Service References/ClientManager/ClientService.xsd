@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/IVS.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/IVS.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfKeyValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValue" nillable="true" type="tns:KeyValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValue" nillable="true" type="tns:ArrayOfKeyValue" />
+  <xs:complexType name="KeyValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="key" nillable="true" type="xs:string" />
+      <xs:element name="value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KeyValue" nillable="true" type="tns:KeyValue" />
+  <xs:complexType name="ClientInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="address2" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="appt" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="country" nillable="true" type="tns:Country">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="macAddresses" nillable="true" type="q1:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="notes" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="phone" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="state" nillable="true" type="tns:State">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="zip" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientInfo" nillable="true" type="tns:ClientInfo" />
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="regions" nillable="true" type="q2:ArrayOfint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country" nillable="true" type="tns:Country" />
+  <xs:complexType name="State">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="countryID" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="State" nillable="true" type="tns:State" />
+  <xs:simpleType name="ContentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AudioBooks" />
+      <xs:enumeration value="DVR" />
+      <xs:enumeration value="Games" />
+      <xs:enumeration value="Karaoke" />
+      <xs:enumeration value="LiveTV" />
+      <xs:enumeration value="Music" />
+      <xs:enumeration value="Podcast" />
+      <xs:enumeration value="Radio" />
+      <xs:enumeration value="ArcPlus" />
+      <xs:enumeration value="VOD" />
+      <xs:enumeration value="SVOD" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ContentType" nillable="true" type="tns:ContentType" />
+  <xs:simpleType name="Status">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Available">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Enabled">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NA">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PreviewAvailable">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Status" nillable="true" type="tns:Status" />
+  <xs:complexType name="PlayerType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PlayerType" nillable="true" type="tns:PlayerType" />
+  <xs:complexType name="ArrayOfContentType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContentType" type="tns:ContentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContentType" nillable="true" type="tns:ArrayOfContentType" />
+  <xs:complexType name="RcKeyMap">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="actions" nillable="true" type="tns:ArrayOfRemoteControlKey" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RcKeyMap" nillable="true" type="tns:RcKeyMap" />
+  <xs:complexType name="ArrayOfRemoteControlKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RemoteControlKey" nillable="true" type="tns:RemoteControlKey" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRemoteControlKey" nillable="true" type="tns:ArrayOfRemoteControlKey" />
+  <xs:complexType name="RemoteControlKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="action" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="keyRC1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="keyRC2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="keyRC3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="modifierKeyRC1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="modifierKeyRC2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="modifierKeyRC3" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RemoteControlKey" nillable="true" type="tns:RemoteControlKey" />
+  <xs:complexType name="ArrayOfClientMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientMessage" nillable="true" type="tns:ClientMessage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientMessage" nillable="true" type="tns:ArrayOfClientMessage" />
+  <xs:complexType name="ClientMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="body" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="expires" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="isRead" type="xs:boolean" />
+      <xs:element minOccurs="0" name="sent" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="subject" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientMessage" nillable="true" type="tns:ClientMessage" />
+  <xs:complexType name="Cart">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ccCVV" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ccMonth" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ccNum" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="ccYear" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="items" nillable="true" type="tns:ArrayOfCartItem">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="profile" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cart" nillable="true" type="tns:Cart" />
+  <xs:complexType name="ArrayOfCartItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CartItem" nillable="true" type="tns:CartItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCartItem" nillable="true" type="tns:ArrayOfCartItem" />
+  <xs:complexType name="CartItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="allEpisodes" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="expDate" nillable="true" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="itemID" type="xs:int" />
+      <xs:element minOccurs="0" name="itemType" type="tns:ContentType" />
+      <xs:element minOccurs="0" name="price" type="xs:decimal">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="qty" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CartItem" nillable="true" type="tns:CartItem" />
+</xs:schema>

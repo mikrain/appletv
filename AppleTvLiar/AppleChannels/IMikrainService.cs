@@ -47,6 +47,11 @@ namespace MikrainService
 
         [XmlSerializerFormat]
         [OperationContract]
+        [WebGet(UriTemplate = "/GetBestRussian", BodyStyle = WebMessageBodyStyle.Bare)]
+        XmlDocument GetBestRussian();
+
+        [XmlSerializerFormat]
+        [OperationContract]
         [WebGet(UriTemplate = "/lovekinozalMovie?movie={movie}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
         XmlDocument lovekinozalMovie(string movie);
 

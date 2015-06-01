@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ivsmedia.iptv-distribution.net" elementFormDefault="qualified" targetNamespace="http://ivsmedia.iptv-distribution.net" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Media.Image" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Media" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Media.Stream" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/IVS.Common" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/IVS.Common.Server" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Application" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Data" />
+  <xs:element name="GetMediaImageTypes">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMediaImageTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IVS.Content.Media.Image" minOccurs="0" name="GetMediaImageTypesResult" nillable="true" type="q1:ArrayOfMediaImageType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MediaImageUrlTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MediaImageUrlTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MediaImageUrlTemplateResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientStreamUri">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/IVS.Content.Media" minOccurs="0" name="mediaRequest" nillable="true" type="q2:MediaRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientStreamUriResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/IVS.Content.Media.Stream" minOccurs="0" name="GetClientStreamUriResult" nillable="true" type="q3:MediaStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppStreamUri">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/IVS.Content.Media" minOccurs="0" name="mediaRequest" nillable="true" type="q4:MediaRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppStreamUriResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/IVS.Content.Media.Stream" minOccurs="0" name="GetAppStreamUriResult" nillable="true" type="q5:MediaStream" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUTCOffset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sTimeZone" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUTCOffsetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUTCOffsetResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMediaZones">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMediaZonesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetMediaZonesResult" nillable="true" type="q6:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMediaZoneInfo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMediaZoneInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="GetMediaZoneInfoResult" nillable="true" type="q7:ArrayOfMediaTimeZone" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SupportedMediaFormats">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SupportedMediaFormatsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/IVS.Content.Media" minOccurs="0" name="SupportedMediaFormatsResult" nillable="true" type="q8:ArrayOfMediaFormat" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BalancingAreas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BalancingAreasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/IVS.Common.Server" minOccurs="0" name="BalancingAreasResult" nillable="true" type="q9:ArrayOfBalancingArea" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeliveryNetworks">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeliveryNetworksResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/IVS.Common.Server" minOccurs="0" name="DeliveryNetworksResult" nillable="true" type="q10:ArrayOfDeliveryNetwork" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableLanguages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableLanguagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/IVS.Content.Media" minOccurs="0" name="GetAvailableLanguagesResult" nillable="true" type="q11:ArrayOfMediaLanguage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CountryCodeFromIP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IP" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CountryCodeFromIPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryCodeFromIPResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentUtcTime">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentUtcTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCurrentUtcTimeResult" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMediaApplications">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMediaApplicationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/IVS.Content.Application" minOccurs="0" name="GetMediaApplicationsResult" nillable="true" type="q12:ArrayOfMediaApp" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StreamProgress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="item" nillable="true" type="q13:ProtoItemPos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StreamProgressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="StreamProgressResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/IVS.Media.Client" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/IVS.Media.Client" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/IVS.Common" />
+  <xs:complexType name="OperationResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResult" nillable="true" type="tns:OperationResult" />
+  <xs:complexType name="ArrayOfSubscription">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Subscription" nillable="true" type="tns:Subscription" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubscription" nillable="true" type="tns:ArrayOfSubscription" />
+  <xs:complexType name="Subscription">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="parameters" nillable="true" type="q1:ArrayOfKeyValue" />
+      <xs:element minOccurs="0" name="purchased" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Subscription" nillable="true" type="tns:Subscription" />
+</xs:schema>

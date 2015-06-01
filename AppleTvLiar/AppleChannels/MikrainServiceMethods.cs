@@ -24,6 +24,7 @@ using AppleTvLiar.AppleChannels.TvManager;
 using System.Net.Http;
 using AppleTvLiar.ProccessManager;
 using System.Threading;
+using System.Xml.Linq;
 
 namespace MikrainService
 {
@@ -686,6 +687,19 @@ namespace MikrainService
                     return result;
                 }
             }
+        }
+
+        public XmlDocument GetBestRussian()
+        {
+            var cacheDoc = ReadDoc("bestRussian");
+            if (cacheDoc != null)
+            {
+                return cacheDoc.GetXmlDocument();
+            }
+
+            var doc= new BestRussian().GetChannelsList();
+            SaveDoc("bestRussian",XDocument.Parse(doc.InnerXml));
+            return doc;
         }
     }
 }

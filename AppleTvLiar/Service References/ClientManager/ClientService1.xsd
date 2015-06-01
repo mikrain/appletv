@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/IVS.Media.Client" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/IVS.Media.Client" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/IVS.Common" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/IVS.Common.Server" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="AccessCredentials">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LoginCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StbMacAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserLogin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserSystemID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserSystemPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clientIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="settings" nillable="true" type="q1:ArrayOfKeyValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AccessCredentials" nillable="true" type="tns:AccessCredentials" />
+  <xs:complexType name="ClientSettings">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adultEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="clientServices" nillable="true" type="tns:ArrayOfClientSubscriptionService" />
+      <xs:element minOccurs="0" name="language" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="playerType" nillable="true" type="q2:PlayerType" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="settings" nillable="true" type="q3:ArrayOfKeyValue">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/IVS.Common.Server" minOccurs="0" name="streamPreference" nillable="true" type="q4:StreamSettings" />
+      <xs:element minOccurs="0" name="timeZoneName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientSettings" nillable="true" type="tns:ClientSettings" />
+  <xs:complexType name="ArrayOfClientSubscriptionService">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientSubscriptionService" nillable="true" type="tns:ClientSubscriptionService" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientSubscriptionService" nillable="true" type="tns:ArrayOfClientSubscriptionService" />
+  <xs:complexType name="ClientSubscriptionService">
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="serviceContentType" type="q5:ContentType" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="serviceStatus" type="q6:Status" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientSubscriptionService" nillable="true" type="tns:ClientSubscriptionService" />
+  <xs:complexType name="ArrayOfClientPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientPackage" nillable="true" type="tns:ClientPackage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientPackage" nillable="true" type="tns:ArrayOfClientPackage" />
+  <xs:complexType name="ClientPackage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="currency" type="xs:int" />
+      <xs:element minOccurs="0" name="endUsage" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="expires" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="frequency" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="isActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isFree" type="xs:boolean" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="packageType" nillable="true" type="q7:ArrayOfContentType" />
+      <xs:element minOccurs="0" name="period" type="tns:Period" />
+      <xs:element minOccurs="0" name="price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="startUsage" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientPackage" nillable="true" type="tns:ClientPackage" />
+  <xs:simpleType name="Period">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NA" />
+      <xs:enumeration value="Day" />
+      <xs:enumeration value="Week" />
+      <xs:enumeration value="SemiMonth" />
+      <xs:enumeration value="Month" />
+      <xs:enumeration value="Year" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Period" nillable="true" type="tns:Period" />
+  <xs:complexType name="RegisterInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DeviceID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeviceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMail" nillable="true" type="xs:string" />
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="Info" nillable="true" type="q8:ClientInfo" />
+      <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegisterInfoType" type="tns:RegisterInfoType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegisterInfo" nillable="true" type="tns:RegisterInfo" />
+  <xs:simpleType name="RegisterInfoType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NA" />
+      <xs:enumeration value="Activate" />
+      <xs:enumeration value="Confirm" />
+      <xs:enumeration value="Register" />
+      <xs:enumeration value="RequestAdultPIN" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RegisterInfoType" nillable="true" type="tns:RegisterInfoType" />
+  <xs:complexType name="RegisterResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" type="xs:boolean" />
+      <xs:element minOccurs="0" name="code" type="tns:RegisterResultCode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegisterResult" nillable="true" type="tns:RegisterResult" />
+  <xs:simpleType name="RegisterResultCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="DeviceHasTrial" />
+      <xs:enumeration value="InvalidArguments" />
+      <xs:enumeration value="SystemError" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RegisterResultCode" nillable="true" type="tns:RegisterResultCode" />
+  <xs:complexType name="OperationResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="Result" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationResult" nillable="true" type="tns:OperationResult" />
+  <xs:complexType name="ArrayOfDeviceAppInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DeviceAppInfo" nillable="true" type="tns:DeviceAppInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDeviceAppInfo" nillable="true" type="tns:ArrayOfDeviceAppInfo" />
+  <xs:complexType name="DeviceAppInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="app_id" type="xs:int" />
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="category" nillable="true" type="q9:ArrayOfint">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="forbidden" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="icon" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="package_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="path" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="requiresKeyboard" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeviceAppInfo" nillable="true" type="tns:DeviceAppInfo" />
+  <xs:complexType name="ArrayOfClientDevice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientDevice" nillable="true" type="tns:ClientDevice" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientDevice" nillable="true" type="tns:ArrayOfClientDevice" />
+  <xs:complexType name="ClientDevice">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="alias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="localIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="macAddress" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientDevice" nillable="true" type="tns:ClientDevice" />
+</xs:schema>

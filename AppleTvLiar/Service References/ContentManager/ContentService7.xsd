@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/IVS.Content.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/IVS.Content.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/IVS.Common" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="ContentGenreType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UnknownGenreType" />
+      <xs:enumeration value="TVGenreType" />
+      <xs:enumeration value="VodGenreType" />
+      <xs:enumeration value="ProgramGenreType" />
+      <xs:enumeration value="ArcplusGenreType" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ContentGenreType" nillable="true" type="tns:ContentGenreType" />
+  <xs:complexType name="ContentGenres">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="genres" nillable="true" type="tns:ArrayOfContentGenre" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContentGenres" nillable="true" type="tns:ContentGenres" />
+  <xs:complexType name="ArrayOfContentGenre">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContentGenre" nillable="true" type="tns:ContentGenre" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContentGenre" nillable="true" type="tns:ArrayOfContentGenre" />
+  <xs:complexType name="ContentGenre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="advisory" type="tns:Advisory" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="childrenIDs" nillable="true" type="q1:ArrayOfint">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="code" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="genreType" type="tns:ContentGenreType" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="itemCount" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="parentID" type="xs:int" />
+      <xs:element minOccurs="0" name="vodType" type="tns:VodType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContentGenre" nillable="true" type="tns:ContentGenre" />
+  <xs:simpleType name="Advisory">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NR" />
+      <xs:enumeration value="PG1" />
+      <xs:enumeration value="PG2" />
+      <xs:enumeration value="PG3" />
+      <xs:enumeration value="PG4" />
+      <xs:enumeration value="R" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Advisory" nillable="true" type="tns:Advisory" />
+  <xs:simpleType name="VodType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="All" />
+      <xs:enumeration value="VOD" />
+      <xs:enumeration value="SVOD" />
+      <xs:enumeration value="PPV" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="VodType" nillable="true" type="tns:VodType" />
+  <xs:complexType name="ProtoItem">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="contentType" type="q2:ContentType" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="misc" nillable="true" type="q3:ArrayOfKeyValue">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProtoItem" nillable="true" type="tns:ProtoItem" />
+  <xs:complexType name="ContentRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filter" nillable="true" type="tns:ContentFilter">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="paging" nillable="true" type="q4:ItemPaging" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="type" type="q5:ContentType" />
+      <xs:element minOccurs="0" name="utcTime" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContentRequest" nillable="true" type="tns:ContentRequest" />
+  <xs:complexType name="ContentFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DontFetchDetails" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="IsContainerSearch" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="availableOnly" type="xs:boolean" />
+      <xs:element minOccurs="0" name="contentGenre" nillable="true" type="tns:ContentGenre">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="contentType" type="q6:ContentType" />
+      <xs:element minOccurs="0" name="date" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="dateTill" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="favoritesOnly" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="keyWord" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="orderBy" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="packageIDList" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="showItems" type="xs:boolean" />
+      <xs:element minOccurs="0" name="studioID" type="xs:int" />
+      <xs:element minOccurs="0" name="visibleOnly" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContentFilter" nillable="true" type="tns:ContentFilter" />
+  <xs:complexType name="Channels">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ContentRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="items" nillable="true" type="tns:ArrayOfChannel" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Channels" nillable="true" type="tns:Channels" />
+  <xs:complexType name="ArrayOfChannel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Channel" nillable="true" type="tns:Channel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChannel" nillable="true" type="tns:ArrayOfChannel" />
+  <xs:complexType name="Channel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ContentItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="UtcOffset" type="xs:int">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="accessNum" type="xs:int" />
+          <xs:element minOccurs="0" name="arX" type="xs:int" />
+          <xs:element minOccurs="0" name="arY" type="xs:int" />
+          <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="channelGroups" nillable="true" type="q7:ArrayOfint">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="orderNum" type="xs:int" />
+          <xs:element minOccurs="0" name="originalLiveUtcOffset" type="xs:int" />
+          <xs:element minOccurs="0" name="readyForDvr" type="xs:boolean" />
+          <xs:element minOccurs="0" name="visible" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Channel" nillable="true" type="tns:Channel" />
+  <xs:complexType name="ContentItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ProtoItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="advisory" type="tns:Advisory" />
+          <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="availableFormats" nillable="true" type="q8:ArrayOfint">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="bookmarked" type="xs:boolean" />
+          <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="children" nillable="true" type="q9:ArrayOfint">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="containerID" type="xs:int" />
+          <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="contentGenres" nillable="true" type="q10:ArrayOfint">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="episodeNum" type="xs:int" />
+          <xs:element minOccurs="0" name="imageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="isContainer" type="xs:boolean" />
+          <xs:element minOccurs="0" name="item_date" type="xs:dateTime">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="rating" type="xs:double" />
+          <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="status" type="q11:Status" />
+          <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="suggestedItems" nillable="true" type="q12:ArrayOfint">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ContentItem" nillable="true" type="tns:ContentItem" />
+  <xs:complexType name="ProgramGuideRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OnDemandRequest">
+        <xs:sequence>
+          <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="channelFilter" nillable="true" type="q13:ArrayOfint">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="channelID" type="xs:int" />
+          <xs:element minOccurs="0" name="fromTime" type="xs:dateTime">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="itemCountAfter" type="xs:int" />
+          <xs:element minOccurs="0" name="itemCountBefore" type="xs:int" />
+          <xs:element minOccurs="0" name="json" type="xs:int">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="streamZone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="streamZoneUTCOffset" type="xs:int">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="tillTime" type="xs:dateTime">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="watchingZone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="watchingZoneUTCOffset" type="xs:int">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProgramGuideRequest" nillable="true" type="tns:ProgramGuideRequest" />
+  <xs:complexType name="OnDemandRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ContentRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="requestType" type="tns:OnDemandRequestType" />
+          <xs:element minOccurs="0" name="vodType" type="tns:VodType">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OnDemandRequest" nillable="true" type="tns:OnDemandRequest" />
+  <xs:simpleType name="OnDemandRequestType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AllItems">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">-1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Today">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Yesterday">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BeforeYesterday">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ThreeDaysAgo">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FourDaysAgo">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FiveDaysAgo">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SixDaysAgo">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SevenDaysAgo">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LastWeek">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JustAdded">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">101</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Featured">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">102</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TopHundredWatched">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">103</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TopHundredRated">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">104</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TopHundredWatchedMonth">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">105</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TopHundredWatchedWeek">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">106</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TopHundredNew">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">107</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SearchByActors">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">120</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SearchByDirectors">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">121</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SearchByName">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">122</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SearchByDescription">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">123</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SearchByDate">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">124</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SearchByDateRange">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">125</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FreeItems">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">126</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SearchByDateRangExpanded">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">127</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SearchByKeywordInChannels">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">128</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OnDemandRequestType" nillable="true" type="tns:OnDemandRequestType" />
+  <xs:complexType name="ProgramGuide">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ContentRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SiteID" type="xs:int" />
+          <xs:element minOccurs="0" name="items" nillable="true" type="tns:ArrayOfProgramGuideItem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProgramGuide" nillable="true" type="tns:ProgramGuide" />
+  <xs:complexType name="ArrayOfProgramGuideItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProgramGuideItem" nillable="true" type="tns:ProgramGuideItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProgramGuideItem" nillable="true" type="tns:ArrayOfProgramGuideItem" />
+  <xs:complexType name="ProgramGuideItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:OnDemandItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="recentAirTime" nillable="true" type="tns:Schedule">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="schedules" nillable="true" type="q14:ArrayOfint">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="showing" nillable="true" type="q15:ArrayOfint">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProgramGuideItem" nillable="true" type="tns:ProgramGuideItem" />
+  <xs:complexType name="OnDemandItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ContentItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="daysAvailable" type="xs:int" />
+          <xs:element minOccurs="0" name="elementType" nillable="true" type="xs:string">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="episodesCount" type="xs:int" />
+          <xs:element minOccurs="0" name="featured" type="xs:boolean">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="length" type="xs:int" />
+          <xs:element minOccurs="0" name="price" type="xs:decimal">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="purchased" type="xs:boolean">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="purchasedTillUTC" type="xs:dateTime">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element minOccurs="0" name="startOffset" type="xs:int">
+            <xs:annotation>
+              <xs:appinfo>
+                <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OnDemandItem" nillable="true" type="tns:OnDemandItem" />
+  <xs:complexType name="Schedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="archived" type="xs:boolean" />
+      <xs:element minOccurs="0" name="channelID" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="playingNow" type="xs:boolean" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Schedule" nillable="true" type="tns:Schedule" />
+  <xs:complexType name="RelatedRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ContentRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="id" type="xs:int" />
+          <xs:element minOccurs="0" name="relatedType" type="tns:RelatedType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RelatedRequest" nillable="true" type="tns:RelatedRequest" />
+  <xs:simpleType name="RelatedType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="children">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="showing">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="similar">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="details">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IDs">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RelatedType" nillable="true" type="tns:RelatedType" />
+  <xs:complexType name="OnDemandContent">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ContentRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="items" nillable="true" type="tns:ArrayOfOnDemandItem" />
+          <xs:element minOccurs="0" name="requestType" type="tns:OnDemandRequestType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OnDemandContent" nillable="true" type="tns:OnDemandContent" />
+  <xs:complexType name="ArrayOfOnDemandItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OnDemandItem" nillable="true" type="tns:OnDemandItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOnDemandItem" nillable="true" type="tns:ArrayOfOnDemandItem" />
+  <xs:complexType name="ArrayOfProgramRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProgramRole" nillable="true" type="tns:ProgramRole" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProgramRole" nillable="true" type="tns:ArrayOfProgramRole" />
+  <xs:complexType name="ProgramRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProgramRole" nillable="true" type="tns:ProgramRole" />
+  <xs:complexType name="ArrayOfContribution">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Contribution" nillable="true" type="tns:Contribution" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContribution" nillable="true" type="tns:ArrayOfContribution" />
+  <xs:complexType name="Contribution">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="contributor" nillable="true" type="tns:Person" />
+      <xs:element minOccurs="0" name="role" nillable="true" type="tns:ProgramRole" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Contribution" nillable="true" type="tns:Contribution" />
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="about" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="birthday" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="imageCount" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+  <xs:complexType name="ArrayOfPersonActivity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PersonActivity" nillable="true" type="tns:PersonActivity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPersonActivity" nillable="true" type="tns:ArrayOfPersonActivity" />
+  <xs:complexType name="PersonActivity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="role" nillable="true" type="tns:ProgramRole" />
+      <xs:element minOccurs="0" name="work" nillable="true" type="tns:ProtoItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonActivity" nillable="true" type="tns:PersonActivity" />
+  <xs:complexType name="ArrayOfVodGenreMap">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VodGenreMap" nillable="true" type="tns:VodGenreMap" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVodGenreMap" nillable="true" type="tns:ArrayOfVodGenreMap" />
+  <xs:complexType name="VodGenreMap">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="OldGenreID" type="xs:int" />
+      <xs:element minOccurs="0" name="ParentID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VodGenreMap" nillable="true" type="tns:VodGenreMap" />
+  <xs:complexType name="ArrayOfProtoItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProtoItem" nillable="true" type="tns:ProtoItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProtoItem" nillable="true" type="tns:ArrayOfProtoItem" />
+  <xs:complexType name="TvGuideRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DontFetchDetails" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="paging" nillable="true" type="q16:ItemPaging" />
+      <xs:element minOccurs="0" name="tillTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TvGuideRequest" nillable="true" type="tns:TvGuideRequest" />
+  <xs:complexType name="TvGuide">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TvChannelRes" nillable="true" type="tns:ArrayOfTvChannel" />
+      <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="paging" nillable="true" type="q17:ItemPaging" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TvGuide" nillable="true" type="tns:TvGuide" />
+  <xs:complexType name="ArrayOfTvChannel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TvChannel" nillable="true" type="tns:TvChannel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTvChannel" nillable="true" type="tns:ArrayOfTvChannel" />
+  <xs:complexType name="TvChannel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TvProgramList" nillable="true" type="tns:ArrayOfTvProgram" />
+      <xs:element minOccurs="0" name="advisory" type="tns:Advisory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TvChannel" nillable="true" type="tns:TvChannel" />
+  <xs:complexType name="ArrayOfTvProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TvProgram" nillable="true" type="tns:TvProgram" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTvProgram" nillable="true" type="tns:ArrayOfTvProgram" />
+  <xs:complexType name="TvProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Recorded" type="xs:boolean" />
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="length" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TvProgram" nillable="true" type="tns:TvProgram" />
+  <xs:complexType name="TVGridRequest">
+    <xs:sequence>
+      <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="channelFilter" nillable="true" type="q18:ArrayOfint">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="fromTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="paging" nillable="true" type="q19:ItemPaging">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="showDetails" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="streamZone" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="tillTime" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="utcTime" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="watchingZone" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TVGridRequest" nillable="true" type="tns:TVGridRequest" />
+  <xs:complexType name="TVGrid">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="grid" nillable="true" type="tns:ArrayOfTVGridChannel" />
+      <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="paging" nillable="true" type="q20:ItemPaging" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TVGrid" nillable="true" type="tns:TVGrid" />
+  <xs:complexType name="ArrayOfTVGridChannel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TVGridChannel" nillable="true" type="tns:TVGridChannel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTVGridChannel" nillable="true" type="tns:ArrayOfTVGridChannel" />
+  <xs:complexType name="TVGridChannel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="UtcOffset" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="accessNum" type="xs:int" />
+      <xs:element minOccurs="0" name="advisory" type="tns:Advisory" />
+      <xs:element minOccurs="0" name="arX" type="xs:int" />
+      <xs:element minOccurs="0" name="arY" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="orderNum" type="xs:int" />
+      <xs:element minOccurs="0" name="programs" nillable="true" type="tns:ArrayOfTVGridProgram" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TVGridChannel" nillable="true" type="tns:TVGridChannel" />
+  <xs:complexType name="ArrayOfTVGridProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TVGridProgram" nillable="true" type="tns:TVGridProgram" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTVGridProgram" nillable="true" type="tns:ArrayOfTVGridProgram" />
+  <xs:complexType name="TVGridProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="advisory" type="tns:Advisory">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="bookmarked" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="imageCount" type="xs:int" />
+      <xs:element minOccurs="0" name="length" type="xs:int" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="recorded" type="xs:boolean" />
+      <xs:element minOccurs="0" name="startOffset" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TVGridProgram" nillable="true" type="tns:TVGridProgram" />
+  <xs:complexType name="ItemMiscRequest">
+    <xs:sequence>
+      <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/IVS.Common" name="contentType" type="q21:ContentType" />
+      <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="items" nillable="true" type="q22:ArrayOfint">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="option" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItemMiscRequest" nillable="true" type="tns:ItemMiscRequest" />
+  <xs:complexType name="ItemMisc">
+    <xs:sequence>
+      <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/IVS.Common" name="contentType" type="q23:ContentType" />
+      <xs:element name="itemID" type="xs:int" />
+      <xs:element name="option" nillable="true" type="xs:string" />
+      <xs:element name="value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItemMisc" nillable="true" type="tns:ItemMisc" />
+  <xs:complexType name="ArrayOfProtoItemPos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProtoItemPos" nillable="true" type="tns:ProtoItemPos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProtoItemPos" nillable="true" type="tns:ArrayOfProtoItemPos" />
+  <xs:complexType name="ProtoItemPos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="item" nillable="true" type="tns:ProtoItem" />
+      <xs:element minOccurs="0" name="pos" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProtoItemPos" nillable="true" type="tns:ProtoItemPos" />
+  <xs:complexType name="ArrayOfItemProperties">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ItemProperties" nillable="true" type="tns:ItemProperties" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItemProperties" nillable="true" type="tns:ArrayOfItemProperties" />
+  <xs:complexType name="ItemProperties">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="properties" nillable="true" type="q24:ArrayOfKeyValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItemProperties" nillable="true" type="tns:ItemProperties" />
+</xs:schema>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://ivsmedia.iptv-distribution.net" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ClientService" targetNamespace="http://ivsmedia.iptv-distribution.net" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ivsmedia.iptv-distribution.net/Imports">
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd0" namespace="http://ivsmedia.iptv-distribution.net" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Application" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/IVS.Common" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/IVS.Media.Client" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/IVS.Common.Server" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ClientService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_ClientLogout_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClientLogout" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_ClientLogout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClientLogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfo" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettings" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetPackages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackages" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetPackages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetSettings" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetChannelOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetChannelOrder" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetChannelOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetChannelOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetChannelOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetChannelOrder" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetChannelOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetChannelOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_ResetChannelOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:ResetChannelOrder" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_ResetChannelOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetChannelOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetChannelStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetChannelStatus" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetChannelStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetChannelStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetClientRcKeyMap_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientRcKeyMap" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetClientRcKeyMap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientRcKeyMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetClientRcKeyMap_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetClientRcKeyMap" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetClientRcKeyMap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetClientRcKeyMapResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_ClientResources_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClientResources" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_ClientResources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClientResourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_AppResources_InputMessage">
+    <wsdl:part name="parameters" element="tns:AppResources" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_AppResources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AppResourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_RegisterClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterClient" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_RegisterClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_RedeemScratchCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:RedeemScratchCode" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_RedeemScratchCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RedeemScratchCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessages" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetMessagesRead_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetMessagesRead" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetMessagesRead_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetMessagesReadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetWinMtrTestIP_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWinMtrTestIP" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetWinMtrTestIP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWinMtrTestIPResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SaveWinMtrTest_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWinMtrTest" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SaveWinMtrTest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveWinMtrTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetApps_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApps" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetApps_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetAppAppearance_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetAppAppearance" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetAppAppearance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetAppAppearanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_CheckOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckOut" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_CheckOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetDevices_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevices" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetDevices_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetDeviceProperty_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDeviceProperty" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SetDeviceProperty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDevicePropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetDeviceProperty_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceProperty" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_GetDeviceProperty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDevicePropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SaveAppSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAppSettings" />
+  </wsdl:message>
+  <wsdl:message name="ClientService_SaveAppSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveAppSettingsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ClientService">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/Login" message="tns:ClientService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/LoginResponse" message="tns:ClientService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientLogout">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/ClientLogout" message="tns:ClientService_ClientLogout_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/ClientLogoutResponse" message="tns:ClientService_ClientLogout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfo">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetInfo" message="tns:ClientService_GetInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetInfoResponse" message="tns:ClientService_GetInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSettings">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetSettings" message="tns:ClientService_GetSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetSettingsResponse" message="tns:ClientService_GetSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPackages">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetPackages" message="tns:ClientService_GetPackages_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetPackagesResponse" message="tns:ClientService_GetPackages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSettings">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetSettings" message="tns:ClientService_SetSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetSettingsResponse" message="tns:ClientService_SetSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChannelOrder">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetChannelOrder" message="tns:ClientService_GetChannelOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetChannelOrderResponse" message="tns:ClientService_GetChannelOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetChannelOrder">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetChannelOrder" message="tns:ClientService_SetChannelOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetChannelOrderResponse" message="tns:ClientService_SetChannelOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ResetChannelOrder">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/ResetChannelOrder" message="tns:ClientService_ResetChannelOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/ResetChannelOrderResponse" message="tns:ClientService_ResetChannelOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetChannelStatus">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetChannelStatus" message="tns:ClientService_SetChannelStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetChannelStatusResponse" message="tns:ClientService_SetChannelStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientRcKeyMap">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetClientRcKeyMap" message="tns:ClientService_GetClientRcKeyMap_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetClientRcKeyMapResponse" message="tns:ClientService_GetClientRcKeyMap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetClientRcKeyMap">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetClientRcKeyMap" message="tns:ClientService_SetClientRcKeyMap_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetClientRcKeyMapResponse" message="tns:ClientService_SetClientRcKeyMap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClientResources">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/ClientResources" message="tns:ClientService_ClientResources_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/ClientResourcesResponse" message="tns:ClientService_ClientResources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AppResources">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/AppResources" message="tns:ClientService_AppResources_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/AppResourcesResponse" message="tns:ClientService_AppResources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterClient">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/RegisterClient" message="tns:ClientService_RegisterClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/RegisterClientResponse" message="tns:ClientService_RegisterClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RedeemScratchCode">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/RedeemScratchCode" message="tns:ClientService_RedeemScratchCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/RedeemScratchCodeResponse" message="tns:ClientService_RedeemScratchCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessages">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetMessages" message="tns:ClientService_GetMessages_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetMessagesResponse" message="tns:ClientService_GetMessages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMessagesRead">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetMessagesRead" message="tns:ClientService_SetMessagesRead_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetMessagesReadResponse" message="tns:ClientService_SetMessagesRead_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWinMtrTestIP">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetWinMtrTestIP" message="tns:ClientService_GetWinMtrTestIP_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetWinMtrTestIPResponse" message="tns:ClientService_GetWinMtrTestIP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveWinMtrTest">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SaveWinMtrTest" message="tns:ClientService_SaveWinMtrTest_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SaveWinMtrTestResponse" message="tns:ClientService_SaveWinMtrTest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApps">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetApps" message="tns:ClientService_GetApps_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetAppsResponse" message="tns:ClientService_GetApps_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAppAppearance">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetAppAppearance" message="tns:ClientService_SetAppAppearance_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetAppAppearanceResponse" message="tns:ClientService_SetAppAppearance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckOut">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/CheckOut" message="tns:ClientService_CheckOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/CheckOutResponse" message="tns:ClientService_CheckOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDevices">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetDevices" message="tns:ClientService_GetDevices_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetDevicesResponse" message="tns:ClientService_GetDevices_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDeviceProperty">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetDeviceProperty" message="tns:ClientService_SetDeviceProperty_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SetDevicePropertyResponse" message="tns:ClientService_SetDeviceProperty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceProperty">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetDeviceProperty" message="tns:ClientService_GetDeviceProperty_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/GetDevicePropertyResponse" message="tns:ClientService_GetDeviceProperty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveAppSettings">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SaveAppSettings" message="tns:ClientService_SaveAppSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/ClientService/SaveAppSettingsResponse" message="tns:ClientService_SaveAppSettings_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ClientService" type="tns:ClientService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientLogout">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/ClientLogout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfo">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/GetInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSettings">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/GetSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPackages">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/GetPackages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSettings">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/SetSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChannelOrder">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/GetChannelOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetChannelOrder">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/SetChannelOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResetChannelOrder">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/ResetChannelOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetChannelStatus">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/SetChannelStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientRcKeyMap">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/GetClientRcKeyMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetClientRcKeyMap">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/SetClientRcKeyMap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClientResources">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/ClientResources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AppResources">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/AppResources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterClient">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/RegisterClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RedeemScratchCode">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/RedeemScratchCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMessages">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/GetMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMessagesRead">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/SetMessagesRead" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWinMtrTestIP">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/GetWinMtrTestIP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveWinMtrTest">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/SaveWinMtrTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApps">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/GetApps" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAppAppearance">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/SetAppAppearance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckOut">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/CheckOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDevices">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/GetDevices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDeviceProperty">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/SetDeviceProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceProperty">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/GetDeviceProperty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveAppSettings">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/ClientService/SaveAppSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClientService">
+    <wsdl:port name="BasicHttpBinding_ClientService" binding="tns:BasicHttpBinding_ClientService">
+      <soap:address location="http://ivsmedia.iptv-distribution.net/ClientService.svc/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

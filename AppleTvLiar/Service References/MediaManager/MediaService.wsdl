@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://ivsmedia.iptv-distribution.net" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MediaService" targetNamespace="http://ivsmedia.iptv-distribution.net" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://ivsmedia.iptv-distribution.net/Imports">
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd0" namespace="http://ivsmedia.iptv-distribution.net" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Media.Image" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Media" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Data" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/IVS.Common" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/IVS.Common.Server" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Media.Stream" />
+      <xsd:import schemaLocation="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Application" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MediaService_GetMediaImageTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMediaImageTypes" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetMediaImageTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMediaImageTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_MediaImageUrlTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:MediaImageUrlTemplate" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_MediaImageUrlTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MediaImageUrlTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetClientStreamUri_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientStreamUri" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetClientStreamUri_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClientStreamUriResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetAppStreamUri_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppStreamUri" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetAppStreamUri_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAppStreamUriResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetUTCOffset_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUTCOffset" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetUTCOffset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUTCOffsetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetMediaZones_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMediaZones" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetMediaZones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMediaZonesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetMediaZoneInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMediaZoneInfo" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetMediaZoneInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMediaZoneInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_SupportedMediaFormats_InputMessage">
+    <wsdl:part name="parameters" element="tns:SupportedMediaFormats" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_SupportedMediaFormats_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SupportedMediaFormatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_BalancingAreas_InputMessage">
+    <wsdl:part name="parameters" element="tns:BalancingAreas" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_BalancingAreas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BalancingAreasResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_DeliveryNetworks_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeliveryNetworks" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_DeliveryNetworks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeliveryNetworksResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetAvailableLanguages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableLanguages" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetAvailableLanguages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableLanguagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_CountryCodeFromIP_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountryCodeFromIP" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_CountryCodeFromIP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountryCodeFromIPResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetCurrentUtcTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentUtcTime" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetCurrentUtcTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentUtcTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetMediaApplications_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMediaApplications" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_GetMediaApplications_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMediaApplicationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_StreamProgress_InputMessage">
+    <wsdl:part name="parameters" element="tns:StreamProgress" />
+  </wsdl:message>
+  <wsdl:message name="MediaService_StreamProgress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StreamProgressResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MediaService">
+    <wsdl:operation name="GetMediaImageTypes">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaImageTypes" message="tns:MediaService_GetMediaImageTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaImageTypesResponse" message="tns:MediaService_GetMediaImageTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MediaImageUrlTemplate">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/MediaImageUrlTemplate" message="tns:MediaService_MediaImageUrlTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/MediaImageUrlTemplateResponse" message="tns:MediaService_MediaImageUrlTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClientStreamUri">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetClientStreamUri" message="tns:MediaService_GetClientStreamUri_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetClientStreamUriResponse" message="tns:MediaService_GetClientStreamUri_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppStreamUri">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetAppStreamUri" message="tns:MediaService_GetAppStreamUri_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetAppStreamUriResponse" message="tns:MediaService_GetAppStreamUri_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUTCOffset">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetUTCOffset" message="tns:MediaService_GetUTCOffset_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetUTCOffsetResponse" message="tns:MediaService_GetUTCOffset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMediaZones">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaZones" message="tns:MediaService_GetMediaZones_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaZonesResponse" message="tns:MediaService_GetMediaZones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMediaZoneInfo">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaZoneInfo" message="tns:MediaService_GetMediaZoneInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaZoneInfoResponse" message="tns:MediaService_GetMediaZoneInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SupportedMediaFormats">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/SupportedMediaFormats" message="tns:MediaService_SupportedMediaFormats_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/SupportedMediaFormatsResponse" message="tns:MediaService_SupportedMediaFormats_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BalancingAreas">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/BalancingAreas" message="tns:MediaService_BalancingAreas_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/BalancingAreasResponse" message="tns:MediaService_BalancingAreas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeliveryNetworks">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/DeliveryNetworks" message="tns:MediaService_DeliveryNetworks_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/DeliveryNetworksResponse" message="tns:MediaService_DeliveryNetworks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableLanguages">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetAvailableLanguages" message="tns:MediaService_GetAvailableLanguages_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetAvailableLanguagesResponse" message="tns:MediaService_GetAvailableLanguages_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CountryCodeFromIP">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/CountryCodeFromIP" message="tns:MediaService_CountryCodeFromIP_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/CountryCodeFromIPResponse" message="tns:MediaService_CountryCodeFromIP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentUtcTime">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetCurrentUtcTime" message="tns:MediaService_GetCurrentUtcTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetCurrentUtcTimeResponse" message="tns:MediaService_GetCurrentUtcTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMediaApplications">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaApplications" message="tns:MediaService_GetMediaApplications_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaApplicationsResponse" message="tns:MediaService_GetMediaApplications_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StreamProgress">
+      <wsdl:input wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/StreamProgress" message="tns:MediaService_StreamProgress_InputMessage" />
+      <wsdl:output wsaw:Action="http://ivsmedia.iptv-distribution.net/MediaService/StreamProgressResponse" message="tns:MediaService_StreamProgress_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_MediaService" type="tns:MediaService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMediaImageTypes">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaImageTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MediaImageUrlTemplate">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/MediaImageUrlTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClientStreamUri">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/GetClientStreamUri" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppStreamUri">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/GetAppStreamUri" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUTCOffset">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/GetUTCOffset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMediaZones">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaZones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMediaZoneInfo">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaZoneInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SupportedMediaFormats">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/SupportedMediaFormats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BalancingAreas">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/BalancingAreas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeliveryNetworks">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/DeliveryNetworks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableLanguages">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/GetAvailableLanguages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountryCodeFromIP">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/CountryCodeFromIP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentUtcTime">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/GetCurrentUtcTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMediaApplications">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/GetMediaApplications" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StreamProgress">
+      <soap:operation soapAction="http://ivsmedia.iptv-distribution.net/MediaService/StreamProgress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MediaService">
+    <wsdl:port name="BasicHttpBinding_MediaService" binding="tns:BasicHttpBinding_MediaService">
+      <soap:address location="http://ivsmedia.iptv-distribution.net/MediaService.svc/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

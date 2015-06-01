@@ -10,6 +10,10 @@
 	<body>
 		<viewWithNavigationBar id="trailers_navigation" onNavigate="Trailers.handleOnNavigate( event )">
 			<navigation>
+			<navigationItem id="BestRus"> 
+					<title>Best Russian TV</title> 
+					<url>http://trailers.apple.com/GetBestRussian</url> 
+				</navigationItem> 
 				<navigationItem id="EnTv"> 
 					<title>UniTV</title> 
 					<url>http://trailers.apple.com/appletv?channel=http://www.yunisov-tv.com/tv2_1/afh8ess13r/menuLeft.xml</url> 

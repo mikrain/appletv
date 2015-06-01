@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7febd548-24be-40b0-ae21-9044af42cfeb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ivsmedia.iptv-distribution.net/MediaService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MediaService.xsd" MetadataType="Schema" ID="7ae64018-49b3-41cf-b0d6-57ef07e0af32" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd4" />
+    <MetadataFile FileName="MediaService1.xsd" MetadataType="Schema" ID="f848ed14-c2c7-4d2a-910b-2132faa8ac59" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd6" />
+    <MetadataFile FileName="MediaService2.xsd" MetadataType="Schema" ID="ead902c3-f56d-4323-a698-705e73b6a2aa" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd9" />
+    <MetadataFile FileName="MediaService3.xsd" MetadataType="Schema" ID="54373d1d-1915-46c6-9d3e-0837be7140b1" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd3" />
+    <MetadataFile FileName="MediaService.wsdl" MetadataType="Wsdl" ID="abc25bda-a31b-4b41-bd49-4788e90118ac" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?wsdl" />
+    <MetadataFile FileName="MediaService4.xsd" MetadataType="Schema" ID="ee82e0c8-b910-4a83-9693-d682ce7699f3" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd8" />
+    <MetadataFile FileName="MediaService5.xsd" MetadataType="Schema" ID="c5caec0e-2563-4dc1-a1ec-7c03fe169e1e" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MediaService6.xsd" MetadataType="Schema" ID="0f5cb98e-e884-4456-91ab-eb9ef97253a6" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MediaService7.xsd" MetadataType="Schema" ID="2735d700-3157-4bd8-b54b-4cdbb4de5928" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd7" />
+    <MetadataFile FileName="MediaService8.xsd" MetadataType="Schema" ID="dd567a22-9666-47fb-a50e-1cfd9d34c6de" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd5" />
+    <MetadataFile FileName="MediaService9.xsd" MetadataType="Schema" ID="93ac5293-bf55-41fd-814d-80d7bbc20cd3" SourceId="1" SourceUrl="http://ivsmedia.iptv-distribution.net/MediaService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ivsmedia.iptv-distribution.net" elementFormDefault="qualified" targetNamespace="http://ivsmedia.iptv-distribution.net" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Application" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/IVS.Common" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/IVS.Media.Client" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Data" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ClientService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IVS.Content.Application" minOccurs="0" name="cc" nillable="true" type="q1:ClientAppSettings" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/IVS.Content.Application" minOccurs="0" name="LoginResult" nillable="true" type="q2:ClientAppSettings" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClientLogout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/IVS.Content.Application" minOccurs="0" name="cc" nillable="true" type="q3:ClientAppSettings" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClientLogoutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClientLogoutResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="GetInfoResult" nillable="true" type="q4:ClientInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSettingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="GetSettingsResult" nillable="true" type="q5:ClientSettings" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPackages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPackagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="GetPackagesResult" nillable="true" type="q6:ArrayOfClientPackage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="cs" nillable="true" type="q7:ClientSettings" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetSettingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetSettingsResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChannelOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChannelOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetChannelOrderResult" nillable="true" type="q8:ChannelOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetChannelOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="co" nillable="true" type="q9:ChannelOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetChannelOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetChannelOrderResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetChannelOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResetChannelOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="ResetChannelOrderResult" nillable="true" type="q10:ChannelOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetChannelStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="channelID" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetChannelStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetChannelStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientRcKeyMap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientRcKeyMapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="GetClientRcKeyMapResult" nillable="true" type="q11:RcKeyMap" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetClientRcKeyMap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="keyMap" nillable="true" type="q12:RcKeyMap" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetClientRcKeyMapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetClientRcKeyMapResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClientResources">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resourceCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClientResourcesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClientResourcesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AppResources">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="lang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="resourceCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AppResourcesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AppResourcesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterClient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/IVS.Content.Application" minOccurs="0" name="cc" nillable="true" type="q13:ClientAppSettings" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="info" nillable="true" type="q14:RegisterInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterClientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="RegisterClientResult" nillable="true" type="q15:RegisterResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RedeemScratchCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="scratchCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RedeemScratchCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="RedeemScratchCodeResult" nillable="true" type="q16:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="GetMessagesResult" nillable="true" type="q17:ArrayOfClientMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMessagesRead">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="messageIDs" nillable="true" type="q18:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMessagesReadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetMessagesReadResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWinMtrTestIP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="macAddress" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWinMtrTestIPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetWinMtrTestIPResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveWinMtrTest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="macAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="testText" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveWinMtrTestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveWinMtrTestResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApps">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="GetAppsResult" nillable="true" type="q19:ArrayOfDeviceAppInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAppAppearance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="app" type="xs:int" />
+        <xs:element minOccurs="0" name="category" type="xs:int" />
+        <xs:element minOccurs="0" name="hidden" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAppAppearanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetAppAppearanceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckOut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="cart" nillable="true" type="q20:Cart" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CheckOutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="CheckOutResult" nillable="true" type="q21:ArrayOfKeyValue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDevices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDevicesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="GetDevicesResult" nillable="true" type="q22:ArrayOfClientDevice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDeviceProperty">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="macAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="key" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDevicePropertyResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeviceProperty">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="macAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="key" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDevicePropertyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDevicePropertyResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveAppSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/IVS.Content.Application" minOccurs="0" name="appSettings" nillable="true" type="q23:AppSettings" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveAppSettingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveAppSettingsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

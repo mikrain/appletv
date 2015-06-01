@@ -187,3 +187,6 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/.svn/pristine/24/*.svn-base
+/.svn/pristine/00/*.svn-base
+*.svn-base

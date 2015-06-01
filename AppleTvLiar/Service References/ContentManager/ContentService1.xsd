@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/IVS.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/IVS.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="ContentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AudioBooks" />
+      <xs:enumeration value="DVR" />
+      <xs:enumeration value="Games" />
+      <xs:enumeration value="Karaoke" />
+      <xs:enumeration value="LiveTV" />
+      <xs:enumeration value="Music" />
+      <xs:enumeration value="Podcast" />
+      <xs:enumeration value="Radio" />
+      <xs:enumeration value="ArcPlus" />
+      <xs:enumeration value="VOD" />
+      <xs:enumeration value="SVOD" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ContentType" nillable="true" type="tns:ContentType" />
+  <xs:complexType name="ArrayOfKeyValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValue" nillable="true" type="tns:KeyValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValue" nillable="true" type="tns:ArrayOfKeyValue" />
+  <xs:complexType name="KeyValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="key" nillable="true" type="xs:string" />
+      <xs:element name="value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KeyValue" nillable="true" type="tns:KeyValue" />
+  <xs:complexType name="ItemPaging">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itemsOnPage" type="xs:int" />
+      <xs:element minOccurs="0" name="pageNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="totalItems" type="xs:int" />
+      <xs:element minOccurs="0" name="totalPages" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItemPaging" nillable="true" type="tns:ItemPaging" />
+  <xs:simpleType name="Status">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Available">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Enabled">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NA">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PreviewAvailable">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Status" nillable="true" type="tns:Status" />
+</xs:schema>

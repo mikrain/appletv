@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ivsmedia.iptv-distribution.net" elementFormDefault="qualified" targetNamespace="http://ivsmedia.iptv-distribution.net" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IVS.Content.Data" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/IVS.Common" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/IVsServices" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Common" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/IVS.Media.Client" />
+  <xs:import schemaLocation="http://ivsmedia.iptv-distribution.net/ContentService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="GetClientContentGenres">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="type" type="q1:ContentGenreType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientContentGenresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetClientContentGenresResult" nillable="true" type="q2:ContentGenres" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppContentGenres">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="type" type="q3:ContentGenreType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppContentGenresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetAppContentGenresResult" nillable="true" type="q4:ContentGenres" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RateItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="item" nillable="true" type="q5:ProtoItem" />
+        <xs:element minOccurs="0" name="rate" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RateItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RateItemResult" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientChannels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q6:ContentRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientChannelsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetClientChannelsResult" nillable="true" type="q7:Channels" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppChannels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q8:ContentRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppChannelsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetAppChannelsResult" nillable="true" type="q9:Channels" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientProgramGuide">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="type" type="q10:ContentType" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q11:ProgramGuideRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientProgramGuideResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetClientProgramGuideResult" nillable="true" type="q12:ProgramGuide" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientRelatedProgramGuide">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q13:RelatedRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientRelatedProgramGuideResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetClientRelatedProgramGuideResult" nillable="true" type="q14:ProgramGuide" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppProgramGuide">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="type" type="q15:ContentType" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q16:ProgramGuideRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppProgramGuideResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetAppProgramGuideResult" nillable="true" type="q17:ProgramGuide" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppRelatedProgramGuide">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q18:RelatedRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppRelatedProgramGuideResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetAppRelatedProgramGuideResult" nillable="true" type="q19:ProgramGuide" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientOnDemandContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q20:OnDemandRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientOnDemandContentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetClientOnDemandContentResult" nillable="true" type="q21:OnDemandContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientRelatedOnDemandContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q22:RelatedRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientRelatedOnDemandContentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetClientRelatedOnDemandContentResult" nillable="true" type="q23:OnDemandContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppRelatedOnDemandContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q24:RelatedRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppRelatedOnDemandContentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetAppRelatedOnDemandContentResult" nillable="true" type="q25:OnDemandContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppOnDemandContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q26:OnDemandRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppOnDemandContentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetAppOnDemandContentResult" nillable="true" type="q27:OnDemandContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramRoles">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetProgramRolesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetProgramRolesResult" nillable="true" type="q28:ArrayOfProgramRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContributions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="item" nillable="true" type="q29:ProtoItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetContributionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetContributionsResult" nillable="true" type="q30:ArrayOfContribution" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActivities">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="person" nillable="true" type="q31:Person" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActivitiesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetActivitiesResult" nillable="true" type="q32:ArrayOfPersonActivity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientContentGenresByRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sSessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="type" type="q33:ContentGenreType" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q34:ContentRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientContentGenresByRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetClientContentGenresByRequestResult" nillable="true" type="q35:ContentGenres" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppContentGenresByRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="type" type="q36:ContentGenreType" />
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q37:ContentRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppContentGenresByRequestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetAppContentGenresByRequestResult" nillable="true" type="q38:ContentGenres" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVODGenresMap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVODGenresMapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetVODGenresMapResult" nillable="true" type="q39:ArrayOfVodGenreMap" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWebsiteTVGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWebsiteTVGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="GetWebsiteTVGroupResult" nillable="true" type="q40:ArrayOfKeyValue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChannelStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="tillTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChannelStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/IVsServices" minOccurs="0" name="GetChannelStatusResult" nillable="true" type="q41:ContentStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddFavorites">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="items" nillable="true" type="q42:ArrayOfProtoItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddFavoritesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddFavoritesResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFavorites">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="items" nillable="true" type="q43:ArrayOfProtoItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteFavoritesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteFavoritesResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFavorites">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="type" type="q44:ContentType" />
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="paging" nillable="true" type="q45:ItemPaging" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFavoritesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetFavoritesResult" nillable="true" type="q46:ArrayOfProtoItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFavPrograms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="type" type="q47:ContentType" />
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="paging" nillable="true" type="q48:ItemPaging" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFavProgramsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetFavProgramsResult" nillable="true" type="q49:ProgramGuide" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFavOnDemandContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="type" type="q50:ContentType" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="paging" nillable="true" type="q51:ItemPaging" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFavOnDemandContentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetFavOnDemandContentResult" nillable="true" type="q52:OnDemandContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFavOnDemandContentFilter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="vodRequest" nillable="true" type="q53:OnDemandRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFavOnDemandContentFilterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetFavOnDemandContentFilterResult" nillable="true" type="q54:OnDemandContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFavChannels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="type" type="q55:ContentType" />
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="paging" nillable="true" type="q56:ItemPaging" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFavChannelsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetFavChannelsResult" nillable="true" type="q57:Channels" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetArchiveTimeSpan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="channelID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetArchiveTimeSpanResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/Common" minOccurs="0" name="GetArchiveTimeSpanResult" nillable="true" type="q58:DateRange" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTvGuide">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q59:TvGuideRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTvGuideResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetTvGuideResult" nillable="true" type="q60:TvGuide" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTVGrid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q61:TVGridRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTVGridResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetTVGridResult" nillable="true" type="q62:TVGrid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientItemMisc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sSessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q63:ItemMiscRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientItemMiscResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetClientItemMiscResult" nillable="true" type="q64:ArrayOfProtoItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppItemMisc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteID" type="xs:int" />
+        <xs:element minOccurs="0" name="sLang" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="appName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="request" nillable="true" type="q65:ItemMiscRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAppItemMiscResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="GetAppItemMiscResult" nillable="true" type="q66:ArrayOfProtoItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetClientItemMisc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sSessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="misc" nillable="true" type="q67:ItemMisc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetClientItemMiscResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="SetClientItemMiscResult" nillable="true" type="q68:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetItemWatchedPosition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="item" nillable="true" type="q69:ProtoItem" />
+        <xs:element minOccurs="0" name="pos" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetItemWatchedPositionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="SetItemWatchedPositionResult" nillable="true" type="q70:OperationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetItemsWatchedPosition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="positions" nillable="true" type="q71:ArrayOfProtoItemPos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetItemsWatchedPositionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetItemsWatchedPositionResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableSubscriptions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="specialCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableSubscriptionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/IVS.Media.Client" minOccurs="0" name="GetAvailableSubscriptionsResult" nillable="true" type="q72:ArrayOfSubscription" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecordFutureProgram">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="item" nillable="true" type="q73:ProtoItemPos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecordFutureProgramResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RecordFutureProgramResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecordedChannels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="channels" nillable="true" type="q74:ArrayOfKeyValue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RecordedChannelsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="RecordedChannelsResult" nillable="true" type="q75:ArrayOfKeyValue" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestItemProperties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sessionID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q76="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="items" nillable="true" type="q76:ArrayOfint" />
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/IVS.Common" minOccurs="0" name="ct" type="q77:ContentType" />
+        <xs:element xmlns:q78="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="props" nillable="true" type="q78:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RequestItemPropertiesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/IVS.Content.Data" minOccurs="0" name="RequestItemPropertiesResult" nillable="true" type="q79:ArrayOfItemProperties" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

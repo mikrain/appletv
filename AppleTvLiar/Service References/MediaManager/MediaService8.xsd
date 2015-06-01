@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/IVS.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/IVS.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ContentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AudioBooks" />
+      <xs:enumeration value="DVR" />
+      <xs:enumeration value="Games" />
+      <xs:enumeration value="Karaoke" />
+      <xs:enumeration value="LiveTV" />
+      <xs:enumeration value="Music" />
+      <xs:enumeration value="Podcast" />
+      <xs:enumeration value="Radio" />
+      <xs:enumeration value="ArcPlus" />
+      <xs:enumeration value="VOD" />
+      <xs:enumeration value="SVOD" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ContentType" nillable="true" type="tns:ContentType" />
+  <xs:complexType name="ArrayOfKeyValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValue" nillable="true" type="tns:KeyValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValue" nillable="true" type="tns:ArrayOfKeyValue" />
+  <xs:complexType name="KeyValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="key" nillable="true" type="xs:string" />
+      <xs:element name="value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KeyValue" nillable="true" type="tns:KeyValue" />
+  <xs:complexType name="ArrayOfMediaTimeZone">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MediaTimeZone" nillable="true" type="tns:MediaTimeZone" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMediaTimeZone" nillable="true" type="tns:ArrayOfMediaTimeZone" />
+  <xs:complexType name="MediaTimeZone">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="stream" type="xs:boolean" />
+      <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="utcOffset" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MediaTimeZone" nillable="true" type="tns:MediaTimeZone" />
+</xs:schema>

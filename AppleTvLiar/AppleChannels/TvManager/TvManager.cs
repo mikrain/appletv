@@ -9,6 +9,7 @@ using System.Xml;
 using AppleTvLiar.AppleChannels.HtmlManager;
 using System.Xml.Linq;
 using HtmlAgilityPack;
+using System.Security.Cryptography;
 
 namespace AppleTvLiar.AppleChannels.TvManager
 {
@@ -63,6 +64,8 @@ namespace AppleTvLiar.AppleChannels.TvManager
 
         private XmlDocument GenereateChannels(string channels)
         {
+
+
             var asd = XDocument.Load(channels);
 
             var linkMovies = asd.Descendants(XName.Get("LinkMovies"));
@@ -118,6 +121,23 @@ namespace AppleTvLiar.AppleChannels.TvManager
 
 
             return GetDocument(root);
+        }
+
+
+        public string CalculateMD5Hash(string input)
+        {
+            // step 1, calculate MD5 hash from input
+            MD5 md5 = System.Security.Cryptography.MD5.Create();
+            byte[] inputBytes = System.Text.Encoding.UTF8.GetBytes(input);
+            byte[] hash = md5.ComputeHash(inputBytes);
+
+            // step 2, convert byte array to hex string
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < hash.Length; i++)
+            {
+                sb.Append(hash[i].ToString("x2"));
+            }
+            return sb.ToString();
         }
 
         private XmlDocument GetDocument(XElement elemtn)
