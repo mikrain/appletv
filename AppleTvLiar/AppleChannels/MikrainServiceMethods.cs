@@ -701,5 +701,11 @@ namespace MikrainService
             SaveDoc("bestRussian",XDocument.Parse(doc.InnerXml));
             return doc;
         }
+
+        public Stream GetBestRussianImage(string channelId)
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(string.Format("http://images.bestrussiantv.com/ui/ImageHandler.ashx?t=10&e={0}", channelId));
+            return request.GetResponse().GetResponseStream();
+        }
     }
 }

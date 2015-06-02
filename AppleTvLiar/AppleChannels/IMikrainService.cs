@@ -50,6 +50,10 @@ namespace MikrainService
         [WebGet(UriTemplate = "/GetBestRussian", BodyStyle = WebMessageBodyStyle.Bare)]
         XmlDocument GetBestRussian();
 
+        [OperationContract]
+        [WebGet(UriTemplate = "/GetBestRussianImage?channelId={channelId}", BodyStyle = WebMessageBodyStyle.Bare)]
+        Stream GetBestRussianImage(string channelId);
+
         [XmlSerializerFormat]
         [OperationContract]
         [WebGet(UriTemplate = "/lovekinozalMovie?movie={movie}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]

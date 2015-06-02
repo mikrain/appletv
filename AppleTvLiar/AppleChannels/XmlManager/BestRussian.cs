@@ -24,7 +24,8 @@ namespace AppleTvLiar.AppleChannels.XmlManager
             ClientServiceClient client = new ClientServiceClient();
             ClientAppSettings settings = new ClientAppSettings();
             settings.appSettings = new AppSettings() { appName = "IPHONE" };
-            var clientCredentials = new AccessCredentials() { UserLogin = "320746", UserPassword = "123456" };
+            //var clientCredentials = new AccessCredentials() { UserLogin = "320746", UserPassword = "123456" };
+            var clientCredentials = new AccessCredentials() { UserLogin = "elizabetru", UserPassword = "winter15" };
             settings.clientCredentials = clientCredentials;
             var trueSettings = client.Login(settings);
 
@@ -36,9 +37,10 @@ namespace AppleTvLiar.AppleChannels.XmlManager
             XElement items = CreateBody(root);
 
 
-            for (int i = 1; i < channels.paging.totalPages; i++)
+            for (int i = 0; i < channels.paging.totalPages; i++)
             {
-                channels = service.GetClientChannels(trueSettings.clientCredentials.sessionID, new ContentRequest() { type = ContentManager.ContentType.LiveTV, paging = new ItemPaging() { itemsOnPage = 10, pageNumber = i } });
+
+                channels = service.GetClientChannels(trueSettings.clientCredentials.sessionID, new ContentRequest() { type = ContentManager.ContentType.LiveTV, paging = new ItemPaging() { itemsOnPage = 10, pageNumber = i+1 } });
 
                 CreateChannel(items, i, channels.items, trueSettings);
 
@@ -106,6 +108,11 @@ namespace AppleTvLiar.AppleChannels.XmlManager
 
             for (int i = 0; i < channels.Count(); i++)
             {
+                if (channels[i].id == 300384 || channels[i].id == 300383 || channels[i].id == 300387 || channels[i].id == 13 )
+                {
+                    continue;
+                }
+
                 XElement itemsTmp;
                 string imageTmp = "";
                 XElement moviePoster = null;
@@ -141,7 +148,7 @@ namespace AppleTvLiar.AppleChannels.XmlManager
 
 
                 var image = new XElement(XName.Get("image"));
-                image.SetValue(imageTmp);// HttpUtility.HtmlEncode( string.Format("http://images.bestrussiantv.com/ui/ImageHandler.ashx?t=10&e={0}", channels[i].id)));
+                image.SetValue(string.Format( "http://trailers.apple.com/GetBestRussianImage?channelId={0}", channels[i].id) );
                 moviePoster.Add(image);
                 var defaultImage = new XElement(XName.Get("defaultImage"));
                 defaultImage.SetValue(imageTmp);
