@@ -73,6 +73,9 @@ namespace AppleTvLiar.AppleChannels
         {
             var tcs = new TaskCompletionSource<string>();
             var request = (HttpWebRequest)WebRequest.Create(url);
+            //xhr.setRequestHeader('X-MOON-EXPIRED', "1445476086");
+            //xhr.setRequestHeader('X-MOON-TOKEN', "a33e0508a7a5e053d21fe15bc6d1576d");
+
             request.Method = "POST";
             request.ContentType = "application/x-www-form-urlencoded";
             if (!string.IsNullOrEmpty(UserAgent))

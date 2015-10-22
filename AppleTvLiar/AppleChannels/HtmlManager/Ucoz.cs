@@ -15,6 +15,7 @@ using HtmlAgilityPack;
 using MikrainService;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Diagnostics;
 
 namespace AppleTvLiar.AppleChannels.HtmlManager
 {
@@ -221,7 +222,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
         }
 
 
-        public XDocument GetMovie(string url, string imageUrl, string movieTitle)
+        public async Task<XDocument> GetMovie(string url, string imageUrl, string movieTitle)
         {
             var cacheDoc = ReadDoc(movieTitle);
             if (cacheDoc != null)
@@ -355,6 +356,48 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
                                     }
                                 }
 
+                                if (videoSource.Contains("moonwalk.cc"))
+                                {
+                                    var htmlSources = HttpRequests(source);
+                                    var document = new HtmlDocument();
+                                    document.LoadHtml(htmlSources);
+
+                                    var text = document.DocumentNode.InnerText;
+
+                                    var lookIntoThis = Regex.Match(text, "/sessions/create_session', (.*?(\n))+.*?");
+                                    var xmoonExp = Regex.Match(text, "X-MOON-EXPIRED', \"(.*)\"").Groups[1].Value;
+                                    var xmoonToken = Regex.Match(text, "X-MOON-TOKEN', \"(.*)\"").Groups[1].Value;
+                                    var video_token = Regex.Match(lookIntoThis.Value, "video_token: '(.*)'").Groups[1].Value;
+                                    var access_key = Regex.Match(lookIntoThis.Value, "access_key: '(.*)'").Groups[1].Value;
+                                    var d_id = Regex.Match(lookIntoThis.Value, "d_id: (.*),").Groups[1].Value;
+
+
+
+                                    var result = await SendMoonRequest(xmoonExp, xmoonToken, "http://moonwalk.cc/sessions/create_session", new Dictionary<string, string>() { { "d_id", d_id }, { "video_token", video_token }, { "access_key", access_key }, { "content_type", "movie" } });
+
+
+                                    var jO = JObject.Parse(result);
+                                    var link = jO["manifest_m3u8"].Value<string>();
+                                    if (link != null)
+                                    {
+                                        videoSource = link;
+                                    }
+
+
+
+                                    //var video = document.GetElementbyId("video");
+
+                                    //foreach (var childNode in video.ChildNodes)
+                                    //{
+                                    //    if (childNode.Name == "source")
+                                    //    {
+                                    //        videoSource = childNode.GetAttributeValue("src", "");
+                                    //        var points = videoSource.Split('.');
+
+                                    //        CreateActionButton(videoSource, xDocument, points[points.Count() - 2]);
+                                    //    }
+                                    //}
+                                }
 
                                 CreateActionButton(videoSource, xDocument, "hd");
                                 break;
@@ -456,13 +499,15 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
             var text = document.DocumentNode.InnerText;
 
             var lookIntoThis = Regex.Match(text, "/sessions/create_session', (.*?(\n))+.*?");
+            var xmoonExp = Regex.Match(text, "X-MOON-EXPIRED', \"(.*)\"").Groups[1].Value;
+            var xmoonToken = Regex.Match(text, "X-MOON-TOKEN', \"(.*)\"").Groups[1].Value;
             var video_token = Regex.Match(lookIntoThis.Value, "video_token: '(.*)'").Groups[1].Value;
             var access_key = Regex.Match(lookIntoThis.Value, "access_key: '(.*)'").Groups[1].Value;
             var d_id = Regex.Match(lookIntoThis.Value, "d_id: (.*),").Groups[1].Value;
 
 
 
-            var result = await SendPostRequest("http://moonwalk.cc/sessions/create_session", new Dictionary<string, string>() { { "d_id", d_id }, { "video_token", video_token }, { "access_key", access_key }, { "content_type", "serial" } });
+            var result = await SendMoonRequest(xmoonExp, xmoonToken,"http://moonwalk.cc/sessions/create_session", new Dictionary<string, string>() { { "d_id", d_id }, { "video_token", video_token }, { "access_key", access_key }, { "content_type", "serial" } });
 
 
             var jO = JObject.Parse(result);
@@ -574,6 +619,107 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
             var element = xDocument.Descendants(XName.Get("httpFileVideoAsset"));
             element.First().AddFirst(new XElement(XName.Get("mediaURL"), url));
             return xDocument;
+        }
+
+
+        protected Task<string> SendMoonRequest(string exp,string TOKEN, string url, Dictionary<string, string> parameters, string UserAgent = "")
+        {
+            var tcs = new TaskCompletionSource<string>();
+            var request = (HttpWebRequest)WebRequest.Create(url);
+            //xhr.setRequestHeader('X-MOON-EXPIRED', "1445476086");
+            //xhr.setRequestHeader('X-MOON-TOKEN', "a33e0508a7a5e053d21fe15bc6d1576d");
+
+            request.Headers.Add("X-MOON-EXPIRED",exp);
+            request.Headers.Add("X-MOON-TOKEN", TOKEN);
+            request.Headers.Add("X-Requested-With", "XMLHttpRequest");
+
+            request.Method = "POST";
+            request.ContentType = "application/x-www-form-urlencoded";
+            if (!string.IsNullOrEmpty(UserAgent))
+            {
+                request.UserAgent = UserAgent;
+            }
+            request.BeginGetRequestStream(rStream =>
+            {
+                try
+                {
+                    if (parameters != null)
+                    {
+                        using (var postStream = request.EndGetRequestStream(rStream))
+                        {
+                            using (var memStream = new MemoryStream())
+                            {
+                                var postData = parameters.Keys.Aggregate("", (current, key) => current + (key + "=" + parameters[key] + "&"));
+
+                                var bytes = Encoding.UTF8.GetBytes(postData);
+
+                                memStream.Write(bytes, 0, bytes.Length);
+
+                                memStream.Position = 0;
+                                var tempBuffer = new byte[memStream.Length];
+                                memStream.Read(tempBuffer, 0, tempBuffer.Length);
+
+                                postStream.Write(tempBuffer, 0, tempBuffer.Length);
+                                memStream.Flush();
+                            }
+                        }
+                    }
+
+                    request.BeginGetResponse(r =>
+                    {
+                        try
+                        {
+                            var httpRequest = (HttpWebRequest)r.AsyncState;
+                            var httpResponse = (HttpWebResponse)httpRequest.EndGetResponse(r);
+
+                            using (var reader = new StreamReader(httpResponse.GetResponseStream()))
+                            {
+                                var result = reader.ReadToEnd();
+                                tcs.SetResult(result);
+
+                                Debug.WriteLine("Finish request " + request.RequestUri);
+                            }
+                        }
+                        catch (WebException ex)
+                        {
+                            if (ex.Response is HttpWebResponse)
+                            {
+                                var raw = ex.Response as HttpWebResponse;
+                                using (var reader = new StreamReader(raw.GetResponseStream()))
+                                {
+                                    var result = reader.ReadToEnd();
+                                    tcs.TrySetException(new WebException(result));
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            tcs.TrySetException(ex);
+                            Debug.WriteLine(ex);
+                        }
+
+                    }, request);
+
+                }
+                catch (WebException ex)
+                {
+                    if (ex.Response is HttpWebResponse)
+                    {
+                        var raw = ex.Response as HttpWebResponse;
+                        using (var reader = new StreamReader(raw.GetResponseStream()))
+                        {
+                            var result = reader.ReadToEnd();
+                            tcs.TrySetException(new WebException(result));
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    tcs.TrySetException(ex);
+                }
+            }, request);
+
+            return tcs.Task;
         }
 
         public string HttpRequests(string url)

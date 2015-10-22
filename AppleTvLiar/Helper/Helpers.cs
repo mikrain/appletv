@@ -33,7 +33,7 @@ namespace AppleTvLiar.Helper
             //return ipcorrect;
             if (ips.Any())
             {
-                return ips[0];
+                return ips[1];
             }
             return IPAddress.Parse(ipadress);
         }

@@ -124,9 +124,9 @@ namespace MikrainService
         XmlDocument ShowUcozEpisodes(string href, string imageHref, string title, string season);
 
         [XmlSerializerFormat]
-        [OperationContract]
+        [OperationContractAttribute(AsyncPattern = true)]
         [WebGet(UriTemplate = "/getUcozMovie?movie={movie}&imageUrl={imageUrl}&movieTitle={movieTitle}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
-        XmlDocument GetUcozMovie(string movie, string imageUrl, string movieTitle); 
+        Task<XmlDocument> GetUcozMovie(string movie, string imageUrl, string movieTitle); 
         
         [XmlSerializerFormat]
         [OperationContract]

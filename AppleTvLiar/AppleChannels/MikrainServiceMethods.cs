@@ -464,11 +464,11 @@ namespace MikrainService
             return new Ucoz().ShowUcozEpisodes(href, imageHref, title, season).GetXmlDocument();
         }
 
-        public XmlDocument GetUcozMovie(string movie, string imageUrl, string movieTitle)
+        public async Task<XmlDocument> GetUcozMovie(string movie, string imageUrl, string movieTitle)
         {
             try
             {
-                return new Ucoz().GetMovie(movie, imageUrl, movieTitle).GetXmlDocument();
+                return (await new Ucoz().GetMovie(movie, imageUrl, movieTitle)).GetXmlDocument();
 
             }
             catch (Exception ex)
@@ -659,7 +659,7 @@ namespace MikrainService
         {
             if (System.ServiceModel.Web.WebOperationContext.Current != null)
             {
-                WebOperationContext.Current.OutgoingResponse.Headers.Add("Content-Disposition", "attachment; filename=mystream.m3u8");
+                //WebOperationContext.Current.OutgoingResponse.Headers.Add("Content-Disposition", "attachment; filename=mystream.m3u8");
                 WebOperationContext.Current.OutgoingResponse.ContentType = "video/MP2T";
                 var asfd = System.ServiceModel.Web.WebOperationContext.Current.IncomingRequest.UriTemplateMatch.RequestUri;
                 var segm = asfd.Segments;

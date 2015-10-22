@@ -12,7 +12,7 @@ namespace AppleTvLiar.ProccessManager
 {
     public class ProccessManager
     {
-        public void StartChannel(string id)
+        public void StartChannel(string id= "b2ce1cb4af564008bf2db362f0fa4519f9ef4690")
         {
             try
             {
@@ -29,7 +29,7 @@ namespace AppleTvLiar.ProccessManager
                                 @"http://" + Helpers.GetIpAddress() + "/getstreamts/mystream-########.ts},mux=ts,dst=" +
                                  Path.Combine(MikrainService.MikrainProgramm._xmlPath, @"streamtv\mystream-########.ts") + "}}";
                 info.WindowStyle = ProcessWindowStyle.Hidden;
-                info.UseShellExecute = false;
+                info.UseShellExecute = true;
 
                
 

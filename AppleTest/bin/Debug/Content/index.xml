@@ -10,18 +10,10 @@
 	<body>
 		<viewWithNavigationBar id="trailers_navigation" onNavigate="Trailers.handleOnNavigate( event )">
 			<navigation>
-			<navigationItem id="BestRus"> 
-					<title>Best Russian TV</title> 
-					<url>http://trailers.apple.com/GetBestRussian</url> 
-				</navigationItem> 
-				<navigationItem id="EnTv"> 
-					<title>UniTV</title> 
-					<url>http://trailers.apple.com/appletv?channel=http://www.yunisov-tv.com/tv2_1/afh8ess13r/menuLeft.xml</url> 
-				</navigationItem> 
-				<!-- <navigationItem id="TorTv"> 
-					<title>TorrentTv</title> 
+				<navigationItem id="RuTv"> 
+					<title>Russian TV</title> 
 					<url>http://trailers.apple.com/appletv?channel=listChannels</url> 
-				</navigationItem>  -->
+				</navigationItem> 
 			<navigationItem id="UkozSer"> 
 					<title>UkozMultSer</title> 
 					<url>http://trailers.apple.com/GetUcozMultSerial</url> 
@@ -30,10 +22,10 @@
 					<title>UkozMult</title> 
 					<url>http://trailers.apple.com/GetUcozMult</url> 
 				</navigationItem>
-				<navigationItem id="Ukoz"> 
-					<title>1080</title> 
-					<url>http://trailers.apple.com/GetKino1080</url> 
-				</navigationItem>
+				<navigationItem id="DisneyMovies"> 
+					<title>Дисней Мульт</title> 
+					<url>http://trailers.apple.com/MultPoisk?ext=disney</url> 
+				</navigationItem> 
 				<navigationItem id="BaskinoMult"> 
 					<title>BaskinoMult</title> 
 					<url>http://trailers.apple.com/baskinoMutliOnline?page=1</url> 
