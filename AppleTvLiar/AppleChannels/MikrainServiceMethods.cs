@@ -306,6 +306,29 @@ namespace MikrainService
             return new FriendsSiteManager().GetShow(friendsPlayHref, imageHref).GetXmlDocument();
         }
 
+        public XmlDocument megafindMovie(string movie, string image, string title)
+        {
+            MegaserialSiteManager manager = new MegaserialSiteManager();
+            return manager.GetMovie(movie, image, title).GetXmlDocument();
+        }
+
+        public XmlDocument megaserial()
+        {
+            MegaserialSiteManager manager = new MegaserialSiteManager();
+            return manager.GetCategories("http://megaserial.net/zapadnye/page", "megaserial").GetXmlDocument();
+        }
+
+        public XmlDocument ShowMegaEpisodes(string href, string imageHref, string title, string season)
+        {
+            MegaserialSiteManager manager = new MegaserialSiteManager();
+            return manager.GetEpisodes(href, imageHref, title, season).GetXmlDocument();
+        }
+
+        public XmlDocument ShowMegaSer(string ser, string image, string title)
+        {
+            MegaserialSiteManager manager = new MegaserialSiteManager();
+            return manager.ShowMegaSer(ser, image, title).GetXmlDocument();
+        }
 
         public XmlDocument lovekinozalNew()
         {

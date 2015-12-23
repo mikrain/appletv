@@ -99,6 +99,15 @@ namespace MikrainService
         [WebGet(UriTemplate = "/GetUcozMult", BodyStyle = WebMessageBodyStyle.Bare)]
         Task<XmlDocument> GetUcozMult();
 
+        [XmlSerializerFormat, OperationContract, WebGet(UriTemplate = "/megafindMovie?movie={movie}&image={image}&title={title}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
+        XmlDocument megafindMovie(string movie, string image, string title);
+        [XmlSerializerFormat, OperationContract, WebGet(UriTemplate = "/megaserial", BodyStyle = WebMessageBodyStyle.Bare)]
+        XmlDocument megaserial();
+        [XmlSerializerFormat, WebGet(UriTemplate = "/ShowMegaEpisodes?href={href}&imageHref={imageHref}&title={title}&season={season}", BodyStyle = WebMessageBodyStyle.Bare)]
+        XmlDocument ShowMegaEpisodes(string href, string imageHref, string title, string season);
+        [XmlSerializerFormat, WebGet(UriTemplate = "/ShowMegaSer?ser={ser}&image={image}&title={title}", BodyStyle = WebMessageBodyStyle.Bare)]
+        XmlDocument ShowMegaSer(string ser, string image, string title);
+
         [XmlSerializerFormat]
         [OperationContract]
         [WebGet(UriTemplate = "/GetKino1080", BodyStyle = WebMessageBodyStyle.Bare)]

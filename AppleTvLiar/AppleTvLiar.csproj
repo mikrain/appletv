@@ -70,6 +70,7 @@
     <Compile Include="AppleChannels\HtmlManager\AdultMult.cs" />
     <Compile Include="AppleChannels\HtmlManager\ArrrSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\Kino1080Manager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\MegaserialSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\MultPoiskSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\M4KinoSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\ShowSiteManager.cs" />

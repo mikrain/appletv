@@ -16,6 +16,7 @@ using MikrainService;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Diagnostics;
+using System.Net.Http;
 
 namespace AppleTvLiar.AppleChannels.HtmlManager
 {
@@ -336,27 +337,28 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
                                     var htmlSources = HttpRequests(source);
                                 }
 
-                                if (!videoSource.Contains("moonwalk.cc"))
-                                {
-                                    var htmlSources = HttpRequests(source);
-                                    var document = new HtmlDocument();
-                                    document.LoadHtml(htmlSources);
+                                //if (!videoSource.Contains("moonwalk.cc"))
+                                //{
+                                //    //setRequestHeader|1450741237.77cf690302c1338469e923dd6ddd2ed8|beforeSend
+                                //    var htmlSources = HttpRequests(source);
+                                //    var document = new HtmlDocument();
+                                //    document.LoadHtml(htmlSources);
 
-                                    var video = document.GetElementbyId("video");
+                                //    var video = document.GetElementbyId("video");
 
-                                    foreach (var childNode in video.ChildNodes)
-                                    {
-                                        if (childNode.Name == "source")
-                                        {
-                                            videoSource = childNode.GetAttributeValue("src", "");
-                                            var points = videoSource.Split('.');
+                                //    foreach (var childNode in video.ChildNodes)
+                                //    {
+                                //        if (childNode.Name == "source")
+                                //        {
+                                //            videoSource = childNode.GetAttributeValue("src", "");
+                                //            var points = videoSource.Split('.');
 
-                                            CreateActionButton(videoSource, xDocument, points[points.Count() - 2]);
-                                        }
-                                    }
-                                }
+                                //            CreateActionButton(videoSource, xDocument, points[points.Count() - 2]);
+                                //        }
+                                //    }
+                                //}
 
-                                if (videoSource.Contains("moonwalk.cc"))
+                                if (videoSource.Contains("moonwalk.cc") || true)
                                 {
                                     var htmlSources = HttpRequests(source);
                                     var document = new HtmlDocument();
@@ -365,15 +367,38 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
                                     var text = document.DocumentNode.InnerText;
 
                                     var lookIntoThis = Regex.Match(text, "/sessions/create_session', (.*?(\n))+.*?");
+                                    var eval = Regex.Match(text, "setRequestHeader\\|(.*?)\\|beforeSend").Groups[1].Value;
                                     var xmoonExp = Regex.Match(text, "X-MOON-EXPIRED', \"(.*)\"").Groups[1].Value;
                                     var xmoonToken = Regex.Match(text, "X-MOON-TOKEN', \"(.*)\"").Groups[1].Value;
                                     var video_token = Regex.Match(lookIntoThis.Value, "video_token: '(.*)'").Groups[1].Value;
                                     var access_key = Regex.Match(lookIntoThis.Value, "access_key: '(.*)'").Groups[1].Value;
                                     var d_id = Regex.Match(lookIntoThis.Value, "d_id: (.*),").Groups[1].Value;
 
+                                    string query;
+
+//                                    using (var client = new HttpClient())
+//                                    {
+//                                        using (var content = new FormUrlEncodedContent(new KeyValuePair<string, string>[]{
+//                                        new KeyValuePair<string, string>("ham", "Glazed?"),
+//                                        new KeyValuePair<string, string>("x-men", "Wolverine + Logan"),
+//                                        new KeyValuePair<string, string>("Time", DateTime.UtcNow.ToString()),
+//}))
+//                                        {
+//                                            query = content.ReadAsStringAsync().Result;
 
 
-                                    var result = await SendMoonRequest(xmoonExp, xmoonToken, "http://moonwalk.cc/sessions/create_session", new Dictionary<string, string>() { { "d_id", d_id }, { "video_token", video_token }, { "access_key", access_key }, { "content_type", "movie" } });
+//                                            var response = client.PostAsync("http://moonwalk.cc/sessions/create_session", content).Result;
+//                                            if (!response.IsSuccessStatusCode)
+//                                            {
+//                                                return null;
+//                                            }
+//                                            var res = response.Content.ReadAsStreamAsync().Result;
+
+//                                        }
+//                                    }
+
+
+                                    var result = await SendMoonRequest(xmoonExp, eval, "http://moonwalk.cc/sessions/create_session", new Dictionary<string, string>() { { "d_id", d_id }, { "video_token", video_token }, { "access_key", access_key }, { "content_type", "movie" } });
 
 
                                     var jO = JObject.Parse(result);
@@ -499,6 +524,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
             var text = document.DocumentNode.InnerText;
 
             var lookIntoThis = Regex.Match(text, "/sessions/create_session', (.*?(\n))+.*?");
+            var eval = Regex.Match(text, "setRequestHeader\\|(.*?)\\|beforeSend").Groups[1].Value;
             var xmoonExp = Regex.Match(text, "X-MOON-EXPIRED', \"(.*)\"").Groups[1].Value;
             var xmoonToken = Regex.Match(text, "X-MOON-TOKEN', \"(.*)\"").Groups[1].Value;
             var video_token = Regex.Match(lookIntoThis.Value, "video_token: '(.*)'").Groups[1].Value;
@@ -507,7 +533,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
 
 
 
-            var result = await SendMoonRequest(xmoonExp, xmoonToken,"http://moonwalk.cc/sessions/create_session", new Dictionary<string, string>() { { "d_id", d_id }, { "video_token", video_token }, { "access_key", access_key }, { "content_type", "serial" } });
+            var result = await SendMoonRequest(xmoonExp, eval, "http://moonwalk.cc/sessions/create_session", new Dictionary<string, string>() { { "d_id", d_id }, { "video_token", video_token }, { "access_key", access_key }, { "content_type", "serial" } });
 
 
             var jO = JObject.Parse(result);
@@ -629,8 +655,9 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
             //xhr.setRequestHeader('X-MOON-EXPIRED', "1445476086");
             //xhr.setRequestHeader('X-MOON-TOKEN', "a33e0508a7a5e053d21fe15bc6d1576d");
 
-            request.Headers.Add("X-MOON-EXPIRED",exp);
-            request.Headers.Add("X-MOON-TOKEN", TOKEN);
+            //request.Headers.Add("X-MOON-EXPIRED",exp);
+            //request.Headers.Add("X-MOON-TOKEN", TOKEN);
+            request.Headers.Add("Content-Data", Base64Encode(TOKEN));
             request.Headers.Add("X-Requested-With", "XMLHttpRequest");
 
             request.Method = "POST";
@@ -720,6 +747,12 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
             }, request);
 
             return tcs.Task;
+        }
+
+        public static string Base64Encode(string plainText)
+        {
+            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            return System.Convert.ToBase64String(plainTextBytes);
         }
 
         public string HttpRequests(string url)
