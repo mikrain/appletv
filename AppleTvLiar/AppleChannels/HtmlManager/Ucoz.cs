@@ -66,7 +66,13 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
                         var inner = new HtmlDocument();
                         inner.LoadHtml(div.InnerHtml);
 
-                        var image = inner.DocumentNode.SelectSingleNode("//table/tr/td/div[2]/img").GetAttributeValue("src", "");
+                        var imageDoc = inner.DocumentNode.SelectSingleNode("//table/tr/td/div[2]/img");
+                        if (imageDoc == null) imageDoc = inner.DocumentNode.SelectSingleNode("//table/tr/td/div[2]/div/img");
+
+                        string image = "";
+                        if (imageDoc != null)
+                            image = imageDoc.GetAttributeValue("src", "").Replace("http://hd-720.ucoz.ru","");
+
                         var name = inner.DocumentNode.SelectSingleNode("//table/tr/td/div[1]/a/span/b/span").InnerText;
                         var href = inner.DocumentNode.SelectSingleNode("//table/tr/td/span[2]/a").GetAttributeValue("href", "");
 
@@ -118,7 +124,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
             {
                 int i1 = i;
                 threads.Add(Task.Run(() => AddToContent(url, i1, elements)));
-               
+
             }
 
             Task.WaitAll(threads.ToArray());
@@ -142,76 +148,76 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
         {
             //var th1 = new Thread(() =>
             //               {
-                               int count = 0;
-                               var collectionDividerElement = new XElement(XName.Get("collectionDivider"));
-                               collectionDividerElement.SetAttributeValue(XName.Get("alignment"), "left");
-                               collectionDividerElement.SetAttributeValue(XName.Get("accessibilityLabel"), i);
-                               collectionDividerElement.Add(new XElement(XName.Get("title"), string.Format("Page number {0}", i)));
-                               var shelfElement = new XElement(XName.Get("shelf"));
-                               shelfElement.SetAttributeValue(XName.Get("id"), string.Format("shelf_{0}", i));
+            int count = 0;
+            var collectionDividerElement = new XElement(XName.Get("collectionDivider"));
+            collectionDividerElement.SetAttributeValue(XName.Get("alignment"), "left");
+            collectionDividerElement.SetAttributeValue(XName.Get("accessibilityLabel"), i);
+            collectionDividerElement.Add(new XElement(XName.Get("title"), string.Format("Page number {0}", i)));
+            var shelfElement = new XElement(XName.Get("shelf"));
+            shelfElement.SetAttributeValue(XName.Get("id"), string.Format("shelf_{0}", i));
 
-                               var sectionsElement = new XElement(XName.Get("sections"));
-                               var shelfSectionElement = new XElement(XName.Get("shelfSection"));
-                               var itemsElement = new XElement(XName.Get("items"));
+            var sectionsElement = new XElement(XName.Get("sections"));
+            var shelfSectionElement = new XElement(XName.Get("shelfSection"));
+            var itemsElement = new XElement(XName.Get("items"));
 
-                               shelfSectionElement.Add(itemsElement);
-                               sectionsElement.Add(shelfSectionElement);
-                               shelfElement.Add(sectionsElement);
+            shelfSectionElement.Add(itemsElement);
+            sectionsElement.Add(shelfSectionElement);
+            shelfElement.Add(sectionsElement);
 
-                               Console.WriteLine(string.Format(url, i));
-                               var html = HttpRequests(string.Format(url, i));
-                               var doc = new HtmlDocument();
-                               doc.OptionDefaultStreamEncoding = new UnicodeEncoding();
-                               doc.OptionOutputAsXml = true;
-                               doc.OptionAutoCloseOnEnd = true;
-                               doc.OptionWriteEmptyNodes = true;
-                               doc.OptionFixNestedTags = true;
-                               doc.OptionReadEncoding = false;
-                               doc.LoadHtml(html);
-
-
-                               //var divs = doc.GetElementbyId("allEntries");
-
-                               if (i == 1)
-                               {
-                                   CreateElementList(count++, string.Format(
-                                       "atv.loadURL('http://trailers.apple.com/getUcozMovie?movie={0}&imageUrl={1}&movieTitle={2}')",
-                                       Uri.EscapeDataString("search"), "", ""), "search", "http://www.kudoschatsearch.com/images/search.png",
-                                       itemsElement);
-                               }
+            Console.WriteLine(string.Format(url, i));
+            var html = HttpRequests(string.Format(url, i));
+            var doc = new HtmlDocument();
+            doc.OptionDefaultStreamEncoding = new UnicodeEncoding();
+            doc.OptionOutputAsXml = true;
+            doc.OptionAutoCloseOnEnd = true;
+            doc.OptionWriteEmptyNodes = true;
+            doc.OptionFixNestedTags = true;
+            doc.OptionReadEncoding = false;
+            doc.LoadHtml(html);
 
 
-                               var divs = doc.DocumentNode.Descendants("div");
+            //var divs = doc.GetElementbyId("allEntries");
 
-                               foreach (var div in divs)
-                               {
-                                   if (div.GetAttributeValue("id", "").Contains("entryID"))
-                                   {
-                                       var strongs = div.ChildNodes.Descendants("strong");
+            if (i == 1)
+            {
+                CreateElementList(count++, string.Format(
+                    "atv.loadURL('http://trailers.apple.com/getUcozMovie?movie={0}&imageUrl={1}&movieTitle={2}')",
+                    Uri.EscapeDataString("search"), "", ""), "search", "http://www.kudoschatsearch.com/images/search.png",
+                    itemsElement);
+            }
 
-                                       var inner = new HtmlDocument();
-                                       inner.LoadHtml(div.InnerHtml);
 
-                                       var image = inner.DocumentNode.SelectSingleNode("//table/tr/td/div[2]/img").GetAttributeValue("src", "");
-                                       var name = inner.DocumentNode.SelectSingleNode("//table/tr/td/div[1]/a/span/b/span").InnerText;
-                                       var href = inner.DocumentNode.SelectSingleNode("//table/tr/td/span[2]/a").GetAttributeValue("href", "");
+            var divs = doc.DocumentNode.Descendants("div");
 
-                                       name = name.Replace("Смотреть", "").Replace("онлайн", "").Replace("сериал", "");
+            foreach (var div in divs)
+            {
+                if (div.GetAttributeValue("id", "").Contains("entryID"))
+                {
+                    var strongs = div.ChildNodes.Descendants("strong");
 
-                                       CreateElementList(count++,
-                                           string.Format(
-                                               "atv.loadURL('http://trailers.apple.com/getUcozMovie?movie={0}&imageUrl={1}&movieTitle={2}')",
-                                               Uri.EscapeDataString(href), Uri.EscapeDataString(image), Uri.EscapeDataString(name)), name,
-                                           "http://hd-720.ucoz.ru/" + image, itemsElement);
-                                   }
-                               }
+                    var inner = new HtmlDocument();
+                    inner.LoadHtml(div.InnerHtml);
 
-                               if (elements != null)
-                                   if (!elements.ContainsKey(i))
-                                       elements.Add(i, new List<XElement>() { collectionDividerElement, shelfElement });
-                               //items.First().Add(collectionDividerElement);
-                               //items.First().Add(shelfElement);
-                               Completed(elements);
+                    var image = inner.DocumentNode.SelectSingleNode("//table/tr/td/div[2]/img").GetAttributeValue("src", "");
+                    var name = inner.DocumentNode.SelectSingleNode("//table/tr/td/div[1]/a/span/b/span").InnerText;
+                    var href = inner.DocumentNode.SelectSingleNode("//table/tr/td/span[2]/a").GetAttributeValue("href", "");
+
+                    name = name.Replace("Смотреть", "").Replace("онлайн", "").Replace("сериал", "");
+
+                    CreateElementList(count++,
+                        string.Format(
+                            "atv.loadURL('http://trailers.apple.com/getUcozMovie?movie={0}&imageUrl={1}&movieTitle={2}')",
+                            Uri.EscapeDataString(href), Uri.EscapeDataString(image), Uri.EscapeDataString(name)), name,
+                        "http://hd-720.ucoz.ru/" + image, itemsElement);
+                }
+            }
+
+            if (elements != null)
+                if (!elements.ContainsKey(i))
+                    elements.Add(i, new List<XElement>() { collectionDividerElement, shelfElement });
+            //items.First().Add(collectionDividerElement);
+            //items.First().Add(shelfElement);
+            Completed(elements);
             //               });
 
             //th1.Start();
@@ -376,26 +382,26 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
 
                                     string query;
 
-//                                    using (var client = new HttpClient())
-//                                    {
-//                                        using (var content = new FormUrlEncodedContent(new KeyValuePair<string, string>[]{
-//                                        new KeyValuePair<string, string>("ham", "Glazed?"),
-//                                        new KeyValuePair<string, string>("x-men", "Wolverine + Logan"),
-//                                        new KeyValuePair<string, string>("Time", DateTime.UtcNow.ToString()),
-//}))
-//                                        {
-//                                            query = content.ReadAsStringAsync().Result;
+                                    //                                    using (var client = new HttpClient())
+                                    //                                    {
+                                    //                                        using (var content = new FormUrlEncodedContent(new KeyValuePair<string, string>[]{
+                                    //                                        new KeyValuePair<string, string>("ham", "Glazed?"),
+                                    //                                        new KeyValuePair<string, string>("x-men", "Wolverine + Logan"),
+                                    //                                        new KeyValuePair<string, string>("Time", DateTime.UtcNow.ToString()),
+                                    //}))
+                                    //                                        {
+                                    //                                            query = content.ReadAsStringAsync().Result;
 
 
-//                                            var response = client.PostAsync("http://moonwalk.cc/sessions/create_session", content).Result;
-//                                            if (!response.IsSuccessStatusCode)
-//                                            {
-//                                                return null;
-//                                            }
-//                                            var res = response.Content.ReadAsStreamAsync().Result;
+                                    //                                            var response = client.PostAsync("http://moonwalk.cc/sessions/create_session", content).Result;
+                                    //                                            if (!response.IsSuccessStatusCode)
+                                    //                                            {
+                                    //                                                return null;
+                                    //                                            }
+                                    //                                            var res = response.Content.ReadAsStreamAsync().Result;
 
-//                                        }
-//                                    }
+                                    //                                        }
+                                    //                                    }
 
 
                                     var result = await SendMoonRequest(xmoonExp, eval, "http://moonwalk.cc/sessions/create_session", new Dictionary<string, string>() { { "d_id", d_id }, { "video_token", video_token }, { "access_key", access_key }, { "content_type", "movie" } });
@@ -648,7 +654,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
         }
 
 
-        protected Task<string> SendMoonRequest(string exp,string TOKEN, string url, Dictionary<string, string> parameters, string UserAgent = "")
+        protected Task<string> SendMoonRequest(string exp, string TOKEN, string url, Dictionary<string, string> parameters, string UserAgent = "")
         {
             var tcs = new TaskCompletionSource<string>();
             var request = (HttpWebRequest)WebRequest.Create(url);

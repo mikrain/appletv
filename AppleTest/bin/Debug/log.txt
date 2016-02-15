@@ -1698,3 +1698,35 @@ start service - 12/21/2015 7:25:16 PM
 D:\appletvliar\AppleTest\bin\Debug - 12/21/2015 7:25:16 PM
 Init Dns - 12/21/2015 7:25:16 PM
 IP = 169.254.80.80 - 12/21/2015 7:25:16 PM
+Start Form1 - 2/14/2016 7:01:32 PM
+start service - 2/14/2016 7:01:32 PM
+D:\appletvliar\AppleTest\bin\Debug - 2/14/2016 7:01:32 PM
+Start Form1 - 2/14/2016 7:01:44 PM
+start service - 2/14/2016 7:01:44 PM
+D:\appletvliar\AppleTest\bin\Debug - 2/14/2016 7:01:44 PM
+Init Dns - 2/14/2016 7:01:44 PM
+Start Form1 - 2/14/2016 7:02:11 PM
+start service - 2/14/2016 7:02:11 PM
+D:\appletvliar\AppleTest\bin\Debug - 2/14/2016 7:02:11 PM
+Init Dns - 2/14/2016 7:02:11 PM
+IP = 169.254.80.80 - 2/14/2016 7:02:11 PM
+Start Form1 - 2/14/2016 7:13:08 PM
+start service - 2/14/2016 7:13:08 PM
+D:\appletvliar\AppleTest\bin\Debug - 2/14/2016 7:13:08 PM
+Init Dns - 2/14/2016 7:13:08 PM
+IP = 169.254.80.80 - 2/14/2016 7:13:08 PM
+Start Form1 - 2/14/2016 7:14:33 PM
+start service - 2/14/2016 7:14:33 PM
+D:\appletvliar\AppleTest\bin\Debug - 2/14/2016 7:14:33 PM
+Init Dns - 2/14/2016 7:14:33 PM
+IP = 169.254.80.80 - 2/14/2016 7:14:33 PM
+Start Form1 - 2/14/2016 7:20:03 PM
+start service - 2/14/2016 7:20:04 PM
+D:\appletvliar\AppleTest\bin\Debug - 2/14/2016 7:20:04 PM
+Init Dns - 2/14/2016 7:20:04 PM
+IP = 169.254.80.80 - 2/14/2016 7:20:04 PM
+Start Form1 - 2/14/2016 7:21:20 PM
+start service - 2/14/2016 7:21:20 PM
+D:\appletvliar\AppleTest\bin\Debug - 2/14/2016 7:21:20 PM
+Init Dns - 2/14/2016 7:21:20 PM
+IP = 169.254.80.80 - 2/14/2016 7:21:20 PM
