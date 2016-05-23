@@ -71,7 +71,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
 
                         string image = "";
                         if (imageDoc != null)
-                            image = imageDoc.GetAttributeValue("src", "").Replace("http://hd-720.ucoz.ru","");
+                            image = imageDoc.GetAttributeValue("src", "").Replace("http://hd-720.ucoz.ru", "");
 
                         var name = inner.DocumentNode.SelectSingleNode("//table/tr/td/div[1]/a/span/b/span").InnerText;
                         var href = inner.DocumentNode.SelectSingleNode("//table/tr/td/span[2]/a").GetAttributeValue("href", "");
@@ -248,7 +248,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
                 return searchDoc;
             }
 
-            var html = HttpRequests(url);
+            var html = HttpRequests("http://hd-720.ucoz.ru/" + url);
 
             try
             {
@@ -336,7 +336,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
                             {
                                 var source = htmlNode.GetAttributeValue("src", "");
 
-                                string videoSource = source.Replace("iframe", "index.m3u8");
+                                string videoSource = source;// source.Replace("iframe", "index.m3u8");
 
                                 if (videoSource.Contains("kodik.biz/"))
                                 {
@@ -672,6 +672,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
             {
                 request.UserAgent = UserAgent;
             }
+
             request.BeginGetRequestStream(rStream =>
             {
                 try

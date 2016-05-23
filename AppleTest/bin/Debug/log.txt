@@ -1730,3 +1730,49 @@ start service - 2/14/2016 7:21:20 PM
 D:\appletvliar\AppleTest\bin\Debug - 2/14/2016 7:21:20 PM
 Init Dns - 2/14/2016 7:21:20 PM
 IP = 169.254.80.80 - 2/14/2016 7:21:20 PM
+Start Form1 - 3/27/2016 2:19:02 PM
+start service - 3/27/2016 2:19:02 PM
+D:\appletvliar\AppleTest\bin\Debug - 3/27/2016 2:19:02 PM
+Start Form1 - 3/27/2016 2:19:15 PM
+start service - 3/27/2016 2:19:15 PM
+D:\appletvliar\AppleTest\bin\Debug - 3/27/2016 2:19:15 PM
+Init Dns - 3/27/2016 2:19:15 PM
+IP = 169.254.80.80 - 3/27/2016 2:19:15 PM
+Start Form1 - 3/27/2016 2:21:29 PM
+start service - 3/27/2016 2:21:29 PM
+D:\appletvliar\AppleTest\bin\Debug - 3/27/2016 2:21:29 PM
+Init Dns - 3/27/2016 2:21:29 PM
+IP = 169.254.80.80 - 3/27/2016 2:21:29 PM
+Start Form1 - 3/27/2016 2:23:10 PM
+start service - 3/27/2016 2:23:10 PM
+D:\appletvliar\AppleTest\bin\Debug - 3/27/2016 2:23:10 PM
+Init Dns - 3/27/2016 2:23:10 PM
+IP = 169.254.80.80 - 3/27/2016 2:23:10 PM
+Start Form1 - 5/20/2016 8:00:15 PM
+start service - 5/20/2016 8:00:16 PM
+D:\appletvliar\AppleTest\bin\Debug - 5/20/2016 8:00:16 PM
+Start Form1 - 5/20/2016 8:00:34 PM
+start service - 5/20/2016 8:00:34 PM
+D:\appletvliar\AppleTest\bin\Debug - 5/20/2016 8:00:34 PM
+Init Dns - 5/20/2016 8:00:34 PM
+IP = 192.168.1.18 - 5/20/2016 8:00:34 PM
+Start Form1 - 5/20/2016 8:03:19 PM
+start service - 5/20/2016 8:03:19 PM
+D:\appletvliar\AppleTest\bin\Debug - 5/20/2016 8:03:19 PM
+Init Dns - 5/20/2016 8:03:19 PM
+IP = 192.168.1.18 - 5/20/2016 8:03:19 PM
+Start Form1 - 5/20/2016 8:03:50 PM
+start service - 5/20/2016 8:03:50 PM
+D:\appletvliar\AppleTest\bin\Debug - 5/20/2016 8:03:50 PM
+Init Dns - 5/20/2016 8:03:50 PM
+IP = 192.168.1.18 - 5/20/2016 8:03:50 PM
+Start Form1 - 5/20/2016 8:30:27 PM
+start service - 5/20/2016 8:30:27 PM
+D:\appletvliar\AppleTest\bin\Debug - 5/20/2016 8:30:27 PM
+Init Dns - 5/20/2016 8:30:28 PM
+IP = 192.168.1.18 - 5/20/2016 8:30:28 PM
+Start Form1 - 5/20/2016 8:37:44 PM
+start service - 5/20/2016 8:37:44 PM
+D:\appletvliar\AppleTest\bin\Debug - 5/20/2016 8:37:44 PM
+Init Dns - 5/20/2016 8:37:44 PM
+IP = 192.168.1.18 - 5/20/2016 8:37:44 PM

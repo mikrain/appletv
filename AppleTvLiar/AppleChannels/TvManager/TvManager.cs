@@ -20,7 +20,7 @@ namespace AppleTvLiar.AppleChannels.TvManager
         internal XmlDocument GetChannel(string channel)
         {
 
-            if (channel.EndsWith(".xml"))
+            if (channel.EndsWith("main"))
             {
                 return GenereateChannels(channel);
             }
@@ -66,12 +66,12 @@ namespace AppleTvLiar.AppleChannels.TvManager
         {
 
 
-            var asd = XDocument.Load(channels);
+            //var asd = XDocument.Load(channels);
 
-            var linkMovies = asd.Descendants(XName.Get("LinkMovies"));
-            var link = linkMovies.ElementAt(0).Value;
+            //var linkMovies = asd.Descendants(XName.Get("LinkMovies"));
+            //var link = linkMovies.ElementAt(0).Value;
 
-            var xmlRaw = HttpRequestsString(link);
+            var xmlRaw = HttpRequestsString(channels);
             xmlRaw = xmlRaw.Replace("group", "Group");
             var parsed = XDocument.Parse(xmlRaw);
 
