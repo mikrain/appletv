@@ -3,7 +3,7 @@
 		<script src="http://trailers.apple.com/appletv/us/js/main.js" />
 	</head>
   <body>
-    <scroller id="com.sample.movie-shelf">
+    <scroller id="com.sample.paged-grid">
       <items></items>
 				  </scroller>
 				  </body>

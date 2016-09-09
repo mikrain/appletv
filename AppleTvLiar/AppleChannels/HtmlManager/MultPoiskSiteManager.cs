@@ -282,7 +282,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
                     using (var reader = new StreamReader(response.GetResponseStream(), Encoding.GetEncoding("windows-1251")))
                     {
                         string result = reader.ReadToEnd();
-                        Console.WriteLine(result);
+                        //Console.WriteLine(result);
                         htmlDocument.LoadHtml(result);
                     }
                 }

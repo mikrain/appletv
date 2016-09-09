@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><atv>
+ <head>
+    <script src="http://trailers.apple.com/appletv/us/js/main.js"/>
+  </head>
   <body>
     <itemDetail id="com.apple.trailers">
       <title>Hello Herman</title>
@@ -24,7 +27,7 @@
       </centerShelf>
      <divider>
 <smallCollectionDivider alignment="left">
-<title>More Drama</title>
+<title>More Movies</title>
 </smallCollectionDivider>
 </divider>
 <bottomShelf>
@@ -32,62 +35,7 @@
 <sections>
 <shelfSection>
 <items>
-<moviePoster id="shelf_item_1" accessibilityLabel="Unfreedom" related="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/unfreedom/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/unfreedom/videos/trailer-hd.xml');">
-<title>Unfreedom</title>
-<image>
-https://trailers.apple.com/trailers/independent/unfreedom/images/poster-large.jpg
-</image>
-<defaultImage>resource://Poster.png</defaultImage>
-</moviePoster>
-<moviePoster id="shelf_item_2" accessibilityLabel="The Road Within" related="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/theroadwithin/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/theroadwithin/videos/trailer-hd.xml');">
-<title>The Road Within</title>
-<image>
-https://trailers.apple.com/trailers/independent/theroadwithin/images/poster-large.jpg
-</image>
-<defaultImage>resource://Poster.png</defaultImage>
-</moviePoster>
-<moviePoster id="shelf_item_3" accessibilityLabel="Run All Night" related="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/wb/runallnight/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/wb/runallnight/videos/trailer-hd.xml');">
-<title>Run All Night</title>
-<image>
-https://trailers.apple.com/trailers/wb/runallnight/images/poster-large.jpg
-</image>
-<defaultImage>resource://Poster.png</defaultImage>
-</moviePoster>
-<moviePoster id="shelf_item_4" accessibilityLabel="Game of Thrones, Season 5" related="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/gameofthrones/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/gameofthrones/videos/trailer-hd.xml');">
-<title>Game of Thrones, Season 5</title>
-<image>
-https://trailers.apple.com/trailers/independent/gameofthrones/images/poster-large.jpg
-</image>
-<defaultImage>resource://Poster.png</defaultImage>
-</moviePoster>
-<moviePoster id="shelf_item_5" accessibilityLabel="Far from the Madding Crowd" related="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/fox_searchlight/farfromthemaddingcrowd/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/fox_searchlight/farfromthemaddingcrowd/videos/trailer2-hd.xml');">
-<title>Far from the Madding Crowd</title>
-<image>
-https://trailers.apple.com/trailers/fox_searchlight/farfromthemaddingcrowd/images/poster-large.jpg
-</image>
-<defaultImage>resource://Poster.png</defaultImage>
-</moviePoster>
-<moviePoster id="shelf_item_6" accessibilityLabel="Buzzard" related="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/oscilloscope/buzzard/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/oscilloscope/buzzard/videos/trailer-hd.xml');">
-<title>Buzzard</title>
-<image>
-https://trailers.apple.com/trailers/oscilloscope/buzzard/images/poster-large.jpg
-</image>
-<defaultImage>resource://Poster.png</defaultImage>
-</moviePoster>
-<moviePoster id="shelf_item_7" accessibilityLabel="Sword of Vengeance" related="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/swordofvengeance/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/swordofvengeance/videos/trailer-hd.xml');">
-<title>Sword of Vengeance</title>
-<image>
-https://trailers.apple.com/trailers/independent/swordofvengeance/images/poster-large.jpg
-</image>
-<defaultImage>resource://Poster.png</defaultImage>
-</moviePoster>
-<moviePoster id="shelf_item_8" accessibilityLabel="Marfa Girl" related="true" onSelect="loadTrailerDetailPage('https://trailers.apple.com/appletv/us/studios/independent/marfagirl/index-hd.xml');" onPlay="atv.loadURL('https://trailers.apple.com/appletv/us/studios/independent/marfagirl/videos/trailer-hd.xml');">
-<title>Marfa Girl</title>
-<image>
-https://trailers.apple.com/trailers/independent/marfagirl/images/poster-large.jpg
-</image>
-<defaultImage>resource://Poster.png</defaultImage>
-</moviePoster>
+
 </items>
 </shelfSection>
 </sections>

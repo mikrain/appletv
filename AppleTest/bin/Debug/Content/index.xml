@@ -14,6 +14,10 @@
 					<title>Russian TV</title> 
 					<url>http://trailers.apple.com/appletv?channel=listChannels</url> 
 				</navigationItem> 
+				<navigationItem id="edem"> 
+					<title>Edem</title> 
+					<url>http://trailers.apple.com/appletv?channel=https://edem.tv/playlists/uplist/e6a4ff0932f67f5a19a0634d8f5445dc/edem_pl.m3u8</url> 
+				</navigationItem> 
 			<navigationItem id="UkozSer"> 
 					<title>UkozMultSer</title> 
 					<url>http://trailers.apple.com/GetUcozMultSerial</url> 

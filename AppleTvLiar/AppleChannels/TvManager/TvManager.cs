@@ -10,6 +10,8 @@ using AppleTvLiar.AppleChannels.HtmlManager;
 using System.Xml.Linq;
 using HtmlAgilityPack;
 using System.Security.Cryptography;
+using AppleTvLiar.AppleChannels.TvManager.UniTv;
+using MikrainService;
 
 namespace AppleTvLiar.AppleChannels.TvManager
 {
@@ -19,12 +21,15 @@ namespace AppleTvLiar.AppleChannels.TvManager
 
         internal XmlDocument GetChannel(string channel)
         {
-
             if (channel.EndsWith("main"))
             {
                 return GenereateChannels(channel);
             }
 
+            if (channel.EndsWith("m3u8"))
+            {
+                return GenereateM3U8Channels(channel);
+            }
 
             string fileName = Path.Combine(MikrainService.MikrainProgramm._xmlPath, @"Content\channels.atl");
 
@@ -58,9 +63,20 @@ namespace AppleTvLiar.AppleChannels.TvManager
                 }
 
             }
-            var xml = GetXml(Path.Combine(MikrainService.MikrainProgramm._xmlPath, string.Format(@"Content\{0}.xml", channel)));
+            var xml =
+                GetXml(Path.Combine(MikrainService.MikrainProgramm._xmlPath, string.Format(@"Content\{0}.xml", channel)));
             return xml;
         }
+
+        private XmlDocument GenereateM3U8Channels(string channel)
+        {
+            var muObj = MUObject.CreateDictionary(channel);
+
+            var doc = muObj.CreateXCategories();
+
+            return doc.GetXmlDocument();
+        }
+
 
         private XmlDocument GenereateChannels(string channels)
         {
@@ -429,5 +445,51 @@ namespace AppleTvLiar.AppleChannels.TvManager
             }
         }
 
+        public XmlDocument CreateM3U8Channels(string cat, string url)
+        {
+            XElement root = CreateRoot();
+            CreateHead(root);
+            XElement items = CreateBody(root);
+
+            var muObj = MUObject.CreateDictionary(url);
+
+            foreach (var category in muObj._channels.Keys)
+            {
+                if (category == cat)
+                {
+                    int count = 0;
+                    List<item> groupItems = new List<item>();
+                    Group group = new Group();
+                    group.Name = category;
+
+                    foreach (var movieName in muObj._channels[category].Keys)
+                    {
+                        if ((count % 4 == 0 && count != 0))
+                        {
+                            group.items = groupItems.ToArray();
+                            CreateChannel(items, group);
+
+                            groupItems = new List<item>();
+                            group = new Group();
+                            group.Name = category;
+                        }
+                        groupItems.Add(new item() { LinkMovie = muObj._channels[category][movieName],Text = movieName,IdMovie = count.ToString(),LinkIconLarge = ""});
+
+                        count++;
+                        if (count == muObj._channels[category].Count)
+                        {
+                            group.items = groupItems.ToArray();
+                            CreateChannel(items, group);
+                        }
+                       
+                    }
+
+                    break;
+                }
+
+            }
+
+            return GetDocument(root);
+        }
     }
 }

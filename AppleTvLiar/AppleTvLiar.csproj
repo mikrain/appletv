@@ -73,6 +73,7 @@
     <Compile Include="AppleChannels\HtmlManager\MegaserialSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\MultPoiskSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\M4KinoSiteManager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\OnlyMults.cs" />
     <Compile Include="AppleChannels\HtmlManager\ShowSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\FriendsSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\MyExtensions.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="AppleChannels\JsonManager\MovieBoxSeries.cs" />
     <Compile Include="AppleChannels\MikrainServiceMethods.cs" />
     <Compile Include="AppleChannels\MikrainProgramm.cs" />
+    <Compile Include="AppleChannels\TvManager\MUObject.cs" />
     <Compile Include="AppleChannels\TvManager\UniTv\plist.cs" />
     <Compile Include="AppleChannels\TvManager\TvManager.cs" />
     <Compile Include="AppleChannels\TvManager\UniTv\Group.cs" />

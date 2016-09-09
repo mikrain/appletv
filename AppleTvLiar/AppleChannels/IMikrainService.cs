@@ -72,8 +72,8 @@ namespace MikrainService
         [XmlSerializerFormat]
         [OperationContractAttribute(AsyncPattern = true)]
         [WebGet(UriTemplate = "/GetUcoz", BodyStyle = WebMessageBodyStyle.Bare)]
-        Task<XmlDocument> GetUcoz(); 
-        
+        Task<XmlDocument> GetUcoz();
+
         [XmlSerializerFormat]
         [OperationContract]
         [WebGet(UriTemplate = "/GetYourCinema", BodyStyle = WebMessageBodyStyle.Bare)]
@@ -112,7 +112,7 @@ namespace MikrainService
         [OperationContract]
         [WebGet(UriTemplate = "/GetKino1080", BodyStyle = WebMessageBodyStyle.Bare)]
         XmlDocument GetKino1080();
-        
+
         [XmlSerializerFormat]
         [OperationContract]
         [WebGet(UriTemplate = "/GetKino1080Mult", BodyStyle = WebMessageBodyStyle.Bare)]
@@ -135,8 +135,13 @@ namespace MikrainService
         [XmlSerializerFormat]
         [OperationContractAttribute(AsyncPattern = true)]
         [WebGet(UriTemplate = "/getUcozMovie?movie={movie}&imageUrl={imageUrl}&movieTitle={movieTitle}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
-        Task<XmlDocument> GetUcozMovie(string movie, string imageUrl, string movieTitle); 
-        
+        Task<XmlDocument> GetUcozMovie(string movie, string imageUrl, string movieTitle);
+
+        [XmlSerializerFormat]
+        [OperationContractAttribute(AsyncPattern = true)]
+        [WebGet(UriTemplate = "/getOnlyMult?movie={movie}&imageUrl={imageUrl}&movieTitle={movieTitle}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
+        Task<XmlDocument> GetOnlyMult(string movie, string imageUrl, string movieTitle);
+
         [XmlSerializerFormat]
         [OperationContract]
         [WebGet(UriTemplate = "/getKino1080Movie?movie={movie}&imageUrl={imageUrl}&movieTitle={movieTitle}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
@@ -262,6 +267,12 @@ namespace MikrainService
 
         [XmlSerializerFormat]
         [OperationContract]
+        [WebGet(UriTemplate = "/ShowCatChannels?cat={cat}&url={url}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
+        XmlDocument ShowCatChannels(string cat,string url);
+
+
+        [XmlSerializerFormat]
+        [OperationContract]
         [WebGet(UriTemplate = "/getShows", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
         XmlDocument GetShows();
 
@@ -306,14 +317,26 @@ namespace MikrainService
         Stream appletvLog();
 
         [OperationContract]
+        [WebGet(UriTemplate = "/scrobble.js", BodyStyle = WebMessageBodyStyle.Bare)]
+        Stream Scrobble();
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/updateXML.js", BodyStyle = WebMessageBodyStyle.Bare)]
+        Stream UpdateXml();
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/settings.js", BodyStyle = WebMessageBodyStyle.Bare)]
+        Stream Settings();
+
+        [OperationContract]
         [WebGet(UriTemplate = "/getstream", BodyStyle = WebMessageBodyStyle.Bare)]
         Stream GetStream();
 
         [OperationContract]
         [WebGet(UriTemplate = "/cert", BodyStyle = WebMessageBodyStyle.Bare)]
-        Stream Cert();  
-        
-        
+        Stream Cert();
+
+
         [OperationContract]
         [WebGet(UriTemplate = "/getstreamts/*", BodyStyle = WebMessageBodyStyle.Bare)]
         Stream GetStreamTs();
@@ -322,6 +345,14 @@ namespace MikrainService
         [OperationContract]
         [WebGet(UriTemplate = "/abc", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json)]
         string GetAllRequests();
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/widgetlist.xml", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json)]
+        Stream GetWidgetXml();
+
+        [OperationContract]
+        [WebGet(UriTemplate = "/Widget/{filename}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json)]
+        Stream GetWidget(string filename);
 
 
     }

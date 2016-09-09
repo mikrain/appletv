@@ -63,7 +63,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
                         continue;
                     }
                     string message = node3.Attributes["class"].Value;
-                    Debug.WriteLine(message);
+                    //Debug.WriteLine(message);
                     if (message == "h2")
                     {
                         HtmlNode node4 = node3.Element("a");
@@ -258,7 +258,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
 
         public XDocument ShowMegaSer(string ser, string title, string image)
         {
-            XDocument xDocument = XDocument.Load(Path.Combine(MikrainProgramm._xmlPath, @"Content\movie.xml"));
+            XDocument xDocument = XDocument.Load(Path.Combine(MikrainProgramm._xmlPath, @"Content\movieNoBottom.xml"));
             IEnumerable<XElement> source = xDocument.Descendants(XName.Get("image"));
             IEnumerable<XElement> enumerable2 = xDocument.Descendants(XName.Get("summary"));
             IEnumerable<XElement> enumerable3 = xDocument.Descendants(XName.Get("title"));

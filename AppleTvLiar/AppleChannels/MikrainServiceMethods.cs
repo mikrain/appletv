@@ -28,7 +28,7 @@ using System.Xml.Linq;
 
 namespace MikrainService
 {
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Reentrant)]
     public class MikrainServiceMethods : AppleBase, IMikrainService
     {
         public static DateTime DateChannel;
@@ -64,6 +64,13 @@ namespace MikrainService
             return new TvManager().PlayChannel(href);
         }
 
+        public XmlDocument ShowCatChannels(string cat, string url)
+        {
+            return new TvManager().CreateM3U8Channels(cat, url);
+
+        }
+
+
         public XmlDocument appleusTv()
         {
             Console.WriteLine("appleusTv");
@@ -71,10 +78,10 @@ namespace MikrainService
             //  doc.LoadXml(HttpRequests("http://trailers.apple.com/appletv/us/index.xml"));
         }
 
-        public XmlDocument appleMoviesOnline(string page = "0")
+        public XmlDocument appleMoviesOnline(string page = "1")
         {
             Console.WriteLine("appleMoviesOnline");
-            XmlDocument xmlDocument = new BaskinoSiteManager().GetCategories("http://baskino.com/mobile/page", "movie").GetXmlDocument();
+            XmlDocument xmlDocument = new OnlyMults().GetCategories("http://www.onlymults.ru/disnei/page/", "disney").GetXmlDocument();
             return xmlDocument;
         }
 
@@ -156,8 +163,8 @@ namespace MikrainService
         {
             try
             {
-           
-               return new MultPoiskSiteManager().GetConent(string.Format("http://multpoisk.net/{0}", ext), @"Content\categories.xml", "multPoisk").GetXmlDocument();
+
+                return new MultPoiskSiteManager().GetConent(string.Format("http://multpoisk.net/{0}", ext), @"Content\categories.xml", "multPoisk").GetXmlDocument();
 
             }
             catch (Exception ex)
@@ -275,6 +282,7 @@ namespace MikrainService
         {
             return new RussianCartoons().GetRCartoonShow(russianCartoonMoview, filmId).GetXmlDocument();
         }
+
 
         public XmlDocument GetShows()
         {
@@ -413,6 +421,8 @@ namespace MikrainService
 
                 // Write an informational entry to the event log.    
                 myLog.WriteEntry(ex.Message);
+
+                return Error(ex).GetXmlDocument();
             }
             return null;
         }
@@ -492,6 +502,24 @@ namespace MikrainService
             try
             {
                 return (await new Ucoz().GetMovie(movie, imageUrl, movieTitle)).GetXmlDocument();
+
+            }
+            catch (Exception ex)
+            {
+                EventLog myLog = new EventLog();
+                myLog.Source = "AppleSource";
+
+                // Write an informational entry to the event log.    
+                myLog.WriteEntry(ex.Message);
+            }
+            return null;
+        }
+
+        public async Task<XmlDocument> GetOnlyMult(string movie, string imageUrl, string movieTitle)
+        {
+            try
+            {
+                return (await new OnlyMults().GetMovie(movie, imageUrl, movieTitle)).GetXmlDocument();
 
             }
             catch (Exception ex)
@@ -601,6 +629,21 @@ namespace MikrainService
             return new MemoryStream(Encoding.UTF8.GetBytes(js));
         }
 
+        public Stream Scrobble()
+        {
+            return new FileStream(Path.Combine(MikrainService.MikrainProgramm._xmlPath, "Content\\js\\scrobble.js"), FileMode.Open);
+        }
+        public Stream UpdateXml()
+        {
+            return new FileStream(Path.Combine(MikrainService.MikrainProgramm._xmlPath, "Content\\js\\updateXML.js"), FileMode.Open);
+        }
+
+        public Stream Settings()
+        {
+            return new FileStream(Path.Combine(MikrainService.MikrainProgramm._xmlPath, "Content\\js\\settings.js"), FileMode.Open);
+
+        }
+
         DateTime nowTime;
 
         public Stream GetStream()
@@ -672,7 +715,7 @@ namespace MikrainService
             //}
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(WebOperationContext.Current.IncomingRequest.UriTemplateMatch.RequestUri.ToString());
-            
+
 
             var req = HttpRequests(WebOperationContext.Current.IncomingRequest.UriTemplateMatch.RequestUri.ToString());
             return req;
@@ -720,8 +763,8 @@ namespace MikrainService
                 return cacheDoc.GetXmlDocument();
             }
 
-            var doc= new BestRussian().GetChannelsList();
-            SaveDoc("bestRussian",XDocument.Parse(doc.InnerXml));
+            var doc = new BestRussian().GetChannelsList();
+            SaveDoc("bestRussian", XDocument.Parse(doc.InnerXml));
             return doc;
         }
 
@@ -729,6 +772,16 @@ namespace MikrainService
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(string.Format("http://images.bestrussiantv.com/ui/ImageHandler.ashx?t=10&e={0}", channelId));
             return request.GetResponse().GetResponseStream();
+        }
+
+        public Stream GetWidgetXml()
+        {
+            return new FileStream(Path.Combine(MikrainService.MikrainProgramm._xmlPath, "widgets\\widgetlist.xml"), FileMode.Open);
+        }
+
+        public Stream GetWidget(string filename)
+        {
+            return new FileStream(Path.Combine(MikrainService.MikrainProgramm._xmlPath, "widgets\\" + filename), FileMode.Open);
         }
     }
 }

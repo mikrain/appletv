@@ -105,6 +105,7 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
         public XDocument GetCategories(string url, string cacheName)
         {
 
+
             var cacheDoc = ReadDoc(cacheName);
             if (cacheDoc != null)
             {
