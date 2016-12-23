@@ -40,14 +40,19 @@ namespace AppleTvLiar.AppleChannels
         protected async Task<string> GetLink(HtmlDocument document)
         {
             var text = document.DocumentNode.InnerText;
-            var urlEnd = Regex.Match(text, "var session_url = '(.*?)'").Groups[1].Value;
+             var urlEnd = Regex.Match(text, "var session_url = '(.*?)'").Groups[1].Value;
+            //var urlEnd = "/sessions/new_session";
             var lookIntoThis = Regex.Match(text, "session_url, (.*?(\n))+.*?");
+            //var lookIntoThis = Regex.Match(text, "new_session', {(.|\n)*}");
             var eval = Regex.Match(text, "setRequestHeader\\|\\|(.*?)\\|beforeSend").Groups[1].Value;
-            var xmoonExp = Regex.Match(text, "X-MOON-EXPIRED', \"(.*)\"").Groups[1].Value;
+            //var xmoonExp = Regex.Match(text, "X-MOON-EXPIRED', \"(.*)\"").Groups[1].Value;
+            var xmoonExp = Regex.Match(document.DocumentNode.InnerHtml, "\"csrf-token\" content=\"(.*)\"").Groups[1].Value;
             var xmoonToken = Regex.Match(text, "X-MOON-TOKEN', \"(.*)\"").Groups[1].Value;
             var video_token = Regex.Match(lookIntoThis.Value, "video_token: '(.*)'").Groups[1].Value;
-            var access_key = Regex.Match(lookIntoThis.Value, "access_key: '(.*)'").Groups[1].Value;
-            var d_id = Regex.Match(lookIntoThis.Value, "mw_did: (.*)").Groups[1].Value;
+            var access_key = Regex.Match(lookIntoThis.Value, "mw_key: '(.*)'").Groups[1].Value;
+            var d_id = Regex.Match(lookIntoThis.Value, "mw_pid: (.*),").Groups[1].Value;
+            var uuid = Regex.Match(lookIntoThis.Value, "uuid: '(.*)'").Groups[1].Value;
+            var mw_domain_id = Regex.Match(lookIntoThis.Value, "mw_domain_id: (.*),").Groups[1].Value;
 
             if (string.IsNullOrEmpty(lookIntoThis.Value)) return "";
 
@@ -56,10 +61,13 @@ namespace AppleTvLiar.AppleChannels
                     SendMoonRequest(xmoonExp, eval, "http://moonwalk.cc" + urlEnd,
                         new Dictionary<string, string>()
                         {
-                            {"mw_did", d_id},
+                            {"mw_pid", d_id},
                             {"video_token", video_token},
-                            {"access_key", access_key},
-                            {"content_type", "serial"}
+                            {"mw_key", access_key},
+                            {"mw_domain_id", mw_domain_id},
+                            {"ad_attr", "0"},
+                            {"content_type", "movie"},
+                            { "uuid",uuid}
                         });
 
             var jO = JObject.Parse(result);
@@ -267,11 +275,14 @@ namespace AppleTvLiar.AppleChannels
             var request = (HttpWebRequest)WebRequest.Create(url);
             //xhr.setRequestHeader('X-MOON-EXPIRED', "1445476086");
             //xhr.setRequestHeader('X-MOON-TOKEN', "a33e0508a7a5e053d21fe15bc6d1576d");
+            //xhr.setRequestHeader('X-MOON-TOKEN', "a33e0508a7a5e053d21fe15bc6d1576d");
 
+            request.Headers.Add("X-CSRF-Token", exp);
+            request.Headers.Add("X-Data-Pool", "Stream");
             //request.Headers.Add("X-MOON-EXPIRED",exp);
             //request.Headers.Add("X-MOON-TOKEN", TOKEN);
-            request.Headers.Add("Content-Data", Base64Encode(TOKEN));
-            request.Headers.Add("Encoding-Pool", Base64Encode(TOKEN));
+            //request.Headers.Add("Content-Data", Base64Encode(TOKEN));
+            //request.Headers.Add("Encoding-Pool", Base64Encode(TOKEN));
             request.Headers.Add("X-Requested-With", "XMLHttpRequest");
 
             request.Method = "POST";

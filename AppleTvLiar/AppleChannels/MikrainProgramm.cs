@@ -89,10 +89,13 @@ namespace MikrainService
             string hostName = Dns.GetHostName();
 
             ServiceEndpointCollection endpointCollection = listener.Description.Endpoints;
+
+
             for (int i = 0; i < endpointCollection.Count; i++)
             {
                 endpointCollection[i].Address = FixEndpointAddress(endpointCollection[i], hostName);
             }
+
         }
 
         private EndpointAddress FixEndpointAddress(ServiceEndpoint endpoint, string hostName)

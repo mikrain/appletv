@@ -10,50 +10,87 @@
 	<body>
 		<viewWithNavigationBar id="trailers_navigation" onNavigate="Trailers.handleOnNavigate( event )">
 			<navigation>
-				<navigationItem id="RuTv"> 
-					<title>Russian TV</title> 
-					<url>http://trailers.apple.com/appletv?channel=listChannels</url> 
-				</navigationItem> 
-				<navigationItem id="edem"> 
+			<!-- <navigationItem id="disc"> 
 					<title>Edem</title> 
 					<url>http://trailers.apple.com/appletv?channel=https://edem.tv/playlists/uplist/e6a4ff0932f67f5a19a0634d8f5445dc/edem_pl.m3u8</url> 
 				</navigationItem> 
-			<navigationItem id="UkozSer"> 
-					<title>UkozMultSer</title> 
-					<url>http://trailers.apple.com/GetUcozMultSerial</url> 
-				</navigationItem>
-			<navigationItem id="UkozMult"> 
-					<title>UkozMult</title> 
-					<url>http://trailers.apple.com/GetUcozMult</url> 
-				</navigationItem>
-				<navigationItem id="DisneyMovies"> 
-					<title>Дисней Мульт</title> 
-					<url>http://trailers.apple.com/MultPoisk?ext=disney</url> 
+				<navigationItem id="ghost"> 
+					<title>Ghost</title> 
+					<url>http://trailers.apple.com/appletv?channel=https://dl.dropboxusercontent.com/u/26778597/vic4_I-GHOST.m3u8</url> 
 				</navigationItem> 
-				<navigationItem id="BaskinoMult"> 
-					<title>BaskinoMult</title> 
-					<url>http://trailers.apple.com/baskinoMutliOnline?page=1</url> 
+			 -->
+			 
+			 <navigationItem id="nnm"> 
+					<title>NNM</title> 
+					<url>http://trailers.apple.com/appletv?channel=http://nnm-list.ru/f/kHche9xjJS?m3u8</url> 
 				</navigationItem> 
+
+				<navigationItem id="englishTv"> 
+					<title>EnglishTv</title> 
+					<url>http://trailers.apple.com/appletv?channel=https://dl.dropboxusercontent.com/u/26778597/CLAB.m3u?m3u8</url> 
+				</navigationItem> 
+			 
+			 <!-- <navigationItem id="disc"> 
+					<title>Discovery</title> 
+					<url>http://trailers.apple.com/appletv?channel=listChannels</url> 
+				</navigationItem>  -->
+				<!-- <navigationItem id="EnTv"> 
+					<title>ТВ</title> 
+					<url>http://trailers.apple.com/appletv?channel=http://internamedia-cdn.ru/hls-live/playlist/channels_list.php?pl=main</url> 
+				</navigationItem> 
+				<navigationItem id="BestRus"> 
+					<title>Best Russian TV</title> 
+					<url>http://trailers.apple.com/GetBestRussian</url> 
+				</navigationItem>  -->
 				<navigationItem id="Ukoz"> 
-					<title>Ukoz</title> 
+					<title>ФильмыHD</title> 
 					<url>http://trailers.apple.com/GetUcoz</url> 
 				</navigationItem>
 					<navigationItem id="UkozSerial"> 
-					<title>UkozSerial</title> 
+					<title>Сериалы</title> 
 					<url>http://trailers.apple.com/GetUcozSerial</url> 
 				</navigationItem>
-				<navigationItem id="Baskino"> 
-					<title>Baskino</title> 
+				<navigationItem id="UkozMega"> 
+					<title>Сериалы Мега</title> 
+					<url>http://trailers.apple.com/megaserial</url> 
+				</navigationItem>
+				 <navigationItem id="Baskino"> 
+					<title>Disney</title> 
 					<url>http://trailers.apple.com/appleMoviesOnline?page=1</url> 
 				</navigationItem> 
-				<navigationItem id="Friends"> 
+				<!--<navigationItem id="Friends"> 
 					<title>Friends</title> 
 					<url>http://trailers.apple.com/FriendsSeason</url> 
 				</navigationItem> 
 				<navigationItem id="EnMovies"> 
-					<title>En Movies</title> 
+					<title>Фильмы на английском</title> 
 					<url>http://trailers.apple.com/movieBoxMovie</url> 
 				</navigationItem> 
+				<navigationItem id="EnShows"> 
+					<title>Сериалы на английском</title> 
+					<url>http://trailers.apple.com/movieBoxMovieShow</url> 
+				</navigationItem>  -->
+				<!-- <navigationItem id="TorTv"> 
+					<title>TorrentTv</title> 
+					<url>http://trailers.apple.com/appletv?channel=listChannels</url> 
+				</navigationItem>  -->
+			<navigationItem id="UkozSer"> 
+					<title>МультСериал</title> 
+					<url>http://trailers.apple.com/GetUcozMultSerial</url> 
+				</navigationItem>
+			<navigationItem id="UkozMult"> 
+					<title>МультфильмыHD</title> 
+					<url>http://trailers.apple.com/GetUcozMult</url> 
+				</navigationItem>
+				<!-- <navigationItem id="DisneyMovies"> 
+					<title>Дисней Мульт</title> 
+					<url>http://trailers.apple.com/MultPoisk?ext=disney</url> 
+				</navigationItem>  -->
+				<!-- <navigationItem id="BaskinoMult"> 
+					<title>МультфильмыSD</title> 
+					<url>http://trailers.apple.com/baskinoMutliOnline?page=1</url> 
+				</navigationItem>  -->
+				
 				
 				<!-- <navigationItem id="DisneyMovies"> 
 					<title>Русские Мульт</title> 
@@ -67,10 +104,7 @@
 					<title>Детские Мульт</title> 
 					<url>http://trailers.apple.com/MultPoisk?ext=mult</url> 
 				</navigationItem> -->
-				<navigationItem id="EnShows"> 
-					<title>En Shows</title> 
-					<url>http://trailers.apple.com/movieBoxMovieShow</url> 
-				</navigationItem> 
+				
 				<!-- <navigationItem id="Calendar"> 
 					<title>Calendar</title> 
 				 <url>http://trailers.apple.com/appletv/us/calendar.xml</url> 

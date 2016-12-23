@@ -272,7 +272,15 @@ namespace AppleTvLiar.AppleChannels.HtmlManager
                                 if (i == 5)
                                 {
                                     var actors = splitted[i];
-                                    desc += actors.Remove(50, actors.Length-51) + "..." + Environment.NewLine;
+                                    if (actors.Length >= 51)
+                                    {
+                                        desc += actors.Remove(50, actors.Length - 51) + "..." + Environment.NewLine;
+                                    }
+                                    else
+                                    {
+                                        desc += actors + Environment.NewLine;
+                                    }
+
                                 }
                                 else
                                 {

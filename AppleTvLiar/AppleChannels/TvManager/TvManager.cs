@@ -10,6 +10,7 @@ using AppleTvLiar.AppleChannels.HtmlManager;
 using System.Xml.Linq;
 using HtmlAgilityPack;
 using System.Security.Cryptography;
+using System.Web;
 using AppleTvLiar.AppleChannels.TvManager.UniTv;
 using MikrainService;
 
@@ -467,13 +468,14 @@ namespace AppleTvLiar.AppleChannels.TvManager
                         if ((count % 4 == 0 && count != 0))
                         {
                             group.items = groupItems.ToArray();
+
                             CreateChannel(items, group);
 
                             groupItems = new List<item>();
                             group = new Group();
                             group.Name = category;
                         }
-                        groupItems.Add(new item() { LinkMovie = muObj._channels[category][movieName],Text = movieName,IdMovie = count.ToString(),LinkIconLarge = ""});
+                        groupItems.Add(new item() { LinkMovie = muObj._channels[category][movieName],Text = movieName,IdMovie = count.ToString(),LinkIconLarge = GetImageUrl(movieName) });
 
                         count++;
                         if (count == muObj._channels[category].Count)
@@ -490,6 +492,11 @@ namespace AppleTvLiar.AppleChannels.TvManager
             }
 
             return GetDocument(root);
+        }
+
+        private string GetImageUrl(string movieName)
+        {
+            return string.Format("http://trailers.apple.com/photo={0}", HttpUtility.UrlEncode(movieName));
         }
     }
 }

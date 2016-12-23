@@ -351,6 +351,10 @@ namespace MikrainService
         Stream GetWidgetXml();
 
         [OperationContract]
+        [WebGet(UriTemplate = "/photo={photo}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json)]
+        Stream GetLocalPhoto(string photo);
+
+        [OperationContract]
         [WebGet(UriTemplate = "/Widget/{filename}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json)]
         Stream GetWidget(string filename);
 

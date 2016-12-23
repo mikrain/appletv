@@ -40,6 +40,26 @@ namespace AppleTvLiar.AppleChannels.TvManager
                 }
             }
 
+
+            //for (var i = 1; i < lines.Length; i += 2)
+            //{
+            //    if (!string.IsNullOrEmpty(lines[i]))
+            //    {
+            //        var name = lines[i].Split(',')[1].Replace("\r", "");
+            //        var cat = lines[i].Split(',')[0];
+            //        var url = lines[i + 1];
+            //        var catReplaced = cat.Split(':')[1].Replace("\r", "");
+            //        var replaced = url.Replace("\r", "");
+
+            //        if (cat.Contains("Для взрослых"))
+            //        {
+            //            continue;
+            //        }
+
+            //        AddChannel(name, catReplaced, replaced, muObj);
+            //    }
+            //}
+
             return muObj;
         }
 
@@ -68,7 +88,12 @@ namespace AppleTvLiar.AppleChannels.TvManager
             doc.Load(Path.Combine(MikrainProgramm._xmlPath, @"Content\Season.xml"));
             var xDoc = doc.GetXDocument();
             var items = xDoc.Descendants(XName.Get("items")).First();
+            var listWithPreview = xDoc.Descendants(XName.Get("listWithPreview")).First();
             int count = 0;
+
+            var crossFadePreview = new XElement(XName.Get("paradePreview"));
+            var preview = new XElement(XName.Get("preview"));
+
             foreach (var cat in _channels.Keys)
             {
                 var oneLineMenuItem = new XElement(XName.Get("oneLineMenuItem"));
@@ -77,31 +102,48 @@ namespace AppleTvLiar.AppleChannels.TvManager
                 oneLineMenuItem.Add(new XAttribute(XName.Get("id"), "shelf_" + count));
                 oneLineMenuItem.Add(new XAttribute(XName.Get("accessibilityLabel"), "shelf_" + count));
                 var label = new XElement(XName.Get("label"));
-                var preview = new XElement(XName.Get("preview"));
-                var crossFadePreview = new XElement(XName.Get("crossFadePreview"));
-                var image = new XElement(XName.Get("image"));
-                image.Add(new XAttribute(XName.Get("src720"), "http://cs624417.vk.me/v624417582/d7b0/MxuqtGpcwuo.jpg"));
-                image.Add(new XAttribute(XName.Get("src1080"), "http://cs624417.vk.me/v624417582/d7b0/MxuqtGpcwuo.jpg"));
+              
+                //var crossFadePreview = new XElement(XName.Get("crossFadePreview"));
+              
+
+                int imageCount = 0;
+
+                foreach (var value in _channels[cat].Keys)
+                {
+                    var image = new XElement(XName.Get("image"));
+                    image.Add(new XAttribute(XName.Get("src720"),  string.Format("http://trailers.apple.com/photo={0}", HttpUtility.UrlEncode(value))));
+                    image.Add(new XAttribute(XName.Get("src1080"), string.Format("http://trailers.apple.com/photo={0}", HttpUtility.UrlEncode(value))));
+                    crossFadePreview.Add(image);
+                    imageCount++;
+                    if (imageCount >2)break;
+                }
+
+                //var image = new XElement(XName.Get("image"));
+                //image.Add(new XAttribute(XName.Get("src720"), "http://cs624417.vk.me/v624417582/d7b0/MxuqtGpcwuo.jpg"));
+                //image.Add(new XAttribute(XName.Get("src1080"), "http://cs624417.vk.me/v624417582/d7b0/MxuqtGpcwuo.jpg"));
 
 
                 label.Value = cat;
                 //image.Value = Uri.EscapeDataString("http://cs624417.vk.me/v624417582/d7b0/MxuqtGpcwuo.jpg");
-                crossFadePreview.Add(image);
-                preview.Add(crossFadePreview);
+                //crossFadePreview.Add(image);
+               
                 oneLineMenuItem.Add(label);
-                oneLineMenuItem.Add(preview);
+                //oneLineMenuItem.Add(preview);
                 items.Add(oneLineMenuItem);
                 count++;
             }
 
+            listWithPreview.AddFirst(preview);
+            preview.Add(crossFadePreview);
+           
+            
+            //< preview >
+            //        < crossFadePreview >
+            //          < image src720 = "http://sample-web-server/sample-xml/images/720p/tv1.png" src1080 = "http://sample-web-server/sample-xml/images/1080p/tv1.png" />
 
-          //< preview >
-          //        < crossFadePreview >
-          //          < image src720 = "http://sample-web-server/sample-xml/images/720p/tv1.png" src1080 = "http://sample-web-server/sample-xml/images/1080p/tv1.png" />
-   
-          //           </ crossFadePreview >
-   
-          //         </ preview >
+            //           </ crossFadePreview >
+
+            //         </ preview >
 
             return xDoc;
         }

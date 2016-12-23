@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<UpdateConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" UpdateVersion="25">
-  <Config Changed="false">
+<UpdateConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" UpdateVersion="1">
+  <Config Changed="true">
     <Url>https://dl.dropboxusercontent.com/u/26778597/1/AppleTvLiar.dll</Url>
     <Source>Updates/BackupFile/AppleTvLiar.dll</Source>
     <Target>AppleTvLiar.dll</Target>
@@ -10,12 +10,12 @@
     <Source>Updates/BackupFile/channels.atl</Source>
     <Target>Content/channels.atl</Target>
   </Config>
-  <Config Changed="false">
+  <Config Changed="true">
     <Url>https://dl.dropboxusercontent.com/u/26778597/xml/index.xml</Url>
     <Source>Updates/BackupFile/index.xml</Source>
     <Target>Content/index.xml</Target>
   </Config>
-  <Config Changed="true">
+  <Config Changed="false">
     <Url>https://dl.dropboxusercontent.com/u/26778597/xml/menuGroups.xml</Url>
     <Source>Updates/BackupFile/menuGroups.xml</Source>
     <Target>Content/menuGroups.xml</Target>

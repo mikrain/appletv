@@ -779,6 +779,37 @@ namespace MikrainService
             return new FileStream(Path.Combine(MikrainService.MikrainProgramm._xmlPath, "widgets\\widgetlist.xml"), FileMode.Open);
         }
 
+        public Stream GetLocalPhoto(string photo)
+        {
+            try
+            {
+                photo = HttpUtility.UrlDecode(photo);
+                var files = Directory.GetFiles(Path.Combine(MikrainService.MikrainProgramm._xmlPath, "Content\\Icons\\"));
+
+                var found = files.FirstOrDefault(s => s.Replace(" ","").ToLower().EndsWith(photo.Replace(" ", "").ToLower() + ".png"));
+
+                if (found == null)
+                {
+                    found = files.FirstOrDefault(s => s.Replace(" ", "").ToLower().Contains(photo.Replace(" ", "").ToLower()));
+                    if (found == null)
+                    {
+                        found = files.FirstOrDefault(s => photo.Replace(" ", "").ToLower().StartsWith(Path.GetFileNameWithoutExtension(s).Replace(" ", "").ToLower()));
+                        if (found == null)
+                        {
+                            return null;
+                        }
+                    }
+                }
+
+                return new FileStream(found, FileMode.Open);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+          
+        }
+
         public Stream GetWidget(string filename)
         {
             return new FileStream(Path.Combine(MikrainService.MikrainProgramm._xmlPath, "widgets\\" + filename), FileMode.Open);
