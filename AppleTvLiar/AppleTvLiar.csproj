@@ -70,6 +70,7 @@
     <Compile Include="AppleChannels\HtmlManager\AdultMult.cs" />
     <Compile Include="AppleChannels\HtmlManager\ArrrSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\Kino1080Manager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\CartoonHd.cs" />
     <Compile Include="AppleChannels\HtmlManager\MegaserialSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\MultPoiskSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\M4KinoSiteManager.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="AppleChannels\HtmlManager\FriendsSiteManager.cs" />
     <Compile Include="AppleChannels\HtmlManager\MyExtensions.cs" />
     <Compile Include="AppleChannels\HtmlManager\BaskinoSiteManager.cs" />
+    <Compile Include="AppleChannels\HtmlManager\UcozKino.cs" />
     <Compile Include="AppleChannels\HtmlManager\Ucoz.cs" />
     <Compile Include="AppleChannels\HtmlManager\YourCinemaManager.cs" />
     <Compile Include="AppleChannels\IMikrainService.cs" />

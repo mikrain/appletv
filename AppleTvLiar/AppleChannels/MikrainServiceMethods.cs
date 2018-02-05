@@ -308,6 +308,16 @@ namespace MikrainService
             return new ShowSiteManager().ShowSer(ser, title, image).GetXmlDocument();
         }
 
+        public XmlDocument CartoonHd()
+        {
+            return new CartoonHd().GetCategories().GetXmlDocument();
+        }
+
+        public async Task<XmlDocument> CartoonHdMovie(string movie, string title, string imgSource)
+        {
+            return (await new CartoonHd().GetMovie(movie, title, imgSource)).GetXmlDocument();
+        }
+
         public XmlDocument FriendsPlay(string friendsPlayHref, string imageHref)
         {
             Console.WriteLine("FriendsPlay " + friendsPlayHref);
@@ -365,7 +375,7 @@ namespace MikrainService
         {
             try
             {
-                return (await new Ucoz().GetContent()).GetXmlDocument();
+                return (await new UcozKino().GetContent()).GetXmlDocument();
 
             }
             catch (Exception ex)
@@ -393,7 +403,7 @@ namespace MikrainService
         {
             try
             {
-                return (await new Ucoz().SearchUkoz(query)).GetXmlDocument();
+                return (await new UcozKino().SearchUkoz(query)).GetXmlDocument();
 
             }
             catch (Exception ex)
@@ -411,7 +421,7 @@ namespace MikrainService
         {
             try
             {
-                return (await new Ucoz().GetContent("http://hd-720.ucoz.ru/load/multserialy/27-{0}-2", "multSerialy")).GetXmlDocument();
+                return (await new Ucoz().GetContent("http://kino-fs.ucoz.net/load/multfilmy/multserialy/43-{0}", "multSerialy")).GetXmlDocument();
 
             }
             catch (Exception ex)
@@ -431,7 +441,7 @@ namespace MikrainService
         {
             try
             {
-                return (await new Ucoz().GetContent("http://hd-720.ucoz.ru/load/multfilm/24-{0}-2", "mult")).GetXmlDocument();
+                return (await new UcozKino().GetContent("http://kino-fs.ucoz.net/load/multfilmy/41-{0}", "mult")).GetXmlDocument();
 
             }
             catch (Exception ex)
@@ -458,7 +468,7 @@ namespace MikrainService
         {
             try
             {
-                return (await new Ucoz().GetContent("http://hd-720.ucoz.ru/load/serialy/26-{0}-2", "serialy")).GetXmlDocument();
+                return (await new UcozKino().GetContent("http://kino-fs.ucoz.net/load/serialy/22-{0}", "serialy")).GetXmlDocument();
 
             }
             catch (Exception ex)
@@ -477,7 +487,7 @@ namespace MikrainService
         {
             try
             {
-                return (await new Ucoz().ShowUcozSer(ser, title, image)).GetXmlDocument();
+                return (await new UcozKino().ShowUcozSer(ser, title, image)).GetXmlDocument();
 
             }
             catch (Exception ex)
@@ -492,16 +502,39 @@ namespace MikrainService
         }
 
 
+        public async Task<XmlDocument> ShowUcozSerGo(string ser, string title, string image)
+        {
+            try
+            {
+                return (await new UcozKino().ShowUcozSerGo(ser, title, image)).GetXmlDocument();
+
+            }
+            catch (Exception ex)
+            {
+                EventLog myLog = new EventLog();
+                myLog.Source = "AppleSource";
+
+                // Write an informational entry to the event log.    
+                myLog.WriteEntry(ex.Message);
+            }
+            return null;
+        }
+
         public XmlDocument ShowUcozEpisodes(string href, string imageHref, string title, string season)
         {
-            return new Ucoz().ShowUcozEpisodes(href, imageHref, title, season).GetXmlDocument();
+            return new UcozKino().ShowUcozEpisodes(href, imageHref, title, season).GetXmlDocument();
+        }
+
+        public XmlDocument ShowUcozEpisodesGo(string href, string imageHref, string title, string season)
+        {
+            return new UcozKino().ShowUcozEpisodesGo(href, imageHref, title, season).GetXmlDocument();
         }
 
         public async Task<XmlDocument> GetUcozMovie(string movie, string imageUrl, string movieTitle)
         {
             try
             {
-                return (await new Ucoz().GetMovie(movie, imageUrl, movieTitle)).GetXmlDocument();
+                return (await new UcozKino().GetMovie(movie, imageUrl, movieTitle)).GetXmlDocument();
 
             }
             catch (Exception ex)
@@ -786,7 +819,7 @@ namespace MikrainService
                 photo = HttpUtility.UrlDecode(photo);
                 var files = Directory.GetFiles(Path.Combine(MikrainService.MikrainProgramm._xmlPath, "Content\\Icons\\"));
 
-                var found = files.FirstOrDefault(s => s.Replace(" ","").ToLower().EndsWith(photo.Replace(" ", "").ToLower() + ".png"));
+                var found = files.FirstOrDefault(s => s.Replace(" ", "").ToLower().EndsWith(photo.Replace(" ", "").ToLower() + ".png"));
 
                 if (found == null)
                 {
@@ -807,7 +840,7 @@ namespace MikrainService
             {
                 return null;
             }
-          
+
         }
 
         public Stream GetWidget(string filename)

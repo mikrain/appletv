@@ -129,8 +129,18 @@ namespace MikrainService
         Task<XmlDocument> ShowUcozSer(string ser, string title, string image);
 
         [XmlSerializerFormat]
+        [OperationContractAttribute(AsyncPattern = true)]
+        [WebGet(UriTemplate = "/ShowUcozSerGo?ser={ser}&title={title}&image={image}", BodyStyle = WebMessageBodyStyle.Bare)]
+        Task<XmlDocument> ShowUcozSerGo(string ser, string title, string image);
+
+
+        [XmlSerializerFormat]
         [WebGet(UriTemplate = "/ShowUcozEpisodes?href={href}&imageHref={imageHref}&title={title}&season={season}", BodyStyle = WebMessageBodyStyle.Bare)]
         XmlDocument ShowUcozEpisodes(string href, string imageHref, string title, string season);
+
+        [XmlSerializerFormat]
+        [WebGet(UriTemplate = "/ShowUcozEpisodesGo?href={href}&imageHref={imageHref}&title={title}&season={season}", BodyStyle = WebMessageBodyStyle.Bare)]
+        XmlDocument ShowUcozEpisodesGo(string href, string imageHref, string title, string season);
 
         [XmlSerializerFormat]
         [OperationContractAttribute(AsyncPattern = true)]
@@ -268,7 +278,7 @@ namespace MikrainService
         [XmlSerializerFormat]
         [OperationContract]
         [WebGet(UriTemplate = "/ShowCatChannels?cat={cat}&url={url}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
-        XmlDocument ShowCatChannels(string cat,string url);
+        XmlDocument ShowCatChannels(string cat, string url);
 
 
         [XmlSerializerFormat]
@@ -291,6 +301,16 @@ namespace MikrainService
         [WebGet(UriTemplate = "/ShowSer?ser={ser}&title={title}&image={image}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
         XmlDocument ShowSer(string ser, string title, string image);
 
+
+        [XmlSerializerFormat]
+        [OperationContract]
+        [WebGet(UriTemplate = "/CartoonHd", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
+        XmlDocument CartoonHd();
+
+        [XmlSerializerFormat]
+        [OperationContract]
+        [WebGet(UriTemplate = "/CartoonHdMovie?movie={movie}&title={title}&imgSource={imgSource}", BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Xml)]
+        Task<XmlDocument> CartoonHdMovie(string movie, string title, string imgSource);
 
         [OperationContract]
         [WebGet(UriTemplate = "/appletv/us/js/application.js", BodyStyle = WebMessageBodyStyle.Bare)]

@@ -40,7 +40,7 @@ namespace AppleTvLiar.AppleChannels.JsonManager
 
         public int GetAllId()
         {
-            var request = (HttpWebRequest)WebRequest.Create("http://mobapps.cc/data/data_en.zip");
+            var request = (HttpWebRequest)WebRequest.Create("http://sbfunapi.cc/data/data_en.zip");
             using (var response = (HttpWebResponse)request.GetResponse())
             {
                 byte[] result = null;
@@ -115,7 +115,7 @@ namespace AppleTvLiar.AppleChannels.JsonManager
             string json;
             if (!File.Exists(MikrainProgramm._xmlPath + @"Content\ExtractMovies\" + fileName))
             {
-                json = HttpRequests("http://mobapps.cc/data/data_en.zip", fileName);
+                json = HttpRequests("http://sbfunapi.cc/data/data_en.zip", fileName);
             }
             else
             {
@@ -128,7 +128,7 @@ namespace AppleTvLiar.AppleChannels.JsonManager
                 }
                 else
                 {
-                    json = HttpRequests("http://mobapps.cc/data/data_en.zip", fileName);
+                    json = HttpRequests("http://sbfunapi.cc/data/data_en.zip", fileName);
                 }
             }
 
@@ -232,7 +232,7 @@ namespace AppleTvLiar.AppleChannels.JsonManager
             xDocument.Descendants(XName.Get("title")).First().SetValue(title);
             xDocument.Descendants(XName.Get("actionButton")).First().Remove();
 
-            string json = HttpRequestsStringMovie("http://mobapps.cc/api/serials/get_movie_data/?id=" + id);
+            string json = HttpRequestsStringMovie("http://sbfunapi.cc/api/serials/movie_details/?id=" + id);
             JToken jFoo = JValue.Parse(json);
 
             var summary = jFoo["description"].Value<string>();
